@@ -48,9 +48,9 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: requirements-actions.txt
+          cache-dependency-path: requirements.txt
 
-      - run: pip install -r requirements-actions.txt
+      - run: pip install -r requirements.txt
 
       - name: Escolher as fontes desta execução
         id: perfil

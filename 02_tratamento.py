@@ -1,11 +1,22 @@
 """
-02_tratamento.py — Transforma os arquivos brutos (data/raw/) nos JSON lidos pelo painel (docs/dados/).
+02_tratamento.py — Transforma os arquivos brutos (data/raw/) nos JSON lidos pelo site (docs/dados/).
 
   python 02_tratamento.py                  # todos os blocos
   python 02_tratamento.py --bloco focos    # só alguns
 
-Se um bloco falhar (fonte fora do ar no dia), o JSON anterior dele é mantido e o painel mostra a
-data da última atualização bem-sucedida.
+Blocos (cada um gera docs/dados/<bloco>.json):
+  enso      índice ONI, regiões Niño semana a semana e o status do boletim do NOAA
+  clima     chuva e temperatura de 30 e 90 dias contra 1991–2020 por região imediata, previsão de 7 dias
+            e as séries diárias por estado (docs/dados/serie/<UF>.json)
+  focos     queimadas: últimas 48 h, acumulado do ano contra 2003 em diante, estados, biomas e municípios
+            (também atualiza a série histórica data/ref/focos_ref_diario.csv)
+  avisos    avisos do INMET em vigor, ligados às mesorregiões do IBGE
+  mundo     desastres do GDACS e temperatura média global diária
+  swic      avisos meteorológicos oficiais graves por país (OMM)
+  noticias  manchetes dos últimos 14 dias, com temas, estados e regiões
+
+Se a coleta de uma fonte falhou, ou o bloco dá erro, o JSON anterior é mantido e o site mostra a data
+da última atualização bem-sucedida (docs/dados/atualizacao.json).
 """
 from __future__ import annotations
 
@@ -20,10 +31,10 @@ from urllib.parse import urlparse
 import pandas as pd
 from defusedxml import ElementTree as ET   # XML vindo de fora: protegido contra entidades maliciosas
 
-from clima_comum import (BRT, NOME_UF, RAW, REF, RX_TEMAS, SAIDA, UF_POR_NOME, UFS, agora, chave, gravar_json, ler_json, r,
+from clima_comum import (BRT, NOME_UF, RAW, REF, RX_TEMAS, SAIDA, UF_POR_NOME, agora, chave, gravar_json, ler_json, r,
                          url_segura)
 
-SAT_REF = "AQUA_M-T"
+SAT_REF = "AQUA_M-T"   # satélite de referência do INPE (o das séries históricas oficiais de queimadas)
 
 
 # ================================================================ ENSO
@@ -50,6 +61,8 @@ STATUS_CPC = {
 
 
 def bloco_enso() -> dict:
+    """Índice ONI desde 1950, as regiões Niño semana a semana (desde 2014), a fase atual e o status
+    do boletim mensal do NOAA (lido da página do ENSO Diagnostic Discussion)."""
     # ONI: estação de 3 meses, ano, temperatura total, anomalia
     oni = []
     for linha in (RAW / "enso" / "oni.txt").read_text(encoding="utf-8").splitlines()[1:]:
@@ -71,7 +84,8 @@ def bloco_enso() -> dict:
     pag = (RAW / "enso" / "discussao.html").read_text(encoding="utf-8", errors="replace")
     texto = html.unescape(re.sub(r"<[^>]+>", " ", pag))
     texto = re.sub(r"\s+", " ", texto)
-    alerta = next((k for k in sorted(STATUS_CPC, key=len, reverse=True) if k in texto[texto.find("ENSO Alert System Status"):][:200]), None)
+    trecho_status = texto[texto.find("ENSO Alert System Status"):][:200]
+    alerta = next((k for k in sorted(STATUS_CPC, key=len, reverse=True) if k in trecho_status), None)
     sinopse = re.search(r"Synopsis:\s*(.+?\.)\s", texto)
     emitido = re.search(r"issued by\s+CLIMATE PREDICTION CENTER.*?(\d{1,2} [A-Z][a-z]+ \d{4})", texto)
     data_disc = None
@@ -95,11 +109,14 @@ def bloco_enso() -> dict:
 
 # ================================================================ clima (NASA POWER) e previsão (Open-Meteo)
 def _normais() -> dict:
+    """Normais 1991–2020 por (região, variável): lista de 12 médias mensais (chuva em mm/dia, temperatura em °C)."""
     nm = pd.read_csv(REF / "normais_power.csv", dtype={"id": str})
     return {(t.id, t.var): [getattr(t, f"m{i}") for i in range(1, 13)] for t in nm.itertuples()}
 
 
 def bloco_clima() -> dict:
+    """Chuva e temperatura dos últimos 30 e 90 dias contra as normais 1991–2020, por região imediata;
+    séries diárias de 120 dias por estado; e a previsão de 7 dias do Open-Meteo."""
     ri = pd.read_csv(REF / "regioes_imediatas.csv", dtype={"id": str})
     NORM = _normais()
     series = {}
@@ -116,6 +133,8 @@ def bloco_clima() -> dict:
     fim = validos[validos >= 0.95].index.max()
 
     def resumo(rid, df, dias):
+        """[chuva, chuva normal, diferença em %, temperatura média, diferença em °C] nos últimos `dias` dias.
+        A normal do período soma, dia a dia, a média do mês correspondente."""
         jan = df.loc[fim - timedelta(days=dias - 1):fim]
         meses = jan.index.month
         np_ = sum(NORM[(rid, "PRECTOTCORR")][m - 1] for m in meses)       # mm/dia normais somados = mm no período
@@ -135,7 +154,8 @@ def bloco_clima() -> dict:
         jan = df.loc[fim - timedelta(days=119):fim]
         norm_p = [r(NORM[(t.id, "PRECTOTCORR")][d.month - 1], 2) for d in jan.index]
         norm_t = [r(NORM[(t.id, "T2M")][d.month - 1], 2) for d in jan.index]
-        por_uf.setdefault(t.uf, {})[t.id] = {"p": [r(x, 1) for x in jan.p], "t": [r(x, 1) for x in jan.t], "np": norm_p, "nt": norm_t}
+        por_uf.setdefault(t.uf, {})[t.id] = {"p": [r(x, 1) for x in jan.p], "t": [r(x, 1) for x in jan.t],
+                                             "np": norm_p, "nt": norm_t}
     ini_serie = (fim - timedelta(days=119)).date().isoformat()
     for uf, dados in por_uf.items():
         gravar_json({"ini": ini_serie, "regioes": dados}, SAIDA / "serie" / f"{uf}.json")
@@ -166,6 +186,7 @@ def nome_proprio(nome: str) -> str:
 
 
 def _ler_focos(arq) -> pd.DataFrame:
+    """Lê um CSV diário do INPE, que pode vir em UTF-8 ou Latin-1."""
     for enc in ("utf-8", "latin-1"):
         try:
             return pd.read_csv(arq, encoding=enc)
@@ -175,6 +196,9 @@ def _ler_focos(arq) -> pd.DataFrame:
 
 
 def bloco_focos() -> dict:
+    """Queimadas: (1) atualiza a série do satélite de referência com os dias baixados; (2) focos das
+    últimas 48 h (todos os satélites) em pontos, por região imediata e por município; (3) acumulado do
+    ano comparado com os anos anteriores, por estado e por bioma."""
     mun = pd.read_csv(REF / "municipios.csv", dtype=str)
     mun_imed = dict(zip(mun.ibge, mun.imediata))
     arqs = sorted((RAW / "focos").glob("focos_diario_br_*.csv"))
@@ -240,6 +264,7 @@ def bloco_focos() -> dict:
     frac = ult.day / pd.Period(ult, "M").days_in_month
 
     def periodo_hist(chave_col):
+        """Média, nos anos anteriores, dos focos de 1º de janeiro até a data atual, por estado ou bioma."""
         h = hist_m[hist_m.mes < ult.month].groupby(["ano", chave_col]).n.sum()
         hm = hist_m[hist_m.mes == ult.month].groupby(["ano", chave_col]).n.sum() * frac
         return h.add(hm, fill_value=0).groupby(chave_col).mean()
@@ -249,18 +274,21 @@ def bloco_focos() -> dict:
     h_ant = hist_m[(hist_m.ano == ano - 1)]
     ano_ant_uf = (h_ant[h_ant.mes < ult.month].groupby("uf").n.sum()
                   .add(h_ant[h_ant.mes == ult.month].groupby("uf").n.sum() * frac, fill_value=0))
-    ufs = {uf: [int(por_uf_atual.get(uf, 0)), r(media_uf.get(uf), 0), r(ano_ant_uf.get(uf), 0)] for uf in UFS}
+    ufs = {uf: [int(por_uf_atual.get(uf, 0)), r(media_uf.get(uf), 0), r(ano_ant_uf.get(uf), 0)] for uf in NOME_UF}
     por_bioma = s_atual.groupby("bioma").n.sum()
     media_bioma = periodo_hist("bioma")
-    biomas = {b: [int(por_bioma.get(b, 0)), r(media_bioma.get(b), 0)] for b in sorted(set(media_bioma.index) | set(por_bioma.index)) if isinstance(b, str)}
+    biomas = {b: [int(por_bioma.get(b, 0)), r(media_bioma.get(b), 0)]
+              for b in sorted(set(media_bioma.index) | set(por_bioma.index)) if isinstance(b, str)}
 
     return {
         "ultimo_dado": str(todos.quando.max()),
         "h48": {"total": int(len(rec)), "por_imediata": {k: int(v) for k, v in por_imed.items()},
                 "pontos": [[round(t.lon, 2), round(t.lat, 2)] for t in pontos.itertuples()],
-                "top_mun": [[str(t.municipio_id), nome_proprio(t.municipio),UF_POR_NOME.get(chave(t.estado)), int(t[4])] for t in top_mun.itertuples()]},
+                "top_mun": [[str(t.municipio_id), nome_proprio(t.municipio), UF_POR_NOME.get(chave(t.estado)), int(t[4])]
+                            for t in top_mun.itertuples()]},
         "ano": {"ano": ano, "ate": ult.date().isoformat(), "doy": hoje_doy, "curvas": curvas,
-                "total": int(por_uf_atual.sum()), "media_mesmo_periodo": r(sum(ate_hoje.values()) / len(ate_hoje), 0) if ate_hoje else None,
+                "total": int(por_uf_atual.sum()),
+                "media_mesmo_periodo": r(sum(ate_hoje.values()) / len(ate_hoje), 0) if ate_hoje else None,
                 "ranking": sorted(ate_hoje.items(), key=lambda x: -x[1])[:5]},
         "ufs": ufs, "ufs_cols": ["ano_atual", "media_2003_ano_ant", "ano_anterior"],
         "biomas": biomas,
@@ -272,6 +300,8 @@ SEVERIDADE = {"Perigo Potencial": 1, "Perigo": 2, "Grande Perigo": 3}
 
 
 def bloco_avisos() -> dict:
+    """Avisos do INMET em vigor (ou que ainda vão começar), com severidade e as mesorregiões atingidas.
+    O RSS traz as áreas pelo nome da mesorregião; a ligação com o mapa é feita pelo nome normalizado."""
     me = pd.read_csv(REF / "mesorregioes.csv", dtype=str)
     por_chave = {}
     for t in me.itertuples():
@@ -290,7 +320,8 @@ def bloco_avisos() -> dict:
             continue
         if fim < agora_ or campos.get("Status", "Alert") != "Alert":
             continue
-        areas = [a.strip() for a in campos.get("Área", "").replace("Aviso para as Áreas:", "").replace("Aviso para as áreas:", "").split(",") if a.strip()]
+        texto_areas = re.sub(r"^Aviso para as [Áá]reas:", "", campos.get("Área", "").strip())
+        areas = [a.strip() for a in texto_areas.split(",") if a.strip()]
         mesos = []
         for a in areas:
             ids = por_chave.get(chave(a))
@@ -339,6 +370,8 @@ TIPOS_GDACS = {"EQ": "Terremoto", "TC": "Ciclone tropical", "FL": "Enchente", "V
 
 
 def bloco_mundo() -> dict:
+    """Desastres do GDACS dos últimos 30 dias (o episódio mais recente de cada evento) e a temperatura
+    média global diária do ano corrente, com os anos mais quentes, a média 1991–2020 e os dias recordes."""
     eventos = {}
     for arq in ("gdacs.json", "gdacs_tc.json"):
         caminho = RAW / "mundo" / arq
@@ -399,6 +432,7 @@ def bloco_swic() -> dict:
     agora_utc = datetime.now(timezone.utc).replace(tzinfo=None)
 
     def data(txt):
+        """Data do SWIC ("2026-11-11 15:30:00", em UTC) ou None se não houver."""
         try:
             return datetime.strptime(txt[:19], "%Y-%m-%d %H:%M:%S")
         except (TypeError, ValueError):
@@ -422,11 +456,12 @@ def bloco_swic() -> dict:
         s = x.get("s")
         if s not in (3, 4):
             continue
-        p = paises.setdefault(m["code"], {"iso3": {"SSD": "SDS"}.get(m["code"], m["code"]), "nome": m["name"], "servico": m.get("dept"),
-                                          "lonlat": [r(m.get("lng"), 2), r(m.get("lat"), 2)],   # para ilhas que não aparecem no mapa
-                                          "url": url_segura("https://" + m["url"].removeprefix("https://").removeprefix("http://"))
-                                          if m.get("url") else None,
-                                          "max": 0, "n4": 0, "n3": 0, "eventos": {}, "expira": None})
+        site = m.get("url") and url_segura("https://" + m["url"].removeprefix("https://").removeprefix("http://"))
+        p = paises.setdefault(m["code"], {
+            "iso3": {"SSD": "SDS"}.get(m["code"], m["code"]),   # o mapa-múndi usa SDS para o Sudão do Sul
+            "nome": m["name"], "servico": m.get("dept"), "url": site or None,
+            "lonlat": [r(m.get("lng"), 2), r(m.get("lat"), 2)],   # para ilhas que não aparecem no mapa
+            "max": 0, "n4": 0, "n3": 0, "eventos": {}, "expira": None})
         p["max"] = max(p["max"], s)
         p[f"n{s}"] += 1
         ev = " ".join(str(x.get("event") or "Aviso").split())[:80]
@@ -438,16 +473,65 @@ def bloco_swic() -> dict:
         p["eventos"] = [[ev, s, n] for (ev, s), n in sorted(p["eventos"].items(), key=lambda kv: (-kv[0][1], -kv[1]))][:6]
         lista.append(p)
     lista.sort(key=lambda p: (-p["max"], -(p["n4"] * 100 + p["n3"])))
-    return {"atualizado": d.get("lastUpdated"), "total_ativos": len(ativos), "paises_com_aviso": len(com_aviso), "paises": lista}
+    return {"atualizado": d.get("lastUpdated"), "total_ativos": len(ativos), "paises_com_aviso": len(com_aviso),
+            "paises": lista}
 
 
 # ================================================================ notícias
-# Feeds temáticos (todo item é sobre clima); nos demais, só entra o que tiver algum tema na manchete
-FEEDS_TEMATICOS = {"onu_news_clima", "cemaden"}
+# ---------- fontes e veículos
+# RSS oficiais (arquivo em data/raw/noticias/<nome>.xml -> nome exibido). Os temáticos (todo item é sobre
+# clima) entram inteiros; nos demais, só o que tiver algum tema na manchete.
 NOME_FONTE = {"agencia_brasil": "Agência Brasil", "onu_news_clima": "ONU News", "cemaden": "Cemaden"}
+FEEDS_TEMATICOS = {"onu_news_clima", "cemaden"}
+FONTES_PERMITIDAS = set(NOME_FONTE.values())
+# Cada fonte de RSS só vale com link para o próprio site (nada de links de agregadores)
+DOMINIOS_FONTE = {"Agência Brasil": ("https://agenciabrasil.ebc.com.br/",), "ONU News": ("https://news.un.org/",),
+                  "Cemaden": ("https://www.gov.br/cemaden/",)}
+# Nomes de exibição dos veículos mais frequentes no GDELT (os demais aparecem pelo endereço do site)
+VEICULOS = {"g1.globo.com": "g1", "oglobo.globo.com": "O Globo", "ge.globo.com": "ge", "valor.globo.com": "Valor",
+            "agenciabrasil.ebc.com.br": "Agência Brasil", "correiobraziliense.com.br": "Correio Braziliense",
+            "folha.uol.com.br": "Folha de S.Paulo", "estadao.com.br": "Estadão", "cnnbrasil.com.br": "CNN Brasil",
+            "metropoles.com": "Metrópoles", "terra.com.br": "Terra", "uol.com.br": "UOL", "noticias.uol.com.br": "UOL",
+            "jc.ne10.uol.com.br": "Jornal do Commercio", "diariodepernambuco.com.br": "Diario de Pernambuco",
+            "diariodonordeste.verdesmares.com.br": "Diário do Nordeste", "opovo.com.br": "O Povo",
+            "gauchazh.clicrbs.com.br": "GZH", "poder360.com.br": "Poder360", "istoe.com.br": "IstoÉ",
+            "band.uol.com.br": "Band", "r7.com": "R7", "sbtnews.sbt.com.br": "SBT News", "exame.com": "Exame",
+            "infomoney.com.br": "InfoMoney", "brasildefato.com.br": "Brasil de Fato", "cartacapital.com.br": "CartaCapital"}
 
 
+def bloqueados() -> set[str]:
+    """Domínios que não podem aparecer: agregadores (que não são a fonte original) e veículos que pedirem
+    para sair. Edite data/ref/noticias_bloqueio.txt (um domínio por linha)."""
+    arq = REF / "noticias_bloqueio.txt"
+    linhas = arq.read_text(encoding="utf-8").splitlines() if arq.exists() else []
+    return {x.strip().lower() for x in linhas if x.strip() and not x.startswith("#")}
+
+
+def host(link: str) -> str:
+    """Domínio de um link, sem "www." (ex.: "g1.globo.com")."""
+    return (urlparse(link).hostname or "").lower().removeprefix("www.")
+
+
+def nome_veiculo(dominio: str) -> str:
+    """Nome de exibição do veículo; sem nome cadastrado, o próprio domínio."""
+    d = dominio.lower().removeprefix("www.")
+    return VEICULOS.get(d) or VEICULOS.get(".".join(d.split(".")[-3:])) or d
+
+
+def link_da_fonte(fonte: str, link: str | None, origem: str = "rss", bloq: frozenset = frozenset()) -> bool:
+    """O link é mesmo da fonte indicada? RSS: só o site oficial dela. GDELT: o domínio do link tem que
+    corresponder ao veículo e não pode estar na lista de bloqueio."""
+    if not link:
+        return False
+    if origem == "gdelt":
+        h = host(link)
+        return bool(h) and not any(h == b or h.endswith("." + b) for b in bloq) and nome_veiculo(h) == fonte
+    return link.startswith(DOMINIOS_FONTE.get(fonte, ("\0",)))
+
+
+# ---------- leitura dos feeds e limpeza das manchetes
 def _local(tag: str) -> str:
+    """Nome de uma tag XML sem o namespace ("{http://www.w3.org/2005/Atom}entry" -> "entry")."""
     return tag.rsplit("}", 1)[-1]
 
 
@@ -465,9 +549,13 @@ def _itens_feed(arq):
         titulo = html.unescape((filhos.get("title").text if "title" in filhos else "") or "").strip()
         link_el = filhos.get("link")
         link = (link_el.get("href") or link_el.text or "") if link_el is not None else ""
-        data_txt = next((filhos[k].text for k in ("pubDate", "date", "published", "updated") if k in filhos and filhos[k].text), None)
-        try:
-            quando = parsedate_to_datetime(data_txt) if data_txt and "," in data_txt else datetime.fromisoformat(data_txt.replace("Z", "+00:00"))
+        data_txt = next((filhos[k].text for k in ("pubDate", "date", "published", "updated")
+                         if k in filhos and filhos[k].text), None)
+        try:   # RSS usa "Tue, 10 Nov 2026 18:48:35 GMT"; Atom/RDF, "2026-11-10T18:48:35Z"
+            if data_txt and "," in data_txt:
+                quando = parsedate_to_datetime(data_txt)
+            else:
+                quando = datetime.fromisoformat(data_txt.replace("Z", "+00:00"))
             quando = quando.astimezone(BRT)
         except (TypeError, ValueError, AttributeError):
             continue
@@ -476,6 +564,27 @@ def _itens_feed(arq):
             yield {"titulo": " ".join(titulo.split()), "link": link, "data": quando}
 
 
+def limpar_titulo(titulo: str, dominio: str) -> str:
+    """Tira o nome do site que alguns veículos põem na manchete ("Diário do Amapá – ...", "... | MidiaNews")."""
+    rotulo = dominio.split(".")[1] if dominio.startswith(("www.", "g1.")) else dominio.split(".")[0]
+    base = re.sub(r"[^a-z0-9]", "", chave(rotulo))
+    titulo = " ".join(titulo.split())
+    # " | Seção ou Site" curto no fim quase sempre é o nome do programa/site (às vezes vêm dois:
+    # "... | Repórter Brasil | TV Brasil")
+    for _ in range(2):
+        titulo = re.sub(r"\s+\|\s+[^|]{2,30}$", "", titulo)
+    for sep in (" | ", " – ", " - "):
+        partes = titulo.split(sep)
+        if len(partes) > 1:
+            fim, ini = re.sub(r"[^a-z0-9]", "", chave(partes[-1])), re.sub(r"[^a-z0-9]", "", chave(partes[0]))
+            if len(partes[-1]) <= 45 and base and (base[:6] in fim or fim[:6] in base):
+                titulo = sep.join(partes[:-1])
+            elif len(partes[0]) <= 30 and base and (base[:6] in ini or ini[:6] in base):
+                titulo = sep.join(partes[1:])
+    return titulo.strip()
+
+
+# ---------- estados, municípios e regiões citados nas manchetes
 CAPITAIS = {"RO": "Porto Velho", "AC": "Rio Branco", "AM": "Manaus", "RR": "Boa Vista", "PA": "Belém", "AP": "Macapá",
             "TO": "Palmas", "MA": "São Luís", "PI": "Teresina", "CE": "Fortaleza", "RN": "Natal", "PB": "João Pessoa",
             "PE": "Recife", "AL": "Maceió", "SE": "Aracaju", "BA": "Salvador", "MG": "Belo Horizonte", "ES": "Vitória",
@@ -521,6 +630,7 @@ PALAVRAS_COMUNS = {"Brasil", "Bonito", "Formosa", "Esperança", "Vitória", "Par
 
 
 def _padrao_municipios() -> tuple[re.Pattern, dict]:
+    """Expressão que acha nomes de municípios na manchete e o dicionário nome -> estado."""
     mun = pd.read_csv(REF / "municipios.csv", dtype=str)
     por_nome = mun.groupby("nome").uf.agg(lambda s: set(s))
     nomes = {n: next(iter(u)) for n, u in por_nome.items()
@@ -529,72 +639,15 @@ def _padrao_municipios() -> tuple[re.Pattern, dict]:
     return rx, nomes
 
 
-def limpar_titulo(titulo: str, dominio: str) -> str:
-    """Tira o nome do site que alguns veículos põem na manchete ("Diário do Amapá – ...", "... | MidiaNews")."""
-    base = re.sub(r"[^a-z0-9]", "", chave(dominio.split(".")[0] if not dominio.startswith(("www.", "g1.")) else dominio.split(".")[1]))
-    # " | Seção ou Site" no fim (curto) quase sempre é o nome do programa/site, não parte da manchete
-    titulo = " ".join(titulo.split())
-    for _ in range(2):   # às vezes vêm dois: "... | Repórter Brasil | TV Brasil"
-        titulo = re.sub(r"\s+\|\s+[^|]{2,30}$", "", titulo)
-    for sep in (" | ", " – ", " - "):
-        partes = titulo.split(sep)
-        if len(partes) > 1:
-            fim, ini = re.sub(r"[^a-z0-9]", "", chave(partes[-1])), re.sub(r"[^a-z0-9]", "", chave(partes[0]))
-            if len(partes[-1]) <= 45 and base and (base[:6] in fim or fim[:6] in base):
-                titulo = sep.join(partes[:-1])
-            elif len(partes[0]) <= 30 and base and (base[:6] in ini or ini[:6] in base):
-                titulo = sep.join(partes[1:])
-    return titulo.strip()
-
-
-FONTES_PERMITIDAS = set(NOME_FONTE.values())
-# Cada fonte de RSS só vale com link para o próprio site (nada de links de agregadores)
-DOMINIOS_FONTE = {"Agência Brasil": ("https://agenciabrasil.ebc.com.br/",), "ONU News": ("https://news.un.org/",),
-                  "Cemaden": ("https://www.gov.br/cemaden/",)}
-
-# Nomes de exibição dos veículos mais frequentes no GDELT (os demais aparecem pelo endereço do site)
-VEICULOS = {"g1.globo.com": "g1", "oglobo.globo.com": "O Globo", "ge.globo.com": "ge", "valor.globo.com": "Valor",
-            "agenciabrasil.ebc.com.br": "Agência Brasil", "correiobraziliense.com.br": "Correio Braziliense",
-            "folha.uol.com.br": "Folha de S.Paulo", "estadao.com.br": "Estadão", "cnnbrasil.com.br": "CNN Brasil",
-            "metropoles.com": "Metrópoles", "terra.com.br": "Terra", "uol.com.br": "UOL", "noticias.uol.com.br": "UOL",
-            "jc.ne10.uol.com.br": "Jornal do Commercio", "diariodepernambuco.com.br": "Diario de Pernambuco",
-            "diariodonordeste.verdesmares.com.br": "Diário do Nordeste", "opovo.com.br": "O Povo",
-            "gauchazh.clicrbs.com.br": "GZH", "poder360.com.br": "Poder360", "istoe.com.br": "IstoÉ",
-            "band.uol.com.br": "Band", "r7.com": "R7", "sbtnews.sbt.com.br": "SBT News", "exame.com": "Exame",
-            "infomoney.com.br": "InfoMoney", "brasildefato.com.br": "Brasil de Fato", "cartacapital.com.br": "CartaCapital"}
 SIGLAS_G1 = {uf.lower() for uf in NOME_UF}
-
-
-def bloqueados() -> set[str]:
-    """Domínios que não podem aparecer: agregadores (que não são a fonte original) e veículos que pedirem
-    para sair. Edite data/ref/noticias_bloqueio.txt (um domínio por linha)."""
-    arq = REF / "noticias_bloqueio.txt"
-    linhas = arq.read_text(encoding="utf-8").splitlines() if arq.exists() else []
-    return {x.strip().lower() for x in linhas if x.strip() and not x.startswith("#")}
-
-
-def host(link: str) -> str:
-    return (urlparse(link).hostname or "").lower().removeprefix("www.")
-
-
-def nome_veiculo(dominio: str) -> str:
-    d = dominio.lower().removeprefix("www.")
-    return VEICULOS.get(d) or VEICULOS.get(".".join(d.split(".")[-3:])) or d
-
-
-def link_da_fonte(fonte: str, link: str | None, origem: str = "rss", bloq: frozenset = frozenset()) -> bool:
-    if not link:
-        return False
-    if origem == "gdelt":
-        h = host(link)
-        return bool(h) and not any(h == b or h.endswith("." + b) for b in bloq) and nome_veiculo(h) == fonte
-    return link.startswith(DOMINIOS_FONTE.get(fonte, ("\0",)))
 
 
 def ufs_da_url(link: str) -> set[str]:
     """No g1, o estado vem no endereço (g1.globo.com/pe/pernambuco/...)."""
     m = re.match(r"https?://g1\.globo\.com/([a-z]{2})/", link)
     return {m.group(1).upper()} if m and m.group(1) in SIGLAS_G1 else set()
+
+
 # Regiões citadas na manchete ("no Sul", "do Nordeste", "Centro-Oeste"...), com maiúscula para não pegar "sul" de direção
 RX_REGIOES = {"Norte": re.compile(r"\b(no|do|na|o|ao|pelo) Norte\b(?! d[aoe])"),
               "Nordeste": re.compile(r"\bNordeste\b|\bSemiárido\b|\bSertão\b"),
@@ -604,6 +657,7 @@ RX_REGIOES = {"Norte": re.compile(r"\b(no|do|na|o|ao|pelo) Norte\b(?! d[aoe])"),
               "Amazônia": re.compile(r"\bAmazônia\b|\bAmazonas\b|\bamazônic")}
 
 
+# ---------- bloco
 def bloco_noticias() -> dict:
     """Junta as manchetes novas às já publicadas (os feeds oficiais trazem só as mais recentes)
     e mantém os últimos 14 dias."""
@@ -615,6 +669,8 @@ def bloco_noticias() -> dict:
     itens = {}
 
     def add(titulo, link, quando, fonte, tematico, origem="rss"):
+        """Inclui a manchete se for dos últimos 14 dias, de fonte autorizada e sobre clima; repetidas
+        (o mesmo texto de agência em vários veículos) entram uma vez só."""
         if quando < limite or quando > agora() + timedelta(hours=1) or not link_da_fonte(fonte, link, origem, bloq):
             return
         temas = sorted(k for k, rx in RX_TEMAS.items() if rx.search(titulo))
@@ -661,13 +717,16 @@ def bloco_noticias() -> dict:
     return {"noticias": [{**x, "data": x["data"].isoformat(timespec="minutes")} for x in lista]}
 
 
-# ================================================================
-BLOCOS = {"enso": (bloco_enso, ["enso"]), "clima": (bloco_clima, ["clima", "previsao"]), "focos": (bloco_focos, ["focos"]),
-          "avisos": (bloco_avisos, ["avisos"]), "mundo": (bloco_mundo, ["mundo"]), "swic": (bloco_swic, ["swic"]),
-          "noticias": (bloco_noticias, ["noticias"])}
+# ================================================================ execução
+# Bloco -> (função, fontes da coleta de que ele depende)
+BLOCOS = {"enso": (bloco_enso, ["enso"]), "clima": (bloco_clima, ["clima", "previsao"]),
+          "focos": (bloco_focos, ["focos"]), "avisos": (bloco_avisos, ["avisos"]), "mundo": (bloco_mundo, ["mundo"]),
+          "swic": (bloco_swic, ["swic"]), "noticias": (bloco_noticias, ["noticias"])}
 
 
 def main(blocos: list[str]) -> None:
+    """Gera o JSON de cada bloco pedido. Se a coleta de alguma fonte do bloco falhou, ou o bloco dá erro,
+    mantém o JSON anterior e registra isso em docs/dados/atualizacao.json (o site mostra a data)."""
     arq_at = SAIDA / "atualizacao.json"
     at = ler_json(arq_at) if arq_at.exists() else {}
     coleta = ler_json(RAW / "status_coleta.json") if (RAW / "status_coleta.json").exists() else {}
@@ -691,6 +750,6 @@ def main(blocos: list[str]) -> None:
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(description="Tratamento dos dados da plataforma El Niño.")
+    ap = argparse.ArgumentParser(description="Tratamento dos dados do Monitor El Niño.")
     ap.add_argument("--bloco", nargs="*", default=list(BLOCOS), choices=list(BLOCOS))
     main(ap.parse_args().bloco)

@@ -1,6 +1,6 @@
 """
 00_referencias.py — Monta, uma única vez, as tabelas de referência da plataforma (data/ref/).
-Roda no computador do LADRI (precisa do geopandas); o resultado vai para o repositório.
+Roda no computador do LADRI (precisa do geopandas: pip install geopandas); o resultado vai para o repositório.
 
   python 00_referencias.py                 # tudo o que ainda não existe
   python 00_referencias.py --refazer focos # refaz uma etapa (malhas|locais|normais|focos)
@@ -33,6 +33,7 @@ SAT_REF = "AQUA_M-T"
 
 # ---------------------------------------------------------------- malhas
 def malhas() -> None:
+    """Baixa as malhas do IBGE (estados, regiões imediatas, mesorregiões) e o mapa-múndi (Natural Earth)."""
     fmt = "formato=application/vnd.geo+json&qualidade=minima"
     for nome, intra in [("br_uf", "UF"), ("br_imediatas", "regiao-imediata"), ("br_meso", "mesorregiao")]:
         baixar(f"{IBGE}/v3/malhas/paises/BR?intrarregiao={intra}&{fmt}", GEO / f"{nome}.geojson", cache=True, timeout=180)
@@ -43,6 +44,9 @@ def malhas() -> None:
 
 # ---------------------------------------------------------------- locais
 def locais() -> None:
+    """Monta as tabelas de lugares a partir da API de localidades do IBGE:
+    municipios.csv (município -> estado, região imediata, mesorregião), regioes_imediatas.csv (com o
+    ponto representativo usado nas consultas de clima) e mesorregioes.csv (para ligar os avisos do INMET)."""
     muns = json.loads(baixar(f"{IBGE}/v1/localidades/municipios", GEO / "ibge_municipios.json", cache=True))
     imeds = json.loads(baixar(f"{IBGE}/v1/localidades/regioes-imediatas", GEO / "ibge_imediatas.json", cache=True))
     mesos = json.loads(baixar(f"{IBGE}/v1/localidades/mesorregioes", GEO / "ibge_meso.json", cache=True))
@@ -82,6 +86,7 @@ MESES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "
 
 
 def _normal(linha) -> list[dict]:
+    """Normais mensais 1991–2020 de chuva (mm/dia) e temperatura (°C) de uma região imediata."""
     p = {"parameters": "PRECTOTCORR,T2M", "community": "AG", "longitude": linha.lon, "latitude": linha.lat,
          "start": 1991, "end": 2020, "format": "JSON"}
     d = json.loads(baixar(POWER_CLIM, params=p, timeout=120))["properties"]["parameter"]
@@ -90,6 +95,8 @@ def _normal(linha) -> list[dict]:
 
 
 def normais() -> None:
+    """Grava normais_power.csv: a régua de comparação (1991–2020) de cada uma das 510 regiões imediatas.
+    Vem do mesmo produto (NASA POWER) dos dados diários, para a comparação ser coerente."""
     ri = pd.read_csv(REF / "regioes_imediatas.csv", dtype={"id": str})
     with ThreadPoolExecutor(max_workers=4) as pool:
         res = list(pool.map(_normal, ri.itertuples()))
@@ -100,10 +107,12 @@ def normais() -> None:
 
 # ---------------------------------------------------------------- focos
 def _uf(nome) -> str | None:
+    """Sigla do estado a partir do nome por extenso usado pelo INPE (ex.: "PARÁ" -> "PA")."""
     return UF_POR_NOME.get(chave(nome))
 
 
 def _ler_csv(conteudo: bytes, **kw) -> pd.DataFrame:
+    """Lê um CSV do INPE, que pode vir em UTF-8 ou Latin-1."""
     for enc in ("utf-8", "latin-1"):
         try:
             return pd.read_csv(io.BytesIO(conteudo), encoding=enc, **kw)
@@ -113,6 +122,9 @@ def _ler_csv(conteudo: bytes, **kw) -> pd.DataFrame:
 
 
 def focos() -> None:
+    """Histórico de focos de queimada do satélite de referência do INPE (AQUA_M-T, o das séries oficiais):
+    focos_hist_mensal.csv e focos_hist_diario_br.csv (2003 até o ano passado, arquivos anuais) e
+    focos_ref_diario.csv (ano corrente, arquivos mensais; depois o 02_tratamento.py o atualiza todo dia)."""
     ano_atual = agora().year
     mensal, diario = [], []
     for ano in range(2003, ano_atual):
@@ -145,6 +157,7 @@ def focos() -> None:
     print("Focos: ok")
 
 
+# Cada etapa e o arquivo que indica que ela já foi feita (só roda de novo com --refazer)
 ETAPAS = {"malhas": (malhas, GEO / "mundo.geojson"), "locais": (locais, REF / "mesorregioes.csv"),
           "normais": (normais, REF / "normais_power.csv"), "focos": (focos, REF / "focos_ref_diario.csv")}
 

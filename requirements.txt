@@ -1,6 +1,6 @@
-# Ambiente completo (computador do LADRI): referências, malhas e geração do painel
+# Atualização dos dados (01_coleta.py, 02_tratamento.py, 04_validar.py) — é o que o GitHub Actions instala
 pandas>=2.2
 requests>=2.31
 defusedxml>=0.7
-geopandas>=1.0
-shapely>=2.0
+# Para refazer as referências ou o visual do site (00_referencias.py, 03_painel.py), instale também:
+#   pip install geopandas>=1.0 shapely>=2.0

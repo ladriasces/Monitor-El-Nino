@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-+jjxdE+6IiwBsproDuAnqwSRNjPjRj+XJ9DwZeHNnTA=' https://cdnjs.cloudflare.com https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://ladri.goatcounter.com; connect-src 'self' https://ladri.goatcounter.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-sh3HiI60saCkL2V30NuDyacOTi0B6ET7iNkvFk54Rdk=' https://cdnjs.cloudflare.com https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://ladri.goatcounter.com; connect-src 'self' https://ladri.goatcounter.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Monitor El Niño: acompanhe o fenômeno, a chuva, a temperatura, as queimadas, os alertas e as notícias sobre o clima no Brasil e no mundo, com dados abertos atualizados todo dia. LADRI · ASCES-UNITA.">
@@ -26,6 +26,11 @@
   --seco: #a8701c; --umido: #1f7a5a; --frio: #2f8a7e; --quente: #c4511f; --fogo: #d4691c;
   --c1: #007a5e; --c2: #b866a8; --c3: #5f5a4f; --c4: #a39d8f; --c5: #c4511f;
   --s1: #f2c94c; --s2: #f2994a; --s3: #d64545; --s0: #3f9c5a;                   /* status oficial: INMET e GDACS */
+  /* ilustração dos biomas (rodapé e divisória) */
+  --bio-v1: #2c6342; --bio-v2: #3f7f52; --bio-v3: #86ad6c; --bio-ol: #8b9a4a; --bio-tr: #6b5140; --bio-seca: #b8904f;
+  --bio-cacto: #4d7f5b; --bio-cupim: #a8704a; --bio-agua: #3f8f88; --bio-ave: #fbf9f4; --bio-preto: #1d1f1c; --bio-fundo: #dfe6d2;
+  --bs1: #5d7447; --bs2: #cfae74; --bs3: #b9794a; --bs4: #7f9d68; --bs5: #4f7a50; --bs6: #9dbb72;
+  --mar-frio: #2f8a7e; --mar-neutro: #e8dfcc; --mar-quente: #c4511f; --mar-extremo: #7e2a0e; --terra: #7d9a68;   /* mapa do cabeçalho */
   --f-display: "Fraunces", Georgia, "Times New Roman", serif;
   --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --shadow: 0 1px 2px rgba(60, 50, 30, .05), 0 6px 22px rgba(60, 50, 30, .06);
@@ -40,6 +45,10 @@
     --seco: #c9913d; --umido: #4fb08a; --frio: #4fa89c; --quente: #d9683a; --fogo: #ee8a3a;
     --c1: #2aa898; --c2: #a85a9a; --c3: #b9b2a3; --c4: #7d776b; --c5: #d9683a;
     --s1: #d9b23c; --s2: #e08a3c; --s3: #e05a5a; --s0: #4cb36c;
+    --mar-frio: #3f9c8f; --mar-neutro: #2b3530; --mar-quente: #d9683a; --mar-extremo: #f0a35c; --terra: #3d5240;
+    --bio-v1: #2f6847; --bio-v2: #3f7c55; --bio-v3: #6b9660; --bio-ol: #7a8746; --bio-tr: #6a5545; --bio-seca: #9c7a47;
+    --bio-cacto: #4b7c5a; --bio-cupim: #8e6142; --bio-agua: #2f7a74; --bio-ave: #e6e2d8; --bio-preto: #0c0f0d; --bio-fundo: #1d2a21;
+    --bs1: #3d4d33; --bs2: #8a7349; --bs3: #80553a; --bs4: #4d6449; --bs5: #365640; --bs6: #627849;
     --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark;
   }
 }
@@ -50,6 +59,10 @@
   --seco: #c9913d; --umido: #4fb08a; --frio: #4fa89c; --quente: #d9683a; --fogo: #ee8a3a;
   --c1: #2aa898; --c2: #a85a9a; --c3: #b9b2a3; --c4: #7d776b; --c5: #d9683a;
   --s1: #d9b23c; --s2: #e08a3c; --s3: #e05a5a; --s0: #4cb36c;
+  --mar-frio: #3f9c8f; --mar-neutro: #2b3530; --mar-quente: #d9683a; --mar-extremo: #f0a35c; --terra: #3d5240;
+  --bio-v1: #2f6847; --bio-v2: #3f7c55; --bio-v3: #6b9660; --bio-ol: #7a8746; --bio-tr: #6a5545; --bio-seca: #9c7a47;
+  --bio-cacto: #4b7c5a; --bio-cupim: #8e6142; --bio-agua: #2f7a74; --bio-ave: #e6e2d8; --bio-preto: #0c0f0d; --bio-fundo: #1d2a21;
+  --bs1: #3d4d33; --bs2: #8a7349; --bs3: #80553a; --bs4: #4d6449; --bs5: #365640; --bs6: #627849;
   --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark;
 }
 
@@ -80,7 +93,15 @@ header.top { padding-block: 28px 18px; display: grid; gap: 18px; }
 .btn .pin { width: 14px; height: 14px; flex: none; }
 
 /* "Placar" do fenômeno */
-.hero { background: linear-gradient(135deg, var(--surface) 35%, color-mix(in srgb, var(--accent-soft) 80%, var(--surface))); border: 1px solid var(--line); border-radius: 22px; padding: 22px 26px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 14px 28px; box-shadow: var(--shadow); align-items: center; }
+/* Fundo do cabeçalho: mapa de hoje da temperatura do mar no Pacífico (canvas), com película para o texto */
+.hero { position: relative; isolation: isolate; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 24px 28px 26px; display: grid; grid-template-columns: minmax(0, 560px); gap: 14px; box-shadow: var(--shadow); min-height: 250px; align-content: center; }
+.hero-texto { display: grid; gap: 4px; }
+.hero-mapa { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, var(--surface) 0%, var(--surface) 34%, color-mix(in srgb, var(--surface) 55%, transparent) 50%, transparent 66%); }
+.hero .medidor { max-width: 520px; }
+.hero-legenda { position: absolute; right: 14px; bottom: 10px; display: flex; align-items: center; gap: 8px; font-size: .72rem; color: var(--ink-2); background: color-mix(in srgb, var(--surface) 86%, transparent); padding: 3px 11px; border-radius: 999px; }
+.hero-legenda .rampa { width: 64px; height: 8px; border-radius: 4px; }
 .hero .fase { font-family: var(--f-display); font-weight: 650; font-size: clamp(2.1rem, 6vw, 3.4rem); line-height: 1; letter-spacing: -.02em; }
 .hero .sub { color: var(--ink-2); font-size: .92rem; }
 .hero .selo { margin-top: 8px; }
@@ -231,6 +252,9 @@ input[type="search"] { width: 240px; max-width: 100%; }
 .efeitos { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
 .efeitos > div { border-top: 3px solid var(--line-strong); padding-top: 8px; display: grid; gap: 4px; align-content: start; font-size: .86rem; }
 .efeitos b { font-family: var(--f-display); font-stretch: 90%; font-size: 1rem; }
+.efeitos img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; background: var(--line); margin-bottom: 4px; }
+.efeitos .credito { font-size: .68rem; color: var(--muted); text-decoration: none; margin-top: auto; }
+.efeitos .credito:hover { text-decoration: underline; }
 .efeitos .seco { border-color: var(--seco); } .efeitos .umido { border-color: var(--umido); } .efeitos .quente { border-color: var(--quente); }
 @media (max-width: 900px) { .efeitos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
@@ -252,7 +276,23 @@ code { font-size: .85em; background: var(--bg); padding: 1px 5px; border-radius:
 .mais { justify-self: center; }
 .repo { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 24px; border-color: var(--accent); }
 .btn-repo { font: 700 .95rem var(--f-body); background: var(--accent); color: var(--accent-ink); text-decoration: none; padding: 10px 16px; border-radius: 8px; border-bottom: 3px solid color-mix(in srgb, var(--accent) 60%, #000); white-space: nowrap; justify-self: end; }
-footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); display: grid; gap: 4px; }
+.horizonte { display: block; width: 100%; height: 18px; margin-top: -4px; fill: color-mix(in srgb, var(--accent) 38%, var(--bg)); }
+.horizonte .hz-l { fill: none; stroke: color-mix(in srgb, var(--accent) 38%, var(--bg)); stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.horizonte .hz-cacto { stroke-width: 2.2; }
+.biomas { margin: 0 0 10px; }
+.biomas svg { display: block; width: 100%; height: auto; }
+.biomas-nomes { display: grid; grid-template-columns: repeat(6, 1fr); text-align: center; font-size: .72rem; color: var(--muted); letter-spacing: .02em; margin-top: 4px; }
+.b-v1 { fill: var(--bio-v1); } .b-v2 { fill: var(--bio-v2); } .b-v3 { fill: var(--bio-v3); } .b-ol { fill: var(--bio-ol); }
+.b-tr { fill: var(--bio-tr); } .b-cupim { fill: var(--bio-cupim); } .b-fundo { fill: var(--bio-fundo); } .b-agua { fill: var(--bio-agua); }
+.b-ave { fill: var(--bio-ave); stroke: var(--bio-preto); stroke-width: .45; } .b-preto { fill: var(--bio-preto); }
+.b-ga, .b-cacto, .b-leque, .b-folha, .b-perna, .b-pescoco, .b-papo, .b-bico, .b-reflexo, .b-cerca { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.b-ga { stroke: var(--bio-tr); stroke-width: 1.4; } .b-grosso { stroke-width: 2.4; }
+.b-cacto { stroke: var(--bio-cacto); stroke-width: 5; } .b-leque { stroke: var(--bio-v2); stroke-width: 1.8; } .b-folha { stroke: var(--bio-v1); stroke-width: 2; }
+.b-perna { stroke: var(--bio-preto); stroke-width: .9; } .b-pescoco { stroke: var(--bio-preto); stroke-width: 2; } .b-bico { stroke: var(--bio-preto); stroke-width: 1.4; }
+.b-papo { stroke: #b8352b; stroke-width: 2.4; } .b-reflexo { stroke: var(--bio-ave); stroke-width: .8; opacity: .55; } .b-cerca { stroke: var(--bio-tr); stroke-width: 1.2; }
+.b-capim-seco { stroke: var(--bio-seca); } .b-capim-verde { stroke: var(--bio-v2); }
+.bs1 { stop-color: var(--bs1); } .bs2 { stop-color: var(--bs2); } .bs3 { stop-color: var(--bs3); } .bs4 { stop-color: var(--bs4); } .bs5 { stop-color: var(--bs5); } .bs6 { stop-color: var(--bs6); }
+footer { margin-top: 36px; font-size: .8rem; color: var(--muted); display: grid; gap: 4px; }
 footer a { color: var(--ink); text-underline-offset: 2px; }
 .redes { display: flex; align-items: center; gap: 12px; }
 .redes a { display: inline-flex; }
@@ -268,7 +308,12 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
   .marca { gap: 12px; }
   .logo { width: 72px; height: 45px; }
   .seletores { justify-content: start; }
-  .hero { padding: 12px 14px; gap: 8px; }
+  /* no celular o mapa sai do fundo e vira uma faixa no fim do cartão, com a legenda logo acima */
+  .hero { padding: 14px 14px 0; gap: 10px; min-height: 0; }
+  .hero::before { display: none; }
+  .hero-mapa { position: static; order: 3; display: block; width: calc(100% + 28px); height: auto; aspect-ratio: 10 / 3; margin-inline: -14px; }
+  .hero-legenda { position: static; order: 2; flex-wrap: wrap; padding: 0; background: none; }
+  .biomas-nomes { font-size: .6rem; letter-spacing: 0; line-height: 1.25; }
   nav.abas { padding-block: 8px; }
   nav.abas .lista { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 28px), transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 28px), transparent 100%); padding-inline: 4px 24px; }
   nav.abas button, .btn, .seg button { min-height: 40px; }
@@ -322,6 +367,21 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
       <p class="nota">A escolha fica guardada só neste navegador. A localização é usada apenas no seu aparelho, para achar a sua região; nada é enviado.</p>
     </div>
     <div class="hero" id="hero"><div class="aviso-dados">Carregando os dados…</div></div>
+    <!-- Divisória: horizonte com silhuetas das plantas dos biomas, repetido na largura da página -->
+    <svg class="horizonte" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="hz" width="168" height="18" patternUnits="userSpaceOnUse">
+          <rect y="16.5" width="168" height="1.5"/>
+          <rect x="17.4" y="10" width="1.2" height="7"/><circle cx="18" cy="7.5" r="5"/><circle cx="13.5" cy="10" r="3.5"/><circle cx="22.5" cy="10" r="3.5"/>
+          <path class="hz-l" d="M42,17 Q41,13 38,10 M44,17 Q44,12 43,8 M46,17 Q47,13 50,11"/>
+          <path class="hz-l hz-cacto" d="M70,17 V5 M70,10 H66.5 V6.5 M70,12 H73.5 V7.5"/>
+          <path class="hz-l" d="M100,17 Q101,11 100,4 M100,4 Q95,3 92,7 M100,4 Q105,3 108,7 M100,4 Q97,0 94,1 M100,4 Q103,0 106,1"/>
+          <rect x="127.4" y="6" width="1.2" height="11"/><path d="M119,6 Q123,3 128,4.5 Q133,3 137,6 Q128,7.5 119,6Z"/>
+          <path class="hz-l" d="M150,17 Q149,14 147,12 M152,17 Q152,13 153,10 M154,17 Q156,15 158,14"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="18" fill="url(#hz)"/>
+    </svg>
   </header>
 
   <nav class="abas" aria-label="Seções">
@@ -353,18 +413,18 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
       <div class="cartao c12">
         <h3>O que o El Niño costuma provocar no Brasil</h3>
         <div class="efeitos">
-          <div class="seco"><b>Norte</b><span>Menos chuva, sobretudo no norte e no leste da Amazônia. Rios mais baixos e mais risco de queimadas.</span></div>
-          <div class="seco"><b>Nordeste</b><span>Menos chuva no norte da região durante a estação chuvosa (fevereiro a maio). Mais risco de seca no Semiárido e de falta de água.</span></div>
-          <div class="quente"><b>Centro-Oeste</b><span>Temperaturas acima da média e chuva irregular. Mais risco de queimadas no Cerrado e no Pantanal.</span></div>
-          <div class="quente"><b>Sudeste</b><span>Mais calor e ondas de calor. A chuva não tem um padrão definido.</span></div>
-          <div class="umido"><b>Sul</b><span>Chuva acima da média, principalmente na primavera e no inverno, com mais risco de enchentes.</span></div>
+          <div class="seco"><img src="img/efeito-norte.webp" width="640" height="480" loading="lazy" decoding="async" alt="Leito seco e rachado do Rio Negro, com a floresta ao fundo, na seca de 2010"><b>Norte</b><span>Menos chuva, sobretudo no norte e no leste da Amazônia. Rios mais baixos e mais risco de queimadas.</span><a class="credito" href="https://commons.wikimedia.org/wiki/File:Seca_no_Rio_Negro_em_2010.jpg" target="_blank" rel="noopener noreferrer">Foto: Alexandre Inagaki, CC BY 2.0</a></div>
+          <div class="seco"><img src="img/efeito-nordeste.webp" width="640" height="480" loading="lazy" decoding="async" alt="Barco no fundo seco do reservatório de Sobradinho, na Bahia, em 2015"><b>Nordeste</b><span>Menos chuva no norte da região durante a estação chuvosa (fevereiro a maio). Mais risco de seca no Semiárido e de falta de água.</span><a class="credito" href="https://commons.wikimedia.org/wiki/File:Seca_em_Sobradinho_05.jpg" target="_blank" rel="noopener noreferrer">Foto: Marcello Casal Jr/Agência Brasil, CC BY 3.0 BR</a></div>
+          <div class="quente"><img src="img/efeito-centro-oeste.webp" width="640" height="480" loading="lazy" decoding="async" alt="Fogo na vegetação seca do Cerrado, no Distrito Federal, em 2015"><b>Centro-Oeste</b><span>Temperaturas acima da média e chuva irregular. Mais risco de queimadas no Cerrado e no Pantanal.</span><a class="credito" href="https://commons.wikimedia.org/wiki/File:Seca_e_queimada_no_cerrado_03.jpg" target="_blank" rel="noopener noreferrer">Foto: José Cruz/Agência Brasil, CC BY 3.0 BR</a></div>
+          <div class="quente"><img src="img/efeito-sudeste.webp" width="640" height="480" loading="lazy" decoding="async" alt="Céu limpo em Coronel Fabriciano (MG) durante a onda de calor de novembro de 2023"><b>Sudeste</b><span>Mais calor e ondas de calor. A chuva não tem um padrão definido.</span><a class="credito" href="https://commons.wikimedia.org/wiki/File:C%C3%A9u_de_Coronel_Fabriciano_MG_durante_a_onda_de_calor_no_Brasil_em_novembro_de_2023.JPG" target="_blank" rel="noopener noreferrer">Foto: HVL, CC BY 4.0</a></div>
+          <div class="umido"><img src="img/efeito-sul.webp" width="640" height="480" loading="lazy" decoding="async" alt="Rua alagada diante do Mercado Público de Porto Alegre na enchente de 2024"><b>Sul</b><span>Chuva acima da média, principalmente na primavera e no inverno, com mais risco de enchentes.</span><a class="credito" href="https://commons.wikimedia.org/wiki/File:Enchente_Porto_Alegre_2024_07.jpg" target="_blank" rel="noopener noreferrer">Foto: Ricardo André Frantz, CC BY 4.0</a></div>
         </div>
         <p class="nota">Esses são os efeitos mais frequentes. Cada El Niño é diferente, e o tempo de cada dia depende também de outros fatores, como o Oceano Atlântico. Para decisões, siga sempre a Defesa Civil e o INMET.</p>
       </div>
       <div class="cartao c12">
         <h3>Quando os dados foram atualizados</h3>
         <div class="tabela-wrap"><table id="tab-atualizacao"></table></div>
-        <p class="nota">A plataforma busca os dados sozinha todos os dias. Se uma fonte estiver fora do ar, o painel mostra os últimos dados disponíveis e a data deles.</p>
+        <p class="nota">A plataforma busca os dados sozinha quatro vezes por dia. Se uma fonte estiver fora do ar, o painel mostra os últimos dados disponíveis e a data deles.</p>
       </div>
     </div>
   </section>
@@ -549,7 +609,18 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
           <li><b>Mundo:</b> Global Disaster Alert and Coordination System, GDACS (alertas de desastres; ONU e Comissão Europeia) e Copernicus Climate Change Service, Climate Pulse (temperatura média global do ERA5). Contém informações modificadas do Copernicus Climate Change Service.</li>
           <li><b>Notícias:</b> <a href="https://www.gdeltproject.org/" target="_blank" rel="noopener noreferrer">GDELT Project</a> (base aberta que monitora notícias do mundo todo; usamos as manchetes em português de veículos brasileiros sobre clima e desastres) e canais RSS oficiais da Agência Brasil (EBC, que autoriza a reprodução com indicação da fonte), da ONU News em português e do Cemaden. A plataforma mostra só a manchete, o veículo, a data e o link para a notícia original. Não reproduz textos nem fotos, e agregadores (como o Google Notícias) não são usados.</li>
           <li><b>Mapas:</b> IBGE (estados, regiões imediatas e mesorregiões) e Natural Earth (mundo).</li>
+          <li><b>Mapa do Pacífico no topo da página:</b> anomalia diária da temperatura da superfície do mar NOAA OI SST V2 High Resolution, fornecida pelo NOAA PSL, Boulder, Colorado, EUA, em <a href="https://psl.noaa.gov" target="_blank" rel="noopener noreferrer">psl.noaa.gov</a> (média de cada bloco de 1°).</li>
         </ul>
+        <h3>Fotos e ilustrações</h3>
+        <p>As fotos dos efeitos do El Niño vêm do Wikimedia Commons, com licenças livres que permitem o uso com crédito. Foram recortadas e reduzidas para o site.</p>
+        <ul>
+          <li>Norte: seca no Rio Negro em 2010, de Alexandre Inagaki (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>), <a href="https://commons.wikimedia.org/wiki/File:Seca_no_Rio_Negro_em_2010.jpg" target="_blank" rel="noopener noreferrer">original</a>.</li>
+          <li>Nordeste: seca em Sobradinho (BA), 2015, de Marcello Casal Jr/Agência Brasil (<a href="https://creativecommons.org/licenses/by/3.0/br/" target="_blank" rel="noopener noreferrer">CC BY 3.0 BR</a>), <a href="https://commons.wikimedia.org/wiki/File:Seca_em_Sobradinho_05.jpg" target="_blank" rel="noopener noreferrer">original</a>.</li>
+          <li>Centro-Oeste: seca e queimada no Cerrado (DF), 2015, de José Cruz/Agência Brasil (<a href="https://creativecommons.org/licenses/by/3.0/br/" target="_blank" rel="noopener noreferrer">CC BY 3.0 BR</a>), <a href="https://commons.wikimedia.org/wiki/File:Seca_e_queimada_no_cerrado_03.jpg" target="_blank" rel="noopener noreferrer">original</a>.</li>
+          <li>Sudeste: céu de Coronel Fabriciano (MG) na onda de calor de novembro de 2023, de HVL (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>), <a href="https://commons.wikimedia.org/wiki/File:C%C3%A9u_de_Coronel_Fabriciano_MG_durante_a_onda_de_calor_no_Brasil_em_novembro_de_2023.JPG" target="_blank" rel="noopener noreferrer">original</a>.</li>
+          <li>Sul: enchente de 2024 em Porto Alegre, de Ricardo André Frantz (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>), <a href="https://commons.wikimedia.org/wiki/File:Enchente_Porto_Alegre_2024_07.jpg" target="_blank" rel="noopener noreferrer">original</a>.</li>
+        </ul>
+        <p>A ilustração dos biomas no rodapé e as silhuetas da divisória foram desenhadas para esta plataforma.</p>
         <h3>Como ler os números</h3>
         <ul>
           <li><b>Anomalia</b> é a diferença em relação ao normal (média de 1991 a 2020). Na chuva, aparece em % (−50% = metade da chuva normal). Na temperatura, em °C.</li>
@@ -560,7 +631,7 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
         <h3>Limites e responsabilidade</h3>
         <p>Esta é uma plataforma de informação e de educação. Ela <b>não substitui os alertas oficiais</b>. Em situação de risco, siga a Defesa Civil (telefone 199, alertas por SMS no 40199) e o INMET.</p>
         <h3>Atualização</h3>
-        <p>Todos os dias, uma rotina automática no GitHub busca as fontes, recalcula os indicadores e publica o site. Nenhum computador do LADRI precisa ficar ligado.</p>
+        <p>Quatro vezes por dia, uma rotina automática no GitHub busca as fontes, recalcula os indicadores e publica o site. Nenhum computador do LADRI precisa ficar ligado.</p>
         <h3>Contagem de acessos</h3>
         <p>O site conta os acessos de forma anônima, com o <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a>: sem cookies e sem guardar dados pessoais. A escolha do "Meu lugar" fica só no seu navegador.</p>
         <h3>Como esta plataforma foi feita</h3>
@@ -570,6 +641,121 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
   </section>
 
   <footer>
+    <!-- Ilustração dos seis biomas (vetorial, feita para o site). Cada planta é desenhada uma vez em <defs>
+         com a base em (0, 0) e repetida com <use>; as cores vêm das variáveis --bio-* (temas claro e escuro). -->
+    <figure class="biomas">
+      <svg viewBox="0 0 1200 112" role="img" aria-label="Ilustração dos seis biomas do Brasil: Amazônia, Caatinga, Cerrado, Pantanal, Mata Atlântica e Pampa">
+        <defs>
+          <linearGradient id="bio-solo" x1="0" x2="1200" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset=".08" class="bs1"/><stop offset=".25" class="bs2"/><stop offset=".42" class="bs3"/>
+            <stop offset=".58" class="bs4"/><stop offset=".75" class="bs5"/><stop offset=".92" class="bs6"/>
+          </linearGradient>
+          <!-- Amazônia: sumaúma (árvore emergente) e copas da floresta -->
+          <g id="b-sumauma">
+            <path class="b-tr" d="M-7,0 Q-2,-5 -2,-14 L-1.4,-52 L1.4,-52 L2,-14 Q2,-5 7,0Z"/>
+            <path class="b-ga" d="M-1,-48 L-14,-56 M1,-49 L13,-57"/>
+            <ellipse class="b-v1" cx="0" cy="-59" rx="24" ry="8"/>
+            <ellipse class="b-v1" cx="-14" cy="-56" rx="12" ry="6"/>
+            <ellipse class="b-v1" cx="14" cy="-57" rx="12" ry="6"/>
+            <ellipse class="b-v2" cx="-4" cy="-63" rx="14" ry="5"/>
+          </g>
+          <g id="b-copa">
+            <rect class="b-tr" x="-1.2" y="-22" width="2.4" height="22"/>
+            <circle class="b-v1" cx="-9" cy="-26" r="10"/>
+            <circle class="b-v1" cx="9" cy="-27" r="10"/>
+            <circle class="b-v2" cx="0" cy="-33" r="11"/>
+            <circle class="b-v3" cx="-4" cy="-38" r="4.5"/>
+          </g>
+          <!-- Caatinga: mandacaru e arbusto sem folhas na seca -->
+          <g id="b-mandacaru"><path class="b-cacto" d="M0,0 V-42 M0,-14 H-7 V-30 M0,-20 H7 V-34"/></g>
+          <g id="b-seco"><path class="b-ga" d="M0,0 L0,-8 L-6,-16 L-9,-23 M0,-8 L5,-15 L4,-22 M-6,-16 L-2,-21 M5,-15 L10,-19 M-9,-23 L-12,-26 M4,-22 L7,-26"/></g>
+          <!-- Cerrado: árvore de tronco torto, capim e cupinzeiro -->
+          <g id="b-pequi">
+            <path class="b-ga b-grosso" d="M0,0 C-2,-8 3,-14 1,-22 C0,-26 -4,-28 -7,-33 M1,-22 C3,-26 7,-27 10,-32"/>
+            <ellipse class="b-ol" cx="-7" cy="-36" rx="10" ry="5.5"/>
+            <ellipse class="b-ol" cx="10" cy="-35" rx="9" ry="5"/>
+            <ellipse class="b-v3" cx="2" cy="-40" rx="8" ry="4.5"/>
+          </g>
+          <g id="b-capim"><path d="M-4,0 Q-5,-6 -8,-11 M-1,0 Q-1,-8 -2,-14 M2,0 Q3,-7 6,-12 M4,0 Q6,-5 9,-8" fill="none" stroke-width="1.2" stroke-linecap="round"/></g>
+          <g id="b-cupim"><path class="b-cupim" d="M-6,0 Q-7,-9 -3,-15 Q0,-19 3,-14 Q7,-8 7,0Z"/></g>
+          <!-- Pantanal: carandá (palmeira de leque) e tuiuiú -->
+          <g id="b-caranda">
+            <path class="b-ga b-grosso" d="M0,0 Q-1,-20 0,-36"/>
+            <path class="b-leque" d="M0,-37 L-11,-38 M0,-37 L-10,-43 M0,-37 L-6,-47 M0,-37 L0,-49 M0,-37 L6,-47 M0,-37 L10,-43 M0,-37 L11,-38 M0,-37 L-8,-32 M0,-37 L8,-32"/>
+          </g>
+          <g id="b-tuiuiu">
+            <path class="b-perna" d="M-1,0 L-0.5,-9 M1.5,0 L1,-9"/>
+            <ellipse class="b-ave" cx="-0.5" cy="-12" rx="5.5" ry="3.6"/>
+            <path class="b-pescoco" d="M3.5,-13.5 Q5.5,-17 4.5,-21"/>
+            <path class="b-papo" d="M3.3,-14 Q4.3,-15.6 5,-15.4"/>
+            <circle class="b-preto" cx="4.6" cy="-21.5" r="1.8"/>
+            <path class="b-bico" d="M5.8,-21.8 L13,-19.5"/>
+          </g>
+          <!-- Mata Atlântica: palmito-juçara e araucária -->
+          <g id="b-palmito">
+            <path class="b-ga" d="M0,0 Q1,-25 0,-52"/>
+            <path class="b-folha" d="M0,-52 Q-9,-56 -17,-48 M0,-52 Q9,-56 17,-48 M0,-52 Q-6,-60 -12,-58 M0,-52 Q6,-60 12,-59 M0,-52 Q-2,-58 -4,-63 M0,-52 Q3,-59 5,-63"/>
+          </g>
+          <g id="b-araucaria">
+            <path class="b-tr" d="M-1.6,0 L-1.1,-57 L1.1,-57 L1.6,0Z"/>
+            <path class="b-ga" d="M0,-36 Q-10,-44 -19,-58 M0,-36 Q10,-44 19,-58 M0,-44 Q-5,-50 -9,-59 M0,-44 Q5,-50 9,-59"/>
+            <path class="b-v1" d="M-25,-58 Q-25,-64 -17,-63 Q-9,-67 0,-64 Q9,-67 17,-63 Q25,-64 25,-58 Q12,-55 0,-57 Q-12,-55 -25,-58Z"/>
+          </g>
+          <!-- Pampa: umbu (árvore solitária do campo) -->
+          <g id="b-umbu">
+            <path class="b-tr" d="M-6,0 Q-3,-5 -2.5,-14 L2.5,-14 Q3,-5 6,0Z"/>
+            <ellipse class="b-v1" cx="0" cy="-22" rx="19" ry="10"/>
+            <ellipse class="b-v2" cx="-9" cy="-25" rx="10" ry="6.5"/>
+            <ellipse class="b-v2" cx="8" cy="-26" rx="11" ry="6.5"/>
+          </g>
+        </defs>
+        <!-- relevo ao fundo -->
+        <path class="b-fundo" d="M0,100 V64 Q40,52 90,58 T200,62 Q240,78 300,80 T400,78 Q450,74 500,76 T600,78 Q650,88 700,90 T800,86 Q850,66 900,64 T1000,70 Q1050,80 1100,78 T1200,82 V100Z"/>
+        <!-- Amazônia -->
+        <use href="#b-sumauma" x="58" y="99"/><use href="#b-sumauma" transform="translate(152 99) scale(.9)"/>
+        <use href="#b-copa" x="8" y="99"/><use href="#b-copa" x="27" y="100"/><use href="#b-copa" x="45" y="99"/><use href="#b-copa" x="70" y="100"/>
+        <use href="#b-copa" x="90" y="99"/><use href="#b-copa" x="108" y="100"/><use href="#b-copa" x="127" y="99"/><use href="#b-copa" x="146" y="100"/>
+        <use href="#b-copa" x="166" y="99"/><use href="#b-copa" x="186" y="100"/>
+        <!-- Caatinga -->
+        <use href="#b-mandacaru" x="236" y="99"/><use href="#b-mandacaru" transform="translate(334 99) scale(.8)"/>
+        <use href="#b-mandacaru" transform="translate(384 99) scale(.55)"/>
+        <use href="#b-seco" x="258" y="99"/><use href="#b-seco" transform="translate(282 99) scale(1.25)"/>
+        <use href="#b-seco" x="306" y="99"/><use href="#b-seco" transform="translate(356 99) scale(1.15)"/>
+        <use href="#b-capim" class="b-capim-seco" x="216" y="99"/><use href="#b-capim" class="b-capim-seco" x="318" y="99"/><use href="#b-capim" class="b-capim-seco" x="368" y="99"/>
+        <!-- Cerrado -->
+        <use href="#b-pequi" transform="translate(432 99) scale(1.1)"/><use href="#b-pequi" transform="translate(503 99) scale(.9)"/>
+        <use href="#b-pequi" transform="translate(572 99) scale(1.2)"/>
+        <use href="#b-cupim" x="466" y="99"/><use href="#b-cupim" transform="translate(540 99) scale(1.3)"/>
+        <use href="#b-capim" class="b-capim-seco" x="412" y="99"/><use href="#b-capim" class="b-capim-seco" x="450" y="99"/><use href="#b-capim" class="b-capim-seco" x="480" y="99"/>
+        <use href="#b-capim" class="b-capim-seco" x="520" y="99"/><use href="#b-capim" class="b-capim-seco" x="555" y="99"/><use href="#b-capim" class="b-capim-seco" x="590" y="99"/>
+        <!-- Pantanal -->
+        <use href="#b-caranda" x="622" y="99"/><use href="#b-caranda" transform="translate(648 99) scale(.8)"/>
+        <use href="#b-caranda" transform="translate(764 99) scale(.9)"/><use href="#b-caranda" transform="translate(786 99) scale(1.1)"/>
+        <use href="#b-capim" class="b-capim-verde" x="610" y="99"/><use href="#b-capim" class="b-capim-verde" x="662" y="99"/><use href="#b-capim" class="b-capim-verde" x="752" y="99"/>
+        <!-- Mata Atlântica -->
+        <use href="#b-palmito" x="832" y="99"/><use href="#b-palmito" transform="translate(872 99) scale(.9)"/>
+        <use href="#b-palmito" transform="translate(912 99) scale(1.05)"/>
+        <use href="#b-copa" transform="translate(808 100) scale(.85)"/><use href="#b-copa" transform="translate(824 99) scale(.95)"/>
+        <use href="#b-copa" transform="translate(845 100) scale(.85)"/><use href="#b-copa" transform="translate(861 99) scale(.9)"/>
+        <use href="#b-copa" transform="translate(884 100) scale(.85)"/><use href="#b-copa" transform="translate(900 99) scale(.95)"/>
+        <use href="#b-copa" transform="translate(925 100) scale(.8)"/>
+        <use href="#b-araucaria" x="950" y="99"/><use href="#b-araucaria" transform="translate(982 99) scale(.85)"/>
+        <!-- Pampa -->
+        <path class="b-cerca" d="M1022,99 V89 M1036,99 V89 M1050,99 V89 M1064,99 V89 M1078,99 V89 M1022,91.5 H1078 M1022,95 H1078"/>
+        <use href="#b-umbu" transform="translate(1118 99) scale(1.25)"/>
+        <use href="#b-umbu" transform="translate(1178 99) scale(.5)"/>
+        <use href="#b-capim" class="b-capim-verde" x="1008" y="99"/><use href="#b-capim" class="b-capim-verde" x="1090" y="99"/>
+        <use href="#b-capim" class="b-capim-verde" x="1150" y="99"/><use href="#b-capim" class="b-capim-verde" x="1192" y="99"/>
+        <!-- solo -->
+        <path fill="url(#bio-solo)" d="M0,99 Q150,96 300,99 T600,99 T900,99 T1200,99 V112 H0Z"/>
+        <!-- água do Pantanal e tuiuiús, por cima do solo -->
+        <path class="b-agua" d="M658,100.5 Q676,97.5 700,98.5 T752,99.5 Q760,101 756,103.5 Q730,106 700,105.5 T660,104 Q652,102.5 658,100.5Z"/>
+        <path class="b-reflexo" d="M680,102.5 H694 M712,101.5 H730 M700,104.5 H716"/>
+        <use href="#b-tuiuiu" transform="translate(700 101) scale(1.5)"/>
+        <use href="#b-tuiuiu" transform="translate(728 101) scale(-1.15 1.15)"/>
+      </svg>
+      <figcaption class="biomas-nomes"><span>Amazônia</span><span>Caatinga</span><span>Cerrado</span><span>Pantanal</span><span>Mata Atlântica</span><span>Pampa</span></figcaption>
+    </figure>
     <span>Fontes: NOAA/CPC; NASA Langley Research Center, projeto POWER; <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo.com</a>; INMET; Programa Queimadas/INPE; Organização Meteorológica Mundial (WMO SWIC) e serviços meteorológicos nacionais; GDACS; Copernicus Climate Change Service (C3S); IBGE; Natural Earth; <a href="https://www.gdeltproject.org/" target="_blank" rel="noopener noreferrer">GDELT Project</a>; Agência Brasil; ONU News; Cemaden.</span>
     <span>Elaboração: LADRI — Laboratório de Dados e Relações Internacionais, ASCES-UNITA.</span>
     <span class="redes">Contato:
@@ -802,21 +988,71 @@ function caixaEscolherLugar() {
 /* ---------- cabeçalho: o "placar" do El Niño ---------- */
 const NOME_FASE = { el_nino: "El Niño", la_nina: "La Niña", neutro: "Neutro", indefinido: "—" };
 const MESES3 = { DJF: "dez–fev", JFM: "jan–mar", FMA: "fev–abr", MAM: "mar–mai", AMJ: "abr–jun", MJJ: "mai–jul", JJA: "jun–ago", JAS: "jul–set", ASO: "ago–out", SON: "set–nov", OND: "out–dez", NDJ: "nov–jan" };
+const ESCALA_MAR = [-30, -5, 5, 25, 45];   // anomalia do mar em décimos de °C: frio, neutro, neutro, quente, extremo
 function hero() {
   const E = D.enso;
   if (!E) { $("#hero").innerHTML = `<div class="aviso-dados">Não foi possível carregar a situação do El Niño agora.</div>`; return; }
   const a = E.atual;
   const corFase = a.fase === "el_nino" ? "var(--nino)" : a.fase === "la_nina" ? "var(--nina)" : "var(--ink)";
+  const P = D.pacifico;
   $("#hero").innerHTML = `
-    <div>
+    ${P ? `<canvas class="hero-mapa" id="hero-mapa" aria-hidden="true"></canvas>` : ""}
+    <div class="hero-texto">
       <div class="eyebrow">Situação do fenômeno · NOAA</div>
       <div class="fase" style="color:${corFase}">${NOME_FASE[a.fase]}${a.forca ? " " + a.forca : ""}</div>
       <p class="sub num">Índice ONI de ${MESES3[a.estacao]}/${a.ano}: <b>${sinal(a.oni, 2, " °C")}</b>${a.nino34 != null ? ` · Pacífico (Niño 3.4) na semana de ${dataBR(a.nino34_semana)}: <b>${sinal(a.nino34, 1, " °C")}</b>` : ""}</p>
-      ${E.cpc && E.cpc.alerta_pt ? `<span class="selo">${esc(E.cpc.alerta_pt)}</span>` : ""}
+      ${E.cpc && E.cpc.alerta_pt ? `<span class="selo" style="justify-self:start">${esc(E.cpc.alerta_pt)}</span>` : ""}
     </div>
-    <div class="medidor" id="medidor"></div>`;
+    <div class="medidor" id="medidor"></div>
+    ${P ? `<div class="hero-legenda"><span>Oceano Pacífico em ${dataBR(P.data, false)}: temperatura do mar comparada à média</span>
+      <span class="chips"><span>mais frio</span><span class="rampa" style="background:linear-gradient(90deg,${ESCALA_MAR.map((v, i) => `var(${["--mar-frio", "--mar-neutro", "--mar-neutro", "--mar-quente", "--mar-extremo"][i]}) ${((v - ESCALA_MAR[0]) / (ESCALA_MAR[4] - ESCALA_MAR[0]) * 100).toFixed(0)}%`).join(",")})"></span><span>mais quente</span></span></div>` : ""}`;
   medidor(a.oni, a.nino34);
+  desenharPacifico();
 }
+// Desenha o mapa do Pacífico (anomalia da temperatura do mar, NOAA OISST) no fundo do cabeçalho.
+// A grade de 1° vira uma imagem pequena que é ampliada com suavização. No computador o mapa ocupa a
+// metade direita do cabeçalho (ajustado pela altura); no celular, uma faixa embaixo do texto.
+// Mostra de 30°S a 30°N: da Austrália e Indonésia à costa da América do Sul.
+function desenharPacifico() {
+  const P = D.pacifico, cv = $("#hero-mapa");
+  if (!P || !cv) return;
+  const corte = 10, linhas = P.linhas.slice(corte, P.linhas.length - corte);   // tira 10° em cada ponta (40° -> 30°)
+  const nl = linhas.length, nc = linhas[0].length, lat0 = P.lat0 + corte;
+  // Décimos de °C: de −0,5 a +0,5 °C é neutro (o mesmo limiar do ENSO); +2,5 °C já é quente e +4,5 °C, extremo
+  const cor = d3.scaleLinear(ESCALA_MAR, ["--mar-frio", "--mar-neutro", "--mar-neutro", "--mar-quente", "--mar-extremo"].map(css))
+    .interpolate(d3.interpolateLab).clamp(true);
+  const terra = d3.rgb(css("--terra"));
+  const peq = document.createElement("canvas"); peq.width = nc; peq.height = nl;
+  const ctx0 = peq.getContext("2d"), img = ctx0.createImageData(nc, nl);
+  linhas.forEach((linha, r) => linha.forEach((v, c) => {
+    const k = ((nl - 1 - r) * nc + c) * 4, rgb = v == null ? terra : d3.rgb(cor(v));   // linha 0 = sul
+    img.data[k] = rgb.r; img.data[k + 1] = rgb.g; img.data[k + 2] = rgb.b; img.data[k + 3] = 255;
+  }));
+  ctx0.putImageData(img, 0, 0);
+  const dpr = Math.min(2, window.devicePixelRatio || 1), W = cv.clientWidth * dpr, H = cv.clientHeight * dpr;
+  if (!W || !H) return;
+  cv.width = W; cv.height = H;
+  const ctx = cv.getContext("2d");
+  ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
+  const faixa = CELULAR.matches;
+  // Computador: altura inteira, alinhado à direita, cobrindo pelo menos 62% da largura.
+  // Celular: largura inteira, colado na parte de baixo.
+  const s = faixa ? W / nc : Math.max(H / nl, 0.62 * W / nc);
+  const dx = faixa ? 0 : W - nc * s, dy = faixa ? H - nl * s : (H - nl * s) / 2;
+  ctx.filter = `blur(${(0.35 * s).toFixed(1)}px)`;   // suaviza os quadrados da grade de 1°
+  ctx.drawImage(peq, dx, dy, nc * s, nl * s);
+  ctx.filter = "none";
+  // Região Niño 3.4 (5°S–5°N, 170°W–120°W), a referência do índice
+  const px = lon => dx + (lon - P.lon0 + 0.5) * s, py = lat => dy + (nl - (lat - lat0 + 0.5)) * s;
+  const x0 = px(190), x1 = px(240), y0 = py(5), y1 = py(-5);
+  ctx.setLineDash([5 * dpr, 4 * dpr]); ctx.lineWidth = 1.5 * dpr; ctx.strokeStyle = css("--ink");
+  ctx.globalAlpha = .65; ctx.strokeRect(x0, y0, x1 - x0, y1 - y0); ctx.globalAlpha = 1; ctx.setLineDash([]);
+  ctx.font = `600 ${11 * dpr}px ${css("--f-body")}`; ctx.lineWidth = 3 * dpr; ctx.strokeStyle = css("--surface"); ctx.fillStyle = css("--ink");
+  ctx.strokeText("Niño 3.4", x0 + 4 * dpr, y0 - 5 * dpr); ctx.fillText("Niño 3.4", x0 + 4 * dpr, y0 - 5 * dpr);
+}
+// Redesenha o mapa quando o cabeçalho muda de tamanho (girar o celular, redimensionar a janela)
+let esperaMapa = null;
+new ResizeObserver(() => { cancelAnimationFrame(esperaMapa); esperaMapa = requestAnimationFrame(desenharPacifico); }).observe($("#hero"));
 function medidor(oni, sem) {
   const box = $("#medidor"); const W = 560, H = 92, ml = 14, mr = 14;
   const x = d3.scaleLinear([-3, 3], [ml, W - mr]).clamp(true);
@@ -1462,7 +1698,7 @@ new MutationObserver(rerender).observe(document.documentElement, { attributes: t
 const VERSAO = Math.floor(Date.now() / 36e5);   // renova o cache do navegador a cada hora
 let CARREGADO = false;
 async function carregar() {
-  const nomes = ["enso", "clima", "focos", "avisos", "mundo", "swic", "noticias", "atualizacao"];
+  const nomes = ["enso", "pacifico", "clima", "focos", "avisos", "mundo", "swic", "noticias", "atualizacao"];
   await Promise.all(nomes.map(n => fetch(`dados/${n}.json?v=${VERSAO}`).then(r => r.ok ? r.json() : null).catch(() => null).then(j => { D[n] = j; })));
   CARREGADO = true;
   if (LUGAR) estadoClima.sel = LUGAR.imed;

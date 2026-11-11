@@ -6,6 +6,7 @@
 
 Blocos (cada um gera docs/dados/<bloco>.json):
   enso      índice ONI, regiões Niño semana a semana e o status do boletim do NOAA
+  pacifico  mapa da anomalia da temperatura do mar no Pacífico (fundo do cabeçalho)
   clima     chuva e temperatura de 30 e 90 dias contra 1991–2020 por região imediata, previsão de 7 dias
             e as séries diárias por estado (docs/dados/serie/<UF>.json)
   focos     queimadas: últimas 48 h, acumulado do ano contra 2003 em diante, estados, biomas e municípios
@@ -105,6 +106,33 @@ def bloco_enso() -> dict:
         "cpc": {"alerta": alerta, "alerta_pt": STATUS_CPC.get(alerta), "sinopse": sinopse.group(1).strip() if sinopse else None,
                 "data": data_disc},
     }
+
+
+def bloco_pacifico() -> dict:
+    """Mapa da anomalia da temperatura do mar no Pacífico (NOAA OISST) para o fundo do cabeçalho.
+
+    A grade original de 0,25° vira uma grade de 1° pela média de cada bloco de 4 × 4 pontos (mais fiel
+    e mais suave que pegar um ponto isolado). Um bloco com menos da metade de mar conta como terra (None).
+    Valores em décimos de °C, inteiros, para o arquivo ficar pequeno."""
+    texto = (RAW / "pacifico.txt").read_text(encoding="utf-8")
+    dias = float(re.search(r"^time\[1\]\s*\n\s*([\d.]+)", texto, flags=re.M).group(1))
+    data = (datetime(1800, 1, 1) + timedelta(days=dias)).date().isoformat()   # "dias desde 1800-01-01"
+    grade = []
+    for linha in texto.splitlines():
+        m = re.match(r"\[0\]\[(\d+)\], (.*)", linha)
+        if m:
+            grade.append([None if abs(v) > 30 else v for v in map(float, m.group(2).split(","))])   # -9.97e36 = terra
+    if len(grade) != 320 or any(len(l) != 800 for l in grade):
+        raise ValueError(f"grade inesperada: {len(grade)} linhas")
+    linhas = []
+    for i in range(0, 320, 4):
+        linha = []
+        for j in range(0, 800, 4):
+            mar = [v for di in range(4) for v in grade[i + di][j:j + 4] if v is not None]
+            linha.append(round(10 * sum(mar) / len(mar)) if len(mar) >= 8 else None)
+        linhas.append(linha)
+    # Linha 0 = centro 39,5°S; coluna 0 = centro 100,5°E; passo de 1°
+    return {"data": data, "lat0": -39.5, "lon0": 100.5, "passo": 1.0, "linhas": linhas}
 
 
 # ================================================================ clima (NASA POWER) e previsão (Open-Meteo)
@@ -719,7 +747,8 @@ def bloco_noticias() -> dict:
 
 # ================================================================ execução
 # Bloco -> (função, fontes da coleta de que ele depende)
-BLOCOS = {"enso": (bloco_enso, ["enso"]), "clima": (bloco_clima, ["clima", "previsao"]),
+BLOCOS = {"enso": (bloco_enso, ["enso"]), "pacifico": (bloco_pacifico, ["pacifico"]),
+          "clima": (bloco_clima, ["clima", "previsao"]),
           "focos": (bloco_focos, ["focos"]), "avisos": (bloco_avisos, ["avisos"]), "mundo": (bloco_mundo, ["mundo"]),
           "swic": (bloco_swic, ["swic"]), "noticias": (bloco_noticias, ["noticias"])}
 

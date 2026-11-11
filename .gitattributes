@@ -2,3 +2,4 @@
 # autoriza o script do painel pelo hash exato do conteúdo, e "\r\n" mudaria o hash.
 * text=auto eol=lf
 *.png binary
+*.webp binary

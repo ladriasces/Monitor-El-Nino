@@ -42,22 +42,6 @@ data/ref/           tabelas de referência
 .github/workflows/  a rotina automática
 ```
 
-## Para a equipe do LADRI
-
-- **Atualizar na hora:** em [Actions](https://github.com/ladriasces/Monitor-El-Nino/actions) → *Atualizar dados e publicar* → *Run workflow*.
-- **Tirar um veículo das notícias** (a pedido dele): acrescente o domínio em `data/ref/noticias_bloqueio.txt`.
-- **Rodar no computador:**
-
-  ```bash
-  pip install -r requirements.txt
-  python 01_coleta.py
-  python 02_tratamento.py
-  python 04_validar.py
-  python -m http.server 8770 --directory docs    # abra http://localhost:8770
-  ```
-
-  Para mudar o visual, edite `painel/template.html` e rode `python 03_painel.py` (precisa de `pip install geopandas`).
-
 ## Créditos
 
 Desenvolvida pelo LADRI com o auxílio do Claude (Anthropic). Contato: [@ladri_asces](https://www.instagram.com/ladri_asces/) · ladri.lapri.asces@gmail.com

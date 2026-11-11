@@ -1,0 +1,138 @@
+id,nome,uf,chave
+1101,Madeira-Guaporé,RO,madeira guapore
+1102,Leste Rondoniense,RO,leste rondoniense
+1201,Vale do Juruá,AC,vale do jurua
+1202,Vale do Acre,AC,vale do acre
+1301,Norte Amazonense,AM,norte amazonense
+1302,Sudoeste Amazonense,AM,sudoeste amazonense
+1303,Centro Amazonense,AM,centro amazonense
+1304,Sul Amazonense,AM,sul amazonense
+1401,Norte de Roraima,RR,norte de roraima
+1402,Sul de Roraima,RR,sul de roraima
+1501,Baixo Amazonas,PA,baixo amazonas
+1502,Marajó,PA,marajo
+1503,Metropolitana de Belém,PA,metropolitana de belem
+1504,Nordeste Paraense,PA,nordeste paraense
+1505,Sudoeste Paraense,PA,sudoeste paraense
+1506,Sudeste Paraense,PA,sudeste paraense
+1601,Norte do Amapá,AP,norte do amapa
+1602,Sul do Amapá,AP,sul do amapa
+1701,Ocidental do Tocantins,TO,ocidental do tocantins
+1702,Oriental do Tocantins,TO,oriental do tocantins
+2101,Norte Maranhense,MA,norte maranhense
+2102,Oeste Maranhense,MA,oeste maranhense
+2103,Centro Maranhense,MA,centro maranhense
+2104,Leste Maranhense,MA,leste maranhense
+2105,Sul Maranhense,MA,sul maranhense
+2201,Norte Piauiense,PI,norte piauiense
+2202,Centro-Norte Piauiense,PI,centro norte piauiense
+2203,Sudoeste Piauiense,PI,sudoeste piauiense
+2204,Sudeste Piauiense,PI,sudeste piauiense
+2301,Noroeste Cearense,CE,noroeste cearense
+2302,Norte Cearense,CE,norte cearense
+2303,Metropolitana de Fortaleza,CE,metropolitana de fortaleza
+2304,Sertões Cearenses,CE,sertoes cearenses
+2305,Jaguaribe,CE,jaguaribe
+2306,Centro-Sul Cearense,CE,centro sul cearense
+2307,Sul Cearense,CE,sul cearense
+2401,Oeste Potiguar,RN,oeste potiguar
+2402,Central Potiguar,RN,central potiguar
+2403,Agreste Potiguar,RN,agreste potiguar
+2404,Leste Potiguar,RN,leste potiguar
+2501,Sertão Paraibano,PB,sertao paraibano
+2502,Borborema,PB,borborema
+2503,Agreste Paraibano,PB,agreste paraibano
+2504,Mata Paraibana,PB,mata paraibana
+2601,Sertão Pernambucano,PE,sertao pernambucano
+2602,São Francisco Pernambucano,PE,sao francisco pernambucano
+2603,Agreste Pernambucano,PE,agreste pernambucano
+2604,Mata Pernambucana,PE,mata pernambucana
+2605,Metropolitana de Recife,PE,metropolitana de recife
+2701,Sertão Alagoano,AL,sertao alagoano
+2702,Agreste Alagoano,AL,agreste alagoano
+2703,Leste Alagoano,AL,leste alagoano
+2801,Sertão Sergipano,SE,sertao sergipano
+2802,Agreste Sergipano,SE,agreste sergipano
+2803,Leste Sergipano,SE,leste sergipano
+2901,Extremo Oeste Baiano,BA,extremo oeste baiano
+2902,Vale São-Franciscano da Bahia,BA,vale sao franciscano da bahia
+2903,Centro Norte Baiano,BA,centro norte baiano
+2904,Nordeste Baiano,BA,nordeste baiano
+2905,Metropolitana de Salvador,BA,metropolitana de salvador
+2906,Centro Sul Baiano,BA,centro sul baiano
+2907,Sul Baiano,BA,sul baiano
+3101,Noroeste de Minas,MG,noroeste de minas
+3102,Norte de Minas,MG,norte de minas
+3103,Jequitinhonha,MG,jequitinhonha
+3104,Vale do Mucuri,MG,vale do mucuri
+3105,Triângulo Mineiro/Alto Paranaíba,MG,triangulo mineiro/alto paranaiba
+3106,Central Mineira,MG,central mineira
+3107,Metropolitana de Belo Horizonte,MG,metropolitana de belo horizonte
+3108,Vale do Rio Doce,MG,vale do rio doce
+3109,Oeste de Minas,MG,oeste de minas
+3110,Sul/Sudoeste de Minas,MG,sul/sudoeste de minas
+3111,Campo das Vertentes,MG,campo das vertentes
+3112,Zona da Mata,MG,zona da mata
+3201,Noroeste Espírito-santense,ES,noroeste espirito santense
+3202,Litoral Norte Espírito-santense,ES,litoral norte espirito santense
+3203,Central Espírito-santense,ES,central espirito santense
+3204,Sul Espírito-santense,ES,sul espirito santense
+3301,Noroeste Fluminense,RJ,noroeste fluminense
+3302,Norte Fluminense,RJ,norte fluminense
+3303,Centro Fluminense,RJ,centro fluminense
+3304,Baixadas,RJ,baixadas
+3305,Sul Fluminense,RJ,sul fluminense
+3306,Metropolitana do Rio de Janeiro,RJ,metropolitana do rio de janeiro
+3501,São José do Rio Preto,SP,sao jose do rio preto
+3502,Ribeirão Preto,SP,ribeirao preto
+3503,Araçatuba,SP,aracatuba
+3504,Bauru,SP,bauru
+3505,Araraquara,SP,araraquara
+3506,Piracicaba,SP,piracicaba
+3507,Campinas,SP,campinas
+3508,Presidente Prudente,SP,presidente prudente
+3509,Marília,SP,marilia
+3510,Assis,SP,assis
+3511,Itapetininga,SP,itapetininga
+3512,Macro Metropolitana Paulista,SP,macro metropolitana paulista
+3513,Vale do Paraíba Paulista,SP,vale do paraiba paulista
+3514,Litoral Sul Paulista,SP,litoral sul paulista
+3515,Metropolitana de São Paulo,SP,metropolitana de sao paulo
+4101,Noroeste Paranaense,PR,noroeste paranaense
+4102,Centro Ocidental Paranaense,PR,centro ocidental paranaense
+4103,Norte Central Paranaense,PR,norte central paranaense
+4104,Norte Pioneiro Paranaense,PR,norte pioneiro paranaense
+4105,Centro Oriental Paranaense,PR,centro oriental paranaense
+4106,Oeste Paranaense,PR,oeste paranaense
+4107,Sudoeste Paranaense,PR,sudoeste paranaense
+4108,Centro-Sul Paranaense,PR,centro sul paranaense
+4109,Sudeste Paranaense,PR,sudeste paranaense
+4110,Metropolitana de Curitiba,PR,metropolitana de curitiba
+4201,Oeste Catarinense,SC,oeste catarinense
+4202,Norte Catarinense,SC,norte catarinense
+4203,Serrana,SC,serrana
+4204,Vale do Itajaí,SC,vale do itajai
+4205,Grande Florianópolis,SC,grande florianopolis
+4206,Sul Catarinense,SC,sul catarinense
+4301,Noroeste Rio-grandense,RS,noroeste rio grandense
+4302,Nordeste Rio-grandense,RS,nordeste rio grandense
+4303,Centro Ocidental Rio-grandense,RS,centro ocidental rio grandense
+4304,Centro Oriental Rio-grandense,RS,centro oriental rio grandense
+4305,Metropolitana de Porto Alegre,RS,metropolitana de porto alegre
+4306,Sudoeste Rio-grandense,RS,sudoeste rio grandense
+4307,Sudeste Rio-grandense,RS,sudeste rio grandense
+5001,Pantanais Sul Mato-grossense,MS,pantanais sul mato grossense
+5002,Centro Norte de Mato Grosso do Sul,MS,centro norte de mato grosso do sul
+5003,Leste de Mato Grosso do Sul,MS,leste de mato grosso do sul
+5004,Sudoeste de Mato Grosso do Sul,MS,sudoeste de mato grosso do sul
+5101,Norte Mato-grossense,MT,norte mato grossense
+5102,Nordeste Mato-grossense,MT,nordeste mato grossense
+5103,Sudoeste Mato-grossense,MT,sudoeste mato grossense
+5104,Centro-Sul Mato-grossense,MT,centro sul mato grossense
+5105,Sudeste Mato-grossense,MT,sudeste mato grossense
+5201,Noroeste Goiano,GO,noroeste goiano
+5202,Norte Goiano,GO,norte goiano
+5203,Centro Goiano,GO,centro goiano
+5204,Leste Goiano,GO,leste goiano
+5205,Sul Goiano,GO,sul goiano
+5301,Distrito Federal,DF,distrito federal

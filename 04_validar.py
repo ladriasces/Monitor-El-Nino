@@ -67,6 +67,16 @@ def validar_enso(E: dict) -> None:
     aviso(recente(E["atual"]["nino34_semana"], 21), "Niño semanal com mais de 3 semanas")
 
 
+def validar_pacifico(P: dict) -> None:
+    """Mapa do Pacífico com a grade esperada (80 × 200, 1°) e anomalias possíveis (em décimos de °C)."""
+    linhas = P["linhas"]
+    erro(len(linhas) == 80 and all(len(l) == 200 for l in linhas), "Pacífico: grade com tamanho inesperado")
+    valores = [v for l in linhas for v in l if v is not None]
+    erro(len(valores) > 8000, "Pacífico: poucos pontos de oceano")
+    erro(all(-150 <= v <= 150 for v in valores), "Pacífico: anomalia fora do possível")
+    aviso(recente(P["data"], 10), f"Pacífico: dado de {P['data']}")
+
+
 def validar_clima(C: dict) -> None:
     """Pelo menos 90% das regiões, valores de chuva e temperatura possíveis, previsão e séries completas."""
     reg = C["regioes"]
@@ -156,13 +166,19 @@ def validar_site() -> None:
     erro(" onclick=" not in texto and " onerror=" not in texto, "atributo de evento embutido no HTML (bloqueado pela CSP)")
 
 
-VALIDADORES = {"enso": validar_enso, "clima": validar_clima, "focos": validar_focos, "avisos": validar_avisos,
+VALIDADORES = {"enso": validar_enso, "pacifico": validar_pacifico, "clima": validar_clima, "focos": validar_focos, "avisos": validar_avisos,
                "mundo": validar_mundo, "swic": validar_swic, "noticias": validar_noticias}
+# Arquivos que podem faltar sem bloquear a publicação (o site funciona sem eles): o mapa do Pacífico
+# é só o fundo do cabeçalho.
+OPCIONAIS = {"pacifico"}
 
 
 def validar() -> None:
     """Confere cada JSON de docs/dados/ e o próprio site."""
     for nome, funcao in VALIDADORES.items():
+        if nome in OPCIONAIS and not (SAIDA / f"{nome}.json").exists():
+            avisos.append(f"{nome}.json ausente (opcional)")
+            continue
         dados = carregar(nome)
         if dados:
             funcao(dados)

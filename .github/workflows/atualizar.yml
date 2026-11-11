@@ -56,8 +56,8 @@ jobs:
         id: perfil
         run: |
           if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%H)" = "06" ]; then
-            echo "fontes=enso clima previsao avisos focos mundo swic noticias" >> "$GITHUB_OUTPUT"
-            echo "blocos=enso clima focos avisos mundo swic noticias" >> "$GITHUB_OUTPUT"
+            echo "fontes=enso pacifico clima previsao avisos focos mundo swic noticias" >> "$GITHUB_OUTPUT"
+            echo "blocos=enso pacifico clima focos avisos mundo swic noticias" >> "$GITHUB_OUTPUT"
           else
             echo "fontes=avisos focos swic noticias" >> "$GITHUB_OUTPUT"
             echo "blocos=focos avisos swic noticias" >> "$GITHUB_OUTPUT"
@@ -69,7 +69,7 @@ jobs:
           SITE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: |
           mkdir -p docs/dados/serie
-          for f in enso clima focos avisos mundo swic noticias atualizacao; do
+          for f in enso pacifico clima focos avisos mundo swic noticias atualizacao; do
             curl -sfL "$SITE/dados/$f.json" -o "docs/dados/$f.json" || rm -f "docs/dados/$f.json"
           done
           for uf in AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO; do

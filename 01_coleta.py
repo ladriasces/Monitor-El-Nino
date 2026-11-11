@@ -7,6 +7,7 @@
 
 Fontes:
   enso      NOAA/CPC: índice ONI, regiões Niño semana a semana e boletim mensal (ENSO Diagnostic Discussion)
+  pacifico  NOAA OISST (via PSL): mapa da anomalia da temperatura do mar no Pacífico (fundo do cabeçalho)
   clima     NASA POWER: chuva e temperatura diárias (últimos 125 dias) em cada região imediata do IBGE
   previsao  Open-Meteo: previsão de 7 dias nos mesmos pontos
   avisos    INMET: avisos meteorológicos em vigor (RSS oficial)
@@ -57,6 +58,24 @@ def enso() -> None:
     baixar(f"{CPC}/data/indices/oni.ascii.txt", RAW / "enso" / "oni.txt")
     baixar(f"{CPC}/data/indices/wksst9120.for", RAW / "enso" / "semanal.txt")
     baixar(f"{CPC}/products/analysis_monitoring/enso_advisory/ensodisc.shtml", RAW / "enso" / "discussao.html")
+
+
+def pacifico() -> None:
+    """NOAA OISST (via NOAA PSL): anomalia da temperatura do mar do dia mais recente no Pacífico tropical,
+    na grade original de 0,25° (40°S a 40°N, 100°E a 60°W; o tratamento tira a média de cada bloco de 1°).
+    É o fundo do cabeçalho do site. Os arquivos do PSL são anuais; no começo de janeiro, antes do
+    primeiro dia do ano novo, usa o arquivo do ano anterior."""
+    for ano in (agora().year, agora().year - 1):
+        base = f"https://psl.noaa.gov/thredds/dodsC/Datasets/noaa.oisst.v2.highres/sst.day.anom.{ano}.nc"
+        try:
+            n = int(re.search(r"time = (\d+)", baixar(f"{base}.dds", timeout=60).decode()).group(1))
+        except (RuntimeError, AttributeError):
+            continue
+        if n:
+            # Índices da grade de 0,25°: latitude 200..519 (40°S a 40°N), longitude 400..1199 (100°E a 300°E)
+            baixar(f"{base}.ascii?anom[{n - 1}][200:1:519][400:1:1199],time[{n - 1}]", RAW / "pacifico.txt", timeout=300)
+            return
+    raise RuntimeError("OISST: nenhum arquivo com dados")
 
 
 # ---------------------------------------------------------------- Brasil: clima, previsão, avisos, queimadas
@@ -236,7 +255,7 @@ def noticias(horas: int = GDELT_HORAS) -> None:
 
 
 # ---------------------------------------------------------------- execução
-FONTES = {"enso": enso, "clima": clima, "previsao": previsao, "avisos": avisos, "focos": focos, "mundo": mundo,
+FONTES = {"enso": enso, "pacifico": pacifico, "clima": clima, "previsao": previsao, "avisos": avisos, "focos": focos, "mundo": mundo,
           "swic": swic, "noticias": noticias}
 
 

@@ -27,7 +27,7 @@ Em **Dados e método** estão as fontes e as explicações de cada número.
 
 Quatro vezes por dia (3h20, 9h20, 15h20 e 21h20, horário de Brasília), uma rotina automática no GitHub busca os dados nas fontes, calcula os indicadores, confere tudo e publica o site. Ninguém precisa deixar um computador ligado. Se uma fonte estiver fora do ar, o site mantém os últimos dados dela e mostra a data.
 
-**Fontes:** NOAA (El Niño), NASA POWER e Open-Meteo (chuva, temperatura e previsão), INMET (avisos), INPE (queimadas), Organização Meteorológica Mundial e GDACS (alertas no mundo), Copernicus (temperatura global), GDELT, Agência Brasil, ONU News e Cemaden (notícias) e IBGE (mapas).
+**Fontes:** NOAA (El Niño e temperatura do mar), NASA POWER e Open-Meteo (chuva, temperatura e previsão), INMET (avisos), INPE (queimadas), Organização Meteorológica Mundial e GDACS (alertas no mundo), Copernicus (temperatura global), GDELT, Agência Brasil, ONU News e Cemaden (notícias) e IBGE (mapas).
 
 ```
 00_referencias.py   tabelas fixas (municípios, regiões, médias de 1991–2020, histórico de queimadas) — roda uma vez
@@ -37,11 +37,11 @@ Quatro vezes por dia (3h20, 9h20, 15h20 e 21h20, horário de Brasília), uma rot
 04_validar.py       confere dados e segurança antes de publicar
 clima_comum.py      funções e constantes usadas pelos scripts
 painel/             modelo do site (template.html) e logo
-docs/               o site publicado
+docs/               o site publicado (img/: fotos com licença livre)
 data/ref/           tabelas de referência
 .github/workflows/  a rotina automática
 ```
 
 ## Créditos
 
-Desenvolvida pelo LADRI com o auxílio do Claude (Anthropic). Contato: [@ladri_asces](https://www.instagram.com/ladri_asces/) · ladri.lapri.asces@gmail.com
+Desenvolvida pelo LADRI com o auxílio do Claude (Anthropic). As fotos vêm do Wikimedia Commons, com licenças CC BY, e os créditos completos estão em **Dados e método**; a ilustração dos biomas foi feita para o site. Contato: [@ladri_asces](https://www.instagram.com/ladri_asces/) · ladri.lapri.asces@gmail.com

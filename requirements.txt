@@ -1,0 +1,6 @@
+# Ambiente completo (computador do LADRI): referências, malhas e geração do painel
+pandas>=2.2
+requests>=2.31
+defusedxml>=0.7
+geopandas>=1.0
+shapely>=2.0

@@ -1,0 +1,14 @@
+# Domínios que nunca aparecem na aba Notícias (um por linha; vale também para os subdomínios).
+# 1) Agregadores e redes: não são a fonte original da notícia.
+# 2) Veículos que pedirem para sair: acrescente o domínio aqui (pedidos pelo e-mail do LADRI).
+news.google.com
+google.com
+msn.com
+yahoo.com
+facebook.com
+instagram.com
+x.com
+twitter.com
+youtube.com
+tiktok.com
+flipboard.com

@@ -1,0 +1,5491 @@
+data,uf,bioma,n
+2026-01-01,AL,Mata Atlântica,3
+2026-01-01,AM,Amazônia,2
+2026-01-01,BA,Caatinga,6
+2026-01-01,BA,Mata Atlântica,8
+2026-01-01,CE,Caatinga,32
+2026-01-01,ES,Mata Atlântica,1
+2026-01-01,MA,Amazônia,3
+2026-01-01,MA,Cerrado,4
+2026-01-01,MG,Cerrado,1
+2026-01-01,MG,Mata Atlântica,1
+2026-01-01,MT,Amazônia,2
+2026-01-01,MT,Cerrado,5
+2026-01-01,MT,Pantanal,1
+2026-01-01,PA,Amazônia,5
+2026-01-01,PB,Caatinga,2
+2026-01-01,PB,Mata Atlântica,5
+2026-01-01,PE,Caatinga,2
+2026-01-01,PE,Mata Atlântica,6
+2026-01-01,PI,Caatinga,1
+2026-01-01,RN,Caatinga,11
+2026-01-01,RN,Mata Atlântica,2
+2026-01-01,RO,Amazônia,3
+2026-01-01,RR,Amazônia,5
+2026-01-01,RS,Pampa,2
+2026-01-02,AC,Amazônia,1
+2026-01-02,AP,Amazônia,12
+2026-01-02,BA,Cerrado,2
+2026-01-02,CE,Caatinga,12
+2026-01-02,ES,Mata Atlântica,1
+2026-01-02,GO,Cerrado,1
+2026-01-02,MA,Amazônia,151
+2026-01-02,MA,Caatinga,1
+2026-01-02,MA,Cerrado,85
+2026-01-02,MG,Cerrado,6
+2026-01-02,MG,Mata Atlântica,9
+2026-01-02,PA,Amazônia,255
+2026-01-02,PB,Caatinga,4
+2026-01-02,PE,Caatinga,3
+2026-01-02,PI,Caatinga,13
+2026-01-02,PI,Cerrado,2
+2026-01-02,RJ,Mata Atlântica,2
+2026-01-02,SC,Mata Atlântica,2
+2026-01-02,TO,Amazônia,2
+2026-01-02,TO,Cerrado,24
+2026-01-03,AL,Mata Atlântica,6
+2026-01-03,AM,Amazônia,1
+2026-01-03,AP,Amazônia,1
+2026-01-03,BA,Mata Atlântica,2
+2026-01-03,CE,Caatinga,11
+2026-01-03,MT,Amazônia,17
+2026-01-03,MT,Cerrado,1
+2026-01-03,PA,Amazônia,75
+2026-01-03,PE,Mata Atlântica,2
+2026-01-03,PR,Mata Atlântica,3
+2026-01-03,RN,Caatinga,3
+2026-01-03,RO,Amazônia,1
+2026-01-03,RR,Amazônia,43
+2026-01-03,RS,Mata Atlântica,1
+2026-01-03,RS,Pampa,3
+2026-01-03,SE,Caatinga,1
+2026-01-04,AP,Amazônia,1
+2026-01-04,BA,Caatinga,2
+2026-01-04,BA,Mata Atlântica,15
+2026-01-04,CE,Caatinga,35
+2026-01-04,ES,Mata Atlântica,1
+2026-01-04,MA,Amazônia,73
+2026-01-04,MA,Caatinga,1
+2026-01-04,MA,Cerrado,47
+2026-01-04,MG,Caatinga,1
+2026-01-04,MG,Mata Atlântica,1
+2026-01-04,PA,Amazônia,47
+2026-01-04,PB,Caatinga,5
+2026-01-04,PE,Caatinga,5
+2026-01-04,PE,Mata Atlântica,3
+2026-01-04,PI,Caatinga,27
+2026-01-04,RR,Amazônia,4
+2026-01-04,SE,Caatinga,1
+2026-01-04,SE,Mata Atlântica,7
+2026-01-05,AP,Amazônia,1
+2026-01-05,GO,Cerrado,1
+2026-01-05,MA,Amazônia,19
+2026-01-05,MA,Cerrado,2
+2026-01-05,MS,Cerrado,2
+2026-01-05,PA,Amazônia,233
+2026-01-05,PE,Mata Atlântica,2
+2026-01-05,PR,Mata Atlântica,3
+2026-01-05,RR,Amazônia,5
+2026-01-05,RS,Mata Atlântica,2
+2026-01-05,RS,Pampa,3
+2026-01-05,SC,Mata Atlântica,8
+2026-01-05,SP,Cerrado,2
+2026-01-06,AL,Caatinga,1
+2026-01-06,AL,Mata Atlântica,4
+2026-01-06,AM,Amazônia,2
+2026-01-06,BA,Mata Atlântica,7
+2026-01-06,CE,Caatinga,39
+2026-01-06,MA,Amazônia,1
+2026-01-06,MA,Cerrado,9
+2026-01-06,MS,Cerrado,3
+2026-01-06,MS,Mata Atlântica,2
+2026-01-06,MS,Pantanal,10
+2026-01-06,MT,Amazônia,3
+2026-01-06,MT,Pantanal,4
+2026-01-06,PA,Amazônia,3
+2026-01-06,PB,Caatinga,12
+2026-01-06,PE,Caatinga,18
+2026-01-06,PE,Mata Atlântica,8
+2026-01-06,PI,Caatinga,2
+2026-01-06,PR,Mata Atlântica,7
+2026-01-06,RN,Caatinga,7
+2026-01-06,RN,Mata Atlântica,1
+2026-01-06,RR,Amazônia,16
+2026-01-06,RS,Pampa,2
+2026-01-06,SE,Mata Atlântica,4
+2026-01-07,BA,Caatinga,6
+2026-01-07,BA,Cerrado,3
+2026-01-07,BA,Mata Atlântica,2
+2026-01-07,CE,Caatinga,20
+2026-01-07,GO,Cerrado,1
+2026-01-07,MA,Amazônia,111
+2026-01-07,MA,Cerrado,77
+2026-01-07,MG,Cerrado,3
+2026-01-07,MG,Mata Atlântica,3
+2026-01-07,MS,Cerrado,1
+2026-01-07,PA,Amazônia,30
+2026-01-07,PE,Caatinga,1
+2026-01-07,PI,Caatinga,16
+2026-01-07,PI,Cerrado,10
+2026-01-07,PR,Mata Atlântica,5
+2026-01-07,SC,Mata Atlântica,10
+2026-01-07,SP,Cerrado,1
+2026-01-07,SP,Mata Atlântica,1
+2026-01-07,TO,Cerrado,3
+2026-01-08,AP,Amazônia,2
+2026-01-08,CE,Caatinga,6
+2026-01-08,MS,Cerrado,6
+2026-01-08,MS,Mata Atlântica,1
+2026-01-08,MT,Amazônia,4
+2026-01-08,MT,Cerrado,8
+2026-01-08,PA,Amazônia,5
+2026-01-08,PB,Caatinga,2
+2026-01-08,PE,Caatinga,1
+2026-01-08,PE,Mata Atlântica,3
+2026-01-08,PR,Mata Atlântica,16
+2026-01-08,RR,Amazônia,20
+2026-01-08,RS,Mata Atlântica,2
+2026-01-08,SC,Mata Atlântica,11
+2026-01-08,SP,Cerrado,3
+2026-01-08,SP,Mata Atlântica,3
+2026-01-09,AL,Caatinga,3
+2026-01-09,AL,Mata Atlântica,4
+2026-01-09,BA,Caatinga,13
+2026-01-09,BA,Cerrado,4
+2026-01-09,BA,Mata Atlântica,3
+2026-01-09,CE,Caatinga,131
+2026-01-09,ES,Mata Atlântica,2
+2026-01-09,MA,Amazônia,29
+2026-01-09,MA,Caatinga,3
+2026-01-09,MA,Cerrado,47
+2026-01-09,MG,Cerrado,2
+2026-01-09,MG,Mata Atlântica,1
+2026-01-09,MS,Cerrado,1
+2026-01-09,MT,Amazônia,3
+2026-01-09,MT,Cerrado,3
+2026-01-09,PA,Amazônia,14
+2026-01-09,PB,Caatinga,9
+2026-01-09,PB,Mata Atlântica,2
+2026-01-09,PE,Caatinga,13
+2026-01-09,PE,Mata Atlântica,3
+2026-01-09,PI,Caatinga,18
+2026-01-09,PI,Cerrado,6
+2026-01-09,RN,Caatinga,9
+2026-01-09,RN,Mata Atlântica,4
+2026-01-09,RR,Amazônia,6
+2026-01-09,SE,Caatinga,1
+2026-01-09,SE,Mata Atlântica,1
+2026-01-09,TO,Cerrado,4
+2026-01-10,AP,Amazônia,10
+2026-01-10,BA,Cerrado,2
+2026-01-10,CE,Caatinga,2
+2026-01-10,GO,Cerrado,9
+2026-01-10,MA,Amazônia,20
+2026-01-10,MA,Cerrado,3
+2026-01-10,MG,Cerrado,23
+2026-01-10,MG,Mata Atlântica,2
+2026-01-10,MT,Amazônia,8
+2026-01-10,MT,Cerrado,2
+2026-01-10,PA,Amazônia,85
+2026-01-10,PE,Caatinga,1
+2026-01-10,PI,Cerrado,2
+2026-01-10,RJ,Mata Atlântica,1
+2026-01-10,RR,Amazônia,8
+2026-01-10,SP,Cerrado,1
+2026-01-10,SP,Mata Atlântica,5
+2026-01-10,TO,Cerrado,23
+2026-01-11,AL,Mata Atlântica,4
+2026-01-11,BA,Caatinga,1
+2026-01-11,CE,Caatinga,8
+2026-01-11,ES,Mata Atlântica,4
+2026-01-11,GO,Cerrado,1
+2026-01-11,MA,Caatinga,1
+2026-01-11,MA,Cerrado,3
+2026-01-11,MT,Amazônia,9
+2026-01-11,MT,Cerrado,2
+2026-01-11,PE,Mata Atlântica,4
+2026-01-11,PI,Caatinga,3
+2026-01-11,RN,Caatinga,7
+2026-01-11,RN,Mata Atlântica,5
+2026-01-11,RO,Amazônia,2
+2026-01-11,RR,Amazônia,32
+2026-01-11,SP,Mata Atlântica,1
+2026-01-12,AP,Amazônia,3
+2026-01-12,BA,Caatinga,5
+2026-01-12,BA,Cerrado,5
+2026-01-12,CE,Caatinga,35
+2026-01-12,ES,Mata Atlântica,6
+2026-01-12,MA,Amazônia,41
+2026-01-12,MA,Cerrado,47
+2026-01-12,MG,Cerrado,8
+2026-01-12,MG,Mata Atlântica,18
+2026-01-12,MT,Amazônia,1
+2026-01-12,PA,Amazônia,47
+2026-01-12,PB,Caatinga,3
+2026-01-12,PE,Caatinga,6
+2026-01-12,PI,Caatinga,17
+2026-01-12,PI,Cerrado,3
+2026-01-12,RJ,Mata Atlântica,8
+2026-01-12,RN,Caatinga,1
+2026-01-12,RR,Amazônia,2
+2026-01-13,AL,Caatinga,3
+2026-01-13,AP,Amazônia,4
+2026-01-13,GO,Cerrado,1
+2026-01-13,MG,Cerrado,2
+2026-01-13,MS,Cerrado,1
+2026-01-13,MT,Amazônia,18
+2026-01-13,MT,Cerrado,7
+2026-01-13,PA,Amazônia,63
+2026-01-13,RR,Amazônia,9
+2026-01-13,SC,Mata Atlântica,2
+2026-01-13,SP,Cerrado,1
+2026-01-13,SP,Mata Atlântica,1
+2026-01-13,TO,Cerrado,4
+2026-01-14,AC,Amazônia,1
+2026-01-14,AL,Mata Atlântica,4
+2026-01-14,AM,Amazônia,2
+2026-01-14,BA,Cerrado,15
+2026-01-14,BA,Mata Atlântica,3
+2026-01-14,CE,Caatinga,22
+2026-01-14,ES,Mata Atlântica,1
+2026-01-14,MA,Cerrado,15
+2026-01-14,MG,Cerrado,1
+2026-01-14,MG,Mata Atlântica,1
+2026-01-14,MS,Cerrado,1
+2026-01-14,MS,Pantanal,5
+2026-01-14,MT,Cerrado,1
+2026-01-14,PA,Amazônia,1
+2026-01-14,PB,Mata Atlântica,1
+2026-01-14,PE,Caatinga,8
+2026-01-14,PE,Mata Atlântica,5
+2026-01-14,PI,Caatinga,23
+2026-01-14,PI,Cerrado,14
+2026-01-14,RN,Caatinga,4
+2026-01-14,RN,Mata Atlântica,1
+2026-01-14,RR,Amazônia,9
+2026-01-14,RS,Mata Atlântica,1
+2026-01-14,RS,Pampa,1
+2026-01-14,SE,Mata Atlântica,2
+2026-01-14,TO,Cerrado,2
+2026-01-15,BA,Caatinga,1
+2026-01-15,BA,Cerrado,24
+2026-01-15,GO,Cerrado,2
+2026-01-15,MA,Amazônia,16
+2026-01-15,MA,Cerrado,8
+2026-01-15,MG,Cerrado,3
+2026-01-15,MG,Mata Atlântica,2
+2026-01-15,MT,Amazônia,2
+2026-01-15,MT,Cerrado,1
+2026-01-15,PA,Amazônia,15
+2026-01-15,PI,Caatinga,8
+2026-01-15,PI,Cerrado,18
+2026-01-15,PR,Mata Atlântica,2
+2026-01-15,RJ,Mata Atlântica,9
+2026-01-15,SC,Mata Atlântica,6
+2026-01-15,SP,Mata Atlântica,1
+2026-01-15,TO,Cerrado,17
+2026-01-16,AL,Caatinga,1
+2026-01-16,AL,Mata Atlântica,2
+2026-01-16,AM,Amazônia,2
+2026-01-16,BA,Caatinga,3
+2026-01-16,CE,Caatinga,16
+2026-01-16,MS,Cerrado,2
+2026-01-16,MS,Mata Atlântica,2
+2026-01-16,MS,Pantanal,1
+2026-01-16,MT,Amazônia,16
+2026-01-16,MT,Cerrado,9
+2026-01-16,PA,Amazônia,3
+2026-01-16,PB,Caatinga,1
+2026-01-16,PE,Caatinga,1
+2026-01-16,PE,Mata Atlântica,1
+2026-01-16,PI,Caatinga,3
+2026-01-16,PR,Mata Atlântica,9
+2026-01-16,RN,Caatinga,5
+2026-01-16,RN,Mata Atlântica,3
+2026-01-16,RR,Amazônia,13
+2026-01-16,SE,Mata Atlântica,2
+2026-01-17,AL,Caatinga,1
+2026-01-17,BA,Caatinga,7
+2026-01-17,BA,Cerrado,13
+2026-01-17,BA,Mata Atlântica,2
+2026-01-17,CE,Caatinga,14
+2026-01-17,ES,Mata Atlântica,3
+2026-01-17,MA,Amazônia,4
+2026-01-17,MA,Cerrado,12
+2026-01-17,MG,Mata Atlântica,1
+2026-01-17,MS,Pantanal,3
+2026-01-17,PE,Caatinga,7
+2026-01-17,PI,Caatinga,6
+2026-01-17,PI,Cerrado,8
+2026-01-17,TO,Cerrado,4
+2026-01-18,GO,Cerrado,1
+2026-01-18,MT,Amazônia,21
+2026-01-18,MT,Cerrado,14
+2026-01-18,PA,Amazônia,6
+2026-01-18,PE,Mata Atlântica,2
+2026-01-18,PR,Mata Atlântica,2
+2026-01-18,RR,Amazônia,5
+2026-01-18,SC,Mata Atlântica,2
+2026-01-18,SP,Cerrado,2
+2026-01-18,TO,Cerrado,6
+2026-01-19,AM,Amazônia,8
+2026-01-19,BA,Caatinga,2
+2026-01-19,BA,Mata Atlântica,2
+2026-01-19,CE,Caatinga,17
+2026-01-19,MS,Mata Atlântica,3
+2026-01-19,MT,Amazônia,3
+2026-01-19,MT,Cerrado,1
+2026-01-19,PB,Caatinga,9
+2026-01-19,PE,Caatinga,2
+2026-01-19,PE,Mata Atlântica,8
+2026-01-19,PI,Caatinga,1
+2026-01-19,RN,Caatinga,2
+2026-01-19,RN,Mata Atlântica,2
+2026-01-19,RO,Amazônia,2
+2026-01-19,RR,Amazônia,7
+2026-01-19,SE,Caatinga,5
+2026-01-20,GO,Cerrado,2
+2026-01-20,MA,Amazônia,41
+2026-01-20,MA,Caatinga,1
+2026-01-20,MA,Cerrado,15
+2026-01-20,MS,Cerrado,2
+2026-01-20,MS,Pantanal,2
+2026-01-20,PA,Amazônia,36
+2026-01-20,PI,Caatinga,3
+2026-01-20,PR,Mata Atlântica,1
+2026-01-20,TO,Amazônia,1
+2026-01-20,TO,Cerrado,4
+2026-01-21,AL,Mata Atlântica,1
+2026-01-21,CE,Caatinga,3
+2026-01-21,GO,Cerrado,1
+2026-01-21,MS,Cerrado,8
+2026-01-21,MS,Pantanal,5
+2026-01-21,MT,Amazônia,2
+2026-01-21,MT,Cerrado,4
+2026-01-21,MT,Pantanal,1
+2026-01-21,PA,Amazônia,17
+2026-01-21,PE,Caatinga,1
+2026-01-21,PR,Mata Atlântica,9
+2026-01-21,RR,Amazônia,8
+2026-01-21,RS,Mata Atlântica,1
+2026-01-21,RS,Pampa,2
+2026-01-21,SC,Mata Atlântica,5
+2026-01-22,AL,Caatinga,3
+2026-01-22,AL,Mata Atlântica,1
+2026-01-22,BA,Caatinga,1
+2026-01-22,BA,Mata Atlântica,4
+2026-01-22,CE,Caatinga,50
+2026-01-22,MA,Amazônia,11
+2026-01-22,MA,Caatinga,4
+2026-01-22,MA,Cerrado,12
+2026-01-22,MS,Pantanal,11
+2026-01-22,PA,Amazônia,5
+2026-01-22,PB,Caatinga,13
+2026-01-22,PE,Caatinga,12
+2026-01-22,PE,Mata Atlântica,2
+2026-01-22,PI,Caatinga,8
+2026-01-22,PI,Cerrado,2
+2026-01-22,RN,Caatinga,2
+2026-01-22,SE,Caatinga,1
+2026-01-22,SE,Mata Atlântica,2
+2026-01-22,TO,Cerrado,5
+2026-01-23,GO,Cerrado,5
+2026-01-23,MA,Amazônia,2
+2026-01-23,MG,Cerrado,1
+2026-01-23,MS,Cerrado,4
+2026-01-23,MS,Pantanal,2
+2026-01-23,MT,Cerrado,1
+2026-01-23,PA,Amazônia,13
+2026-01-23,PB,Mata Atlântica,2
+2026-01-23,PR,Mata Atlântica,1
+2026-01-23,RR,Amazônia,5
+2026-01-23,RS,Mata Atlântica,2
+2026-01-23,RS,Pampa,1
+2026-01-23,SC,Mata Atlântica,16
+2026-01-23,SP,Cerrado,1
+2026-01-23,SP,Mata Atlântica,4
+2026-01-24,AL,Caatinga,1
+2026-01-24,AL,Mata Atlântica,2
+2026-01-24,CE,Caatinga,10
+2026-01-24,MA,Amazônia,1
+2026-01-24,MS,Cerrado,1
+2026-01-24,MS,Mata Atlântica,1
+2026-01-24,MS,Pantanal,17
+2026-01-24,MT,Amazônia,6
+2026-01-24,MT,Cerrado,5
+2026-01-24,MT,Pantanal,3
+2026-01-24,PB,Caatinga,2
+2026-01-24,PE,Caatinga,1
+2026-01-24,PE,Mata Atlântica,2
+2026-01-24,PI,Caatinga,3
+2026-01-24,PR,Mata Atlântica,2
+2026-01-24,RN,Caatinga,6
+2026-01-24,RR,Amazônia,2
+2026-01-24,SE,Mata Atlântica,5
+2026-01-25,BA,Caatinga,2
+2026-01-25,BA,Cerrado,1
+2026-01-25,CE,Caatinga,1
+2026-01-25,MA,Amazônia,13
+2026-01-25,MA,Caatinga,1
+2026-01-25,MA,Cerrado,8
+2026-01-25,MS,Pantanal,4
+2026-01-25,PA,Amazônia,7
+2026-01-25,PI,Caatinga,1
+2026-01-25,PI,Cerrado,4
+2026-01-25,TO,Cerrado,5
+2026-01-26,AL,Caatinga,2
+2026-01-26,AM,Amazônia,1
+2026-01-26,CE,Caatinga,1
+2026-01-26,GO,Cerrado,3
+2026-01-26,MS,Cerrado,1
+2026-01-26,MS,Pantanal,5
+2026-01-26,MT,Amazônia,12
+2026-01-26,PA,Amazônia,1
+2026-01-26,PE,Mata Atlântica,2
+2026-01-26,PR,Mata Atlântica,14
+2026-01-26,RR,Amazônia,2
+2026-01-26,RS,Mata Atlântica,3
+2026-01-26,RS,Pampa,1
+2026-01-26,SC,Mata Atlântica,33
+2026-01-26,SP,Mata Atlântica,2
+2026-01-27,BA,Caatinga,16
+2026-01-27,BA,Cerrado,4
+2026-01-27,BA,Mata Atlântica,4
+2026-01-27,GO,Cerrado,4
+2026-01-27,MA,Cerrado,1
+2026-01-27,MG,Mata Atlântica,3
+2026-01-27,MT,Cerrado,1
+2026-01-27,PB,Caatinga,1
+2026-01-27,PE,Caatinga,3
+2026-01-27,PE,Mata Atlântica,1
+2026-01-27,PI,Caatinga,2
+2026-01-27,PI,Cerrado,5
+2026-01-27,RR,Amazônia,5
+2026-01-27,SE,Caatinga,3
+2026-01-27,SE,Mata Atlântica,6
+2026-01-27,TO,Cerrado,1
+2026-01-28,BA,Cerrado,3
+2026-01-28,GO,Cerrado,3
+2026-01-28,MA,Amazônia,2
+2026-01-28,MT,Amazônia,1
+2026-01-28,PA,Amazônia,15
+2026-01-28,PR,Mata Atlântica,4
+2026-01-28,RS,Mata Atlântica,3
+2026-01-28,SC,Mata Atlântica,1
+2026-01-28,SP,Mata Atlântica,4
+2026-01-28,TO,Cerrado,11
+2026-01-29,BA,Mata Atlântica,1
+2026-01-29,CE,Caatinga,1
+2026-01-29,ES,Mata Atlântica,1
+2026-01-29,MS,Cerrado,2
+2026-01-29,MS,Mata Atlântica,1
+2026-01-29,MT,Amazônia,17
+2026-01-29,MT,Pantanal,2
+2026-01-29,PA,Amazônia,2
+2026-01-29,PB,Caatinga,1
+2026-01-29,PE,Mata Atlântica,5
+2026-01-29,RN,Caatinga,5
+2026-01-29,RO,Amazônia,3
+2026-01-29,RR,Amazônia,12
+2026-01-30,AP,Amazônia,1
+2026-01-30,BA,Caatinga,19
+2026-01-30,BA,Cerrado,3
+2026-01-30,BA,Mata Atlântica,13
+2026-01-30,CE,Caatinga,8
+2026-01-30,ES,Mata Atlântica,2
+2026-01-30,MA,Amazônia,20
+2026-01-30,MA,Cerrado,25
+2026-01-30,MG,Mata Atlântica,3
+2026-01-30,MT,Amazônia,14
+2026-01-30,PA,Amazônia,18
+2026-01-30,PB,Caatinga,2
+2026-01-30,PI,Caatinga,11
+2026-01-30,PI,Cerrado,11
+2026-01-30,RN,Caatinga,1
+2026-01-30,TO,Cerrado,4
+2026-01-31,AP,Amazônia,1
+2026-01-31,CE,Caatinga,2
+2026-01-31,MG,Cerrado,1
+2026-01-31,MS,Cerrado,1
+2026-01-31,MT,Amazônia,8
+2026-01-31,MT,Cerrado,2
+2026-01-31,PA,Amazônia,41
+2026-01-31,PE,Mata Atlântica,2
+2026-01-31,PR,Mata Atlântica,2
+2026-01-31,RR,Amazônia,1
+2026-01-31,RS,Mata Atlântica,1
+2026-01-31,SC,Mata Atlântica,1
+2026-01-31,SE,Mata Atlântica,2
+2026-01-31,TO,Cerrado,3
+2026-02-01,AL,Caatinga,6
+2026-02-01,AL,Mata Atlântica,2
+2026-02-01,BA,Caatinga,2
+2026-02-01,BA,Mata Atlântica,2
+2026-02-01,CE,Caatinga,30
+2026-02-01,MA,Amazônia,6
+2026-02-01,MA,Cerrado,11
+2026-02-01,MT,Amazônia,6
+2026-02-01,MT,Cerrado,1
+2026-02-01,PA,Amazônia,3
+2026-02-01,PB,Caatinga,5
+2026-02-01,PE,Caatinga,5
+2026-02-01,PE,Mata Atlântica,2
+2026-02-01,PI,Caatinga,4
+2026-02-01,RN,Caatinga,5
+2026-02-01,RN,Mata Atlântica,1
+2026-02-01,RO,Amazônia,1
+2026-02-01,RR,Amazônia,4
+2026-02-01,SE,Mata Atlântica,1
+2026-02-02,AP,Amazônia,2
+2026-02-02,BA,Caatinga,1
+2026-02-02,BA,Cerrado,1
+2026-02-02,MA,Amazônia,16
+2026-02-02,PA,Amazônia,101
+2026-02-02,SC,Mata Atlântica,6
+2026-02-02,TO,Cerrado,6
+2026-02-03,AL,Mata Atlântica,1
+2026-02-03,AM,Amazônia,5
+2026-02-03,CE,Caatinga,9
+2026-02-03,MS,Mata Atlântica,1
+2026-02-03,MT,Cerrado,1
+2026-02-03,MT,Pantanal,4
+2026-02-03,PA,Amazônia,5
+2026-02-03,PB,Caatinga,3
+2026-02-03,PB,Mata Atlântica,1
+2026-02-03,PE,Caatinga,5
+2026-02-03,PE,Mata Atlântica,9
+2026-02-03,PI,Caatinga,1
+2026-02-03,RN,Caatinga,5
+2026-02-03,RR,Amazônia,6
+2026-02-03,RS,Pampa,2
+2026-02-03,SE,Mata Atlântica,1
+2026-02-04,AM,Amazônia,2
+2026-02-04,BA,Caatinga,18
+2026-02-04,BA,Mata Atlântica,25
+2026-02-04,CE,Caatinga,4
+2026-02-04,ES,Mata Atlântica,1
+2026-02-04,MA,Amazônia,8
+2026-02-04,MA,Cerrado,6
+2026-02-04,MG,Mata Atlântica,2
+2026-02-04,PA,Amazônia,9
+2026-02-04,PB,Caatinga,1
+2026-02-04,PE,Caatinga,3
+2026-02-04,PI,Caatinga,1
+2026-02-04,PI,Cerrado,1
+2026-02-04,RN,Caatinga,4
+2026-02-04,SE,Mata Atlântica,4
+2026-02-04,TO,Cerrado,2
+2026-02-05,AL,Mata Atlântica,3
+2026-02-05,AP,Amazônia,2
+2026-02-05,GO,Cerrado,2
+2026-02-05,MA,Amazônia,1
+2026-02-05,MG,Cerrado,3
+2026-02-05,MS,Cerrado,2
+2026-02-05,MS,Mata Atlântica,1
+2026-02-05,MT,Amazônia,9
+2026-02-05,MT,Cerrado,3
+2026-02-05,PA,Amazônia,55
+2026-02-05,PE,Mata Atlântica,3
+2026-02-05,PR,Mata Atlântica,4
+2026-02-05,RR,Amazônia,13
+2026-02-05,RS,Mata Atlântica,11
+2026-02-05,SC,Mata Atlântica,3
+2026-02-05,SP,Cerrado,1
+2026-02-05,SP,Mata Atlântica,4
+2026-02-05,TO,Cerrado,6
+2026-02-06,AL,Caatinga,3
+2026-02-06,AL,Mata Atlântica,2
+2026-02-06,BA,Caatinga,12
+2026-02-06,BA,Cerrado,2
+2026-02-06,BA,Mata Atlântica,17
+2026-02-06,CE,Caatinga,9
+2026-02-06,MA,Amazônia,8
+2026-02-06,MA,Cerrado,4
+2026-02-06,MG,Mata Atlântica,1
+2026-02-06,MT,Amazônia,5
+2026-02-06,MT,Pantanal,2
+2026-02-06,PA,Amazônia,2
+2026-02-06,PB,Caatinga,3
+2026-02-06,PE,Caatinga,9
+2026-02-06,PE,Mata Atlântica,3
+2026-02-06,PI,Caatinga,1
+2026-02-06,RN,Caatinga,1
+2026-02-06,RR,Amazônia,20
+2026-02-06,RS,Mata Atlântica,1
+2026-02-06,RS,Pampa,1
+2026-02-06,SE,Mata Atlântica,7
+2026-02-07,AC,Amazônia,2
+2026-02-07,BA,Caatinga,5
+2026-02-07,BA,Cerrado,2
+2026-02-07,ES,Mata Atlântica,1
+2026-02-07,MA,Cerrado,3
+2026-02-07,MG,Cerrado,3
+2026-02-07,MS,Mata Atlântica,1
+2026-02-07,PI,Cerrado,4
+2026-02-07,PR,Mata Atlântica,1
+2026-02-07,SP,Cerrado,1
+2026-02-07,SP,Mata Atlântica,2
+2026-02-08,BA,Mata Atlântica,4
+2026-02-08,MS,Cerrado,2
+2026-02-08,MT,Amazônia,3
+2026-02-08,PA,Amazônia,1
+2026-02-08,PR,Mata Atlântica,1
+2026-02-08,RR,Amazônia,34
+2026-02-08,RS,Mata Atlântica,2
+2026-02-08,RS,Pampa,3
+2026-02-09,AL,Caatinga,1
+2026-02-09,AM,Amazônia,2
+2026-02-09,BA,Caatinga,9
+2026-02-09,BA,Cerrado,6
+2026-02-09,BA,Mata Atlântica,31
+2026-02-09,CE,Caatinga,1
+2026-02-09,ES,Mata Atlântica,1
+2026-02-09,MA,Cerrado,6
+2026-02-09,MG,Cerrado,2
+2026-02-09,MG,Mata Atlântica,7
+2026-02-09,PE,Caatinga,2
+2026-02-09,PI,Caatinga,2
+2026-02-09,PI,Cerrado,4
+2026-02-09,RN,Caatinga,1
+2026-02-09,RR,Amazônia,4
+2026-02-09,SE,Caatinga,1
+2026-02-09,SE,Mata Atlântica,5
+2026-02-10,AM,Amazônia,1
+2026-02-10,BA,Cerrado,2
+2026-02-10,MS,Cerrado,2
+2026-02-10,MT,Cerrado,1
+2026-02-10,PA,Amazônia,5
+2026-02-10,PE,Mata Atlântica,2
+2026-02-10,PR,Mata Atlântica,1
+2026-02-10,RR,Amazônia,14
+2026-02-10,RS,Mata Atlântica,1
+2026-02-10,RS,Pampa,3
+2026-02-10,SP,Cerrado,1
+2026-02-10,TO,Cerrado,1
+2026-02-11,AL,Mata Atlântica,4
+2026-02-11,AM,Amazônia,7
+2026-02-11,BA,Mata Atlântica,4
+2026-02-11,CE,Caatinga,11
+2026-02-11,MS,Cerrado,3
+2026-02-11,MS,Mata Atlântica,3
+2026-02-11,MS,Pantanal,2
+2026-02-11,MT,Amazônia,4
+2026-02-11,MT,Cerrado,1
+2026-02-11,PB,Caatinga,3
+2026-02-11,PE,Caatinga,1
+2026-02-11,PE,Mata Atlântica,1
+2026-02-11,RN,Caatinga,5
+2026-02-11,RO,Amazônia,1
+2026-02-11,RR,Amazônia,45
+2026-02-11,RS,Pampa,15
+2026-02-11,SC,Mata Atlântica,7
+2026-02-11,SP,Mata Atlântica,1
+2026-02-12,BA,Caatinga,4
+2026-02-12,BA,Cerrado,13
+2026-02-12,BA,Mata Atlântica,6
+2026-02-12,ES,Mata Atlântica,4
+2026-02-12,GO,Cerrado,4
+2026-02-12,MA,Cerrado,11
+2026-02-12,MG,Caatinga,1
+2026-02-12,MG,Cerrado,1
+2026-02-12,MG,Mata Atlântica,5
+2026-02-12,PA,Amazônia,8
+2026-02-12,PE,Caatinga,1
+2026-02-12,PI,Caatinga,2
+2026-02-12,PI,Cerrado,1
+2026-02-12,SC,Mata Atlântica,5
+2026-02-12,TO,Amazônia,1
+2026-02-12,TO,Cerrado,6
+2026-02-13,BA,Caatinga,2
+2026-02-13,GO,Cerrado,7
+2026-02-13,MT,Amazônia,2
+2026-02-13,MT,Cerrado,1
+2026-02-13,RR,Amazônia,6
+2026-02-13,SE,Caatinga,2
+2026-02-13,SP,Cerrado,1
+2026-02-13,TO,Cerrado,1
+2026-02-14,AL,Caatinga,6
+2026-02-14,BA,Caatinga,3
+2026-02-14,BA,Mata Atlântica,4
+2026-02-14,CE,Caatinga,3
+2026-02-14,ES,Mata Atlântica,3
+2026-02-14,MG,Cerrado,2
+2026-02-14,MG,Mata Atlântica,3
+2026-02-14,PB,Caatinga,3
+2026-02-14,PE,Caatinga,5
+2026-02-14,RO,Amazônia,1
+2026-02-14,RS,Pampa,2
+2026-02-15,BA,Cerrado,6
+2026-02-15,GO,Cerrado,7
+2026-02-15,MG,Cerrado,1
+2026-02-15,MS,Cerrado,4
+2026-02-15,MS,Mata Atlântica,1
+2026-02-15,MT,Amazônia,7
+2026-02-15,MT,Cerrado,6
+2026-02-15,PA,Amazônia,3
+2026-02-15,PR,Mata Atlântica,1
+2026-02-15,RR,Amazônia,4
+2026-02-15,SP,Cerrado,2
+2026-02-15,SP,Mata Atlântica,1
+2026-02-15,TO,Cerrado,4
+2026-02-16,AM,Amazônia,2
+2026-02-16,BA,Mata Atlântica,2
+2026-02-16,CE,Caatinga,3
+2026-02-16,MG,Mata Atlântica,3
+2026-02-16,MS,Cerrado,8
+2026-02-16,MS,Mata Atlântica,1
+2026-02-16,MS,Pantanal,1
+2026-02-16,MT,Amazônia,3
+2026-02-16,MT,Cerrado,3
+2026-02-16,MT,Pantanal,2
+2026-02-16,PB,Caatinga,2
+2026-02-16,PE,Caatinga,1
+2026-02-16,PE,Mata Atlântica,1
+2026-02-16,RN,Caatinga,3
+2026-02-16,RR,Amazônia,54
+2026-02-16,RS,Pampa,1
+2026-02-17,BA,Caatinga,13
+2026-02-17,BA,Cerrado,13
+2026-02-17,BA,Mata Atlântica,4
+2026-02-17,ES,Mata Atlântica,5
+2026-02-17,GO,Cerrado,2
+2026-02-17,MA,Caatinga,3
+2026-02-17,MA,Cerrado,1
+2026-02-17,MG,Caatinga,1
+2026-02-17,MG,Cerrado,8
+2026-02-17,MG,Mata Atlântica,19
+2026-02-17,PI,Caatinga,7
+2026-02-17,RR,Amazônia,1
+2026-02-17,SP,Cerrado,4
+2026-02-17,SP,Mata Atlântica,2
+2026-02-17,TO,Cerrado,2
+2026-02-18,GO,Cerrado,3
+2026-02-18,MG,Cerrado,2
+2026-02-18,MS,Cerrado,6
+2026-02-18,MT,Amazônia,40
+2026-02-18,MT,Cerrado,7
+2026-02-18,PA,Amazônia,5
+2026-02-18,PR,Mata Atlântica,4
+2026-02-18,RR,Amazônia,34
+2026-02-18,RS,Mata Atlântica,1
+2026-02-18,SC,Mata Atlântica,1
+2026-02-18,SP,Mata Atlântica,2
+2026-02-18,TO,Cerrado,4
+2026-02-19,AL,Caatinga,1
+2026-02-19,AL,Mata Atlântica,2
+2026-02-19,AM,Amazônia,3
+2026-02-19,BA,Caatinga,3
+2026-02-19,BA,Cerrado,3
+2026-02-19,BA,Mata Atlântica,16
+2026-02-19,CE,Caatinga,7
+2026-02-19,ES,Mata Atlântica,1
+2026-02-19,MS,Cerrado,1
+2026-02-19,MS,Pantanal,3
+2026-02-19,MT,Amazônia,1
+2026-02-19,MT,Cerrado,5
+2026-02-19,MT,Pantanal,1
+2026-02-19,PB,Caatinga,2
+2026-02-19,PE,Caatinga,3
+2026-02-19,PE,Mata Atlântica,1
+2026-02-19,PR,Mata Atlântica,1
+2026-02-19,RN,Caatinga,1
+2026-02-19,RO,Amazônia,1
+2026-02-19,RR,Amazônia,32
+2026-02-20,AM,Amazônia,1
+2026-02-20,GO,Cerrado,1
+2026-02-20,MA,Amazônia,5
+2026-02-20,MA,Cerrado,1
+2026-02-20,MG,Cerrado,6
+2026-02-20,MG,Mata Atlântica,1
+2026-02-20,PA,Amazônia,3
+2026-02-20,RJ,Mata Atlântica,1
+2026-02-20,SP,Cerrado,3
+2026-02-20,SP,Mata Atlântica,1
+2026-02-20,TO,Cerrado,3
+2026-02-21,AM,Amazônia,1
+2026-02-21,CE,Caatinga,1
+2026-02-21,MS,Cerrado,4
+2026-02-21,MT,Amazônia,2
+2026-02-21,MT,Cerrado,3
+2026-02-21,PB,Caatinga,3
+2026-02-21,PE,Mata Atlântica,5
+2026-02-21,RO,Amazônia,1
+2026-02-21,RR,Amazônia,55
+2026-02-21,RS,Mata Atlântica,2
+2026-02-21,RS,Pampa,1
+2026-02-22,AL,Caatinga,1
+2026-02-22,BA,Mata Atlântica,8
+2026-02-22,CE,Caatinga,2
+2026-02-22,MA,Amazônia,2
+2026-02-22,MA,Cerrado,2
+2026-02-22,MG,Cerrado,1
+2026-02-22,MG,Mata Atlântica,1
+2026-02-22,PI,Caatinga,3
+2026-02-23,AL,Mata Atlântica,1
+2026-02-23,PA,Amazônia,5
+2026-02-23,RR,Amazônia,31
+2026-02-23,RS,Mata Atlântica,1
+2026-02-23,SP,Mata Atlântica,2
+2026-02-24,AL,Caatinga,3
+2026-02-24,AL,Mata Atlântica,2
+2026-02-24,AM,Amazônia,1
+2026-02-24,BA,Mata Atlântica,1
+2026-02-24,CE,Caatinga,4
+2026-02-24,MS,Cerrado,3
+2026-02-24,MS,Pantanal,1
+2026-02-24,MT,Amazônia,2
+2026-02-24,PB,Caatinga,1
+2026-02-24,PE,Caatinga,9
+2026-02-24,PE,Mata Atlântica,6
+2026-02-24,RN,Caatinga,2
+2026-02-24,RR,Amazônia,65
+2026-02-24,RS,Pampa,1
+2026-02-24,SE,Caatinga,1
+2026-02-24,SE,Mata Atlântica,2
+2026-02-25,MA,Cerrado,1
+2026-02-25,MG,Mata Atlântica,1
+2026-02-25,MT,Cerrado,1
+2026-02-26,MS,Cerrado,4
+2026-02-26,PA,Amazônia,1
+2026-02-26,PR,Mata Atlântica,5
+2026-02-26,RR,Amazônia,13
+2026-02-26,RS,Pampa,2
+2026-02-26,SC,Mata Atlântica,2
+2026-02-26,SP,Mata Atlântica,1
+2026-02-27,AL,Mata Atlântica,1
+2026-02-27,AM,Amazônia,6
+2026-02-27,MA,Cerrado,2
+2026-02-27,MT,Amazônia,1
+2026-02-27,PI,Caatinga,1
+2026-02-27,RR,Amazônia,2
+2026-02-28,MS,Cerrado,5
+2026-02-28,PR,Mata Atlântica,5
+2026-02-28,RR,Amazônia,56
+2026-02-28,RS,Mata Atlântica,1
+2026-02-28,SC,Mata Atlântica,1
+2026-03-01,AM,Amazônia,8
+2026-03-01,MS,Cerrado,3
+2026-03-01,MS,Mata Atlântica,2
+2026-03-01,MT,Amazônia,5
+2026-03-01,MT,Cerrado,6
+2026-03-01,RO,Amazônia,1
+2026-03-01,RR,Amazônia,146
+2026-03-01,RS,Pampa,4
+2026-03-02,BA,Cerrado,1
+2026-03-02,GO,Cerrado,1
+2026-03-02,MA,Cerrado,1
+2026-03-02,MG,Cerrado,4
+2026-03-02,MG,Mata Atlântica,3
+2026-03-02,MT,Amazônia,3
+2026-03-02,RR,Amazônia,1
+2026-03-02,SP,Cerrado,1
+2026-03-03,AM,Amazônia,10
+2026-03-03,GO,Cerrado,5
+2026-03-03,MG,Cerrado,2
+2026-03-03,MS,Cerrado,4
+2026-03-03,MS,Pantanal,1
+2026-03-03,MT,Amazônia,23
+2026-03-03,MT,Cerrado,6
+2026-03-03,MT,Pantanal,1
+2026-03-03,PA,Amazônia,60
+2026-03-03,PR,Mata Atlântica,24
+2026-03-03,RR,Amazônia,66
+2026-03-03,RS,Mata Atlântica,8
+2026-03-03,RS,Pampa,1
+2026-03-03,SC,Mata Atlântica,20
+2026-03-03,SP,Cerrado,4
+2026-03-03,SP,Mata Atlântica,5
+2026-03-04,AL,Caatinga,2
+2026-03-04,AL,Mata Atlântica,1
+2026-03-04,AM,Amazônia,8
+2026-03-04,MA,Cerrado,2
+2026-03-04,PB,Mata Atlântica,1
+2026-03-04,PE,Mata Atlântica,2
+2026-03-04,RR,Amazônia,20
+2026-03-04,SE,Mata Atlântica,1
+2026-03-05,GO,Cerrado,2
+2026-03-05,GO,Mata Atlântica,1
+2026-03-05,MG,Cerrado,2
+2026-03-05,MG,Mata Atlântica,6
+2026-03-05,MT,Amazônia,2
+2026-03-05,MT,Cerrado,2
+2026-03-05,PA,Amazônia,1
+2026-03-05,PR,Mata Atlântica,9
+2026-03-05,RJ,Mata Atlântica,1
+2026-03-05,RR,Amazônia,3
+2026-03-05,SC,Mata Atlântica,6
+2026-03-05,SP,Cerrado,3
+2026-03-05,SP,Mata Atlântica,2
+2026-03-06,AL,Caatinga,1
+2026-03-06,AL,Mata Atlântica,5
+2026-03-06,CE,Caatinga,1
+2026-03-06,MS,Cerrado,2
+2026-03-06,MS,Pantanal,1
+2026-03-06,MT,Amazônia,6
+2026-03-06,MT,Cerrado,2
+2026-03-06,PB,Mata Atlântica,1
+2026-03-06,PE,Caatinga,4
+2026-03-06,PE,Mata Atlântica,4
+2026-03-06,PR,Mata Atlântica,11
+2026-03-06,RN,Caatinga,3
+2026-03-06,RR,Amazônia,40
+2026-03-06,RS,Mata Atlântica,5
+2026-03-06,RS,Pampa,6
+2026-03-06,SC,Mata Atlântica,8
+2026-03-07,AM,Amazônia,1
+2026-03-07,BA,Caatinga,2
+2026-03-07,BA,Mata Atlântica,2
+2026-03-07,ES,Mata Atlântica,1
+2026-03-07,MA,Amazônia,1
+2026-03-07,MA,Caatinga,1
+2026-03-07,MA,Cerrado,6
+2026-03-07,PA,Amazônia,1
+2026-03-07,PE,Caatinga,1
+2026-03-07,PI,Caatinga,1
+2026-03-08,MA,Cerrado,2
+2026-03-08,MG,Cerrado,2
+2026-03-08,MS,Cerrado,1
+2026-03-08,MT,Amazônia,20
+2026-03-08,MT,Cerrado,4
+2026-03-08,PR,Mata Atlântica,1
+2026-03-08,RR,Amazônia,13
+2026-03-08,SP,Cerrado,2
+2026-03-08,TO,Cerrado,2
+2026-03-09,AL,Caatinga,5
+2026-03-09,AL,Mata Atlântica,4
+2026-03-09,AM,Amazônia,3
+2026-03-09,BA,Caatinga,15
+2026-03-09,BA,Cerrado,1
+2026-03-09,BA,Mata Atlântica,7
+2026-03-09,CE,Caatinga,3
+2026-03-09,ES,Mata Atlântica,1
+2026-03-09,MA,Cerrado,3
+2026-03-09,MG,Cerrado,2
+2026-03-09,MG,Mata Atlântica,1
+2026-03-09,PB,Caatinga,6
+2026-03-09,PE,Caatinga,8
+2026-03-09,PE,Mata Atlântica,4
+2026-03-09,PI,Cerrado,1
+2026-03-09,RN,Caatinga,1
+2026-03-09,RO,Amazônia,1
+2026-03-09,RR,Amazônia,15
+2026-03-09,SE,Mata Atlântica,6
+2026-03-10,BA,Cerrado,8
+2026-03-10,BA,Mata Atlântica,2
+2026-03-10,MG,Cerrado,6
+2026-03-10,MG,Mata Atlântica,10
+2026-03-10,MT,Amazônia,2
+2026-03-10,MT,Cerrado,1
+2026-03-10,PA,Amazônia,6
+2026-03-10,TO,Cerrado,2
+2026-03-11,AL,Caatinga,4
+2026-03-11,BA,Caatinga,4
+2026-03-11,MT,Amazônia,14
+2026-03-11,MT,Cerrado,7
+2026-03-11,PA,Amazônia,1
+2026-03-11,PE,Mata Atlântica,1
+2026-03-11,RN,Caatinga,3
+2026-03-11,RR,Amazônia,27
+2026-03-12,BA,Caatinga,30
+2026-03-12,BA,Cerrado,19
+2026-03-12,BA,Mata Atlântica,23
+2026-03-12,CE,Caatinga,1
+2026-03-12,MA,Caatinga,1
+2026-03-12,MG,Mata Atlântica,4
+2026-03-12,PE,Caatinga,6
+2026-03-12,PI,Caatinga,2
+2026-03-12,PI,Cerrado,5
+2026-03-12,RN,Caatinga,1
+2026-03-12,SE,Mata Atlântica,2
+2026-03-12,TO,Cerrado,1
+2026-03-13,BA,Cerrado,1
+2026-03-13,MT,Amazônia,3
+2026-03-13,PR,Mata Atlântica,5
+2026-03-13,RR,Amazônia,3
+2026-03-13,SC,Mata Atlântica,2
+2026-03-13,TO,Cerrado,1
+2026-03-14,AL,Caatinga,5
+2026-03-14,AM,Amazônia,1
+2026-03-14,BA,Caatinga,1
+2026-03-14,BA,Mata Atlântica,9
+2026-03-14,MS,Cerrado,1
+2026-03-14,MT,Amazônia,1
+2026-03-14,PB,Mata Atlântica,1
+2026-03-14,PE,Caatinga,2
+2026-03-14,PI,Caatinga,1
+2026-03-14,PI,Cerrado,2
+2026-03-14,PR,Mata Atlântica,3
+2026-03-14,RO,Amazônia,2
+2026-03-14,RR,Amazônia,32
+2026-03-14,RS,Mata Atlântica,1
+2026-03-14,RS,Pampa,5
+2026-03-14,SC,Mata Atlântica,3
+2026-03-14,SE,Caatinga,4
+2026-03-14,SE,Mata Atlântica,3
+2026-03-15,BA,Caatinga,3
+2026-03-15,BA,Cerrado,4
+2026-03-15,GO,Cerrado,1
+2026-03-15,MG,Cerrado,4
+2026-03-15,MG,Mata Atlântica,2
+2026-03-15,MS,Cerrado,1
+2026-03-15,MT,Amazônia,2
+2026-03-15,MT,Cerrado,1
+2026-03-15,PI,Cerrado,2
+2026-03-15,SC,Mata Atlântica,1
+2026-03-15,SP,Cerrado,1
+2026-03-15,TO,Cerrado,2
+2026-03-16,AL,Caatinga,3
+2026-03-16,AM,Amazônia,1
+2026-03-16,BA,Mata Atlântica,1
+2026-03-16,MG,Mata Atlântica,1
+2026-03-16,MS,Cerrado,4
+2026-03-16,MT,Amazônia,4
+2026-03-16,MT,Cerrado,3
+2026-03-16,PA,Amazônia,1
+2026-03-16,PB,Mata Atlântica,2
+2026-03-16,PE,Mata Atlântica,1
+2026-03-16,PR,Mata Atlântica,9
+2026-03-16,RN,Caatinga,5
+2026-03-16,RR,Amazônia,36
+2026-03-16,RS,Mata Atlântica,4
+2026-03-16,RS,Pampa,2
+2026-03-16,SC,Mata Atlântica,11
+2026-03-16,SP,Cerrado,2
+2026-03-16,SP,Mata Atlântica,1
+2026-03-17,AL,Caatinga,1
+2026-03-17,BA,Caatinga,25
+2026-03-17,BA,Mata Atlântica,42
+2026-03-17,CE,Caatinga,3
+2026-03-17,ES,Mata Atlântica,5
+2026-03-17,MA,Cerrado,5
+2026-03-17,PE,Caatinga,2
+2026-03-17,PI,Caatinga,2
+2026-03-17,RR,Amazônia,1
+2026-03-17,SE,Caatinga,5
+2026-03-17,SE,Mata Atlântica,10
+2026-03-18,BA,Cerrado,3
+2026-03-18,MA,Cerrado,4
+2026-03-18,MG,Caatinga,1
+2026-03-18,MT,Amazônia,2
+2026-03-18,PA,Amazônia,7
+2026-03-18,PR,Mata Atlântica,2
+2026-03-18,SP,Cerrado,2
+2026-03-18,TO,Cerrado,14
+2026-03-19,AL,Caatinga,1
+2026-03-19,BA,Caatinga,5
+2026-03-19,BA,Mata Atlântica,16
+2026-03-19,MS,Cerrado,3
+2026-03-19,MT,Cerrado,1
+2026-03-19,PR,Mata Atlântica,3
+2026-03-19,RN,Caatinga,6
+2026-03-19,RN,Mata Atlântica,1
+2026-03-19,RR,Amazônia,2
+2026-03-19,RS,Pampa,1
+2026-03-19,SC,Mata Atlântica,4
+2026-03-20,BA,Caatinga,15
+2026-03-20,BA,Cerrado,2
+2026-03-20,BA,Mata Atlântica,14
+2026-03-20,MA,Cerrado,2
+2026-03-20,PI,Cerrado,3
+2026-03-20,SC,Mata Atlântica,1
+2026-03-20,SE,Caatinga,1
+2026-03-20,SP,Mata Atlântica,2
+2026-03-21,AM,Amazônia,1
+2026-03-21,MS,Cerrado,11
+2026-03-21,MT,Amazônia,1
+2026-03-21,MT,Cerrado,1
+2026-03-21,PA,Amazônia,2
+2026-03-21,PR,Mata Atlântica,9
+2026-03-21,RR,Amazônia,32
+2026-03-21,RS,Mata Atlântica,2
+2026-03-21,SC,Mata Atlântica,24
+2026-03-21,SP,Mata Atlântica,3
+2026-03-22,AL,Mata Atlântica,1
+2026-03-22,AM,Amazônia,6
+2026-03-22,BA,Caatinga,4
+2026-03-22,BA,Cerrado,1
+2026-03-22,BA,Mata Atlântica,8
+2026-03-22,CE,Caatinga,1
+2026-03-22,MS,Cerrado,2
+2026-03-22,MT,Amazônia,1
+2026-03-22,PB,Caatinga,2
+2026-03-22,PI,Caatinga,1
+2026-03-22,PI,Cerrado,1
+2026-03-22,RN,Caatinga,3
+2026-03-22,RO,Amazônia,1
+2026-03-22,RR,Amazônia,34
+2026-03-23,DF,Cerrado,1
+2026-03-23,GO,Cerrado,5
+2026-03-23,MA,Amazônia,1
+2026-03-23,MA,Cerrado,1
+2026-03-23,MG,Cerrado,4
+2026-03-23,MG,Mata Atlântica,4
+2026-03-23,MT,Amazônia,10
+2026-03-23,MT,Cerrado,2
+2026-03-23,PA,Amazônia,17
+2026-03-23,PR,Mata Atlântica,1
+2026-03-23,SP,Mata Atlântica,2
+2026-03-24,AL,Caatinga,1
+2026-03-24,AM,Amazônia,2
+2026-03-24,BA,Caatinga,1
+2026-03-24,GO,Cerrado,1
+2026-03-24,MS,Cerrado,1
+2026-03-24,MT,Amazônia,2
+2026-03-24,PA,Amazônia,2
+2026-03-24,PB,Caatinga,1
+2026-03-24,PB,Mata Atlântica,1
+2026-03-24,PE,Mata Atlântica,4
+2026-03-24,PR,Mata Atlântica,2
+2026-03-24,RN,Caatinga,2
+2026-03-24,RR,Amazônia,89
+2026-03-24,SE,Caatinga,3
+2026-03-24,SE,Mata Atlântica,1
+2026-03-25,AL,Caatinga,1
+2026-03-25,BA,Caatinga,10
+2026-03-25,BA,Mata Atlântica,4
+2026-03-25,CE,Caatinga,1
+2026-03-25,MA,Cerrado,5
+2026-03-25,MG,Cerrado,1
+2026-03-25,PA,Amazônia,1
+2026-03-25,PB,Caatinga,3
+2026-03-25,PI,Caatinga,3
+2026-03-25,RJ,Mata Atlântica,1
+2026-03-26,GO,Cerrado,1
+2026-03-26,MG,Mata Atlântica,1
+2026-03-26,PA,Amazônia,6
+2026-03-26,PR,Mata Atlântica,4
+2026-03-26,RN,Caatinga,6
+2026-03-26,RR,Amazônia,20
+2026-03-26,RS,Mata Atlântica,1
+2026-03-26,SC,Mata Atlântica,10
+2026-03-26,SP,Cerrado,1
+2026-03-26,TO,Cerrado,1
+2026-03-27,BA,Caatinga,1
+2026-03-27,BA,Mata Atlântica,2
+2026-03-27,MG,Mata Atlântica,1
+2026-03-27,MS,Cerrado,1
+2026-03-27,MS,Pantanal,1
+2026-03-27,PB,Caatinga,2
+2026-03-27,PB,Mata Atlântica,1
+2026-03-27,PI,Caatinga,2
+2026-03-27,RN,Caatinga,3
+2026-03-27,RR,Amazônia,10
+2026-03-27,RS,Mata Atlântica,1
+2026-03-27,SC,Mata Atlântica,1
+2026-03-28,BA,Caatinga,2
+2026-03-28,BA,Cerrado,4
+2026-03-28,MA,Amazônia,2
+2026-03-28,MA,Cerrado,7
+2026-03-28,MG,Cerrado,2
+2026-03-28,MG,Mata Atlântica,3
+2026-03-28,PA,Amazônia,2
+2026-03-28,PI,Caatinga,1
+2026-03-28,PI,Cerrado,3
+2026-03-28,PR,Mata Atlântica,1
+2026-03-28,SC,Mata Atlântica,11
+2026-03-28,SP,Cerrado,2
+2026-03-28,SP,Mata Atlântica,2
+2026-03-28,TO,Cerrado,11
+2026-03-29,GO,Cerrado,2
+2026-03-29,MS,Cerrado,3
+2026-03-29,MT,Amazônia,1
+2026-03-29,MT,Cerrado,4
+2026-03-29,PR,Mata Atlântica,5
+2026-03-29,RR,Amazônia,12
+2026-03-29,RS,Mata Atlântica,2
+2026-03-29,RS,Pampa,4
+2026-03-29,SC,Mata Atlântica,13
+2026-03-29,SP,Mata Atlântica,4
+2026-03-29,TO,Cerrado,3
+2026-03-30,BA,Caatinga,2
+2026-03-30,BA,Cerrado,4
+2026-03-30,MG,Caatinga,1
+2026-03-30,MG,Cerrado,2
+2026-03-30,MG,Mata Atlântica,5
+2026-03-30,MT,Cerrado,7
+2026-03-30,PA,Amazônia,1
+2026-03-30,PI,Cerrado,3
+2026-03-30,PR,Mata Atlântica,2
+2026-03-30,RS,Pampa,2
+2026-03-30,SC,Mata Atlântica,3
+2026-03-30,TO,Cerrado,1
+2026-03-31,ES,Mata Atlântica,1
+2026-03-31,GO,Cerrado,6
+2026-03-31,MA,Amazônia,1
+2026-03-31,MG,Cerrado,2
+2026-03-31,MG,Mata Atlântica,1
+2026-03-31,MS,Cerrado,1
+2026-03-31,MT,Amazônia,10
+2026-03-31,MT,Cerrado,4
+2026-03-31,RS,Mata Atlântica,1
+2026-03-31,RS,Pampa,3
+2026-03-31,SC,Mata Atlântica,1
+2026-04-01,BA,Caatinga,1
+2026-04-01,ES,Mata Atlântica,1
+2026-04-01,MS,Cerrado,5
+2026-04-01,MS,Mata Atlântica,1
+2026-04-01,MS,Pantanal,1
+2026-04-01,MT,Amazônia,1
+2026-04-01,MT,Cerrado,7
+2026-04-01,PR,Mata Atlântica,2
+2026-04-01,RR,Amazônia,2
+2026-04-01,RS,Pampa,9
+2026-04-01,SC,Mata Atlântica,7
+2026-04-02,AC,Amazônia,1
+2026-04-02,AM,Amazônia,2
+2026-04-02,BA,Caatinga,1
+2026-04-02,BA,Cerrado,1
+2026-04-03,GO,Cerrado,3
+2026-04-03,MS,Cerrado,1
+2026-04-03,MT,Amazônia,10
+2026-04-03,MT,Cerrado,4
+2026-04-03,PA,Amazônia,1
+2026-04-03,RR,Amazônia,9
+2026-04-03,RS,Mata Atlântica,1
+2026-04-04,AL,Caatinga,3
+2026-04-04,BA,Caatinga,4
+2026-04-04,CE,Caatinga,3
+2026-04-04,MG,Cerrado,1
+2026-04-04,PE,Caatinga,2
+2026-04-04,PE,Mata Atlântica,1
+2026-04-04,PI,Caatinga,1
+2026-04-04,SE,Caatinga,3
+2026-04-05,BA,Cerrado,4
+2026-04-05,GO,Cerrado,1
+2026-04-05,MG,Caatinga,1
+2026-04-05,MG,Cerrado,2
+2026-04-05,MG,Mata Atlântica,1
+2026-04-05,PA,Amazônia,1
+2026-04-05,SP,Cerrado,1
+2026-04-05,TO,Cerrado,5
+2026-04-06,AL,Caatinga,2
+2026-04-06,BA,Caatinga,1
+2026-04-06,ES,Mata Atlântica,3
+2026-04-06,MS,Cerrado,7
+2026-04-06,MS,Mata Atlântica,3
+2026-04-06,MS,Pantanal,4
+2026-04-06,MT,Amazônia,1
+2026-04-06,MT,Cerrado,2
+2026-04-06,PB,Mata Atlântica,1
+2026-04-06,PE,Mata Atlântica,1
+2026-04-06,PR,Mata Atlântica,13
+2026-04-06,RN,Caatinga,1
+2026-04-06,RR,Amazônia,30
+2026-04-06,RS,Pampa,1
+2026-04-06,SC,Mata Atlântica,3
+2026-04-06,SE,Mata Atlântica,2
+2026-04-06,SP,Mata Atlântica,3
+2026-04-07,AL,Caatinga,1
+2026-04-07,BA,Caatinga,8
+2026-04-07,BA,Cerrado,8
+2026-04-07,BA,Mata Atlântica,6
+2026-04-07,ES,Mata Atlântica,5
+2026-04-07,GO,Cerrado,7
+2026-04-07,MA,Amazônia,1
+2026-04-07,MA,Cerrado,5
+2026-04-07,MG,Cerrado,5
+2026-04-07,MG,Mata Atlântica,9
+2026-04-07,MT,Cerrado,1
+2026-04-07,TO,Cerrado,4
+2026-04-08,BA,Cerrado,3
+2026-04-08,GO,Cerrado,3
+2026-04-08,MA,Cerrado,1
+2026-04-08,MG,Cerrado,3
+2026-04-08,MS,Cerrado,2
+2026-04-08,MT,Amazônia,17
+2026-04-08,MT,Cerrado,4
+2026-04-08,PA,Amazônia,4
+2026-04-08,RR,Amazônia,1
+2026-04-08,TO,Cerrado,8
+2026-04-09,AL,Caatinga,6
+2026-04-09,AM,Amazônia,1
+2026-04-09,BA,Caatinga,21
+2026-04-09,BA,Cerrado,2
+2026-04-09,BA,Mata Atlântica,7
+2026-04-09,CE,Caatinga,1
+2026-04-09,MG,Cerrado,1
+2026-04-09,MG,Mata Atlântica,1
+2026-04-09,MS,Cerrado,1
+2026-04-09,MS,Pantanal,2
+2026-04-09,PE,Caatinga,5
+2026-04-09,PI,Cerrado,4
+2026-04-09,RN,Caatinga,2
+2026-04-09,RR,Amazônia,3
+2026-04-09,RS,Pampa,1
+2026-04-09,SE,Caatinga,4
+2026-04-09,SE,Mata Atlântica,1
+2026-04-09,TO,Cerrado,1
+2026-04-10,BA,Caatinga,4
+2026-04-10,BA,Cerrado,1
+2026-04-10,BA,Mata Atlântica,2
+2026-04-10,GO,Cerrado,3
+2026-04-10,MA,Amazônia,2
+2026-04-10,MA,Cerrado,1
+2026-04-10,MT,Amazônia,2
+2026-04-10,PA,Amazônia,3
+2026-04-10,PI,Cerrado,2
+2026-04-10,PR,Mata Atlântica,3
+2026-04-10,SC,Mata Atlântica,3
+2026-04-10,TO,Cerrado,1
+2026-04-11,GO,Cerrado,2
+2026-04-11,MS,Cerrado,2
+2026-04-11,MS,Mata Atlântica,1
+2026-04-11,MS,Pantanal,1
+2026-04-11,MT,Amazônia,9
+2026-04-11,MT,Cerrado,3
+2026-04-11,PA,Amazônia,3
+2026-04-11,PE,Caatinga,2
+2026-04-11,PR,Mata Atlântica,12
+2026-04-11,RR,Amazônia,101
+2026-04-11,RS,Mata Atlântica,6
+2026-04-11,RS,Pampa,5
+2026-04-11,SC,Mata Atlântica,14
+2026-04-12,AM,Amazônia,1
+2026-04-12,BA,Cerrado,5
+2026-04-12,CE,Caatinga,1
+2026-04-12,MG,Cerrado,5
+2026-04-12,PA,Amazônia,1
+2026-04-12,PE,Caatinga,3
+2026-04-12,PI,Caatinga,1
+2026-04-12,RR,Amazônia,2
+2026-04-12,SE,Caatinga,1
+2026-04-12,SE,Mata Atlântica,1
+2026-04-13,BA,Cerrado,2
+2026-04-13,GO,Cerrado,3
+2026-04-13,MA,Cerrado,1
+2026-04-13,MG,Cerrado,3
+2026-04-13,MT,Cerrado,1
+2026-04-13,PI,Cerrado,1
+2026-04-13,PR,Mata Atlântica,1
+2026-04-13,RR,Amazônia,25
+2026-04-13,RS,Mata Atlântica,5
+2026-04-13,SC,Mata Atlântica,5
+2026-04-13,SP,Cerrado,3
+2026-04-13,TO,Cerrado,13
+2026-04-14,ES,Mata Atlântica,2
+2026-04-14,GO,Cerrado,1
+2026-04-14,MS,Cerrado,4
+2026-04-14,MT,Amazônia,9
+2026-04-14,MT,Cerrado,2
+2026-04-14,PI,Caatinga,2
+2026-04-14,PR,Mata Atlântica,2
+2026-04-14,RR,Amazônia,36
+2026-04-14,RS,Mata Atlântica,1
+2026-04-14,RS,Pampa,3
+2026-04-15,BA,Caatinga,9
+2026-04-15,BA,Cerrado,17
+2026-04-15,BA,Mata Atlântica,1
+2026-04-15,ES,Mata Atlântica,3
+2026-04-15,GO,Cerrado,1
+2026-04-15,MA,Cerrado,3
+2026-04-15,MG,Caatinga,1
+2026-04-15,MG,Cerrado,11
+2026-04-15,MG,Mata Atlântica,14
+2026-04-15,PI,Caatinga,1
+2026-04-15,PI,Cerrado,8
+2026-04-15,PR,Mata Atlântica,1
+2026-04-15,RJ,Mata Atlântica,3
+2026-04-15,SP,Cerrado,2
+2026-04-15,TO,Cerrado,13
+2026-04-16,AL,Caatinga,1
+2026-04-16,AM,Amazônia,1
+2026-04-16,BA,Cerrado,2
+2026-04-16,GO,Cerrado,5
+2026-04-16,GO,Mata Atlântica,1
+2026-04-16,MG,Mata Atlântica,2
+2026-04-16,MT,Amazônia,8
+2026-04-16,MT,Cerrado,7
+2026-04-16,PA,Amazônia,2
+2026-04-16,PR,Mata Atlântica,5
+2026-04-16,RR,Amazônia,6
+2026-04-16,SP,Cerrado,2
+2026-04-17,AL,Caatinga,7
+2026-04-17,BA,Caatinga,31
+2026-04-17,BA,Cerrado,4
+2026-04-17,BA,Mata Atlântica,19
+2026-04-17,CE,Caatinga,1
+2026-04-17,MA,Cerrado,2
+2026-04-17,MG,Mata Atlântica,1
+2026-04-17,MS,Mata Atlântica,1
+2026-04-17,PE,Caatinga,5
+2026-04-17,PI,Caatinga,4
+2026-04-17,PI,Cerrado,5
+2026-04-17,RJ,Mata Atlântica,2
+2026-04-17,RS,Pampa,1
+2026-04-17,SE,Caatinga,1
+2026-04-17,TO,Cerrado,1
+2026-04-18,BA,Cerrado,8
+2026-04-18,MG,Caatinga,1
+2026-04-18,MG,Cerrado,6
+2026-04-18,MG,Mata Atlântica,6
+2026-04-18,PR,Mata Atlântica,1
+2026-04-18,SC,Mata Atlântica,12
+2026-04-18,SP,Mata Atlântica,2
+2026-04-18,TO,Cerrado,1
+2026-04-19,BA,Mata Atlântica,1
+2026-04-19,PR,Mata Atlântica,5
+2026-04-19,RR,Amazônia,10
+2026-04-19,RS,Mata Atlântica,3
+2026-04-19,RS,Pampa,1
+2026-04-19,SC,Mata Atlântica,15
+2026-04-20,AL,Caatinga,1
+2026-04-20,BA,Caatinga,17
+2026-04-20,BA,Cerrado,15
+2026-04-20,BA,Mata Atlântica,19
+2026-04-20,ES,Mata Atlântica,8
+2026-04-20,MA,Cerrado,4
+2026-04-20,MG,Caatinga,2
+2026-04-20,MG,Cerrado,1
+2026-04-20,MG,Mata Atlântica,13
+2026-04-20,PI,Cerrado,1
+2026-04-20,SE,Caatinga,1
+2026-04-20,TO,Cerrado,2
+2026-04-21,BA,Cerrado,12
+2026-04-21,DF,Cerrado,2
+2026-04-21,GO,Cerrado,8
+2026-04-21,MG,Cerrado,2
+2026-04-21,MG,Mata Atlântica,2
+2026-04-21,MS,Cerrado,4
+2026-04-21,MT,Amazônia,10
+2026-04-21,MT,Cerrado,6
+2026-04-21,PR,Mata Atlântica,40
+2026-04-21,RR,Amazônia,8
+2026-04-21,SC,Mata Atlântica,32
+2026-04-21,SP,Cerrado,6
+2026-04-21,SP,Mata Atlântica,8
+2026-04-21,TO,Cerrado,8
+2026-04-22,AM,Amazônia,2
+2026-04-22,BA,Caatinga,8
+2026-04-22,BA,Cerrado,22
+2026-04-22,BA,Mata Atlântica,20
+2026-04-22,ES,Mata Atlântica,4
+2026-04-22,GO,Cerrado,4
+2026-04-22,MG,Cerrado,6
+2026-04-22,MS,Cerrado,12
+2026-04-22,MS,Mata Atlântica,2
+2026-04-22,MS,Pantanal,16
+2026-04-22,MT,Amazônia,8
+2026-04-22,MT,Cerrado,4
+2026-04-22,PB,Caatinga,2
+2026-04-22,PE,Caatinga,6
+2026-04-22,PR,Mata Atlântica,2
+2026-04-22,RN,Caatinga,2
+2026-04-22,SC,Mata Atlântica,6
+2026-04-22,TO,Cerrado,4
+2026-04-23,BA,Caatinga,4
+2026-04-23,BA,Cerrado,38
+2026-04-23,BA,Mata Atlântica,8
+2026-04-23,DF,Cerrado,10
+2026-04-23,GO,Cerrado,14
+2026-04-23,MA,Cerrado,6
+2026-04-23,MG,Caatinga,2
+2026-04-23,MG,Cerrado,32
+2026-04-23,MG,Mata Atlântica,14
+2026-04-23,MT,Amazônia,4
+2026-04-23,MT,Cerrado,8
+2026-04-23,PI,Cerrado,12
+2026-04-23,PR,Mata Atlântica,22
+2026-04-23,RJ,Mata Atlântica,2
+2026-04-23,SC,Mata Atlântica,2
+2026-04-23,SP,Cerrado,14
+2026-04-23,SP,Mata Atlântica,6
+2026-04-23,TO,Cerrado,54
+2026-04-24,GO,Cerrado,1
+2026-04-24,GO,Mata Atlântica,1
+2026-04-24,MS,Cerrado,5
+2026-04-24,MS,Mata Atlântica,1
+2026-04-24,MS,Pantanal,1
+2026-04-24,MT,Amazônia,19
+2026-04-24,MT,Cerrado,6
+2026-04-24,PR,Mata Atlântica,23
+2026-04-24,RR,Amazônia,10
+2026-04-24,SC,Mata Atlântica,9
+2026-04-25,BA,Caatinga,1
+2026-04-25,BA,Cerrado,9
+2026-04-25,BA,Mata Atlântica,1
+2026-04-25,ES,Mata Atlântica,3
+2026-04-25,GO,Cerrado,1
+2026-04-25,MG,Caatinga,2
+2026-04-25,MG,Cerrado,1
+2026-04-25,MG,Mata Atlântica,8
+2026-04-25,MT,Cerrado,7
+2026-04-25,RJ,Mata Atlântica,1
+2026-04-25,TO,Cerrado,6
+2026-04-26,AC,Amazônia,1
+2026-04-26,BA,Cerrado,4
+2026-04-26,GO,Cerrado,5
+2026-04-26,MG,Cerrado,5
+2026-04-26,MT,Amazônia,3
+2026-04-26,MT,Cerrado,4
+2026-04-26,SP,Cerrado,3
+2026-04-26,SP,Mata Atlântica,4
+2026-04-26,TO,Cerrado,8
+2026-04-27,AL,Caatinga,6
+2026-04-27,AL,Mata Atlântica,1
+2026-04-27,BA,Caatinga,4
+2026-04-27,BA,Cerrado,2
+2026-04-27,BA,Mata Atlântica,1
+2026-04-27,ES,Mata Atlântica,2
+2026-04-27,MG,Cerrado,1
+2026-04-27,MT,Amazônia,3
+2026-04-27,MT,Cerrado,2
+2026-04-27,PE,Caatinga,7
+2026-04-27,PE,Mata Atlântica,1
+2026-04-27,PI,Caatinga,1
+2026-04-27,PI,Cerrado,3
+2026-04-27,RN,Caatinga,1
+2026-04-27,RR,Amazônia,2
+2026-04-27,RS,Pampa,6
+2026-04-27,SC,Mata Atlântica,1
+2026-04-27,SE,Mata Atlântica,1
+2026-04-28,BA,Caatinga,12
+2026-04-28,BA,Cerrado,15
+2026-04-28,BA,Mata Atlântica,4
+2026-04-28,ES,Mata Atlântica,5
+2026-04-28,GO,Cerrado,8
+2026-04-28,MA,Amazônia,1
+2026-04-28,MA,Cerrado,7
+2026-04-28,MG,Caatinga,3
+2026-04-28,MG,Cerrado,12
+2026-04-28,MG,Mata Atlântica,15
+2026-04-28,PA,Amazônia,3
+2026-04-28,PE,Caatinga,2
+2026-04-28,PI,Caatinga,1
+2026-04-28,PI,Cerrado,10
+2026-04-28,TO,Cerrado,6
+2026-04-29,AM,Amazônia,1
+2026-04-29,DF,Cerrado,3
+2026-04-29,GO,Cerrado,16
+2026-04-29,MA,Cerrado,3
+2026-04-29,MG,Cerrado,6
+2026-04-29,MS,Cerrado,3
+2026-04-29,MT,Amazônia,9
+2026-04-29,MT,Cerrado,9
+2026-04-29,RR,Amazônia,12
+2026-04-29,RS,Mata Atlântica,3
+2026-04-29,RS,Pampa,2
+2026-04-29,TO,Cerrado,14
+2026-04-30,BA,Caatinga,12
+2026-04-30,BA,Cerrado,14
+2026-04-30,BA,Mata Atlântica,2
+2026-04-30,CE,Caatinga,1
+2026-04-30,DF,Cerrado,1
+2026-04-30,ES,Mata Atlântica,10
+2026-04-30,MA,Cerrado,7
+2026-04-30,MG,Cerrado,3
+2026-04-30,MG,Mata Atlântica,4
+2026-04-30,MS,Pantanal,1
+2026-04-30,MT,Amazônia,1
+2026-04-30,PI,Cerrado,2
+2026-04-30,RS,Mata Atlântica,1
+2026-04-30,RS,Pampa,3
+2026-04-30,SE,Mata Atlântica,1
+2026-04-30,TO,Cerrado,1
+2026-05-01,BA,Caatinga,2
+2026-05-01,BA,Cerrado,17
+2026-05-01,GO,Cerrado,17
+2026-05-01,MG,Cerrado,16
+2026-05-01,MG,Mata Atlântica,4
+2026-05-01,MS,Mata Atlântica,2
+2026-05-01,MT,Amazônia,8
+2026-05-01,MT,Cerrado,6
+2026-05-01,PA,Amazônia,2
+2026-05-01,PI,Cerrado,2
+2026-05-01,RJ,Mata Atlântica,1
+2026-05-01,SC,Mata Atlântica,2
+2026-05-01,SP,Cerrado,3
+2026-05-01,SP,Mata Atlântica,1
+2026-05-01,TO,Cerrado,29
+2026-05-02,GO,Cerrado,10
+2026-05-02,MG,Cerrado,3
+2026-05-02,MS,Cerrado,1
+2026-05-02,MS,Mata Atlântica,2
+2026-05-02,MS,Pantanal,4
+2026-05-02,MT,Amazônia,8
+2026-05-02,MT,Cerrado,5
+2026-05-02,PI,Caatinga,1
+2026-05-02,RR,Amazônia,15
+2026-05-04,BA,Cerrado,1
+2026-05-04,DF,Cerrado,2
+2026-05-04,GO,Cerrado,10
+2026-05-04,MG,Cerrado,2
+2026-05-04,MS,Cerrado,1
+2026-05-04,MS,Mata Atlântica,1
+2026-05-04,MT,Amazônia,21
+2026-05-04,MT,Cerrado,22
+2026-05-04,MT,Pantanal,2
+2026-05-04,PA,Amazônia,4
+2026-05-04,PR,Mata Atlântica,2
+2026-05-04,SP,Cerrado,8
+2026-05-04,TO,Cerrado,23
+2026-05-05,AL,Caatinga,2
+2026-05-05,BA,Caatinga,10
+2026-05-05,BA,Cerrado,5
+2026-05-05,BA,Mata Atlântica,8
+2026-05-05,CE,Caatinga,1
+2026-05-05,ES,Mata Atlântica,2
+2026-05-05,GO,Cerrado,1
+2026-05-05,MA,Cerrado,13
+2026-05-05,MG,Mata Atlântica,1
+2026-05-05,MS,Cerrado,6
+2026-05-05,MS,Pantanal,1
+2026-05-05,MT,Amazônia,11
+2026-05-05,MT,Cerrado,10
+2026-05-05,MT,Pantanal,8
+2026-05-05,PE,Caatinga,1
+2026-05-05,PI,Caatinga,4
+2026-05-05,PI,Cerrado,5
+2026-05-05,RS,Pampa,3
+2026-05-05,TO,Cerrado,23
+2026-05-06,BA,Caatinga,1
+2026-05-06,BA,Cerrado,19
+2026-05-06,BA,Mata Atlântica,2
+2026-05-06,DF,Cerrado,1
+2026-05-06,GO,Cerrado,16
+2026-05-06,MA,Cerrado,21
+2026-05-06,MG,Cerrado,10
+2026-05-06,MG,Mata Atlântica,9
+2026-05-06,MS,Cerrado,4
+2026-05-06,MT,Amazônia,10
+2026-05-06,MT,Cerrado,7
+2026-05-06,PA,Amazônia,15
+2026-05-06,PI,Caatinga,1
+2026-05-06,PI,Cerrado,5
+2026-05-06,PR,Mata Atlântica,2
+2026-05-06,SC,Mata Atlântica,1
+2026-05-06,SP,Cerrado,2
+2026-05-06,SP,Mata Atlântica,3
+2026-05-06,TO,Cerrado,69
+2026-05-07,AL,Caatinga,3
+2026-05-07,CE,Caatinga,2
+2026-05-07,GO,Cerrado,2
+2026-05-07,MA,Cerrado,3
+2026-05-07,MS,Cerrado,3
+2026-05-07,MS,Pantanal,1
+2026-05-07,MT,Amazônia,30
+2026-05-07,MT,Cerrado,21
+2026-05-07,MT,Pantanal,6
+2026-05-07,PA,Amazônia,1
+2026-05-07,PE,Caatinga,1
+2026-05-07,PR,Mata Atlântica,16
+2026-05-07,RR,Amazônia,11
+2026-05-07,RS,Mata Atlântica,1
+2026-05-07,RS,Pampa,1
+2026-05-07,SC,Mata Atlântica,19
+2026-05-07,SE,Caatinga,1
+2026-05-07,SP,Cerrado,2
+2026-05-07,TO,Cerrado,13
+2026-05-08,AM,Amazônia,1
+2026-05-08,BA,Caatinga,7
+2026-05-08,BA,Cerrado,14
+2026-05-08,BA,Mata Atlântica,1
+2026-05-08,ES,Mata Atlântica,7
+2026-05-08,GO,Cerrado,7
+2026-05-08,MA,Amazônia,1
+2026-05-08,MA,Cerrado,11
+2026-05-08,MG,Cerrado,5
+2026-05-08,MG,Mata Atlântica,6
+2026-05-08,MT,Cerrado,4
+2026-05-08,PA,Amazônia,2
+2026-05-08,PI,Caatinga,2
+2026-05-08,PI,Cerrado,1
+2026-05-08,RO,Amazônia,1
+2026-05-08,TO,Cerrado,23
+2026-05-09,BA,Caatinga,2
+2026-05-09,BA,Cerrado,5
+2026-05-09,GO,Cerrado,15
+2026-05-09,MA,Cerrado,6
+2026-05-09,MG,Cerrado,7
+2026-05-09,MT,Amazônia,17
+2026-05-09,MT,Cerrado,10
+2026-05-09,PA,Amazônia,19
+2026-05-09,PI,Cerrado,1
+2026-05-09,SP,Mata Atlântica,1
+2026-05-09,TO,Cerrado,38
+2026-05-10,AM,Amazônia,2
+2026-05-10,BA,Caatinga,6
+2026-05-10,ES,Mata Atlântica,3
+2026-05-10,MA,Cerrado,1
+2026-05-10,MT,Amazônia,2
+2026-05-10,PI,Caatinga,1
+2026-05-10,RR,Amazônia,4
+2026-05-11,BA,Caatinga,24
+2026-05-11,BA,Cerrado,45
+2026-05-11,BA,Mata Atlântica,9
+2026-05-11,ES,Mata Atlântica,3
+2026-05-11,GO,Cerrado,15
+2026-05-11,MG,Cerrado,4
+2026-05-11,MG,Mata Atlântica,12
+2026-05-11,MT,Amazônia,9
+2026-05-11,MT,Cerrado,12
+2026-05-11,PA,Amazônia,4
+2026-05-11,PI,Cerrado,3
+2026-05-11,SP,Cerrado,1
+2026-05-11,TO,Cerrado,38
+2026-05-12,BA,Cerrado,3
+2026-05-12,MG,Cerrado,2
+2026-05-12,MS,Cerrado,4
+2026-05-12,MS,Pantanal,1
+2026-05-12,MT,Amazônia,29
+2026-05-12,MT,Cerrado,14
+2026-05-12,MT,Pantanal,3
+2026-05-12,RS,Mata Atlântica,3
+2026-05-12,RS,Pampa,6
+2026-05-12,SC,Mata Atlântica,4
+2026-05-12,SP,Cerrado,2
+2026-05-12,TO,Cerrado,9
+2026-05-13,BA,Caatinga,14
+2026-05-13,BA,Cerrado,9
+2026-05-13,BA,Mata Atlântica,6
+2026-05-13,ES,Mata Atlântica,1
+2026-05-13,MG,Mata Atlântica,3
+2026-05-13,MS,Cerrado,6
+2026-05-13,MS,Pantanal,1
+2026-05-13,PE,Caatinga,2
+2026-05-13,PI,Cerrado,2
+2026-05-13,RJ,Mata Atlântica,1
+2026-05-13,RS,Pampa,1
+2026-05-13,SP,Cerrado,1
+2026-05-13,TO,Cerrado,5
+2026-05-14,BA,Caatinga,5
+2026-05-14,BA,Cerrado,36
+2026-05-14,GO,Cerrado,7
+2026-05-14,MA,Cerrado,2
+2026-05-14,MG,Cerrado,1
+2026-05-14,MG,Mata Atlântica,3
+2026-05-14,MS,Cerrado,4
+2026-05-14,MT,Amazônia,7
+2026-05-14,MT,Cerrado,3
+2026-05-14,PA,Amazônia,2
+2026-05-14,PI,Cerrado,6
+2026-05-14,PR,Mata Atlântica,2
+2026-05-14,RS,Mata Atlântica,11
+2026-05-14,RS,Pampa,1
+2026-05-14,SC,Mata Atlântica,4
+2026-05-14,SP,Cerrado,2
+2026-05-14,TO,Cerrado,33
+2026-05-15,AL,Caatinga,3
+2026-05-15,BA,Caatinga,14
+2026-05-15,BA,Cerrado,2
+2026-05-15,BA,Mata Atlântica,5
+2026-05-15,MS,Pantanal,1
+2026-05-15,MT,Amazônia,10
+2026-05-15,MT,Cerrado,12
+2026-05-15,MT,Pantanal,4
+2026-05-15,PB,Caatinga,1
+2026-05-15,PE,Caatinga,1
+2026-05-15,PI,Caatinga,2
+2026-05-15,RO,Amazônia,2
+2026-05-15,RR,Amazônia,1
+2026-05-15,RS,Mata Atlântica,3
+2026-05-15,RS,Pampa,4
+2026-05-15,TO,Cerrado,1
+2026-05-16,BA,Caatinga,9
+2026-05-16,BA,Cerrado,20
+2026-05-16,BA,Mata Atlântica,4
+2026-05-16,ES,Mata Atlântica,6
+2026-05-16,GO,Cerrado,2
+2026-05-16,MA,Cerrado,21
+2026-05-16,MG,Caatinga,1
+2026-05-16,MG,Cerrado,4
+2026-05-16,MG,Mata Atlântica,2
+2026-05-16,MT,Amazônia,4
+2026-05-16,PA,Amazônia,1
+2026-05-16,PI,Caatinga,3
+2026-05-16,TO,Amazônia,1
+2026-05-16,TO,Cerrado,26
+2026-05-17,BA,Cerrado,3
+2026-05-17,GO,Cerrado,2
+2026-05-17,MG,Cerrado,1
+2026-05-17,MT,Amazônia,19
+2026-05-17,MT,Cerrado,7
+2026-05-17,PA,Amazônia,10
+2026-05-17,TO,Cerrado,9
+2026-05-18,AL,Caatinga,4
+2026-05-18,AM,Amazônia,1
+2026-05-18,BA,Caatinga,43
+2026-05-18,BA,Cerrado,11
+2026-05-18,BA,Mata Atlântica,12
+2026-05-18,CE,Caatinga,2
+2026-05-18,ES,Mata Atlântica,2
+2026-05-18,MA,Cerrado,6
+2026-05-18,MG,Cerrado,7
+2026-05-18,MG,Mata Atlântica,3
+2026-05-18,MT,Amazônia,16
+2026-05-18,PE,Caatinga,4
+2026-05-18,PI,Cerrado,7
+2026-05-18,SE,Caatinga,2
+2026-05-18,SE,Mata Atlântica,1
+2026-05-18,TO,Cerrado,9
+2026-05-19,BA,Caatinga,11
+2026-05-19,BA,Cerrado,30
+2026-05-19,BA,Mata Atlântica,2
+2026-05-19,DF,Cerrado,2
+2026-05-19,GO,Cerrado,5
+2026-05-19,MA,Cerrado,18
+2026-05-19,MG,Cerrado,6
+2026-05-19,MT,Amazônia,20
+2026-05-19,MT,Cerrado,8
+2026-05-19,PA,Amazônia,33
+2026-05-19,PI,Cerrado,7
+2026-05-19,TO,Amazônia,1
+2026-05-19,TO,Cerrado,113
+2026-05-20,AL,Caatinga,4
+2026-05-20,AL,Mata Atlântica,1
+2026-05-20,BA,Caatinga,3
+2026-05-20,CE,Caatinga,2
+2026-05-20,GO,Cerrado,3
+2026-05-20,MA,Cerrado,7
+2026-05-20,MS,Cerrado,1
+2026-05-20,MT,Amazônia,46
+2026-05-20,MT,Cerrado,10
+2026-05-20,PA,Amazônia,2
+2026-05-20,PB,Caatinga,1
+2026-05-20,PI,Caatinga,5
+2026-05-20,RN,Caatinga,2
+2026-05-20,RR,Amazônia,1
+2026-05-20,RS,Mata Atlântica,5
+2026-05-20,RS,Pampa,11
+2026-05-20,SC,Mata Atlântica,5
+2026-05-20,TO,Cerrado,6
+2026-05-21,BA,Caatinga,14
+2026-05-21,BA,Cerrado,27
+2026-05-21,BA,Mata Atlântica,9
+2026-05-21,CE,Caatinga,3
+2026-05-21,ES,Mata Atlântica,1
+2026-05-21,MA,Amazônia,1
+2026-05-21,MA,Cerrado,26
+2026-05-21,MG,Caatinga,1
+2026-05-21,MG,Cerrado,8
+2026-05-21,MG,Mata Atlântica,10
+2026-05-21,MT,Cerrado,1
+2026-05-21,PA,Amazônia,6
+2026-05-21,PE,Caatinga,3
+2026-05-21,PI,Caatinga,11
+2026-05-21,PI,Cerrado,16
+2026-05-21,TO,Cerrado,68
+2026-05-22,BA,Cerrado,1
+2026-05-22,MA,Cerrado,11
+2026-05-22,MT,Amazônia,22
+2026-05-22,MT,Cerrado,11
+2026-05-22,PA,Amazônia,32
+2026-05-22,PI,Caatinga,1
+2026-05-22,PI,Cerrado,1
+2026-05-22,SP,Cerrado,1
+2026-05-22,SP,Mata Atlântica,2
+2026-05-22,TO,Amazônia,2
+2026-05-22,TO,Cerrado,76
+2026-05-23,CE,Caatinga,3
+2026-05-23,MA,Cerrado,6
+2026-05-23,MT,Amazônia,34
+2026-05-23,MT,Cerrado,11
+2026-05-23,PB,Caatinga,1
+2026-05-23,RN,Caatinga,3
+2026-05-23,RS,Pampa,1
+2026-05-24,AC,Amazônia,3
+2026-05-24,ES,Mata Atlântica,1
+2026-05-24,GO,Cerrado,3
+2026-05-24,MA,Cerrado,25
+2026-05-24,MG,Cerrado,4
+2026-05-24,MG,Mata Atlântica,1
+2026-05-24,MT,Amazônia,5
+2026-05-24,MT,Cerrado,14
+2026-05-24,PA,Amazônia,13
+2026-05-24,PI,Caatinga,4
+2026-05-24,PI,Cerrado,1
+2026-05-24,RJ,Mata Atlântica,1
+2026-05-24,TO,Amazônia,3
+2026-05-24,TO,Cerrado,75
+2026-05-25,AM,Amazônia,7
+2026-05-25,BA,Caatinga,1
+2026-05-25,BA,Cerrado,1
+2026-05-25,CE,Caatinga,1
+2026-05-25,GO,Cerrado,3
+2026-05-25,MA,Cerrado,1
+2026-05-25,MS,Cerrado,3
+2026-05-25,MT,Amazônia,70
+2026-05-25,MT,Cerrado,23
+2026-05-25,MT,Pantanal,2
+2026-05-25,PA,Amazônia,17
+2026-05-25,PR,Mata Atlântica,2
+2026-05-25,RN,Caatinga,1
+2026-05-25,RO,Amazônia,5
+2026-05-25,TO,Cerrado,12
+2026-05-26,AC,Amazônia,7
+2026-05-26,AM,Amazônia,2
+2026-05-26,BA,Caatinga,19
+2026-05-26,BA,Cerrado,14
+2026-05-26,BA,Mata Atlântica,1
+2026-05-26,CE,Caatinga,4
+2026-05-26,ES,Mata Atlântica,2
+2026-05-26,GO,Cerrado,2
+2026-05-26,MA,Caatinga,2
+2026-05-26,MA,Cerrado,49
+2026-05-26,MG,Cerrado,1
+2026-05-26,MG,Mata Atlântica,3
+2026-05-26,MS,Cerrado,2
+2026-05-26,MT,Amazônia,7
+2026-05-26,MT,Cerrado,14
+2026-05-26,PA,Amazônia,5
+2026-05-26,PE,Caatinga,5
+2026-05-26,PI,Caatinga,12
+2026-05-26,PI,Cerrado,7
+2026-05-26,RO,Amazônia,5
+2026-05-26,TO,Amazônia,6
+2026-05-26,TO,Cerrado,99
+2026-05-27,AC,Amazônia,2
+2026-05-27,BA,Cerrado,23
+2026-05-27,DF,Cerrado,2
+2026-05-27,GO,Cerrado,11
+2026-05-27,MA,Cerrado,21
+2026-05-27,MG,Cerrado,12
+2026-05-27,MG,Mata Atlântica,3
+2026-05-27,MS,Cerrado,2
+2026-05-27,MS,Mata Atlântica,1
+2026-05-27,MT,Amazônia,46
+2026-05-27,MT,Cerrado,20
+2026-05-27,PA,Amazônia,43
+2026-05-27,SP,Cerrado,2
+2026-05-27,SP,Mata Atlântica,3
+2026-05-27,TO,Amazônia,4
+2026-05-27,TO,Cerrado,103
+2026-05-28,AL,Caatinga,4
+2026-05-28,AM,Amazônia,14
+2026-05-28,BA,Caatinga,5
+2026-05-28,GO,Cerrado,3
+2026-05-28,MA,Cerrado,8
+2026-05-28,MS,Cerrado,1
+2026-05-28,MS,Pantanal,2
+2026-05-28,MT,Amazônia,41
+2026-05-28,MT,Cerrado,21
+2026-05-28,PA,Amazônia,1
+2026-05-28,PE,Caatinga,1
+2026-05-28,PI,Caatinga,1
+2026-05-28,RN,Caatinga,1
+2026-05-28,RO,Amazônia,2
+2026-05-28,RS,Pampa,1
+2026-05-28,SC,Mata Atlântica,1
+2026-05-28,SE,Caatinga,1
+2026-05-28,SP,Cerrado,1
+2026-05-28,SP,Mata Atlântica,2
+2026-05-28,TO,Cerrado,2
+2026-05-29,AM,Amazônia,3
+2026-05-29,BA,Caatinga,7
+2026-05-29,BA,Cerrado,12
+2026-05-29,ES,Mata Atlântica,4
+2026-05-29,MA,Caatinga,2
+2026-05-29,MA,Cerrado,20
+2026-05-29,MG,Cerrado,1
+2026-05-29,MG,Mata Atlântica,1
+2026-05-29,MT,Amazônia,2
+2026-05-29,MT,Cerrado,1
+2026-05-29,PA,Amazônia,14
+2026-05-29,PE,Caatinga,1
+2026-05-29,PI,Caatinga,10
+2026-05-29,PI,Cerrado,2
+2026-05-29,SP,Mata Atlântica,2
+2026-05-29,TO,Cerrado,93
+2026-05-30,AC,Amazônia,3
+2026-05-30,AL,Caatinga,1
+2026-05-30,BA,Cerrado,1
+2026-05-30,GO,Cerrado,2
+2026-05-30,MA,Cerrado,6
+2026-05-30,MG,Cerrado,3
+2026-05-30,MS,Cerrado,5
+2026-05-30,MS,Pantanal,2
+2026-05-30,MT,Amazônia,14
+2026-05-30,MT,Cerrado,22
+2026-05-30,MT,Pantanal,1
+2026-05-30,PA,Amazônia,7
+2026-05-30,PR,Mata Atlântica,3
+2026-05-30,SP,Cerrado,2
+2026-05-30,SP,Mata Atlântica,2
+2026-05-30,TO,Cerrado,12
+2026-05-31,AM,Amazônia,9
+2026-05-31,CE,Caatinga,2
+2026-05-31,ES,Mata Atlântica,3
+2026-05-31,MA,Cerrado,6
+2026-05-31,MG,Cerrado,6
+2026-05-31,MS,Pantanal,1
+2026-05-31,MT,Amazônia,5
+2026-05-31,MT,Cerrado,3
+2026-05-31,PB,Caatinga,1
+2026-05-31,PI,Caatinga,2
+2026-05-31,PI,Cerrado,3
+2026-05-31,RJ,Mata Atlântica,3
+2026-05-31,RN,Caatinga,1
+2026-05-31,RO,Amazônia,1
+2026-05-31,RS,Pampa,1
+2026-05-31,SE,Caatinga,2
+2026-05-31,TO,Cerrado,11
+2026-06-01,AC,Amazônia,6
+2026-06-01,BA,Caatinga,2
+2026-06-01,BA,Cerrado,7
+2026-06-01,ES,Mata Atlântica,4
+2026-06-01,GO,Cerrado,8
+2026-06-01,MA,Amazônia,2
+2026-06-01,MA,Cerrado,30
+2026-06-01,MG,Cerrado,9
+2026-06-01,MG,Mata Atlântica,4
+2026-06-01,MS,Cerrado,3
+2026-06-01,MS,Pantanal,2
+2026-06-01,MT,Amazônia,18
+2026-06-01,MT,Cerrado,10
+2026-06-01,PA,Amazônia,16
+2026-06-01,PI,Caatinga,1
+2026-06-01,PI,Cerrado,5
+2026-06-01,SP,Cerrado,1
+2026-06-01,SP,Mata Atlântica,2
+2026-06-01,TO,Amazônia,2
+2026-06-01,TO,Cerrado,93
+2026-06-02,AL,Caatinga,1
+2026-06-02,AL,Mata Atlântica,1
+2026-06-02,BA,Mata Atlântica,4
+2026-06-02,CE,Caatinga,2
+2026-06-02,GO,Cerrado,4
+2026-06-02,MS,Cerrado,7
+2026-06-02,MS,Pantanal,6
+2026-06-02,MT,Amazônia,59
+2026-06-02,MT,Cerrado,28
+2026-06-02,MT,Pantanal,2
+2026-06-02,PA,Amazônia,7
+2026-06-02,PR,Mata Atlântica,3
+2026-06-02,RR,Amazônia,1
+2026-06-02,SC,Mata Atlântica,3
+2026-06-02,SP,Mata Atlântica,1
+2026-06-03,AC,Amazônia,3
+2026-06-03,AM,Amazônia,11
+2026-06-03,AP,Amazônia,1
+2026-06-03,BA,Caatinga,6
+2026-06-03,BA,Cerrado,7
+2026-06-03,BA,Mata Atlântica,1
+2026-06-03,CE,Caatinga,1
+2026-06-03,ES,Mata Atlântica,8
+2026-06-03,GO,Cerrado,3
+2026-06-03,MA,Amazônia,1
+2026-06-03,MA,Cerrado,19
+2026-06-03,MG,Cerrado,3
+2026-06-03,MT,Amazônia,7
+2026-06-03,MT,Cerrado,10
+2026-06-03,PA,Amazônia,1
+2026-06-03,PI,Caatinga,10
+2026-06-03,PI,Cerrado,3
+2026-06-03,RJ,Mata Atlântica,2
+2026-06-03,RO,Amazônia,6
+2026-06-03,RS,Pampa,1
+2026-06-03,TO,Cerrado,21
+2026-06-04,AC,Amazônia,1
+2026-06-04,AM,Amazônia,1
+2026-06-04,BA,Cerrado,8
+2026-06-04,GO,Cerrado,15
+2026-06-04,MA,Cerrado,11
+2026-06-04,MG,Cerrado,20
+2026-06-04,MS,Cerrado,5
+2026-06-04,MS,Pantanal,2
+2026-06-04,MT,Amazônia,62
+2026-06-04,MT,Cerrado,47
+2026-06-04,MT,Pantanal,7
+2026-06-04,PA,Amazônia,5
+2026-06-04,PI,Cerrado,2
+2026-06-04,PR,Mata Atlântica,5
+2026-06-04,RS,Mata Atlântica,1
+2026-06-04,RS,Pampa,2
+2026-06-04,SC,Mata Atlântica,1
+2026-06-04,SP,Cerrado,7
+2026-06-04,SP,Mata Atlântica,2
+2026-06-04,TO,Amazônia,1
+2026-06-04,TO,Cerrado,60
+2026-06-05,AM,Amazônia,3
+2026-06-05,BA,Caatinga,2
+2026-06-05,BA,Cerrado,4
+2026-06-05,BA,Mata Atlântica,1
+2026-06-05,CE,Caatinga,1
+2026-06-05,MA,Cerrado,11
+2026-06-05,MS,Cerrado,1
+2026-06-05,MS,Mata Atlântica,3
+2026-06-05,MS,Pantanal,7
+2026-06-05,MT,Amazônia,55
+2026-06-05,MT,Cerrado,23
+2026-06-05,MT,Pantanal,8
+2026-06-05,PA,Amazônia,4
+2026-06-05,RN,Mata Atlântica,1
+2026-06-05,RO,Amazônia,3
+2026-06-05,RS,Mata Atlântica,1
+2026-06-05,RS,Pampa,2
+2026-06-05,SC,Mata Atlântica,1
+2026-06-05,TO,Cerrado,7
+2026-06-06,AC,Amazônia,5
+2026-06-06,AM,Amazônia,2
+2026-06-06,BA,Caatinga,10
+2026-06-06,BA,Cerrado,26
+2026-06-06,BA,Mata Atlântica,1
+2026-06-06,DF,Cerrado,1
+2026-06-06,GO,Cerrado,4
+2026-06-06,MA,Amazônia,1
+2026-06-06,MA,Cerrado,19
+2026-06-06,MG,Cerrado,9
+2026-06-06,MG,Mata Atlântica,10
+2026-06-06,MT,Amazônia,11
+2026-06-06,MT,Cerrado,7
+2026-06-06,PA,Amazônia,14
+2026-06-06,PI,Cerrado,8
+2026-06-06,PR,Mata Atlântica,3
+2026-06-06,RJ,Mata Atlântica,3
+2026-06-06,SC,Mata Atlântica,1
+2026-06-06,SP,Cerrado,1
+2026-06-06,SP,Mata Atlântica,2
+2026-06-06,TO,Cerrado,46
+2026-06-07,BA,Cerrado,1
+2026-06-07,GO,Cerrado,7
+2026-06-07,MA,Cerrado,3
+2026-06-07,MS,Cerrado,7
+2026-06-07,MS,Mata Atlântica,2
+2026-06-07,MT,Amazônia,33
+2026-06-07,MT,Cerrado,15
+2026-06-07,PA,Amazônia,2
+2026-06-07,PR,Mata Atlântica,4
+2026-06-07,RS,Mata Atlântica,2
+2026-06-07,SC,Mata Atlântica,9
+2026-06-07,TO,Cerrado,7
+2026-06-08,AC,Amazônia,1
+2026-06-08,AM,Amazônia,2
+2026-06-08,BA,Caatinga,12
+2026-06-08,BA,Cerrado,11
+2026-06-08,BA,Mata Atlântica,22
+2026-06-08,CE,Caatinga,2
+2026-06-08,ES,Mata Atlântica,7
+2026-06-08,GO,Cerrado,2
+2026-06-08,MA,Amazônia,4
+2026-06-08,MA,Cerrado,20
+2026-06-08,MG,Cerrado,4
+2026-06-08,MG,Mata Atlântica,17
+2026-06-08,MT,Amazônia,5
+2026-06-08,MT,Cerrado,5
+2026-06-08,MT,Pantanal,2
+2026-06-08,PA,Amazônia,5
+2026-06-08,PI,Caatinga,10
+2026-06-08,PI,Cerrado,7
+2026-06-08,RJ,Mata Atlântica,2
+2026-06-08,RO,Amazônia,2
+2026-06-08,SP,Cerrado,4
+2026-06-08,TO,Cerrado,26
+2026-06-09,BA,Cerrado,17
+2026-06-09,DF,Cerrado,3
+2026-06-09,GO,Cerrado,11
+2026-06-09,MA,Cerrado,10
+2026-06-09,MG,Cerrado,16
+2026-06-09,MG,Mata Atlântica,9
+2026-06-09,MT,Amazônia,22
+2026-06-09,MT,Cerrado,22
+2026-06-09,PA,Amazônia,23
+2026-06-09,PI,Cerrado,6
+2026-06-09,PR,Mata Atlântica,5
+2026-06-09,RJ,Mata Atlântica,5
+2026-06-09,SC,Mata Atlântica,1
+2026-06-09,SP,Cerrado,3
+2026-06-09,SP,Mata Atlântica,9
+2026-06-09,TO,Amazônia,1
+2026-06-09,TO,Cerrado,67
+2026-06-10,BA,Caatinga,2
+2026-06-10,BA,Cerrado,3
+2026-06-10,BA,Mata Atlântica,3
+2026-06-10,ES,Mata Atlântica,1
+2026-06-10,MA,Cerrado,3
+2026-06-10,MG,Cerrado,5
+2026-06-10,MT,Amazônia,15
+2026-06-10,MT,Cerrado,5
+2026-06-10,PA,Amazônia,3
+2026-06-10,PB,Caatinga,2
+2026-06-10,PI,Caatinga,4
+2026-06-10,RS,Pampa,1
+2026-06-11,AP,Amazônia,1
+2026-06-11,BA,Caatinga,27
+2026-06-11,BA,Cerrado,18
+2026-06-11,BA,Mata Atlântica,9
+2026-06-11,ES,Mata Atlântica,7
+2026-06-11,GO,Cerrado,3
+2026-06-11,MA,Cerrado,43
+2026-06-11,MG,Cerrado,4
+2026-06-11,MG,Mata Atlântica,5
+2026-06-11,MT,Amazônia,1
+2026-06-11,PA,Amazônia,6
+2026-06-11,PI,Caatinga,10
+2026-06-11,PI,Cerrado,12
+2026-06-11,TO,Cerrado,35
+2026-06-12,AM,Amazônia,1
+2026-06-12,BA,Cerrado,4
+2026-06-12,CE,Caatinga,2
+2026-06-12,MA,Cerrado,7
+2026-06-12,MT,Amazônia,41
+2026-06-12,MT,Cerrado,44
+2026-06-12,PA,Amazônia,21
+2026-06-12,PE,Caatinga,2
+2026-06-12,PI,Cerrado,1
+2026-06-12,RR,Amazônia,1
+2026-06-12,TO,Cerrado,46
+2026-06-13,AC,Amazônia,2
+2026-06-13,AL,Caatinga,2
+2026-06-13,AM,Amazônia,2
+2026-06-13,BA,Caatinga,7
+2026-06-13,BA,Cerrado,18
+2026-06-13,BA,Mata Atlântica,9
+2026-06-13,CE,Caatinga,8
+2026-06-13,MA,Cerrado,8
+2026-06-13,MT,Amazônia,7
+2026-06-13,MT,Cerrado,3
+2026-06-13,PA,Amazônia,2
+2026-06-13,PB,Caatinga,2
+2026-06-13,PE,Caatinga,5
+2026-06-13,PI,Caatinga,1
+2026-06-13,PI,Cerrado,3
+2026-06-13,RO,Amazônia,3
+2026-06-13,TO,Cerrado,15
+2026-06-14,BA,Caatinga,3
+2026-06-14,BA,Cerrado,7
+2026-06-14,GO,Cerrado,4
+2026-06-14,MA,Amazônia,1
+2026-06-14,MA,Cerrado,24
+2026-06-14,MT,Amazônia,29
+2026-06-14,MT,Cerrado,11
+2026-06-14,PA,Amazônia,24
+2026-06-14,PI,Caatinga,1
+2026-06-14,PI,Cerrado,3
+2026-06-14,RJ,Mata Atlântica,2
+2026-06-14,TO,Cerrado,60
+2026-06-15,AM,Amazônia,6
+2026-06-15,BA,Caatinga,8
+2026-06-15,BA,Mata Atlântica,3
+2026-06-15,MA,Cerrado,1
+2026-06-15,MT,Amazônia,55
+2026-06-15,MT,Cerrado,24
+2026-06-15,PA,Amazônia,3
+2026-06-15,RN,Caatinga,2
+2026-06-15,RO,Amazônia,1
+2026-06-15,RS,Pampa,1
+2026-06-15,TO,Cerrado,4
+2026-06-16,AM,Amazônia,1
+2026-06-16,BA,Caatinga,26
+2026-06-16,BA,Cerrado,18
+2026-06-16,BA,Mata Atlântica,23
+2026-06-16,CE,Caatinga,1
+2026-06-16,ES,Mata Atlântica,11
+2026-06-16,GO,Cerrado,5
+2026-06-16,MA,Amazônia,4
+2026-06-16,MA,Cerrado,62
+2026-06-16,MG,Cerrado,10
+2026-06-16,MG,Mata Atlântica,18
+2026-06-16,MT,Cerrado,1
+2026-06-16,PA,Amazônia,20
+2026-06-16,PE,Caatinga,3
+2026-06-16,PI,Caatinga,7
+2026-06-16,PI,Cerrado,6
+2026-06-16,RN,Caatinga,1
+2026-06-16,TO,Amazônia,2
+2026-06-16,TO,Cerrado,49
+2026-06-17,BA,Cerrado,10
+2026-06-17,GO,Cerrado,8
+2026-06-17,MA,Amazônia,2
+2026-06-17,MA,Cerrado,8
+2026-06-17,MG,Cerrado,11
+2026-06-17,MG,Mata Atlântica,2
+2026-06-17,MS,Cerrado,2
+2026-06-17,MS,Mata Atlântica,1
+2026-06-17,MT,Amazônia,43
+2026-06-17,MT,Cerrado,19
+2026-06-17,PA,Amazônia,20
+2026-06-17,PI,Cerrado,1
+2026-06-17,PR,Mata Atlântica,12
+2026-06-17,RS,Mata Atlântica,3
+2026-06-17,SC,Mata Atlântica,9
+2026-06-17,TO,Amazônia,4
+2026-06-17,TO,Cerrado,58
+2026-06-18,AL,Caatinga,4
+2026-06-18,BA,Caatinga,20
+2026-06-18,BA,Cerrado,7
+2026-06-18,BA,Mata Atlântica,4
+2026-06-18,CE,Caatinga,8
+2026-06-18,ES,Mata Atlântica,3
+2026-06-18,GO,Cerrado,1
+2026-06-18,MA,Caatinga,1
+2026-06-18,MA,Cerrado,5
+2026-06-18,MG,Cerrado,2
+2026-06-18,MS,Cerrado,5
+2026-06-18,MT,Amazônia,20
+2026-06-18,MT,Cerrado,22
+2026-06-18,MT,Pantanal,4
+2026-06-18,PE,Caatinga,3
+2026-06-18,PE,Mata Atlântica,1
+2026-06-18,PI,Caatinga,3
+2026-06-18,PI,Cerrado,1
+2026-06-18,PR,Mata Atlântica,2
+2026-06-18,RJ,Mata Atlântica,1
+2026-06-18,RN,Caatinga,1
+2026-06-18,RO,Amazônia,5
+2026-06-18,SC,Mata Atlântica,1
+2026-06-18,SE,Mata Atlântica,1
+2026-06-18,TO,Cerrado,2
+2026-06-19,AP,Amazônia,1
+2026-06-19,BA,Caatinga,9
+2026-06-19,BA,Cerrado,40
+2026-06-19,BA,Mata Atlântica,1
+2026-06-19,DF,Cerrado,1
+2026-06-19,ES,Mata Atlântica,2
+2026-06-19,GO,Cerrado,10
+2026-06-19,MA,Amazônia,2
+2026-06-19,MA,Cerrado,25
+2026-06-19,MG,Cerrado,24
+2026-06-19,MG,Mata Atlântica,14
+2026-06-19,MS,Cerrado,2
+2026-06-19,MT,Amazônia,13
+2026-06-19,MT,Cerrado,16
+2026-06-19,PA,Amazônia,11
+2026-06-19,PI,Caatinga,2
+2026-06-19,PI,Cerrado,5
+2026-06-19,RJ,Mata Atlântica,2
+2026-06-19,SP,Cerrado,6
+2026-06-19,SP,Mata Atlântica,2
+2026-06-19,TO,Amazônia,5
+2026-06-19,TO,Cerrado,96
+2026-06-20,AM,Amazônia,3
+2026-06-20,BA,Caatinga,1
+2026-06-20,GO,Cerrado,1
+2026-06-20,MT,Amazônia,22
+2026-06-20,MT,Cerrado,8
+2026-06-20,PA,Amazônia,1
+2026-06-20,RO,Amazônia,1
+2026-06-20,TO,Cerrado,1
+2026-06-21,AM,Amazônia,2
+2026-06-21,BA,Caatinga,16
+2026-06-21,BA,Cerrado,28
+2026-06-21,BA,Mata Atlântica,7
+2026-06-21,ES,Mata Atlântica,8
+2026-06-21,MA,Amazônia,6
+2026-06-21,MA,Cerrado,14
+2026-06-21,MG,Cerrado,5
+2026-06-21,MG,Mata Atlântica,3
+2026-06-21,MT,Amazônia,3
+2026-06-21,PA,Amazônia,3
+2026-06-21,PE,Caatinga,2
+2026-06-21,PI,Caatinga,9
+2026-06-21,PI,Cerrado,5
+2026-06-21,RJ,Mata Atlântica,2
+2026-06-21,RO,Amazônia,2
+2026-06-21,TO,Cerrado,26
+2026-06-22,AC,Amazônia,1
+2026-06-22,BA,Cerrado,30
+2026-06-22,GO,Cerrado,8
+2026-06-22,MA,Cerrado,21
+2026-06-22,MG,Cerrado,16
+2026-06-22,MG,Mata Atlântica,5
+2026-06-22,MS,Cerrado,1
+2026-06-22,MT,Amazônia,30
+2026-06-22,MT,Cerrado,23
+2026-06-22,MT,Pantanal,1
+2026-06-22,PA,Amazônia,25
+2026-06-22,PI,Caatinga,1
+2026-06-22,PI,Cerrado,4
+2026-06-22,RJ,Mata Atlântica,4
+2026-06-22,SP,Cerrado,7
+2026-06-22,TO,Amazônia,5
+2026-06-22,TO,Cerrado,88
+2026-06-23,AM,Amazônia,2
+2026-06-23,BA,Caatinga,17
+2026-06-23,BA,Cerrado,12
+2026-06-23,BA,Mata Atlântica,8
+2026-06-23,CE,Caatinga,5
+2026-06-23,ES,Mata Atlântica,4
+2026-06-23,MA,Cerrado,28
+2026-06-23,MT,Amazônia,31
+2026-06-23,MT,Cerrado,21
+2026-06-23,PB,Caatinga,1
+2026-06-23,PI,Caatinga,7
+2026-06-23,PI,Cerrado,2
+2026-06-23,RJ,Mata Atlântica,2
+2026-06-23,RR,Amazônia,1
+2026-06-23,TO,Cerrado,1
+2026-06-24,AM,Amazônia,1
+2026-06-24,BA,Caatinga,15
+2026-06-24,BA,Cerrado,41
+2026-06-24,BA,Mata Atlântica,2
+2026-06-24,ES,Mata Atlântica,12
+2026-06-24,GO,Cerrado,10
+2026-06-24,MA,Cerrado,65
+2026-06-24,MG,Caatinga,2
+2026-06-24,MG,Cerrado,12
+2026-06-24,MG,Mata Atlântica,7
+2026-06-24,MT,Amazônia,13
+2026-06-24,MT,Cerrado,1
+2026-06-24,PA,Amazônia,15
+2026-06-24,PI,Caatinga,8
+2026-06-24,PI,Cerrado,27
+2026-06-24,RJ,Mata Atlântica,4
+2026-06-24,TO,Cerrado,121
+2026-06-25,BA,Caatinga,3
+2026-06-25,BA,Cerrado,1
+2026-06-25,DF,Cerrado,1
+2026-06-25,GO,Cerrado,15
+2026-06-25,MA,Amazônia,1
+2026-06-25,MA,Cerrado,9
+2026-06-25,MG,Cerrado,10
+2026-06-25,MS,Cerrado,1
+2026-06-25,MT,Amazônia,70
+2026-06-25,MT,Cerrado,11
+2026-06-25,PA,Amazônia,16
+2026-06-25,PI,Cerrado,2
+2026-06-25,PR,Mata Atlântica,2
+2026-06-25,RN,Caatinga,1
+2026-06-25,RS,Mata Atlântica,2
+2026-06-25,SC,Mata Atlântica,3
+2026-06-25,TO,Cerrado,62
+2026-06-26,AM,Amazônia,2
+2026-06-26,BA,Mata Atlântica,1
+2026-06-26,CE,Caatinga,3
+2026-06-26,GO,Cerrado,4
+2026-06-26,MA,Cerrado,40
+2026-06-26,MG,Cerrado,2
+2026-06-26,MG,Mata Atlântica,1
+2026-06-26,MT,Amazônia,9
+2026-06-26,PA,Amazônia,1
+2026-06-26,PI,Caatinga,4
+2026-06-26,PI,Cerrado,1
+2026-06-26,RO,Amazônia,4
+2026-06-26,TO,Cerrado,15
+2026-06-27,BA,Cerrado,1
+2026-06-27,ES,Mata Atlântica,1
+2026-06-27,GO,Cerrado,10
+2026-06-27,MA,Cerrado,1
+2026-06-27,MG,Cerrado,15
+2026-06-27,MG,Mata Atlântica,1
+2026-06-27,MS,Cerrado,1
+2026-06-27,MT,Amazônia,72
+2026-06-27,MT,Cerrado,27
+2026-06-27,PA,Amazônia,13
+2026-06-27,RJ,Mata Atlântica,2
+2026-06-27,TO,Cerrado,14
+2026-06-28,BA,Caatinga,2
+2026-06-28,MS,Cerrado,4
+2026-06-28,MS,Pantanal,5
+2026-06-28,MT,Amazônia,73
+2026-06-28,MT,Cerrado,30
+2026-06-28,RO,Amazônia,5
+2026-06-28,RR,Amazônia,3
+2026-06-28,TO,Cerrado,6
+2026-06-29,AC,Amazônia,1
+2026-06-29,AM,Amazônia,2
+2026-06-29,BA,Caatinga,6
+2026-06-29,BA,Cerrado,5
+2026-06-29,CE,Caatinga,2
+2026-06-29,DF,Cerrado,2
+2026-06-29,ES,Mata Atlântica,3
+2026-06-29,MA,Cerrado,45
+2026-06-29,MG,Caatinga,1
+2026-06-29,MG,Cerrado,15
+2026-06-29,MG,Mata Atlântica,13
+2026-06-29,MT,Amazônia,13
+2026-06-29,MT,Cerrado,3
+2026-06-29,PA,Amazônia,6
+2026-06-29,PI,Caatinga,8
+2026-06-29,PI,Cerrado,17
+2026-06-29,RJ,Mata Atlântica,2
+2026-06-29,TO,Cerrado,31
+2026-06-30,BA,Cerrado,8
+2026-06-30,DF,Cerrado,5
+2026-06-30,GO,Cerrado,22
+2026-06-30,MA,Cerrado,8
+2026-06-30,MG,Cerrado,11
+2026-06-30,MS,Cerrado,3
+2026-06-30,MS,Mata Atlântica,1
+2026-06-30,MT,Amazônia,103
+2026-06-30,MT,Cerrado,45
+2026-06-30,PA,Amazônia,18
+2026-06-30,PI,Cerrado,2
+2026-06-30,PR,Mata Atlântica,3
+2026-06-30,RJ,Mata Atlântica,3
+2026-06-30,SP,Cerrado,4
+2026-06-30,SP,Mata Atlântica,7
+2026-06-30,TO,Cerrado,32
+2026-07-01,AL,Caatinga,2
+2026-07-01,AM,Amazônia,4
+2026-07-01,BA,Caatinga,9
+2026-07-01,BA,Cerrado,15
+2026-07-01,BA,Mata Atlântica,1
+2026-07-01,CE,Caatinga,10
+2026-07-01,ES,Mata Atlântica,1
+2026-07-01,MA,Amazônia,2
+2026-07-01,MA,Cerrado,32
+2026-07-01,MG,Cerrado,7
+2026-07-01,MG,Mata Atlântica,4
+2026-07-01,MS,Cerrado,6
+2026-07-01,MS,Mata Atlântica,2
+2026-07-01,MT,Amazônia,26
+2026-07-01,MT,Cerrado,8
+2026-07-01,MT,Pantanal,3
+2026-07-01,PA,Amazônia,2
+2026-07-01,PE,Caatinga,6
+2026-07-01,PI,Caatinga,8
+2026-07-01,PI,Cerrado,9
+2026-07-01,RJ,Mata Atlântica,3
+2026-07-01,RN,Caatinga,1
+2026-07-01,RO,Amazônia,5
+2026-07-01,TO,Cerrado,5
+2026-07-02,AC,Amazônia,3
+2026-07-02,BA,Caatinga,4
+2026-07-02,BA,Cerrado,17
+2026-07-02,ES,Mata Atlântica,5
+2026-07-02,GO,Cerrado,5
+2026-07-02,MA,Amazônia,4
+2026-07-02,MA,Cerrado,62
+2026-07-02,MG,Caatinga,2
+2026-07-02,MG,Cerrado,15
+2026-07-02,MG,Mata Atlântica,10
+2026-07-02,MS,Cerrado,3
+2026-07-02,MT,Amazônia,17
+2026-07-02,MT,Cerrado,17
+2026-07-02,PA,Amazônia,68
+2026-07-02,PI,Caatinga,5
+2026-07-02,PI,Cerrado,16
+2026-07-02,PR,Cerrado,2
+2026-07-02,RJ,Mata Atlântica,7
+2026-07-02,SP,Mata Atlântica,5
+2026-07-02,TO,Amazônia,12
+2026-07-02,TO,Cerrado,61
+2026-07-03,AL,Caatinga,1
+2026-07-03,AL,Mata Atlântica,1
+2026-07-03,AM,Amazônia,5
+2026-07-03,DF,Cerrado,1
+2026-07-03,GO,Cerrado,8
+2026-07-03,MA,Cerrado,1
+2026-07-03,MG,Cerrado,1
+2026-07-03,MS,Cerrado,6
+2026-07-03,MS,Mata Atlântica,1
+2026-07-03,MT,Amazônia,52
+2026-07-03,MT,Cerrado,16
+2026-07-03,PA,Amazônia,31
+2026-07-03,PI,Caatinga,2
+2026-07-03,PR,Mata Atlântica,3
+2026-07-03,RO,Amazônia,5
+2026-07-03,RS,Pampa,1
+2026-07-03,SP,Cerrado,2
+2026-07-03,SP,Mata Atlântica,1
+2026-07-03,TO,Cerrado,14
+2026-07-04,AC,Amazônia,7
+2026-07-04,AM,Amazônia,4
+2026-07-04,BA,Caatinga,11
+2026-07-04,BA,Cerrado,8
+2026-07-04,BA,Mata Atlântica,3
+2026-07-04,CE,Caatinga,2
+2026-07-04,DF,Cerrado,1
+2026-07-04,ES,Mata Atlântica,4
+2026-07-04,GO,Cerrado,2
+2026-07-04,MA,Cerrado,35
+2026-07-04,MG,Cerrado,3
+2026-07-04,MG,Mata Atlântica,2
+2026-07-04,MT,Amazônia,6
+2026-07-04,MT,Cerrado,2
+2026-07-04,PA,Amazônia,9
+2026-07-04,PE,Caatinga,1
+2026-07-04,PI,Caatinga,11
+2026-07-04,PI,Cerrado,18
+2026-07-04,RJ,Mata Atlântica,2
+2026-07-04,RO,Amazônia,6
+2026-07-04,TO,Cerrado,23
+2026-07-05,AM,Amazônia,5
+2026-07-05,BA,Cerrado,7
+2026-07-05,GO,Cerrado,16
+2026-07-05,MA,Cerrado,15
+2026-07-05,MG,Cerrado,4
+2026-07-05,MG,Mata Atlântica,3
+2026-07-05,MS,Cerrado,2
+2026-07-05,MT,Amazônia,24
+2026-07-05,MT,Cerrado,14
+2026-07-05,PA,Amazônia,54
+2026-07-05,PI,Cerrado,9
+2026-07-05,TO,Amazônia,2
+2026-07-05,TO,Cerrado,85
+2026-07-06,AL,Caatinga,4
+2026-07-06,AM,Amazônia,2
+2026-07-06,BA,Caatinga,3
+2026-07-06,BA,Cerrado,4
+2026-07-06,BA,Mata Atlântica,2
+2026-07-06,CE,Caatinga,9
+2026-07-06,ES,Mata Atlântica,3
+2026-07-06,GO,Cerrado,1
+2026-07-06,MA,Cerrado,15
+2026-07-06,MG,Mata Atlântica,1
+2026-07-06,MS,Cerrado,21
+2026-07-06,MS,Pantanal,1
+2026-07-06,MT,Amazônia,17
+2026-07-06,MT,Cerrado,22
+2026-07-06,PA,Amazônia,7
+2026-07-06,PE,Caatinga,5
+2026-07-06,PE,Mata Atlântica,4
+2026-07-06,PI,Caatinga,3
+2026-07-06,PI,Cerrado,6
+2026-07-06,RO,Amazônia,5
+2026-07-06,RS,Pampa,1
+2026-07-06,TO,Cerrado,1
+2026-07-07,AC,Amazônia,13
+2026-07-07,AM,Amazônia,2
+2026-07-07,BA,Caatinga,21
+2026-07-07,BA,Cerrado,24
+2026-07-07,BA,Mata Atlântica,6
+2026-07-07,CE,Caatinga,1
+2026-07-07,DF,Cerrado,2
+2026-07-07,ES,Mata Atlântica,12
+2026-07-07,GO,Cerrado,10
+2026-07-07,MA,Amazônia,1
+2026-07-07,MA,Caatinga,2
+2026-07-07,MA,Cerrado,59
+2026-07-07,MG,Caatinga,2
+2026-07-07,MG,Cerrado,30
+2026-07-07,MG,Mata Atlântica,13
+2026-07-07,MS,Cerrado,6
+2026-07-07,MT,Amazônia,9
+2026-07-07,MT,Cerrado,20
+2026-07-07,PA,Amazônia,23
+2026-07-07,PE,Caatinga,2
+2026-07-07,PI,Caatinga,5
+2026-07-07,PI,Cerrado,16
+2026-07-07,RJ,Mata Atlântica,7
+2026-07-07,RO,Amazônia,3
+2026-07-07,SP,Mata Atlântica,1
+2026-07-07,TO,Cerrado,65
+2026-07-08,AM,Amazônia,6
+2026-07-08,BA,Cerrado,1
+2026-07-08,GO,Cerrado,11
+2026-07-08,MA,Cerrado,5
+2026-07-08,MG,Cerrado,3
+2026-07-08,MG,Mata Atlântica,1
+2026-07-08,MS,Cerrado,12
+2026-07-08,MS,Mata Atlântica,1
+2026-07-08,MS,Pantanal,2
+2026-07-08,MT,Amazônia,38
+2026-07-08,MT,Cerrado,23
+2026-07-08,PA,Amazônia,22
+2026-07-08,PR,Mata Atlântica,15
+2026-07-08,RS,Pampa,4
+2026-07-08,SC,Mata Atlântica,2
+2026-07-08,SP,Mata Atlântica,2
+2026-07-08,TO,Cerrado,51
+2026-07-09,AM,Amazônia,3
+2026-07-09,BA,Caatinga,27
+2026-07-09,BA,Cerrado,7
+2026-07-09,BA,Mata Atlântica,12
+2026-07-09,CE,Caatinga,2
+2026-07-09,ES,Mata Atlântica,4
+2026-07-09,MA,Amazônia,1
+2026-07-09,MA,Cerrado,18
+2026-07-09,MG,Cerrado,5
+2026-07-09,MG,Mata Atlântica,9
+2026-07-09,MS,Cerrado,6
+2026-07-09,MS,Pantanal,9
+2026-07-09,MT,Amazônia,5
+2026-07-09,MT,Cerrado,5
+2026-07-09,PA,Amazônia,3
+2026-07-09,PE,Caatinga,3
+2026-07-09,PI,Caatinga,7
+2026-07-09,PI,Cerrado,7
+2026-07-09,RJ,Mata Atlântica,1
+2026-07-09,RO,Amazônia,4
+2026-07-09,TO,Cerrado,23
+2026-07-11,AL,Caatinga,1
+2026-07-11,AM,Amazônia,3
+2026-07-11,BA,Caatinga,5
+2026-07-11,BA,Mata Atlântica,3
+2026-07-11,CE,Caatinga,7
+2026-07-11,MA,Cerrado,3
+2026-07-11,MS,Cerrado,2
+2026-07-11,MS,Mata Atlântica,1
+2026-07-11,MT,Amazônia,1
+2026-07-11,MT,Cerrado,3
+2026-07-11,PA,Amazônia,6
+2026-07-11,PB,Caatinga,2
+2026-07-11,PE,Caatinga,2
+2026-07-11,PE,Mata Atlântica,2
+2026-07-11,PI,Caatinga,2
+2026-07-11,PI,Cerrado,2
+2026-07-11,RR,Amazônia,12
+2026-07-11,RS,Pampa,4
+2026-07-12,AC,Amazônia,1
+2026-07-12,BA,Caatinga,10
+2026-07-12,BA,Cerrado,4
+2026-07-12,BA,Mata Atlântica,5
+2026-07-12,CE,Caatinga,3
+2026-07-12,ES,Mata Atlântica,12
+2026-07-12,MA,Amazônia,8
+2026-07-12,MA,Cerrado,18
+2026-07-12,MG,Cerrado,6
+2026-07-12,MG,Mata Atlântica,14
+2026-07-12,MT,Cerrado,1
+2026-07-12,PA,Amazônia,7
+2026-07-12,PE,Caatinga,1
+2026-07-12,PI,Caatinga,9
+2026-07-12,PI,Cerrado,15
+2026-07-12,TO,Cerrado,16
+2026-07-13,AL,Caatinga,4
+2026-07-13,AM,Amazônia,5
+2026-07-13,BA,Cerrado,5
+2026-07-13,GO,Cerrado,2
+2026-07-13,MA,Cerrado,1
+2026-07-13,MG,Cerrado,12
+2026-07-13,MG,Mata Atlântica,1
+2026-07-13,MS,Cerrado,6
+2026-07-13,MT,Amazônia,2
+2026-07-13,PA,Amazônia,15
+2026-07-13,PE,Caatinga,1
+2026-07-13,PI,Cerrado,1
+2026-07-13,PR,Mata Atlântica,6
+2026-07-13,RR,Amazônia,2
+2026-07-13,SP,Cerrado,3
+2026-07-13,TO,Cerrado,46
+2026-07-14,AL,Caatinga,4
+2026-07-14,BA,Caatinga,8
+2026-07-14,BA,Cerrado,3
+2026-07-14,CE,Caatinga,3
+2026-07-14,ES,Mata Atlântica,1
+2026-07-14,MA,Cerrado,15
+2026-07-14,MG,Caatinga,1
+2026-07-14,MG,Mata Atlântica,4
+2026-07-14,PB,Caatinga,1
+2026-07-14,PE,Caatinga,12
+2026-07-14,PI,Caatinga,4
+2026-07-14,RN,Caatinga,1
+2026-07-14,RS,Pampa,9
+2026-07-14,SE,Caatinga,1
+2026-07-14,SE,Mata Atlântica,1
+2026-07-14,TO,Cerrado,1
+2026-07-15,AC,Amazônia,1
+2026-07-15,AP,Amazônia,1
+2026-07-15,BA,Caatinga,1
+2026-07-15,BA,Cerrado,9
+2026-07-15,DF,Cerrado,1
+2026-07-15,ES,Mata Atlântica,1
+2026-07-15,GO,Cerrado,17
+2026-07-15,MA,Cerrado,1
+2026-07-15,MG,Cerrado,26
+2026-07-15,MG,Mata Atlântica,18
+2026-07-15,MS,Cerrado,2
+2026-07-15,MT,Amazônia,4
+2026-07-15,MT,Cerrado,9
+2026-07-15,PA,Amazônia,44
+2026-07-15,PR,Mata Atlântica,3
+2026-07-15,RJ,Mata Atlântica,10
+2026-07-15,RS,Mata Atlântica,3
+2026-07-15,SP,Cerrado,2
+2026-07-15,TO,Cerrado,33
+2026-07-16,AM,Amazônia,4
+2026-07-16,BA,Caatinga,1
+2026-07-16,BA,Cerrado,2
+2026-07-16,BA,Mata Atlântica,1
+2026-07-16,GO,Cerrado,8
+2026-07-16,MG,Cerrado,4
+2026-07-16,MG,Mata Atlântica,2
+2026-07-16,MS,Cerrado,30
+2026-07-16,MS,Mata Atlântica,5
+2026-07-16,MS,Pantanal,2
+2026-07-16,MT,Amazônia,6
+2026-07-16,MT,Cerrado,5
+2026-07-16,PA,Amazônia,2
+2026-07-16,PR,Mata Atlântica,11
+2026-07-16,RS,Mata Atlântica,39
+2026-07-16,RS,Pampa,42
+2026-07-16,SC,Mata Atlântica,9
+2026-07-16,SP,Cerrado,1
+2026-07-16,SP,Mata Atlântica,5
+2026-07-16,TO,Cerrado,17
+2026-07-17,BA,Caatinga,10
+2026-07-17,BA,Cerrado,9
+2026-07-17,CE,Caatinga,4
+2026-07-17,ES,Mata Atlântica,11
+2026-07-17,GO,Cerrado,11
+2026-07-17,MA,Amazônia,4
+2026-07-17,MA,Cerrado,16
+2026-07-17,MG,Cerrado,9
+2026-07-17,MG,Mata Atlântica,12
+2026-07-17,MS,Pantanal,7
+2026-07-17,MT,Cerrado,3
+2026-07-17,PA,Amazônia,16
+2026-07-17,PE,Caatinga,1
+2026-07-17,PI,Caatinga,3
+2026-07-17,PI,Cerrado,9
+2026-07-17,RJ,Mata Atlântica,14
+2026-07-17,RS,Mata Atlântica,2
+2026-07-17,RS,Pampa,5
+2026-07-17,SP,Cerrado,1
+2026-07-17,TO,Cerrado,71
+2026-07-18,AC,Amazônia,2
+2026-07-18,AP,Amazônia,2
+2026-07-18,BA,Cerrado,5
+2026-07-18,GO,Cerrado,15
+2026-07-18,MA,Cerrado,4
+2026-07-18,MG,Cerrado,14
+2026-07-18,MG,Mata Atlântica,6
+2026-07-18,MS,Cerrado,6
+2026-07-18,MS,Mata Atlântica,5
+2026-07-18,MS,Pantanal,1
+2026-07-18,MT,Amazônia,16
+2026-07-18,MT,Cerrado,23
+2026-07-18,PA,Amazônia,20
+2026-07-18,PI,Caatinga,1
+2026-07-18,PI,Cerrado,3
+2026-07-18,PR,Mata Atlântica,13
+2026-07-18,RJ,Mata Atlântica,5
+2026-07-18,RR,Amazônia,2
+2026-07-18,RS,Mata Atlântica,29
+2026-07-18,RS,Pampa,2
+2026-07-18,SC,Mata Atlântica,32
+2026-07-18,SP,Cerrado,10
+2026-07-18,SP,Mata Atlântica,14
+2026-07-18,TO,Amazônia,3
+2026-07-18,TO,Cerrado,89
+2026-07-19,AC,Amazônia,1
+2026-07-19,AM,Amazônia,8
+2026-07-19,BA,Cerrado,10
+2026-07-19,CE,Caatinga,6
+2026-07-19,GO,Cerrado,8
+2026-07-19,MA,Cerrado,18
+2026-07-19,MG,Cerrado,1
+2026-07-19,MG,Mata Atlântica,1
+2026-07-19,MS,Cerrado,5
+2026-07-19,MT,Amazônia,11
+2026-07-19,MT,Cerrado,8
+2026-07-19,MT,Pantanal,2
+2026-07-19,PB,Caatinga,3
+2026-07-19,PB,Mata Atlântica,1
+2026-07-19,PE,Caatinga,3
+2026-07-19,PI,Caatinga,3
+2026-07-19,PI,Cerrado,2
+2026-07-19,PR,Mata Atlântica,3
+2026-07-19,RO,Amazônia,6
+2026-07-19,RR,Amazônia,5
+2026-07-19,RS,Mata Atlântica,2
+2026-07-19,SC,Mata Atlântica,5
+2026-07-19,TO,Cerrado,5
+2026-07-20,AC,Amazônia,10
+2026-07-20,AM,Amazônia,1
+2026-07-20,AP,Amazônia,1
+2026-07-20,BA,Caatinga,19
+2026-07-20,BA,Cerrado,20
+2026-07-20,BA,Mata Atlântica,4
+2026-07-20,DF,Cerrado,1
+2026-07-20,GO,Cerrado,8
+2026-07-20,MA,Amazônia,14
+2026-07-20,MA,Cerrado,61
+2026-07-20,MG,Caatinga,1
+2026-07-20,MG,Cerrado,25
+2026-07-20,MG,Mata Atlântica,19
+2026-07-20,MS,Cerrado,2
+2026-07-20,MT,Amazônia,3
+2026-07-20,MT,Cerrado,11
+2026-07-20,PA,Amazônia,68
+2026-07-20,PI,Caatinga,10
+2026-07-20,PI,Cerrado,14
+2026-07-20,PR,Mata Atlântica,9
+2026-07-20,RJ,Mata Atlântica,16
+2026-07-20,RO,Amazônia,2
+2026-07-20,SC,Mata Atlântica,2
+2026-07-20,SP,Cerrado,1
+2026-07-20,SP,Mata Atlântica,22
+2026-07-20,TO,Cerrado,139
+2026-07-21,AM,Amazônia,4
+2026-07-21,BA,Cerrado,5
+2026-07-21,GO,Cerrado,15
+2026-07-21,MA,Cerrado,8
+2026-07-21,MG,Cerrado,1
+2026-07-21,MG,Mata Atlântica,7
+2026-07-21,MS,Cerrado,5
+2026-07-21,MS,Mata Atlântica,1
+2026-07-21,MS,Pantanal,1
+2026-07-21,MT,Amazônia,42
+2026-07-21,MT,Cerrado,25
+2026-07-21,PA,Amazônia,28
+2026-07-21,PI,Cerrado,3
+2026-07-21,PR,Mata Atlântica,30
+2026-07-21,RR,Amazônia,1
+2026-07-21,SP,Cerrado,4
+2026-07-21,SP,Mata Atlântica,7
+2026-07-21,TO,Cerrado,61
+2026-07-23,AC,Amazônia,1
+2026-07-23,AM,Amazônia,2
+2026-07-23,AP,Amazônia,2
+2026-07-23,DF,Cerrado,2
+2026-07-23,ES,Mata Atlântica,1
+2026-07-23,GO,Cerrado,22
+2026-07-23,MA,Amazônia,1
+2026-07-23,MA,Cerrado,20
+2026-07-23,MG,Caatinga,1
+2026-07-23,MG,Cerrado,19
+2026-07-23,MG,Mata Atlântica,26
+2026-07-23,MS,Cerrado,2
+2026-07-23,MS,Pantanal,5
+2026-07-23,MT,Amazônia,8
+2026-07-23,MT,Cerrado,16
+2026-07-23,PA,Amazônia,36
+2026-07-23,PI,Cerrado,2
+2026-07-23,SP,Cerrado,2
+2026-07-23,SP,Mata Atlântica,1
+2026-07-23,TO,Amazônia,6
+2026-07-23,TO,Cerrado,107
+2026-07-24,AM,Amazônia,25
+2026-07-24,BA,Caatinga,3
+2026-07-24,BA,Cerrado,2
+2026-07-24,BA,Mata Atlântica,10
+2026-07-24,CE,Caatinga,2
+2026-07-24,MA,Cerrado,10
+2026-07-24,MS,Cerrado,4
+2026-07-24,MS,Pantanal,2
+2026-07-24,MT,Amazônia,24
+2026-07-24,MT,Cerrado,13
+2026-07-24,PA,Amazônia,4
+2026-07-24,RO,Amazônia,6
+2026-07-24,RR,Amazônia,4
+2026-07-24,TO,Cerrado,33
+2026-07-25,AC,Amazônia,6
+2026-07-25,AM,Amazônia,3
+2026-07-25,BA,Caatinga,17
+2026-07-25,BA,Cerrado,9
+2026-07-25,BA,Mata Atlântica,8
+2026-07-25,CE,Caatinga,4
+2026-07-25,ES,Mata Atlântica,5
+2026-07-25,GO,Cerrado,7
+2026-07-25,MA,Amazônia,5
+2026-07-25,MA,Cerrado,24
+2026-07-25,MG,Cerrado,4
+2026-07-25,MG,Mata Atlântica,14
+2026-07-25,MT,Cerrado,9
+2026-07-25,PA,Amazônia,21
+2026-07-25,PI,Caatinga,1
+2026-07-25,PI,Cerrado,5
+2026-07-25,RJ,Mata Atlântica,5
+2026-07-25,RO,Amazônia,1
+2026-07-25,TO,Cerrado,72
+2026-07-26,AM,Amazônia,3
+2026-07-26,AP,Amazônia,1
+2026-07-26,BA,Caatinga,3
+2026-07-26,BA,Cerrado,2
+2026-07-26,DF,Cerrado,1
+2026-07-26,GO,Cerrado,4
+2026-07-26,MG,Cerrado,3
+2026-07-26,MG,Mata Atlântica,3
+2026-07-26,MS,Cerrado,9
+2026-07-26,MS,Pantanal,2
+2026-07-26,MT,Amazônia,12
+2026-07-26,MT,Cerrado,36
+2026-07-26,PA,Amazônia,25
+2026-07-26,RR,Amazônia,3
+2026-07-26,SP,Mata Atlântica,3
+2026-07-26,TO,Amazônia,1
+2026-07-26,TO,Cerrado,56
+2026-07-27,AC,Amazônia,2
+2026-07-27,AM,Amazônia,6
+2026-07-27,BA,Caatinga,10
+2026-07-27,BA,Cerrado,13
+2026-07-27,BA,Mata Atlântica,16
+2026-07-27,CE,Caatinga,19
+2026-07-27,ES,Mata Atlântica,8
+2026-07-27,MA,Amazônia,2
+2026-07-27,MA,Cerrado,34
+2026-07-27,MG,Cerrado,2
+2026-07-27,MG,Mata Atlântica,2
+2026-07-27,MS,Cerrado,16
+2026-07-27,MS,Mata Atlântica,1
+2026-07-27,MS,Pantanal,4
+2026-07-27,MT,Amazônia,4
+2026-07-27,MT,Cerrado,8
+2026-07-27,PA,Amazônia,5
+2026-07-27,PE,Caatinga,4
+2026-07-27,PI,Caatinga,11
+2026-07-27,PI,Cerrado,2
+2026-07-27,RJ,Mata Atlântica,1
+2026-07-27,RN,Caatinga,1
+2026-07-27,RO,Amazônia,9
+2026-07-27,SE,Caatinga,1
+2026-07-27,TO,Cerrado,5
+2026-07-28,AC,Amazônia,3
+2026-07-28,AM,Amazônia,3
+2026-07-28,AP,Amazônia,2
+2026-07-28,BA,Caatinga,18
+2026-07-28,BA,Cerrado,8
+2026-07-28,BA,Mata Atlântica,11
+2026-07-28,ES,Mata Atlântica,4
+2026-07-28,GO,Cerrado,26
+2026-07-28,MA,Amazônia,3
+2026-07-28,MA,Cerrado,55
+2026-07-28,MG,Cerrado,26
+2026-07-28,MG,Mata Atlântica,23
+2026-07-28,MT,Amazônia,11
+2026-07-28,MT,Cerrado,22
+2026-07-28,PA,Amazônia,44
+2026-07-28,PI,Caatinga,4
+2026-07-28,PI,Cerrado,7
+2026-07-28,PR,Mata Atlântica,1
+2026-07-28,RJ,Mata Atlântica,5
+2026-07-28,SP,Cerrado,2
+2026-07-28,SP,Mata Atlântica,4
+2026-07-28,TO,Cerrado,52
+2026-07-29,AL,Caatinga,1
+2026-07-29,AL,Mata Atlântica,1
+2026-07-29,AM,Amazônia,8
+2026-07-29,BA,Caatinga,4
+2026-07-29,BA,Mata Atlântica,5
+2026-07-29,ES,Mata Atlântica,1
+2026-07-29,GO,Cerrado,5
+2026-07-29,GO,Mata Atlântica,2
+2026-07-29,MA,Cerrado,7
+2026-07-29,MS,Cerrado,6
+2026-07-29,MS,Mata Atlântica,2
+2026-07-29,MS,Pantanal,1
+2026-07-29,MT,Amazônia,15
+2026-07-29,MT,Cerrado,16
+2026-07-29,PA,Amazônia,11
+2026-07-29,PE,Caatinga,6
+2026-07-29,PE,Mata Atlântica,3
+2026-07-29,RN,Caatinga,5
+2026-07-29,RR,Amazônia,3
+2026-07-29,TO,Cerrado,17
+2026-07-30,AC,Amazônia,4
+2026-07-30,AM,Amazônia,7
+2026-07-30,AP,Amazônia,2
+2026-07-30,BA,Caatinga,39
+2026-07-30,BA,Cerrado,41
+2026-07-30,BA,Mata Atlântica,35
+2026-07-30,CE,Caatinga,9
+2026-07-30,DF,Cerrado,2
+2026-07-30,ES,Mata Atlântica,7
+2026-07-30,GO,Cerrado,4
+2026-07-30,MA,Amazônia,7
+2026-07-30,MA,Caatinga,2
+2026-07-30,MA,Cerrado,67
+2026-07-30,MG,Caatinga,2
+2026-07-30,MG,Cerrado,30
+2026-07-30,MG,Mata Atlântica,20
+2026-07-30,MS,Cerrado,1
+2026-07-30,MS,Pantanal,1
+2026-07-30,MT,Amazônia,3
+2026-07-30,PA,Amazônia,22
+2026-07-30,PB,Caatinga,2
+2026-07-30,PE,Caatinga,13
+2026-07-30,PI,Caatinga,27
+2026-07-30,PI,Cerrado,18
+2026-07-30,RJ,Mata Atlântica,14
+2026-07-30,RO,Amazônia,2
+2026-07-30,RR,Amazônia,2
+2026-07-30,SE,Caatinga,1
+2026-07-30,TO,Cerrado,25
+2026-07-31,AC,Amazônia,2
+2026-07-31,AM,Amazônia,9
+2026-07-31,AP,Amazônia,4
+2026-07-31,BA,Cerrado,10
+2026-07-31,BA,Mata Atlântica,3
+2026-07-31,CE,Caatinga,1
+2026-07-31,DF,Cerrado,5
+2026-07-31,GO,Cerrado,31
+2026-07-31,MA,Cerrado,13
+2026-07-31,MG,Caatinga,4
+2026-07-31,MG,Cerrado,23
+2026-07-31,MG,Mata Atlântica,12
+2026-07-31,MS,Cerrado,6
+2026-07-31,MS,Pantanal,1
+2026-07-31,MT,Amazônia,15
+2026-07-31,MT,Cerrado,35
+2026-07-31,PA,Amazônia,47
+2026-07-31,PI,Caatinga,5
+2026-07-31,PI,Cerrado,6
+2026-07-31,PR,Mata Atlântica,2
+2026-07-31,RJ,Mata Atlântica,3
+2026-07-31,RR,Amazônia,6
+2026-07-31,RS,Mata Atlântica,21
+2026-07-31,RS,Pampa,1
+2026-07-31,SC,Mata Atlântica,7
+2026-07-31,SP,Cerrado,5
+2026-07-31,SP,Mata Atlântica,5
+2026-07-31,TO,Cerrado,86
+2026-08-01,AM,Amazônia,21
+2026-08-01,BA,Caatinga,2
+2026-08-01,BA,Cerrado,2
+2026-08-01,ES,Mata Atlântica,4
+2026-08-01,MA,Amazônia,3
+2026-08-01,MA,Caatinga,1
+2026-08-01,MA,Cerrado,46
+2026-08-01,MG,Caatinga,2
+2026-08-01,MG,Cerrado,1
+2026-08-01,MS,Cerrado,2
+2026-08-01,MS,Mata Atlântica,1
+2026-08-01,MS,Pantanal,6
+2026-08-01,MT,Amazônia,20
+2026-08-01,MT,Cerrado,15
+2026-08-01,MT,Pantanal,1
+2026-08-01,PA,Amazônia,7
+2026-08-01,PB,Caatinga,1
+2026-08-01,PI,Caatinga,9
+2026-08-01,PI,Cerrado,4
+2026-08-01,RN,Caatinga,2
+2026-08-01,RO,Amazônia,7
+2026-08-01,RR,Amazônia,5
+2026-08-01,RS,Mata Atlântica,1
+2026-08-01,SC,Mata Atlântica,6
+2026-08-01,TO,Cerrado,8
+2026-08-02,AP,Amazônia,1
+2026-08-02,BA,Caatinga,1
+2026-08-02,BA,Cerrado,11
+2026-08-02,ES,Mata Atlântica,12
+2026-08-02,GO,Cerrado,10
+2026-08-02,MA,Amazônia,12
+2026-08-02,MA,Caatinga,1
+2026-08-02,MA,Cerrado,120
+2026-08-02,MG,Cerrado,18
+2026-08-02,MG,Mata Atlântica,18
+2026-08-02,MT,Amazônia,16
+2026-08-02,MT,Cerrado,5
+2026-08-02,PA,Amazônia,69
+2026-08-02,PI,Caatinga,12
+2026-08-02,PI,Cerrado,33
+2026-08-02,RJ,Mata Atlântica,20
+2026-08-02,RO,Amazônia,2
+2026-08-02,SP,Mata Atlântica,5
+2026-08-02,TO,Cerrado,59
+2026-08-03,AM,Amazônia,23
+2026-08-03,BA,Cerrado,3
+2026-08-03,BA,Mata Atlântica,2
+2026-08-03,CE,Caatinga,3
+2026-08-03,GO,Cerrado,2
+2026-08-03,MA,Cerrado,4
+2026-08-03,MG,Cerrado,2
+2026-08-03,MS,Cerrado,1
+2026-08-03,MT,Amazônia,26
+2026-08-03,MT,Cerrado,22
+2026-08-03,PA,Amazônia,69
+2026-08-03,RO,Amazônia,3
+2026-08-03,RR,Amazônia,5
+2026-08-03,RS,Mata Atlântica,10
+2026-08-03,SC,Mata Atlântica,1
+2026-08-03,TO,Cerrado,27
+2026-08-04,AM,Amazônia,7
+2026-08-04,BA,Caatinga,9
+2026-08-04,BA,Cerrado,11
+2026-08-04,BA,Mata Atlântica,6
+2026-08-04,CE,Caatinga,6
+2026-08-04,ES,Mata Atlântica,3
+2026-08-04,MA,Amazônia,5
+2026-08-04,MA,Caatinga,1
+2026-08-04,MA,Cerrado,41
+2026-08-04,MG,Cerrado,11
+2026-08-04,MG,Mata Atlântica,13
+2026-08-04,MT,Amazônia,8
+2026-08-04,MT,Cerrado,2
+2026-08-04,PA,Amazônia,51
+2026-08-04,PE,Caatinga,2
+2026-08-04,PI,Caatinga,12
+2026-08-04,PI,Cerrado,13
+2026-08-04,RJ,Mata Atlântica,7
+2026-08-04,RO,Amazônia,2
+2026-08-04,TO,Amazônia,1
+2026-08-04,TO,Cerrado,31
+2026-08-05,AC,Amazônia,4
+2026-08-05,AM,Amazônia,13
+2026-08-05,AP,Amazônia,2
+2026-08-05,BA,Caatinga,3
+2026-08-05,BA,Cerrado,8
+2026-08-05,BA,Mata Atlântica,1
+2026-08-05,DF,Cerrado,2
+2026-08-05,GO,Cerrado,20
+2026-08-05,GO,Mata Atlântica,1
+2026-08-05,MA,Amazônia,5
+2026-08-05,MA,Cerrado,13
+2026-08-05,MG,Cerrado,27
+2026-08-05,MG,Mata Atlântica,23
+2026-08-05,MT,Amazônia,33
+2026-08-05,MT,Cerrado,43
+2026-08-05,PA,Amazônia,96
+2026-08-05,PI,Caatinga,3
+2026-08-05,PI,Cerrado,11
+2026-08-05,PR,Mata Atlântica,1
+2026-08-05,RJ,Mata Atlântica,13
+2026-08-05,RR,Amazônia,5
+2026-08-05,RS,Pampa,1
+2026-08-05,SP,Cerrado,2
+2026-08-05,SP,Mata Atlântica,2
+2026-08-05,TO,Amazônia,2
+2026-08-05,TO,Cerrado,71
+2026-08-06,AM,Amazônia,57
+2026-08-06,BA,Caatinga,11
+2026-08-06,BA,Mata Atlântica,2
+2026-08-06,CE,Caatinga,7
+2026-08-06,ES,Mata Atlântica,5
+2026-08-06,GO,Cerrado,5
+2026-08-06,MA,Cerrado,16
+2026-08-06,MG,Mata Atlântica,1
+2026-08-06,MS,Cerrado,2
+2026-08-06,MS,Pantanal,1
+2026-08-06,MT,Amazônia,56
+2026-08-06,MT,Cerrado,79
+2026-08-06,MT,Pantanal,2
+2026-08-06,PA,Amazônia,32
+2026-08-06,PB,Caatinga,1
+2026-08-06,PE,Caatinga,1
+2026-08-06,PE,Mata Atlântica,1
+2026-08-06,PI,Caatinga,5
+2026-08-06,RN,Caatinga,6
+2026-08-06,RN,Mata Atlântica,1
+2026-08-06,RO,Amazônia,10
+2026-08-06,RR,Amazônia,15
+2026-08-06,RS,Mata Atlântica,1
+2026-08-06,TO,Cerrado,9
+2026-08-07,AC,Amazônia,18
+2026-08-07,AL,Caatinga,2
+2026-08-07,AM,Amazônia,11
+2026-08-07,BA,Caatinga,38
+2026-08-07,BA,Cerrado,28
+2026-08-07,BA,Mata Atlântica,28
+2026-08-07,CE,Caatinga,7
+2026-08-07,DF,Cerrado,1
+2026-08-07,ES,Mata Atlântica,20
+2026-08-07,GO,Cerrado,24
+2026-08-07,MA,Amazônia,4
+2026-08-07,MA,Cerrado,52
+2026-08-07,MG,Cerrado,32
+2026-08-07,MG,Mata Atlântica,34
+2026-08-07,MT,Amazônia,3
+2026-08-07,MT,Cerrado,2
+2026-08-07,PA,Amazônia,47
+2026-08-07,PI,Caatinga,10
+2026-08-07,PI,Cerrado,19
+2026-08-07,RJ,Mata Atlântica,7
+2026-08-07,RO,Amazônia,1
+2026-08-07,TO,Cerrado,38
+2026-08-08,AM,Amazônia,47
+2026-08-08,BA,Cerrado,2
+2026-08-08,DF,Cerrado,3
+2026-08-08,GO,Cerrado,23
+2026-08-08,GO,Mata Atlântica,6
+2026-08-08,MG,Cerrado,13
+2026-08-08,MG,Mata Atlântica,6
+2026-08-08,MS,Cerrado,6
+2026-08-08,MS,Pantanal,1
+2026-08-08,MT,Amazônia,36
+2026-08-08,MT,Cerrado,93
+2026-08-08,PA,Amazônia,90
+2026-08-08,PI,Cerrado,4
+2026-08-08,RO,Amazônia,8
+2026-08-08,RR,Amazônia,2
+2026-08-08,SP,Cerrado,3
+2026-08-08,SP,Mata Atlântica,11
+2026-08-08,TO,Cerrado,13
+2026-08-09,AC,Amazônia,1
+2026-08-09,AM,Amazônia,48
+2026-08-09,BA,Caatinga,12
+2026-08-09,BA,Cerrado,2
+2026-08-09,BA,Mata Atlântica,7
+2026-08-09,CE,Caatinga,11
+2026-08-09,ES,Mata Atlântica,1
+2026-08-09,GO,Cerrado,2
+2026-08-09,MA,Amazônia,2
+2026-08-09,MA,Cerrado,36
+2026-08-09,MG,Cerrado,5
+2026-08-09,MG,Mata Atlântica,17
+2026-08-09,MS,Pantanal,2
+2026-08-09,MT,Amazônia,33
+2026-08-09,MT,Cerrado,24
+2026-08-09,PA,Amazônia,15
+2026-08-09,PE,Caatinga,3
+2026-08-09,PI,Caatinga,6
+2026-08-09,PI,Cerrado,4
+2026-08-09,RJ,Mata Atlântica,5
+2026-08-09,RN,Caatinga,1
+2026-08-09,RO,Amazônia,30
+2026-08-09,RR,Amazônia,2
+2026-08-09,TO,Cerrado,2
+2026-08-10,AC,Amazônia,1
+2026-08-10,AM,Amazônia,5
+2026-08-10,AP,Amazônia,1
+2026-08-10,BA,Caatinga,34
+2026-08-10,BA,Cerrado,71
+2026-08-10,BA,Mata Atlântica,4
+2026-08-10,DF,Cerrado,4
+2026-08-10,ES,Mata Atlântica,2
+2026-08-10,GO,Cerrado,68
+2026-08-10,MA,Amazônia,2
+2026-08-10,MA,Cerrado,33
+2026-08-10,MG,Caatinga,7
+2026-08-10,MG,Cerrado,49
+2026-08-10,MG,Mata Atlântica,38
+2026-08-10,MT,Amazônia,21
+2026-08-10,MT,Cerrado,42
+2026-08-10,PA,Amazônia,82
+2026-08-10,PI,Caatinga,16
+2026-08-10,PI,Cerrado,31
+2026-08-10,RJ,Mata Atlântica,1
+2026-08-10,RS,Mata Atlântica,2
+2026-08-10,SC,Mata Atlântica,3
+2026-08-10,SP,Cerrado,10
+2026-08-10,TO,Cerrado,74
+2026-08-11,AL,Caatinga,1
+2026-08-11,AM,Amazônia,53
+2026-08-11,BA,Caatinga,1
+2026-08-11,BA,Mata Atlântica,1
+2026-08-11,CE,Caatinga,2
+2026-08-11,GO,Cerrado,40
+2026-08-11,MA,Cerrado,16
+2026-08-11,MS,Cerrado,2
+2026-08-11,MT,Amazônia,84
+2026-08-11,MT,Cerrado,143
+2026-08-11,PA,Amazônia,22
+2026-08-11,PE,Caatinga,3
+2026-08-11,PI,Caatinga,6
+2026-08-11,RN,Caatinga,2
+2026-08-11,RO,Amazônia,2
+2026-08-11,RR,Amazônia,12
+2026-08-11,SP,Mata Atlântica,2
+2026-08-11,TO,Cerrado,32
+2026-08-12,AM,Amazônia,2
+2026-08-12,RO,Amazônia,3
+2026-08-13,AM,Amazônia,34
+2026-08-13,AP,Amazônia,1
+2026-08-13,BA,Caatinga,3
+2026-08-13,BA,Cerrado,5
+2026-08-13,GO,Cerrado,26
+2026-08-13,MA,Amazônia,2
+2026-08-13,MA,Cerrado,7
+2026-08-13,MG,Caatinga,2
+2026-08-13,MG,Cerrado,28
+2026-08-13,MG,Mata Atlântica,9
+2026-08-13,MT,Amazônia,90
+2026-08-13,MT,Cerrado,195
+2026-08-13,PA,Amazônia,138
+2026-08-13,PE,Mata Atlântica,2
+2026-08-13,PI,Cerrado,2
+2026-08-13,PR,Mata Atlântica,2
+2026-08-13,RJ,Mata Atlântica,2
+2026-08-13,RR,Amazônia,2
+2026-08-13,SP,Cerrado,8
+2026-08-13,SP,Mata Atlântica,8
+2026-08-13,TO,Amazônia,2
+2026-08-13,TO,Cerrado,71
+2026-08-14,AL,Caatinga,3
+2026-08-14,AL,Mata Atlântica,1
+2026-08-14,AM,Amazônia,127
+2026-08-14,BA,Caatinga,28
+2026-08-14,BA,Cerrado,18
+2026-08-14,BA,Mata Atlântica,27
+2026-08-14,CE,Caatinga,20
+2026-08-14,ES,Mata Atlântica,2
+2026-08-14,GO,Cerrado,5
+2026-08-14,MA,Amazônia,3
+2026-08-14,MA,Caatinga,1
+2026-08-14,MA,Cerrado,64
+2026-08-14,MG,Cerrado,9
+2026-08-14,MG,Mata Atlântica,9
+2026-08-14,MS,Cerrado,5
+2026-08-14,MT,Amazônia,62
+2026-08-14,MT,Cerrado,22
+2026-08-14,MT,Pantanal,1
+2026-08-14,PA,Amazônia,69
+2026-08-14,PB,Caatinga,5
+2026-08-14,PB,Mata Atlântica,3
+2026-08-14,PE,Caatinga,15
+2026-08-14,PI,Caatinga,24
+2026-08-14,PI,Cerrado,21
+2026-08-14,PR,Mata Atlântica,1
+2026-08-14,RN,Caatinga,2
+2026-08-14,RO,Amazônia,7
+2026-08-14,RR,Amazônia,1
+2026-08-14,SE,Mata Atlântica,1
+2026-08-14,SP,Cerrado,2
+2026-08-15,AC,Amazônia,19
+2026-08-15,AM,Amazônia,10
+2026-08-15,AP,Amazônia,4
+2026-08-15,BA,Caatinga,22
+2026-08-15,BA,Cerrado,57
+2026-08-15,BA,Mata Atlântica,1
+2026-08-15,DF,Cerrado,9
+2026-08-15,GO,Cerrado,86
+2026-08-15,MA,Amazônia,11
+2026-08-15,MA,Cerrado,70
+2026-08-15,MG,Caatinga,7
+2026-08-15,MG,Cerrado,35
+2026-08-15,MG,Mata Atlântica,15
+2026-08-15,MT,Amazônia,25
+2026-08-15,MT,Cerrado,32
+2026-08-15,PA,Amazônia,129
+2026-08-15,PE,Caatinga,1
+2026-08-15,PI,Caatinga,16
+2026-08-15,PI,Cerrado,60
+2026-08-15,RO,Amazônia,1
+2026-08-15,SP,Mata Atlântica,2
+2026-08-15,TO,Amazônia,2
+2026-08-15,TO,Cerrado,180
+2026-08-16,AM,Amazônia,194
+2026-08-16,AP,Amazônia,2
+2026-08-16,BA,Cerrado,11
+2026-08-16,CE,Caatinga,5
+2026-08-16,DF,Cerrado,3
+2026-08-16,GO,Cerrado,61
+2026-08-16,GO,Mata Atlântica,10
+2026-08-16,MG,Cerrado,8
+2026-08-16,MS,Cerrado,17
+2026-08-16,MT,Amazônia,214
+2026-08-16,MT,Cerrado,303
+2026-08-16,MT,Pantanal,15
+2026-08-16,PA,Amazônia,189
+2026-08-16,PB,Caatinga,2
+2026-08-16,PB,Mata Atlântica,2
+2026-08-16,PE,Mata Atlântica,1
+2026-08-16,PI,Caatinga,2
+2026-08-16,PR,Mata Atlântica,1
+2026-08-16,RN,Caatinga,1
+2026-08-16,RN,Mata Atlântica,2
+2026-08-16,RO,Amazônia,50
+2026-08-16,RR,Amazônia,9
+2026-08-16,RS,Mata Atlântica,2
+2026-08-16,SC,Mata Atlântica,1
+2026-08-16,SP,Mata Atlântica,3
+2026-08-16,TO,Amazônia,2
+2026-08-16,TO,Cerrado,95
+2026-08-17,AC,Amazônia,37
+2026-08-17,AL,Caatinga,3
+2026-08-17,AM,Amazônia,66
+2026-08-17,BA,Caatinga,16
+2026-08-17,BA,Cerrado,14
+2026-08-17,BA,Mata Atlântica,6
+2026-08-17,CE,Caatinga,13
+2026-08-17,GO,Cerrado,5
+2026-08-17,MA,Amazônia,31
+2026-08-17,MA,Cerrado,116
+2026-08-17,MG,Cerrado,8
+2026-08-17,MG,Mata Atlântica,8
+2026-08-17,MS,Cerrado,10
+2026-08-17,MS,Pantanal,14
+2026-08-17,MT,Amazônia,51
+2026-08-17,MT,Cerrado,32
+2026-08-17,MT,Pantanal,1
+2026-08-17,PA,Amazônia,36
+2026-08-17,PE,Caatinga,6
+2026-08-17,PI,Caatinga,29
+2026-08-17,PI,Cerrado,32
+2026-08-17,RJ,Mata Atlântica,2
+2026-08-17,RO,Amazônia,45
+2026-08-17,SE,Caatinga,1
+2026-08-17,TO,Amazônia,1
+2026-08-17,TO,Cerrado,82
+2026-08-18,AC,Amazônia,2
+2026-08-18,AM,Amazônia,56
+2026-08-18,AP,Amazônia,3
+2026-08-18,BA,Caatinga,4
+2026-08-18,BA,Cerrado,8
+2026-08-18,ES,Mata Atlântica,1
+2026-08-18,GO,Cerrado,27
+2026-08-18,GO,Mata Atlântica,3
+2026-08-18,MA,Amazônia,3
+2026-08-18,MA,Cerrado,54
+2026-08-18,MG,Cerrado,39
+2026-08-18,MG,Mata Atlântica,16
+2026-08-18,MS,Cerrado,3
+2026-08-18,MS,Pantanal,7
+2026-08-18,MT,Amazônia,99
+2026-08-18,MT,Cerrado,83
+2026-08-18,MT,Pantanal,2
+2026-08-18,PA,Amazônia,269
+2026-08-18,PI,Caatinga,8
+2026-08-18,PI,Cerrado,15
+2026-08-18,PR,Cerrado,3
+2026-08-18,PR,Mata Atlântica,10
+2026-08-18,RJ,Mata Atlântica,2
+2026-08-18,RR,Amazônia,1
+2026-08-18,RS,Mata Atlântica,13
+2026-08-18,SC,Mata Atlântica,25
+2026-08-18,SP,Cerrado,1
+2026-08-18,SP,Mata Atlântica,5
+2026-08-18,TO,Amazônia,1
+2026-08-18,TO,Cerrado,104
+2026-08-19,AM,Amazônia,171
+2026-08-19,BA,Caatinga,18
+2026-08-19,BA,Cerrado,1
+2026-08-19,BA,Mata Atlântica,6
+2026-08-19,CE,Caatinga,3
+2026-08-19,ES,Mata Atlântica,2
+2026-08-19,MA,Amazônia,4
+2026-08-19,MA,Cerrado,19
+2026-08-19,MG,Caatinga,1
+2026-08-19,MG,Cerrado,4
+2026-08-19,MG,Mata Atlântica,1
+2026-08-19,MS,Cerrado,2
+2026-08-19,MT,Amazônia,143
+2026-08-19,MT,Cerrado,58
+2026-08-19,MT,Pantanal,2
+2026-08-19,PA,Amazônia,159
+2026-08-19,PB,Mata Atlântica,3
+2026-08-19,PE,Caatinga,1
+2026-08-19,PI,Caatinga,6
+2026-08-19,PI,Cerrado,4
+2026-08-19,RN,Caatinga,1
+2026-08-19,RO,Amazônia,12
+2026-08-19,RR,Amazônia,12
+2026-08-19,SP,Mata Atlântica,5
+2026-08-19,TO,Cerrado,9
+2026-08-20,AC,Amazônia,15
+2026-08-20,AM,Amazônia,15
+2026-08-20,AP,Amazônia,4
+2026-08-20,BA,Caatinga,36
+2026-08-20,BA,Cerrado,31
+2026-08-20,BA,Mata Atlântica,19
+2026-08-20,CE,Caatinga,12
+2026-08-20,DF,Cerrado,6
+2026-08-20,ES,Mata Atlântica,11
+2026-08-20,GO,Cerrado,26
+2026-08-20,MA,Amazônia,19
+2026-08-20,MA,Cerrado,170
+2026-08-20,MG,Caatinga,6
+2026-08-20,MG,Cerrado,74
+2026-08-20,MG,Mata Atlântica,77
+2026-08-20,MT,Amazônia,16
+2026-08-20,MT,Cerrado,25
+2026-08-20,PA,Amazônia,156
+2026-08-20,PI,Caatinga,15
+2026-08-20,PI,Cerrado,38
+2026-08-20,RJ,Mata Atlântica,12
+2026-08-20,RO,Amazônia,3
+2026-08-20,SP,Cerrado,6
+2026-08-20,SP,Mata Atlântica,9
+2026-08-20,TO,Amazônia,3
+2026-08-20,TO,Cerrado,135
+2026-08-21,AC,Amazônia,1
+2026-08-21,AM,Amazônia,209
+2026-08-21,AP,Amazônia,3
+2026-08-21,BA,Caatinga,2
+2026-08-21,BA,Cerrado,11
+2026-08-21,CE,Caatinga,6
+2026-08-21,DF,Cerrado,5
+2026-08-21,GO,Cerrado,21
+2026-08-21,MA,Cerrado,12
+2026-08-21,MG,Cerrado,37
+2026-08-21,MG,Mata Atlântica,12
+2026-08-21,MS,Cerrado,7
+2026-08-21,MS,Mata Atlântica,2
+2026-08-21,MS,Pantanal,2
+2026-08-21,MT,Amazônia,105
+2026-08-21,MT,Cerrado,151
+2026-08-21,MT,Pantanal,1
+2026-08-21,PA,Amazônia,438
+2026-08-21,PE,Mata Atlântica,1
+2026-08-21,PI,Cerrado,1
+2026-08-21,PR,Mata Atlântica,18
+2026-08-21,RN,Caatinga,1
+2026-08-21,RO,Amazônia,12
+2026-08-21,RR,Amazônia,11
+2026-08-21,SC,Mata Atlântica,2
+2026-08-21,SP,Cerrado,1
+2026-08-21,SP,Mata Atlântica,18
+2026-08-21,TO,Cerrado,166
+2026-08-22,AC,Amazônia,8
+2026-08-22,AL,Caatinga,2
+2026-08-22,AM,Amazônia,255
+2026-08-22,BA,Caatinga,36
+2026-08-22,BA,Cerrado,32
+2026-08-22,BA,Mata Atlântica,25
+2026-08-22,CE,Caatinga,19
+2026-08-22,ES,Mata Atlântica,4
+2026-08-22,MA,Amazônia,9
+2026-08-22,MA,Cerrado,92
+2026-08-22,MG,Cerrado,23
+2026-08-22,MG,Mata Atlântica,14
+2026-08-22,MS,Cerrado,2
+2026-08-22,MS,Pantanal,10
+2026-08-22,MT,Amazônia,166
+2026-08-22,MT,Cerrado,18
+2026-08-22,MT,Pantanal,4
+2026-08-22,PA,Amazônia,30
+2026-08-22,PB,Caatinga,2
+2026-08-22,PE,Caatinga,4
+2026-08-22,PI,Caatinga,38
+2026-08-22,PI,Cerrado,31
+2026-08-22,PR,Mata Atlântica,1
+2026-08-22,RN,Caatinga,5
+2026-08-22,RO,Amazônia,53
+2026-08-22,RR,Amazônia,1
+2026-08-22,SE,Caatinga,1
+2026-08-22,TO,Amazônia,3
+2026-08-22,TO,Cerrado,24
+2026-08-23,AC,Amazônia,31
+2026-08-23,AM,Amazônia,21
+2026-08-23,AP,Amazônia,10
+2026-08-23,BA,Caatinga,11
+2026-08-23,BA,Cerrado,23
+2026-08-23,BA,Mata Atlântica,3
+2026-08-23,GO,Cerrado,43
+2026-08-23,MA,Amazônia,6
+2026-08-23,MA,Cerrado,84
+2026-08-23,MG,Caatinga,3
+2026-08-23,MG,Cerrado,37
+2026-08-23,MG,Mata Atlântica,9
+2026-08-23,MS,Mata Atlântica,4
+2026-08-23,MT,Amazônia,20
+2026-08-23,MT,Cerrado,73
+2026-08-23,PA,Amazônia,193
+2026-08-23,PI,Caatinga,15
+2026-08-23,PI,Cerrado,35
+2026-08-23,PR,Mata Atlântica,6
+2026-08-23,RO,Amazônia,4
+2026-08-23,RS,Mata Atlântica,8
+2026-08-23,SC,Mata Atlântica,20
+2026-08-23,SP,Cerrado,11
+2026-08-23,SP,Mata Atlântica,11
+2026-08-23,TO,Amazônia,1
+2026-08-23,TO,Cerrado,77
+2026-08-24,AL,Caatinga,2
+2026-08-24,AM,Amazônia,179
+2026-08-24,BA,Caatinga,6
+2026-08-24,BA,Mata Atlântica,3
+2026-08-24,CE,Caatinga,22
+2026-08-24,MA,Amazônia,1
+2026-08-24,MA,Cerrado,18
+2026-08-24,MG,Cerrado,3
+2026-08-24,MT,Amazônia,20
+2026-08-24,MT,Cerrado,51
+2026-08-24,MT,Pantanal,1
+2026-08-24,PA,Amazônia,310
+2026-08-24,PB,Caatinga,2
+2026-08-24,PB,Mata Atlântica,4
+2026-08-24,PE,Caatinga,2
+2026-08-24,PI,Caatinga,30
+2026-08-24,PR,Mata Atlântica,11
+2026-08-24,RN,Caatinga,4
+2026-08-24,RO,Amazônia,11
+2026-08-24,RR,Amazônia,3
+2026-08-24,RS,Pampa,1
+2026-08-24,SC,Mata Atlântica,1
+2026-08-24,TO,Cerrado,13
+2026-08-25,AC,Amazônia,1
+2026-08-25,AM,Amazônia,10
+2026-08-25,AP,Amazônia,3
+2026-08-25,BA,Caatinga,64
+2026-08-25,BA,Cerrado,68
+2026-08-25,BA,Mata Atlântica,39
+2026-08-25,CE,Caatinga,13
+2026-08-25,ES,Mata Atlântica,1
+2026-08-25,GO,Cerrado,10
+2026-08-25,MA,Amazônia,43
+2026-08-25,MA,Caatinga,1
+2026-08-25,MA,Cerrado,314
+2026-08-25,MG,Caatinga,2
+2026-08-25,MG,Cerrado,19
+2026-08-25,MG,Mata Atlântica,17
+2026-08-25,MT,Amazônia,2
+2026-08-25,MT,Cerrado,27
+2026-08-25,PA,Amazônia,69
+2026-08-25,PE,Caatinga,9
+2026-08-25,PI,Caatinga,86
+2026-08-25,PI,Cerrado,41
+2026-08-25,RJ,Mata Atlântica,2
+2026-08-25,RO,Amazônia,4
+2026-08-25,TO,Cerrado,102
+2026-08-26,AC,Amazônia,2
+2026-08-26,AL,Caatinga,1
+2026-08-26,AM,Amazônia,108
+2026-08-26,AP,Amazônia,3
+2026-08-26,BA,Caatinga,4
+2026-08-26,BA,Cerrado,18
+2026-08-26,DF,Cerrado,1
+2026-08-26,ES,Mata Atlântica,1
+2026-08-26,GO,Cerrado,55
+2026-08-26,MA,Amazônia,2
+2026-08-26,MA,Cerrado,43
+2026-08-26,MG,Cerrado,5
+2026-08-26,MG,Mata Atlântica,7
+2026-08-26,MS,Cerrado,1
+2026-08-26,MS,Pantanal,1
+2026-08-26,MT,Amazônia,73
+2026-08-26,MT,Cerrado,108
+2026-08-26,MT,Pantanal,4
+2026-08-26,PA,Amazônia,398
+2026-08-26,PI,Caatinga,6
+2026-08-26,PI,Cerrado,23
+2026-08-26,RR,Amazônia,1
+2026-08-26,RS,Mata Atlântica,63
+2026-08-26,RS,Pampa,7
+2026-08-26,SC,Mata Atlântica,69
+2026-08-26,TO,Amazônia,5
+2026-08-26,TO,Cerrado,159
+2026-08-27,AC,Amazônia,48
+2026-08-27,AL,Caatinga,2
+2026-08-27,AM,Amazônia,77
+2026-08-27,BA,Caatinga,26
+2026-08-27,BA,Cerrado,29
+2026-08-27,BA,Mata Atlântica,24
+2026-08-27,CE,Caatinga,6
+2026-08-27,GO,Cerrado,2
+2026-08-27,MA,Amazônia,4
+2026-08-27,MA,Cerrado,48
+2026-08-27,MS,Cerrado,9
+2026-08-27,MS,Pantanal,6
+2026-08-27,MT,Amazônia,27
+2026-08-27,MT,Cerrado,64
+2026-08-27,MT,Pantanal,3
+2026-08-27,PA,Amazônia,36
+2026-08-27,PB,Caatinga,1
+2026-08-27,PE,Caatinga,10
+2026-08-27,PI,Caatinga,21
+2026-08-27,PI,Cerrado,7
+2026-08-27,PR,Mata Atlântica,6
+2026-08-27,RN,Caatinga,4
+2026-08-27,RO,Amazônia,38
+2026-08-27,RR,Amazônia,6
+2026-08-27,RS,Mata Atlântica,8
+2026-08-27,RS,Pampa,15
+2026-08-27,SC,Mata Atlântica,12
+2026-08-27,SE,Caatinga,2
+2026-08-27,SE,Mata Atlântica,4
+2026-08-27,TO,Cerrado,12
+2026-08-28,AC,Amazônia,125
+2026-08-28,AM,Amazônia,20
+2026-08-28,AP,Amazônia,15
+2026-08-28,BA,Caatinga,20
+2026-08-28,BA,Cerrado,49
+2026-08-28,BA,Mata Atlântica,3
+2026-08-28,CE,Caatinga,1
+2026-08-28,ES,Mata Atlântica,7
+2026-08-28,GO,Cerrado,35
+2026-08-28,MA,Amazônia,18
+2026-08-28,MA,Cerrado,75
+2026-08-28,MG,Cerrado,25
+2026-08-28,MG,Mata Atlântica,22
+2026-08-28,MS,Cerrado,4
+2026-08-28,MT,Amazônia,8
+2026-08-28,MT,Cerrado,25
+2026-08-28,PA,Amazônia,154
+2026-08-28,PI,Caatinga,4
+2026-08-28,PI,Cerrado,36
+2026-08-28,PR,Mata Atlântica,2
+2026-08-28,RO,Amazônia,9
+2026-08-28,SC,Mata Atlântica,5
+2026-08-28,SP,Mata Atlântica,13
+2026-08-28,TO,Amazônia,1
+2026-08-28,TO,Cerrado,68
+2026-08-29,AM,Amazônia,143
+2026-08-29,AP,Amazônia,2
+2026-08-29,BA,Caatinga,2
+2026-08-29,BA,Cerrado,10
+2026-08-29,CE,Caatinga,9
+2026-08-29,GO,Cerrado,14
+2026-08-29,MA,Cerrado,1
+2026-08-29,MG,Cerrado,1
+2026-08-29,MG,Mata Atlântica,1
+2026-08-29,MS,Cerrado,3
+2026-08-29,MS,Mata Atlântica,3
+2026-08-29,MS,Pantanal,14
+2026-08-29,MT,Amazônia,151
+2026-08-29,MT,Cerrado,64
+2026-08-29,MT,Pantanal,2
+2026-08-29,PA,Amazônia,255
+2026-08-29,PB,Caatinga,1
+2026-08-29,PB,Mata Atlântica,1
+2026-08-29,PE,Caatinga,7
+2026-08-29,PI,Caatinga,11
+2026-08-29,PI,Cerrado,1
+2026-08-29,PR,Mata Atlântica,12
+2026-08-29,RO,Amazônia,21
+2026-08-29,RR,Amazônia,12
+2026-08-29,SC,Mata Atlântica,4
+2026-08-29,SP,Cerrado,8
+2026-08-29,SP,Mata Atlântica,14
+2026-08-29,TO,Cerrado,29
+2026-08-30,AC,Amazônia,123
+2026-08-30,AM,Amazônia,142
+2026-08-30,AP,Amazônia,1
+2026-08-30,BA,Caatinga,30
+2026-08-30,BA,Cerrado,87
+2026-08-30,BA,Mata Atlântica,13
+2026-08-30,CE,Caatinga,24
+2026-08-30,ES,Mata Atlântica,13
+2026-08-30,GO,Cerrado,5
+2026-08-30,MA,Amazônia,37
+2026-08-30,MA,Cerrado,95
+2026-08-30,MG,Cerrado,27
+2026-08-30,MG,Mata Atlântica,8
+2026-08-30,MS,Pantanal,15
+2026-08-30,MT,Amazônia,39
+2026-08-30,MT,Cerrado,11
+2026-08-30,MT,Pantanal,5
+2026-08-30,PA,Amazônia,27
+2026-08-30,PB,Caatinga,1
+2026-08-30,PE,Caatinga,3
+2026-08-30,PI,Caatinga,45
+2026-08-30,PI,Cerrado,84
+2026-08-30,RJ,Mata Atlântica,1
+2026-08-30,RN,Caatinga,1
+2026-08-30,RO,Amazônia,64
+2026-08-30,TO,Amazônia,3
+2026-08-30,TO,Cerrado,27
+2026-08-31,AC,Amazônia,51
+2026-08-31,AM,Amazônia,107
+2026-08-31,AP,Amazônia,12
+2026-08-31,BA,Caatinga,7
+2026-08-31,BA,Cerrado,75
+2026-08-31,DF,Cerrado,2
+2026-08-31,GO,Cerrado,102
+2026-08-31,GO,Mata Atlântica,1
+2026-08-31,MA,Amazônia,2
+2026-08-31,MA,Cerrado,45
+2026-08-31,MG,Caatinga,1
+2026-08-31,MG,Cerrado,84
+2026-08-31,MG,Mata Atlântica,18
+2026-08-31,MS,Pantanal,6
+2026-08-31,MT,Amazônia,45
+2026-08-31,MT,Cerrado,140
+2026-08-31,MT,Pantanal,3
+2026-08-31,PA,Amazônia,327
+2026-08-31,PB,Caatinga,1
+2026-08-31,PB,Mata Atlântica,1
+2026-08-31,PI,Caatinga,2
+2026-08-31,PI,Cerrado,37
+2026-08-31,PR,Mata Atlântica,1
+2026-08-31,RJ,Mata Atlântica,1
+2026-08-31,RR,Amazônia,5
+2026-08-31,SP,Cerrado,9
+2026-08-31,SP,Mata Atlântica,2
+2026-08-31,TO,Cerrado,181
+2026-09-01,AC,Amazônia,10
+2026-09-01,AM,Amazônia,361
+2026-09-01,BA,Caatinga,28
+2026-09-01,BA,Cerrado,18
+2026-09-01,BA,Mata Atlântica,28
+2026-09-01,CE,Caatinga,13
+2026-09-01,MA,Amazônia,7
+2026-09-01,MA,Cerrado,16
+2026-09-01,MG,Cerrado,5
+2026-09-01,MG,Mata Atlântica,6
+2026-09-01,MS,Cerrado,1
+2026-09-01,MS,Pantanal,1
+2026-09-01,MT,Amazônia,58
+2026-09-01,MT,Cerrado,43
+2026-09-01,PA,Amazônia,72
+2026-09-01,PB,Caatinga,2
+2026-09-01,PE,Caatinga,7
+2026-09-01,PE,Mata Atlântica,2
+2026-09-01,PI,Caatinga,5
+2026-09-01,RN,Caatinga,2
+2026-09-01,RO,Amazônia,47
+2026-09-01,RR,Amazônia,6
+2026-09-01,TO,Cerrado,3
+2026-09-02,AC,Amazônia,76
+2026-09-02,AL,Caatinga,4
+2026-09-02,AM,Amazônia,34
+2026-09-02,AP,Amazônia,1
+2026-09-02,BA,Caatinga,40
+2026-09-02,BA,Cerrado,47
+2026-09-02,BA,Mata Atlântica,26
+2026-09-02,CE,Caatinga,8
+2026-09-02,GO,Cerrado,2
+2026-09-02,MA,Amazônia,65
+2026-09-02,MA,Cerrado,71
+2026-09-02,MG,Caatinga,7
+2026-09-02,MG,Cerrado,14
+2026-09-02,MG,Mata Atlântica,3
+2026-09-02,MS,Pantanal,3
+2026-09-02,MT,Amazônia,8
+2026-09-02,MT,Cerrado,9
+2026-09-02,MT,Pantanal,2
+2026-09-02,PA,Amazônia,166
+2026-09-02,PB,Caatinga,3
+2026-09-02,PI,Caatinga,14
+2026-09-02,PI,Cerrado,38
+2026-09-02,RJ,Mata Atlântica,2
+2026-09-02,RO,Amazônia,3
+2026-09-02,SP,Cerrado,3
+2026-09-02,SP,Mata Atlântica,1
+2026-09-02,TO,Cerrado,46
+2026-09-03,AM,Amazônia,232
+2026-09-03,AP,Amazônia,4
+2026-09-03,BA,Cerrado,2
+2026-09-03,CE,Caatinga,14
+2026-09-03,GO,Cerrado,5
+2026-09-03,MG,Cerrado,6
+2026-09-03,MS,Cerrado,7
+2026-09-03,MS,Mata Atlântica,2
+2026-09-03,MS,Pantanal,7
+2026-09-03,MT,Amazônia,34
+2026-09-03,MT,Cerrado,22
+2026-09-03,MT,Pantanal,15
+2026-09-03,PA,Amazônia,172
+2026-09-03,PI,Cerrado,2
+2026-09-03,PR,Mata Atlântica,16
+2026-09-03,RN,Caatinga,3
+2026-09-03,RO,Amazônia,20
+2026-09-03,RR,Amazônia,3
+2026-09-03,RS,Mata Atlântica,10
+2026-09-03,RS,Pampa,1
+2026-09-03,SC,Mata Atlântica,14
+2026-09-03,SP,Cerrado,3
+2026-09-03,SP,Mata Atlântica,5
+2026-09-03,TO,Cerrado,15
+2026-09-04,AC,Amazônia,43
+2026-09-04,AL,Caatinga,2
+2026-09-04,AM,Amazônia,120
+2026-09-04,AP,Amazônia,3
+2026-09-04,BA,Caatinga,49
+2026-09-04,BA,Cerrado,8
+2026-09-04,BA,Mata Atlântica,12
+2026-09-04,CE,Caatinga,10
+2026-09-04,ES,Mata Atlântica,5
+2026-09-04,GO,Cerrado,2
+2026-09-04,MA,Amazônia,14
+2026-09-04,MA,Cerrado,27
+2026-09-04,MG,Cerrado,14
+2026-09-04,MG,Mata Atlântica,28
+2026-09-04,MS,Cerrado,2
+2026-09-04,MS,Pantanal,22
+2026-09-04,MT,Amazônia,5
+2026-09-04,MT,Cerrado,5
+2026-09-04,MT,Pantanal,17
+2026-09-04,PA,Amazônia,20
+2026-09-04,PB,Caatinga,1
+2026-09-04,PB,Mata Atlântica,2
+2026-09-04,PE,Caatinga,11
+2026-09-04,PE,Mata Atlântica,3
+2026-09-04,PI,Caatinga,12
+2026-09-04,PI,Cerrado,14
+2026-09-04,RJ,Mata Atlântica,2
+2026-09-04,RN,Caatinga,3
+2026-09-04,RN,Mata Atlântica,2
+2026-09-04,RO,Amazônia,20
+2026-09-04,RR,Amazônia,4
+2026-09-04,SE,Caatinga,1
+2026-09-05,AC,Amazônia,50
+2026-09-05,AM,Amazônia,16
+2026-09-05,AP,Amazônia,12
+2026-09-05,BA,Caatinga,19
+2026-09-05,BA,Cerrado,20
+2026-09-05,BA,Mata Atlântica,6
+2026-09-05,DF,Cerrado,1
+2026-09-05,ES,Mata Atlântica,2
+2026-09-05,GO,Cerrado,18
+2026-09-05,MA,Amazônia,3
+2026-09-05,MA,Cerrado,33
+2026-09-05,MG,Caatinga,3
+2026-09-05,MG,Cerrado,49
+2026-09-05,MG,Mata Atlântica,35
+2026-09-05,MT,Amazônia,10
+2026-09-05,MT,Cerrado,5
+2026-09-05,PA,Amazônia,192
+2026-09-05,PI,Caatinga,3
+2026-09-05,PI,Cerrado,13
+2026-09-05,RR,Amazônia,2
+2026-09-05,SP,Cerrado,5
+2026-09-05,TO,Amazônia,3
+2026-09-05,TO,Cerrado,18
+2026-09-06,AM,Amazônia,400
+2026-09-06,BA,Caatinga,11
+2026-09-06,BA,Mata Atlântica,9
+2026-09-06,CE,Caatinga,20
+2026-09-06,GO,Cerrado,1
+2026-09-06,MA,Cerrado,6
+2026-09-06,MG,Mata Atlântica,3
+2026-09-06,MT,Amazônia,6
+2026-09-06,MT,Cerrado,1
+2026-09-06,PA,Amazônia,112
+2026-09-06,PE,Caatinga,1
+2026-09-06,RN,Mata Atlântica,1
+2026-09-06,RO,Amazônia,30
+2026-09-06,RR,Amazônia,25
+2026-09-06,RS,Mata Atlântica,1
+2026-09-06,RS,Pampa,2
+2026-09-06,SC,Mata Atlântica,1
+2026-09-07,AM,Amazônia,4
+2026-09-07,AP,Amazônia,3
+2026-09-07,BA,Caatinga,60
+2026-09-07,BA,Cerrado,30
+2026-09-07,BA,Mata Atlântica,6
+2026-09-07,CE,Caatinga,15
+2026-09-07,MA,Amazônia,62
+2026-09-07,MA,Caatinga,1
+2026-09-07,MA,Cerrado,102
+2026-09-07,MG,Caatinga,1
+2026-09-07,MG,Cerrado,1
+2026-09-07,MG,Mata Atlântica,2
+2026-09-07,MS,Pantanal,3
+2026-09-07,MT,Amazônia,8
+2026-09-07,MT,Cerrado,1
+2026-09-07,PA,Amazônia,122
+2026-09-07,PB,Caatinga,1
+2026-09-07,PE,Caatinga,1
+2026-09-07,PI,Caatinga,27
+2026-09-07,PI,Cerrado,23
+2026-09-07,RN,Caatinga,4
+2026-09-07,RO,Amazônia,22
+2026-09-07,TO,Amazônia,1
+2026-09-07,TO,Cerrado,16
+2026-09-08,AL,Caatinga,2
+2026-09-08,AM,Amazônia,57
+2026-09-08,AP,Amazônia,4
+2026-09-08,BA,Caatinga,6
+2026-09-08,BA,Cerrado,26
+2026-09-08,DF,Cerrado,1
+2026-09-08,GO,Cerrado,10
+2026-09-08,MA,Cerrado,15
+2026-09-08,MG,Cerrado,5
+2026-09-08,MT,Amazônia,23
+2026-09-08,MT,Cerrado,3
+2026-09-08,MT,Pantanal,3
+2026-09-08,PA,Amazônia,197
+2026-09-08,PB,Caatinga,2
+2026-09-08,PI,Cerrado,8
+2026-09-08,RR,Amazônia,6
+2026-09-08,RS,Mata Atlântica,26
+2026-09-08,RS,Pampa,3
+2026-09-08,SC,Mata Atlântica,23
+2026-09-08,TO,Cerrado,27
+2026-09-09,AC,Amazônia,10
+2026-09-09,AL,Caatinga,5
+2026-09-09,AL,Mata Atlântica,1
+2026-09-09,AM,Amazônia,153
+2026-09-09,BA,Caatinga,41
+2026-09-09,BA,Cerrado,26
+2026-09-09,BA,Mata Atlântica,7
+2026-09-09,CE,Caatinga,30
+2026-09-09,GO,Cerrado,1
+2026-09-09,MA,Amazônia,15
+2026-09-09,MA,Cerrado,94
+2026-09-09,MG,Cerrado,4
+2026-09-09,MS,Cerrado,1
+2026-09-09,MS,Pantanal,4
+2026-09-09,MT,Amazônia,68
+2026-09-09,PA,Amazônia,15
+2026-09-09,PB,Caatinga,5
+2026-09-09,PE,Caatinga,6
+2026-09-09,PI,Caatinga,32
+2026-09-09,PI,Cerrado,54
+2026-09-09,RN,Caatinga,1
+2026-09-09,RN,Mata Atlântica,1
+2026-09-09,RO,Amazônia,80
+2026-09-09,RR,Amazônia,9
+2026-09-09,RS,Pampa,5
+2026-09-09,TO,Cerrado,1
+2026-09-10,AC,Amazônia,134
+2026-09-10,AM,Amazônia,50
+2026-09-10,AP,Amazônia,18
+2026-09-10,BA,Caatinga,28
+2026-09-10,BA,Cerrado,104
+2026-09-10,GO,Cerrado,24
+2026-09-10,MA,Amazônia,35
+2026-09-10,MA,Cerrado,124
+2026-09-10,MG,Caatinga,7
+2026-09-10,MG,Cerrado,26
+2026-09-10,MG,Mata Atlântica,9
+2026-09-10,MT,Amazônia,6
+2026-09-10,MT,Cerrado,19
+2026-09-10,PA,Amazônia,202
+2026-09-10,PE,Caatinga,1
+2026-09-10,PI,Caatinga,3
+2026-09-10,PI,Cerrado,113
+2026-09-10,RJ,Mata Atlântica,2
+2026-09-10,RO,Amazônia,1
+2026-09-10,TO,Amazônia,4
+2026-09-10,TO,Cerrado,149
+2026-09-11,AC,Amazônia,1
+2026-09-11,AM,Amazônia,125
+2026-09-11,AP,Amazônia,5
+2026-09-11,BA,Caatinga,3
+2026-09-11,BA,Cerrado,2
+2026-09-11,CE,Caatinga,5
+2026-09-11,GO,Cerrado,28
+2026-09-11,MA,Cerrado,6
+2026-09-11,MG,Cerrado,3
+2026-09-11,MS,Cerrado,3
+2026-09-11,MS,Pantanal,3
+2026-09-11,MT,Amazônia,100
+2026-09-11,MT,Cerrado,90
+2026-09-11,PA,Amazônia,309
+2026-09-11,PB,Caatinga,4
+2026-09-11,PE,Caatinga,1
+2026-09-11,PI,Caatinga,12
+2026-09-11,PI,Cerrado,3
+2026-09-11,RO,Amazônia,4
+2026-09-11,RR,Amazônia,10
+2026-09-11,SE,Caatinga,3
+2026-09-11,TO,Cerrado,36
+2026-09-12,AC,Amazônia,54
+2026-09-12,AM,Amazônia,64
+2026-09-12,AP,Amazônia,15
+2026-09-12,BA,Caatinga,68
+2026-09-12,BA,Cerrado,25
+2026-09-12,BA,Mata Atlântica,31
+2026-09-12,CE,Caatinga,28
+2026-09-12,ES,Mata Atlântica,1
+2026-09-12,GO,Cerrado,4
+2026-09-12,MA,Amazônia,35
+2026-09-12,MA,Caatinga,2
+2026-09-12,MA,Cerrado,153
+2026-09-12,MG,Cerrado,10
+2026-09-12,MG,Mata Atlântica,49
+2026-09-12,MT,Amazônia,5
+2026-09-12,MT,Cerrado,1
+2026-09-12,PA,Amazônia,58
+2026-09-12,PB,Caatinga,1
+2026-09-12,PE,Caatinga,7
+2026-09-12,PI,Caatinga,24
+2026-09-12,PI,Cerrado,93
+2026-09-12,RJ,Mata Atlântica,3
+2026-09-12,RN,Caatinga,1
+2026-09-12,RO,Amazônia,4
+2026-09-12,TO,Amazônia,1
+2026-09-12,TO,Cerrado,72
+2026-09-13,AC,Amazônia,3
+2026-09-13,AL,Mata Atlântica,2
+2026-09-13,AM,Amazônia,60
+2026-09-13,AP,Amazônia,19
+2026-09-13,BA,Caatinga,7
+2026-09-13,BA,Cerrado,13
+2026-09-13,BA,Mata Atlântica,1
+2026-09-13,DF,Cerrado,1
+2026-09-13,GO,Cerrado,42
+2026-09-13,GO,Mata Atlântica,1
+2026-09-13,MA,Amazônia,1
+2026-09-13,MA,Cerrado,47
+2026-09-13,MG,Caatinga,1
+2026-09-13,MG,Cerrado,13
+2026-09-13,MG,Mata Atlântica,4
+2026-09-13,MT,Amazônia,51
+2026-09-13,MT,Cerrado,29
+2026-09-13,PA,Amazônia,385
+2026-09-13,PB,Mata Atlântica,2
+2026-09-13,PI,Caatinga,8
+2026-09-13,PI,Cerrado,28
+2026-09-13,RR,Amazônia,6
+2026-09-13,SP,Cerrado,2
+2026-09-13,TO,Amazônia,1
+2026-09-13,TO,Cerrado,139
+2026-09-14,AL,Caatinga,3
+2026-09-14,AL,Mata Atlântica,1
+2026-09-14,AM,Amazônia,270
+2026-09-14,BA,Caatinga,51
+2026-09-14,BA,Cerrado,14
+2026-09-14,BA,Mata Atlântica,20
+2026-09-14,CE,Caatinga,41
+2026-09-14,ES,Mata Atlântica,1
+2026-09-14,GO,Cerrado,6
+2026-09-14,MA,Amazônia,16
+2026-09-14,MA,Cerrado,69
+2026-09-14,MG,Caatinga,2
+2026-09-14,MG,Cerrado,10
+2026-09-14,MG,Mata Atlântica,18
+2026-09-14,MS,Cerrado,1
+2026-09-14,MT,Amazônia,62
+2026-09-14,MT,Cerrado,24
+2026-09-14,PA,Amazônia,60
+2026-09-14,PB,Caatinga,5
+2026-09-14,PE,Caatinga,11
+2026-09-14,PE,Mata Atlântica,3
+2026-09-14,PI,Caatinga,43
+2026-09-14,PI,Cerrado,12
+2026-09-14,RN,Caatinga,5
+2026-09-14,RO,Amazônia,27
+2026-09-14,RR,Amazônia,30
+2026-09-14,RS,Pampa,3
+2026-09-14,SE,Caatinga,1
+2026-09-15,AC,Amazônia,22
+2026-09-15,AM,Amazônia,19
+2026-09-15,AP,Amazônia,9
+2026-09-15,BA,Caatinga,119
+2026-09-15,BA,Cerrado,78
+2026-09-15,BA,Mata Atlântica,40
+2026-09-15,CE,Caatinga,12
+2026-09-15,ES,Mata Atlântica,8
+2026-09-15,GO,Cerrado,13
+2026-09-15,GO,Mata Atlântica,1
+2026-09-15,MA,Amazônia,37
+2026-09-15,MA,Cerrado,226
+2026-09-15,MG,Caatinga,1
+2026-09-15,MG,Cerrado,34
+2026-09-15,MG,Mata Atlântica,46
+2026-09-15,MT,Amazônia,4
+2026-09-15,MT,Cerrado,1
+2026-09-15,PA,Amazônia,240
+2026-09-15,PE,Caatinga,8
+2026-09-15,PI,Caatinga,81
+2026-09-15,PI,Cerrado,124
+2026-09-15,RO,Amazônia,4
+2026-09-15,RS,Pampa,2
+2026-09-15,TO,Amazônia,5
+2026-09-15,TO,Cerrado,112
+2026-09-16,AL,Caatinga,2
+2026-09-16,CE,Caatinga,2
+2026-09-16,PB,Caatinga,3
+2026-09-16,PE,Caatinga,7
+2026-09-16,RN,Caatinga,1
+2026-09-17,AC,Amazônia,12
+2026-09-17,AL,Caatinga,2
+2026-09-17,AL,Mata Atlântica,1
+2026-09-17,AM,Amazônia,51
+2026-09-17,AP,Amazônia,1
+2026-09-17,BA,Caatinga,82
+2026-09-17,BA,Cerrado,84
+2026-09-17,BA,Mata Atlântica,21
+2026-09-17,CE,Caatinga,78
+2026-09-17,MA,Amazônia,21
+2026-09-17,MA,Caatinga,2
+2026-09-17,MA,Cerrado,132
+2026-09-17,MG,Cerrado,13
+2026-09-17,MG,Mata Atlântica,1
+2026-09-17,MS,Cerrado,2
+2026-09-17,MS,Pantanal,2
+2026-09-17,MT,Amazônia,6
+2026-09-17,MT,Cerrado,4
+2026-09-17,MT,Pantanal,1
+2026-09-17,PA,Amazônia,20
+2026-09-17,PB,Caatinga,9
+2026-09-17,PB,Mata Atlântica,3
+2026-09-17,PE,Caatinga,11
+2026-09-17,PE,Mata Atlântica,1
+2026-09-17,PI,Caatinga,99
+2026-09-17,PI,Cerrado,180
+2026-09-17,RN,Caatinga,2
+2026-09-17,RO,Amazônia,20
+2026-09-17,RR,Amazônia,2
+2026-09-17,RS,Mata Atlântica,1
+2026-09-17,SC,Mata Atlântica,1
+2026-09-17,TO,Amazônia,3
+2026-09-17,TO,Cerrado,66
+2026-09-18,AC,Amazônia,6
+2026-09-18,AM,Amazônia,5
+2026-09-18,AP,Amazônia,31
+2026-09-18,BA,Caatinga,16
+2026-09-18,BA,Cerrado,113
+2026-09-18,GO,Cerrado,95
+2026-09-18,MA,Amazônia,8
+2026-09-18,MA,Cerrado,113
+2026-09-18,MG,Caatinga,2
+2026-09-18,MG,Cerrado,47
+2026-09-18,MG,Mata Atlântica,5
+2026-09-18,MT,Amazônia,63
+2026-09-18,MT,Cerrado,119
+2026-09-18,PA,Amazônia,453
+2026-09-18,PI,Caatinga,3
+2026-09-18,PI,Cerrado,84
+2026-09-18,PR,Mata Atlântica,8
+2026-09-18,RR,Amazônia,4
+2026-09-18,RS,Mata Atlântica,5
+2026-09-18,SC,Mata Atlântica,5
+2026-09-18,SP,Cerrado,1
+2026-09-18,TO,Amazônia,22
+2026-09-18,TO,Cerrado,418
+2026-09-19,AL,Mata Atlântica,3
+2026-09-19,AM,Amazônia,363
+2026-09-19,BA,Caatinga,4
+2026-09-19,CE,Caatinga,44
+2026-09-19,GO,Cerrado,4
+2026-09-19,MA,Amazônia,1
+2026-09-19,MA,Caatinga,1
+2026-09-19,MA,Cerrado,24
+2026-09-19,MS,Cerrado,1
+2026-09-19,MT,Amazônia,161
+2026-09-19,MT,Cerrado,43
+2026-09-19,MT,Pantanal,1
+2026-09-19,PA,Amazônia,190
+2026-09-19,PB,Caatinga,6
+2026-09-19,PB,Mata Atlântica,1
+2026-09-19,PE,Caatinga,5
+2026-09-19,PI,Caatinga,26
+2026-09-19,PI,Cerrado,11
+2026-09-19,RN,Caatinga,11
+2026-09-19,RO,Amazônia,18
+2026-09-19,RR,Amazônia,31
+2026-09-19,TO,Amazônia,4
+2026-09-19,TO,Cerrado,82
+2026-09-20,AC,Amazônia,115
+2026-09-20,AM,Amazônia,83
+2026-09-20,AP,Amazônia,13
+2026-09-20,BA,Caatinga,15
+2026-09-20,BA,Cerrado,38
+2026-09-20,BA,Mata Atlântica,1
+2026-09-20,CE,Caatinga,54
+2026-09-20,GO,Cerrado,12
+2026-09-20,MA,Amazônia,47
+2026-09-20,MA,Caatinga,2
+2026-09-20,MA,Cerrado,154
+2026-09-20,MG,Caatinga,2
+2026-09-20,MG,Cerrado,28
+2026-09-20,MG,Mata Atlântica,5
+2026-09-20,MS,Pantanal,1
+2026-09-20,MT,Amazônia,11
+2026-09-20,MT,Cerrado,22
+2026-09-20,PA,Amazônia,123
+2026-09-20,PE,Caatinga,5
+2026-09-20,PI,Caatinga,12
+2026-09-20,PI,Cerrado,63
+2026-09-20,RN,Caatinga,3
+2026-09-20,RO,Amazônia,54
+2026-09-20,TO,Amazônia,18
+2026-09-20,TO,Cerrado,107
+2026-09-21,AC,Amazônia,11
+2026-09-21,AM,Amazônia,253
+2026-09-21,AP,Amazônia,5
+2026-09-21,BA,Caatinga,1
+2026-09-21,BA,Cerrado,30
+2026-09-21,DF,Cerrado,1
+2026-09-21,GO,Cerrado,48
+2026-09-21,MA,Cerrado,31
+2026-09-21,MG,Cerrado,10
+2026-09-21,MS,Cerrado,2
+2026-09-21,MS,Mata Atlântica,5
+2026-09-21,MT,Amazônia,144
+2026-09-21,MT,Cerrado,92
+2026-09-21,MT,Pantanal,5
+2026-09-21,PA,Amazônia,747
+2026-09-21,PB,Caatinga,1
+2026-09-21,PI,Caatinga,5
+2026-09-21,PI,Cerrado,21
+2026-09-21,PR,Mata Atlântica,2
+2026-09-21,RN,Caatinga,1
+2026-09-21,RO,Amazônia,8
+2026-09-21,RR,Amazônia,31
+2026-09-21,RS,Pampa,1
+2026-09-21,SP,Cerrado,9
+2026-09-21,TO,Amazônia,9
+2026-09-21,TO,Cerrado,168
+2026-09-22,AC,Amazônia,6
+2026-09-22,AL,Caatinga,5
+2026-09-22,AM,Amazônia,520
+2026-09-22,BA,Caatinga,87
+2026-09-22,BA,Cerrado,91
+2026-09-22,BA,Mata Atlântica,36
+2026-09-22,CE,Caatinga,28
+2026-09-22,ES,Mata Atlântica,2
+2026-09-22,GO,Cerrado,9
+2026-09-22,MA,Amazônia,7
+2026-09-22,MA,Caatinga,3
+2026-09-22,MA,Cerrado,87
+2026-09-22,MG,Caatinga,1
+2026-09-22,MG,Cerrado,6
+2026-09-22,MG,Mata Atlântica,14
+2026-09-22,MT,Amazônia,106
+2026-09-22,MT,Cerrado,1
+2026-09-22,PA,Amazônia,50
+2026-09-22,PB,Caatinga,15
+2026-09-22,PE,Caatinga,20
+2026-09-22,PI,Caatinga,64
+2026-09-22,PI,Cerrado,71
+2026-09-22,RN,Caatinga,7
+2026-09-22,RO,Amazônia,85
+2026-09-22,RR,Amazônia,11
+2026-09-22,SE,Mata Atlântica,2
+2026-09-22,TO,Cerrado,19
+2026-09-23,AC,Amazônia,117
+2026-09-23,AM,Amazônia,19
+2026-09-23,AP,Amazônia,37
+2026-09-23,BA,Caatinga,57
+2026-09-23,BA,Cerrado,48
+2026-09-23,BA,Mata Atlântica,12
+2026-09-23,ES,Mata Atlântica,3
+2026-09-23,GO,Mata Atlântica,1
+2026-09-23,MA,Amazônia,13
+2026-09-23,MA,Caatinga,2
+2026-09-23,MA,Cerrado,132
+2026-09-23,MG,Cerrado,9
+2026-09-23,MG,Mata Atlântica,6
+2026-09-23,MT,Amazônia,14
+2026-09-23,MT,Cerrado,8
+2026-09-23,PA,Amazônia,256
+2026-09-23,PE,Caatinga,2
+2026-09-23,PI,Caatinga,15
+2026-09-23,PI,Cerrado,82
+2026-09-23,TO,Amazônia,4
+2026-09-23,TO,Cerrado,99
+2026-09-24,AL,Caatinga,1
+2026-09-24,AL,Mata Atlântica,2
+2026-09-24,AM,Amazônia,106
+2026-09-24,BA,Caatinga,6
+2026-09-24,BA,Mata Atlântica,3
+2026-09-24,CE,Caatinga,1
+2026-09-24,MA,Cerrado,6
+2026-09-24,MG,Cerrado,1
+2026-09-24,MS,Cerrado,1
+2026-09-24,MS,Pantanal,2
+2026-09-24,MT,Amazônia,109
+2026-09-24,MT,Cerrado,41
+2026-09-24,MT,Pantanal,2
+2026-09-24,PA,Amazônia,169
+2026-09-24,PB,Caatinga,1
+2026-09-24,PE,Caatinga,3
+2026-09-24,PI,Caatinga,2
+2026-09-24,RN,Caatinga,1
+2026-09-24,RO,Amazônia,4
+2026-09-24,RR,Amazônia,13
+2026-09-24,RS,Mata Atlântica,3
+2026-09-24,RS,Pampa,2
+2026-09-24,SC,Mata Atlântica,8
+2026-09-24,SP,Cerrado,1
+2026-09-24,TO,Cerrado,27
+2026-09-25,AC,Amazônia,101
+2026-09-25,AM,Amazônia,30
+2026-09-25,BA,Caatinga,11
+2026-09-25,BA,Cerrado,12
+2026-09-25,BA,Mata Atlântica,17
+2026-09-25,CE,Caatinga,19
+2026-09-25,GO,Cerrado,4
+2026-09-25,MA,Amazônia,25
+2026-09-25,MA,Caatinga,1
+2026-09-25,MA,Cerrado,36
+2026-09-25,MG,Cerrado,13
+2026-09-25,MG,Mata Atlântica,9
+2026-09-25,MT,Amazônia,3
+2026-09-25,MT,Cerrado,3
+2026-09-25,PA,Amazônia,5
+2026-09-25,PB,Caatinga,1
+2026-09-25,PE,Caatinga,12
+2026-09-25,PI,Caatinga,26
+2026-09-25,PI,Cerrado,11
+2026-09-25,RN,Caatinga,1
+2026-09-25,RO,Amazônia,10
+2026-09-25,TO,Cerrado,1
+2026-09-26,AM,Amazônia,12
+2026-09-26,AP,Amazônia,37
+2026-09-26,BA,Caatinga,3
+2026-09-26,BA,Cerrado,2
+2026-09-26,DF,Cerrado,3
+2026-09-26,GO,Cerrado,33
+2026-09-26,GO,Mata Atlântica,1
+2026-09-26,MA,Amazônia,5
+2026-09-26,MA,Cerrado,7
+2026-09-26,MG,Cerrado,12
+2026-09-26,MG,Mata Atlântica,5
+2026-09-26,MS,Cerrado,3
+2026-09-26,MS,Pantanal,1
+2026-09-26,MT,Amazônia,30
+2026-09-26,MT,Cerrado,29
+2026-09-26,PA,Amazônia,387
+2026-09-26,PI,Caatinga,1
+2026-09-26,PI,Cerrado,2
+2026-09-26,PR,Mata Atlântica,13
+2026-09-26,RR,Amazônia,2
+2026-09-26,RS,Mata Atlântica,5
+2026-09-26,RS,Pampa,3
+2026-09-26,SC,Mata Atlântica,22
+2026-09-26,SP,Cerrado,4
+2026-09-26,SP,Mata Atlântica,5
+2026-09-26,TO,Amazônia,2
+2026-09-26,TO,Cerrado,26
+2026-09-27,AC,Amazônia,5
+2026-09-27,AM,Amazônia,97
+2026-09-27,BA,Caatinga,16
+2026-09-27,BA,Cerrado,81
+2026-09-27,BA,Mata Atlântica,5
+2026-09-27,CE,Caatinga,17
+2026-09-27,GO,Cerrado,1
+2026-09-27,MA,Cerrado,16
+2026-09-27,MG,Caatinga,16
+2026-09-27,MG,Cerrado,22
+2026-09-27,MG,Mata Atlântica,10
+2026-09-27,MS,Mata Atlântica,2
+2026-09-27,MS,Pantanal,6
+2026-09-27,MT,Amazônia,62
+2026-09-27,MT,Cerrado,21
+2026-09-27,MT,Pantanal,1
+2026-09-27,PA,Amazônia,33
+2026-09-27,PB,Caatinga,2
+2026-09-27,PB,Mata Atlântica,4
+2026-09-27,PE,Caatinga,23
+2026-09-27,PE,Mata Atlântica,5
+2026-09-27,PI,Caatinga,23
+2026-09-27,PI,Cerrado,25
+2026-09-27,PR,Mata Atlântica,3
+2026-09-27,RJ,Mata Atlântica,1
+2026-09-27,RN,Caatinga,1
+2026-09-27,RO,Amazônia,17
+2026-09-27,RR,Amazônia,12
+2026-09-27,RS,Pampa,3
+2026-09-27,TO,Cerrado,11
+2026-09-28,AC,Amazônia,92
+2026-09-28,AM,Amazônia,82
+2026-09-28,AP,Amazônia,14
+2026-09-28,BA,Caatinga,90
+2026-09-28,BA,Cerrado,208
+2026-09-28,BA,Mata Atlântica,21
+2026-09-28,CE,Caatinga,4
+2026-09-28,DF,Cerrado,3
+2026-09-28,ES,Mata Atlântica,6
+2026-09-28,GO,Cerrado,49
+2026-09-28,GO,Mata Atlântica,1
+2026-09-28,MA,Amazônia,29
+2026-09-28,MA,Caatinga,1
+2026-09-28,MA,Cerrado,168
+2026-09-28,MG,Caatinga,10
+2026-09-28,MG,Cerrado,91
+2026-09-28,MG,Mata Atlântica,91
+2026-09-28,MT,Amazônia,7
+2026-09-28,MT,Cerrado,21
+2026-09-28,PA,Amazônia,168
+2026-09-28,PI,Caatinga,15
+2026-09-28,PI,Cerrado,108
+2026-09-28,RJ,Mata Atlântica,4
+2026-09-28,RO,Amazônia,3
+2026-09-28,SP,Cerrado,1
+2026-09-28,SP,Mata Atlântica,5
+2026-09-28,TO,Amazônia,5
+2026-09-28,TO,Cerrado,155
+2026-09-29,AC,Amazônia,3
+2026-09-29,AL,Caatinga,2
+2026-09-29,AM,Amazônia,25
+2026-09-29,BA,Caatinga,3
+2026-09-29,BA,Cerrado,15
+2026-09-29,BA,Mata Atlântica,1
+2026-09-29,CE,Caatinga,3
+2026-09-29,DF,Cerrado,11
+2026-09-29,GO,Cerrado,15
+2026-09-29,MA,Cerrado,1
+2026-09-29,MG,Caatinga,1
+2026-09-29,MG,Cerrado,12
+2026-09-29,MG,Mata Atlântica,2
+2026-09-29,MS,Cerrado,5
+2026-09-29,MS,Mata Atlântica,6
+2026-09-29,MT,Amazônia,54
+2026-09-29,MT,Cerrado,28
+2026-09-29,PA,Amazônia,256
+2026-09-29,PE,Caatinga,4
+2026-09-29,PE,Mata Atlântica,2
+2026-09-29,PI,Cerrado,2
+2026-09-29,PR,Mata Atlântica,1
+2026-09-29,RO,Amazônia,4
+2026-09-29,RR,Amazônia,8
+2026-09-29,TO,Cerrado,26
+2026-09-30,AC,Amazônia,6
+2026-09-30,AL,Caatinga,2
+2026-09-30,AM,Amazônia,115
+2026-09-30,AP,Amazônia,4
+2026-09-30,BA,Caatinga,139
+2026-09-30,BA,Cerrado,182
+2026-09-30,BA,Mata Atlântica,67
+2026-09-30,CE,Caatinga,20
+2026-09-30,ES,Mata Atlântica,7
+2026-09-30,MA,Amazônia,10
+2026-09-30,MA,Caatinga,2
+2026-09-30,MA,Cerrado,112
+2026-09-30,MG,Caatinga,8
+2026-09-30,MG,Cerrado,22
+2026-09-30,MG,Mata Atlântica,63
+2026-09-30,MT,Amazônia,13
+2026-09-30,MT,Cerrado,1
+2026-09-30,PA,Amazônia,45
+2026-09-30,PB,Caatinga,2
+2026-09-30,PE,Caatinga,14
+2026-09-30,PE,Mata Atlântica,2
+2026-09-30,PI,Caatinga,37
+2026-09-30,PI,Cerrado,71
+2026-09-30,RJ,Mata Atlântica,1
+2026-09-30,RO,Amazônia,30
+2026-09-30,RR,Amazônia,1
+2026-09-30,SE,Mata Atlântica,2
+2026-09-30,TO,Cerrado,13
+2026-10-01,AM,Amazônia,19
+2026-10-01,AP,Amazônia,35
+2026-10-01,BA,Caatinga,61
+2026-10-01,BA,Cerrado,171
+2026-10-01,BA,Mata Atlântica,3
+2026-10-01,GO,Cerrado,27
+2026-10-01,GO,Mata Atlântica,1
+2026-10-01,MA,Amazônia,11
+2026-10-01,MA,Cerrado,94
+2026-10-01,MG,Caatinga,3
+2026-10-01,MG,Cerrado,35
+2026-10-01,MG,Mata Atlântica,29
+2026-10-01,MT,Amazônia,36
+2026-10-01,MT,Cerrado,34
+2026-10-01,PA,Amazônia,511
+2026-10-01,PI,Caatinga,4
+2026-10-01,PI,Cerrado,55
+2026-10-01,RR,Amazônia,1
+2026-10-01,TO,Amazônia,6
+2026-10-01,TO,Cerrado,103
+2026-10-02,AC,Amazônia,1
+2026-10-02,AL,Caatinga,2
+2026-10-02,AL,Mata Atlântica,3
+2026-10-02,AM,Amazônia,113
+2026-10-02,BA,Caatinga,41
+2026-10-02,BA,Cerrado,25
+2026-10-02,BA,Mata Atlântica,17
+2026-10-02,CE,Caatinga,7
+2026-10-02,MA,Caatinga,1
+2026-10-02,MA,Cerrado,20
+2026-10-02,MG,Mata Atlântica,23
+2026-10-02,MS,Cerrado,1
+2026-10-02,MT,Amazônia,15
+2026-10-02,PA,Amazônia,162
+2026-10-02,PB,Caatinga,3
+2026-10-02,PB,Mata Atlântica,3
+2026-10-02,PE,Caatinga,1
+2026-10-02,PI,Caatinga,8
+2026-10-02,PI,Cerrado,1
+2026-10-02,RN,Caatinga,2
+2026-10-02,RO,Amazônia,14
+2026-10-02,RR,Amazônia,41
+2026-10-02,RS,Mata Atlântica,1
+2026-10-02,RS,Pampa,9
+2026-10-03,AC,Amazônia,55
+2026-10-03,AM,Amazônia,189
+2026-10-03,AP,Amazônia,21
+2026-10-03,BA,Caatinga,25
+2026-10-03,BA,Cerrado,3
+2026-10-03,BA,Mata Atlântica,6
+2026-10-03,CE,Caatinga,6
+2026-10-03,MA,Amazônia,44
+2026-10-03,MA,Caatinga,4
+2026-10-03,MA,Cerrado,138
+2026-10-03,MG,Caatinga,1
+2026-10-03,MG,Cerrado,2
+2026-10-03,MG,Mata Atlântica,5
+2026-10-03,PA,Amazônia,183
+2026-10-03,PB,Caatinga,3
+2026-10-03,PE,Caatinga,11
+2026-10-03,PI,Caatinga,11
+2026-10-03,PI,Cerrado,6
+2026-10-03,RO,Amazônia,35
+2026-10-03,TO,Amazônia,7
+2026-10-03,TO,Cerrado,17
+2026-10-04,AC,Amazônia,1
+2026-10-04,AM,Amazônia,33
+2026-10-04,AP,Amazônia,18
+2026-10-04,BA,Cerrado,7
+2026-10-04,CE,Caatinga,3
+2026-10-04,GO,Cerrado,2
+2026-10-04,MA,Amazônia,4
+2026-10-04,MA,Cerrado,1
+2026-10-04,MG,Caatinga,2
+2026-10-04,MT,Amazônia,13
+2026-10-04,MT,Cerrado,1
+2026-10-04,MT,Pantanal,1
+2026-10-04,PA,Amazônia,696
+2026-10-04,PB,Caatinga,1
+2026-10-04,PI,Cerrado,4
+2026-10-04,RN,Caatinga,1
+2026-10-04,RO,Amazônia,5
+2026-10-04,RR,Amazônia,3
+2026-10-04,TO,Amazônia,2
+2026-10-04,TO,Cerrado,10
+2026-10-05,AC,Amazônia,53
+2026-10-05,AM,Amazônia,200
+2026-10-05,BA,Caatinga,38
+2026-10-05,BA,Cerrado,15
+2026-10-05,BA,Mata Atlântica,21
+2026-10-05,CE,Caatinga,37
+2026-10-05,MA,Amazônia,3
+2026-10-05,MA,Caatinga,4
+2026-10-05,MA,Cerrado,63
+2026-10-05,MG,Cerrado,2
+2026-10-05,MG,Mata Atlântica,12
+2026-10-05,MT,Amazônia,16
+2026-10-05,MT,Cerrado,5
+2026-10-05,PA,Amazônia,7
+2026-10-05,PB,Caatinga,13
+2026-10-05,PB,Mata Atlântica,3
+2026-10-05,PE,Caatinga,16
+2026-10-05,PE,Mata Atlântica,3
+2026-10-05,PI,Caatinga,68
+2026-10-05,PI,Cerrado,22
+2026-10-05,RN,Caatinga,5
+2026-10-05,RO,Amazônia,77
+2026-10-05,RR,Amazônia,14
+2026-10-05,TO,Cerrado,6
+2026-10-06,AC,Amazônia,260
+2026-10-06,AM,Amazônia,90
+2026-10-06,AP,Amazônia,73
+2026-10-06,BA,Caatinga,42
+2026-10-06,BA,Cerrado,194
+2026-10-06,BA,Mata Atlântica,13
+2026-10-06,CE,Caatinga,6
+2026-10-06,ES,Mata Atlântica,3
+2026-10-06,GO,Cerrado,29
+2026-10-06,MA,Amazônia,59
+2026-10-06,MA,Caatinga,8
+2026-10-06,MA,Cerrado,226
+2026-10-06,MG,Caatinga,1
+2026-10-06,MG,Cerrado,41
+2026-10-06,MG,Mata Atlântica,31
+2026-10-06,MT,Cerrado,10
+2026-10-06,PA,Amazônia,484
+2026-10-06,PI,Caatinga,43
+2026-10-06,PI,Cerrado,54
+2026-10-06,RJ,Mata Atlântica,1
+2026-10-06,RO,Amazônia,1
+2026-10-06,RR,Amazônia,1
+2026-10-06,TO,Amazônia,11
+2026-10-06,TO,Cerrado,142
+2026-10-07,AL,Mata Atlântica,1
+2026-10-07,BA,Caatinga,6
+2026-10-07,BA,Cerrado,2
+2026-10-07,BA,Mata Atlântica,6
+2026-10-07,CE,Caatinga,28
+2026-10-07,GO,Cerrado,5
+2026-10-07,MA,Cerrado,3
+2026-10-07,MG,Mata Atlântica,2
+2026-10-07,MT,Amazônia,27
+2026-10-07,MT,Cerrado,6
+2026-10-07,PA,Amazônia,7
+2026-10-07,PB,Caatinga,4
+2026-10-07,PE,Caatinga,4
+2026-10-07,PE,Mata Atlântica,1
+2026-10-07,PI,Caatinga,37
+2026-10-07,RN,Caatinga,5
+2026-10-07,RO,Amazônia,3
+2026-10-07,RS,Mata Atlântica,2
+2026-10-07,RS,Pampa,4
+2026-10-07,SE,Mata Atlântica,3
+2026-10-07,TO,Cerrado,13
+2026-10-08,AC,Amazônia,20
+2026-10-08,AL,Caatinga,2
+2026-10-08,AM,Amazônia,138
+2026-10-08,BA,Caatinga,156
+2026-10-08,BA,Cerrado,292
+2026-10-08,BA,Mata Atlântica,76
+2026-10-08,CE,Caatinga,66
+2026-10-08,ES,Mata Atlântica,11
+2026-10-08,GO,Cerrado,2
+2026-10-08,MA,Amazônia,52
+2026-10-08,MA,Caatinga,6
+2026-10-08,MA,Cerrado,406
+2026-10-08,MG,Caatinga,12
+2026-10-08,MG,Cerrado,45
+2026-10-08,MG,Mata Atlântica,99
+2026-10-08,MT,Amazônia,13
+2026-10-08,PA,Amazônia,70
+2026-10-08,PB,Caatinga,15
+2026-10-08,PE,Caatinga,20
+2026-10-08,PI,Caatinga,165
+2026-10-08,PI,Cerrado,146
+2026-10-08,RN,Caatinga,10
+2026-10-08,RO,Amazônia,17
+2026-10-08,SP,Cerrado,1
+2026-10-08,TO,Amazônia,6
+2026-10-08,TO,Cerrado,68
+2026-10-09,AC,Amazônia,2
+2026-10-09,AM,Amazônia,50
+2026-10-09,AP,Amazônia,44
+2026-10-09,BA,Caatinga,3
+2026-10-09,BA,Cerrado,183
+2026-10-09,BA,Mata Atlântica,3
+2026-10-09,DF,Cerrado,10
+2026-10-09,GO,Cerrado,87
+2026-10-09,MA,Amazônia,9
+2026-10-09,MA,Caatinga,1
+2026-10-09,MA,Cerrado,54
+2026-10-09,MG,Caatinga,4
+2026-10-09,MG,Cerrado,85
+2026-10-09,MG,Mata Atlântica,30
+2026-10-09,MT,Amazônia,41
+2026-10-09,MT,Cerrado,21
+2026-10-09,PA,Amazônia,1115
+2026-10-09,PI,Caatinga,1
+2026-10-09,PI,Cerrado,35
+2026-10-09,RN,Caatinga,1
+2026-10-09,RR,Amazônia,11
+2026-10-09,SP,Cerrado,9
+2026-10-09,SP,Mata Atlântica,2
+2026-10-09,TO,Amazônia,10
+2026-10-09,TO,Cerrado,190
+2026-10-10,AC,Amazônia,5
+2026-10-10,AL,Caatinga,2
+2026-10-10,AL,Mata Atlântica,4
+2026-10-10,AM,Amazônia,494
+2026-10-10,BA,Caatinga,60
+2026-10-10,BA,Cerrado,90
+2026-10-10,BA,Mata Atlântica,30
+2026-10-10,CE,Caatinga,52
+2026-10-10,GO,Cerrado,1
+2026-10-10,MA,Amazônia,1
+2026-10-10,MA,Cerrado,14
+2026-10-10,MG,Caatinga,3
+2026-10-10,MG,Cerrado,19
+2026-10-10,MG,Mata Atlântica,40
+2026-10-10,MT,Amazônia,30
+2026-10-10,MT,Cerrado,4
+2026-10-10,PA,Amazônia,98
+2026-10-10,PB,Caatinga,18
+2026-10-10,PB,Mata Atlântica,1
+2026-10-10,PE,Caatinga,43
+2026-10-10,PE,Mata Atlântica,5
+2026-10-10,PI,Caatinga,25
+2026-10-10,PI,Cerrado,22
+2026-10-10,RN,Caatinga,8
+2026-10-10,RN,Mata Atlântica,1
+2026-10-10,RO,Amazônia,23
+2026-10-10,RR,Amazônia,61
+2026-10-10,SE,Mata Atlântica,1
+2026-10-11,AC,Amazônia,98
+2026-10-11,AM,Amazônia,46
+2026-10-11,RO,Amazônia,6
+2026-10-12,AM,Amazônia,186
+2026-10-12,AP,Amazônia,12
+2026-10-12,BA,Cerrado,2
+2026-10-12,CE,Caatinga,7
+2026-10-12,GO,Cerrado,8
+2026-10-12,MG,Cerrado,1
+2026-10-12,MS,Cerrado,2
+2026-10-12,MT,Amazônia,39
+2026-10-12,MT,Cerrado,18
+2026-10-12,MT,Pantanal,2
+2026-10-12,PA,Amazônia,1064
+2026-10-12,PE,Caatinga,3
+2026-10-12,PE,Mata Atlântica,1
+2026-10-12,PI,Caatinga,1
+2026-10-12,PI,Cerrado,1
+2026-10-12,RN,Caatinga,5
+2026-10-12,RR,Amazônia,33
+2026-10-12,TO,Amazônia,1
+2026-10-12,TO,Cerrado,15
+2026-10-13,AC,Amazônia,10
+2026-10-13,AL,Caatinga,1
+2026-10-13,AL,Mata Atlântica,1
+2026-10-13,AM,Amazônia,50
+2026-10-13,AP,Amazônia,13
+2026-10-13,BA,Caatinga,142
+2026-10-13,BA,Cerrado,59
+2026-10-13,BA,Mata Atlântica,82
+2026-10-13,CE,Caatinga,87
+2026-10-13,ES,Mata Atlântica,15
+2026-10-13,GO,Cerrado,6
+2026-10-13,MA,Amazônia,35
+2026-10-13,MA,Caatinga,4
+2026-10-13,MA,Cerrado,121
+2026-10-13,MG,Caatinga,2
+2026-10-13,MG,Cerrado,4
+2026-10-13,MG,Mata Atlântica,50
+2026-10-13,MT,Amazônia,8
+2026-10-13,PA,Amazônia,27
+2026-10-13,PB,Caatinga,8
+2026-10-13,PE,Caatinga,30
+2026-10-13,PE,Mata Atlântica,3
+2026-10-13,PI,Caatinga,142
+2026-10-13,PI,Cerrado,79
+2026-10-13,RN,Caatinga,14
+2026-10-13,RO,Amazônia,34
+2026-10-13,RR,Amazônia,9
+2026-10-13,SE,Caatinga,1
+2026-10-13,SE,Mata Atlântica,1
+2026-10-13,TO,Cerrado,12
+2026-10-14,AC,Amazônia,70
+2026-10-14,AM,Amazônia,31
+2026-10-14,AP,Amazônia,171
+2026-10-14,BA,Caatinga,84
+2026-10-14,BA,Cerrado,78
+2026-10-14,BA,Mata Atlântica,13
+2026-10-14,GO,Cerrado,18
+2026-10-14,MA,Amazônia,68
+2026-10-14,MA,Caatinga,1
+2026-10-14,MA,Cerrado,141
+2026-10-14,MG,Caatinga,3
+2026-10-14,MG,Cerrado,35
+2026-10-14,MG,Mata Atlântica,29
+2026-10-14,MT,Amazônia,17
+2026-10-14,MT,Cerrado,23
+2026-10-14,PA,Amazônia,1125
+2026-10-14,PI,Caatinga,2
+2026-10-14,PI,Cerrado,67
+2026-10-14,TO,Amazônia,18
+2026-10-14,TO,Cerrado,183
+2026-10-15,AC,Amazônia,2
+2026-10-15,AL,Mata Atlântica,2
+2026-10-15,AM,Amazônia,188
+2026-10-15,BA,Caatinga,42
+2026-10-15,BA,Mata Atlântica,21
+2026-10-15,CE,Caatinga,20
+2026-10-15,MA,Cerrado,22
+2026-10-15,MG,Mata Atlântica,10
+2026-10-15,MT,Amazônia,5
+2026-10-15,MT,Cerrado,1
+2026-10-15,PA,Amazônia,163
+2026-10-15,PB,Caatinga,5
+2026-10-15,PB,Mata Atlântica,5
+2026-10-15,PE,Caatinga,10
+2026-10-15,PE,Mata Atlântica,8
+2026-10-15,PI,Caatinga,4
+2026-10-15,RN,Caatinga,7
+2026-10-15,RO,Amazônia,7
+2026-10-15,RR,Amazônia,38
+2026-10-15,SE,Mata Atlântica,9
+2026-10-16,AC,Amazônia,3
+2026-10-16,AM,Amazônia,3
+2026-10-16,AP,Amazônia,47
+2026-10-16,BA,Caatinga,122
+2026-10-16,BA,Cerrado,55
+2026-10-16,BA,Mata Atlântica,27
+2026-10-16,CE,Caatinga,74
+2026-10-16,GO,Cerrado,9
+2026-10-16,MA,Amazônia,86
+2026-10-16,MA,Caatinga,7
+2026-10-16,MA,Cerrado,243
+2026-10-16,MG,Caatinga,8
+2026-10-16,MG,Cerrado,6
+2026-10-16,MG,Mata Atlântica,24
+2026-10-16,MT,Amazônia,1
+2026-10-16,PA,Amazônia,210
+2026-10-16,PB,Caatinga,2
+2026-10-16,PE,Caatinga,18
+2026-10-16,PI,Caatinga,56
+2026-10-16,PI,Cerrado,68
+2026-10-16,TO,Amazônia,5
+2026-10-16,TO,Cerrado,68
+2026-10-17,AM,Amazônia,78
+2026-10-17,AP,Amazônia,25
+2026-10-17,BA,Caatinga,1
+2026-10-17,BA,Cerrado,2
+2026-10-17,DF,Cerrado,1
+2026-10-17,GO,Cerrado,26
+2026-10-17,MA,Cerrado,4
+2026-10-17,MG,Caatinga,1
+2026-10-17,MG,Cerrado,7
+2026-10-17,MT,Amazônia,33
+2026-10-17,MT,Cerrado,19
+2026-10-17,PA,Amazônia,918
+2026-10-17,PR,Mata Atlântica,4
+2026-10-17,RR,Amazônia,21
+2026-10-17,RS,Pampa,1
+2026-10-17,SP,Mata Atlântica,4
+2026-10-17,TO,Cerrado,81
+2026-10-18,AC,Amazônia,1
+2026-10-18,AL,Mata Atlântica,4
+2026-10-18,AM,Amazônia,12
+2026-10-18,BA,Cerrado,1
+2026-10-18,CE,Caatinga,38
+2026-10-18,MA,Amazônia,12
+2026-10-18,MA,Caatinga,2
+2026-10-18,MA,Cerrado,28
+2026-10-18,MG,Mata Atlântica,1
+2026-10-18,MT,Amazônia,15
+2026-10-18,MT,Cerrado,7
+2026-10-18,PA,Amazônia,4
+2026-10-18,PB,Caatinga,10
+2026-10-18,PE,Caatinga,26
+2026-10-18,PE,Mata Atlântica,5
+2026-10-18,PI,Caatinga,15
+2026-10-18,PI,Cerrado,1
+2026-10-18,RN,Caatinga,3
+2026-10-18,RO,Amazônia,20
+2026-10-18,RR,Amazônia,15
+2026-10-18,RS,Pampa,1
+2026-10-18,SE,Mata Atlântica,1
+2026-10-19,AC,Amazônia,14
+2026-10-19,AM,Amazônia,1
+2026-10-19,AP,Amazônia,56
+2026-10-19,BA,Caatinga,22
+2026-10-19,BA,Cerrado,55
+2026-10-19,CE,Caatinga,2
+2026-10-19,GO,Cerrado,37
+2026-10-19,GO,Mata Atlântica,1
+2026-10-19,MA,Amazônia,46
+2026-10-19,MA,Cerrado,88
+2026-10-19,MG,Caatinga,2
+2026-10-19,MG,Cerrado,66
+2026-10-19,MG,Mata Atlântica,45
+2026-10-19,MS,Cerrado,4
+2026-10-19,MT,Amazônia,7
+2026-10-19,MT,Cerrado,12
+2026-10-19,PA,Amazônia,465
+2026-10-19,PE,Caatinga,3
+2026-10-19,PI,Caatinga,7
+2026-10-19,PI,Cerrado,8
+2026-10-19,PR,Mata Atlântica,7
+2026-10-19,SC,Mata Atlântica,4
+2026-10-19,SP,Cerrado,3
+2026-10-19,SP,Mata Atlântica,3
+2026-10-19,TO,Amazônia,2
+2026-10-19,TO,Cerrado,51
+2026-10-20,AM,Amazônia,13
+2026-10-20,BA,Caatinga,1
+2026-10-20,CE,Caatinga,9
+2026-10-20,GO,Cerrado,22
+2026-10-20,GO,Mata Atlântica,3
+2026-10-20,MA,Cerrado,10
+2026-10-20,MG,Cerrado,2
+2026-10-20,MS,Cerrado,10
+2026-10-20,MS,Pantanal,6
+2026-10-20,MT,Amazônia,21
+2026-10-20,MT,Cerrado,39
+2026-10-20,MT,Pantanal,2
+2026-10-20,PA,Amazônia,106
+2026-10-20,PB,Caatinga,6
+2026-10-20,PB,Mata Atlântica,1
+2026-10-20,PE,Caatinga,21
+2026-10-20,PE,Mata Atlântica,4
+2026-10-20,PI,Caatinga,6
+2026-10-20,PR,Mata Atlântica,26
+2026-10-20,RN,Caatinga,4
+2026-10-20,RN,Mata Atlântica,1
+2026-10-20,RO,Amazônia,2
+2026-10-20,RR,Amazônia,7
+2026-10-20,RS,Mata Atlântica,24
+2026-10-20,RS,Pampa,5
+2026-10-20,SC,Mata Atlântica,41
+2026-10-20,TO,Cerrado,7
+2026-10-21,AC,Amazônia,29
+2026-10-21,AL,Caatinga,1
+2026-10-21,AM,Amazônia,34
+2026-10-21,AP,Amazônia,3
+2026-10-21,BA,Caatinga,108
+2026-10-21,BA,Cerrado,70
+2026-10-21,BA,Mata Atlântica,25
+2026-10-21,CE,Caatinga,100
+2026-10-21,GO,Cerrado,11
+2026-10-21,MA,Amazônia,188
+2026-10-21,MA,Caatinga,4
+2026-10-21,MA,Cerrado,367
+2026-10-21,MG,Caatinga,8
+2026-10-21,MG,Cerrado,31
+2026-10-21,MG,Mata Atlântica,12
+2026-10-21,PA,Amazônia,109
+2026-10-21,PB,Caatinga,7
+2026-10-21,PE,Caatinga,17
+2026-10-21,PI,Caatinga,91
+2026-10-21,PI,Cerrado,14
+2026-10-21,RN,Caatinga,1
+2026-10-21,TO,Amazônia,1
+2026-10-21,TO,Cerrado,6
+2026-10-22,AM,Amazônia,43
+2026-10-22,AP,Amazônia,72
+2026-10-22,BA,Caatinga,5
+2026-10-22,BA,Cerrado,14
+2026-10-22,GO,Cerrado,73
+2026-10-22,MA,Amazônia,18
+2026-10-22,MA,Cerrado,51
+2026-10-22,MG,Cerrado,2
+2026-10-22,MT,Amazônia,22
+2026-10-22,MT,Cerrado,19
+2026-10-22,PA,Amazônia,1260
+2026-10-22,PI,Caatinga,3
+2026-10-22,PI,Cerrado,16
+2026-10-22,RN,Caatinga,1
+2026-10-22,TO,Amazônia,26
+2026-10-22,TO,Cerrado,308
+2026-10-23,AL,Mata Atlântica,4
+2026-10-23,AM,Amazônia,40
+2026-10-23,BA,Caatinga,27
+2026-10-23,BA,Cerrado,23
+2026-10-23,BA,Mata Atlântica,17
+2026-10-23,CE,Caatinga,102
+2026-10-23,MA,Amazônia,6
+2026-10-23,MA,Caatinga,1
+2026-10-23,MA,Cerrado,35
+2026-10-23,MG,Mata Atlântica,2
+2026-10-23,MS,Cerrado,2
+2026-10-23,MS,Pantanal,3
+2026-10-23,MT,Amazônia,25
+2026-10-23,MT,Cerrado,4
+2026-10-23,MT,Pantanal,4
+2026-10-23,PA,Amazônia,35
+2026-10-23,PB,Caatinga,13
+2026-10-23,PB,Mata Atlântica,4
+2026-10-23,PE,Caatinga,23
+2026-10-23,PE,Mata Atlântica,7
+2026-10-23,PI,Caatinga,28
+2026-10-23,PI,Cerrado,5
+2026-10-23,RN,Mata Atlântica,3
+2026-10-23,RO,Amazônia,16
+2026-10-23,RR,Amazônia,52
+2026-10-23,SE,Caatinga,1
+2026-10-23,SE,Mata Atlântica,5
+2026-10-24,AC,Amazônia,48
+2026-10-24,AM,Amazônia,3
+2026-10-24,AP,Amazônia,101
+2026-10-24,BA,Caatinga,152
+2026-10-24,BA,Cerrado,84
+2026-10-24,BA,Mata Atlântica,12
+2026-10-24,CE,Caatinga,47
+2026-10-24,ES,Mata Atlântica,1
+2026-10-24,GO,Cerrado,11
+2026-10-24,MA,Amazônia,185
+2026-10-24,MA,Caatinga,8
+2026-10-24,MA,Cerrado,391
+2026-10-24,MG,Caatinga,14
+2026-10-24,MG,Cerrado,11
+2026-10-24,MG,Mata Atlântica,7
+2026-10-24,MT,Amazônia,7
+2026-10-24,PA,Amazônia,616
+2026-10-24,PB,Caatinga,5
+2026-10-24,PE,Caatinga,41
+2026-10-24,PI,Caatinga,80
+2026-10-24,PI,Cerrado,112
+2026-10-24,RJ,Mata Atlântica,3
+2026-10-24,RO,Amazônia,7
+2026-10-24,TO,Amazônia,23
+2026-10-24,TO,Cerrado,209
+2026-10-25,AM,Amazônia,81
+2026-10-25,AP,Amazônia,31
+2026-10-25,BA,Caatinga,1
+2026-10-25,CE,Caatinga,5
+2026-10-25,GO,Cerrado,4
+2026-10-25,MT,Amazônia,67
+2026-10-25,MT,Cerrado,17
+2026-10-25,MT,Pantanal,2
+2026-10-25,PA,Amazônia,908
+2026-10-25,PB,Caatinga,1
+2026-10-25,PB,Mata Atlântica,2
+2026-10-25,PE,Mata Atlântica,2
+2026-10-25,RN,Caatinga,2
+2026-10-25,RO,Amazônia,3
+2026-10-25,RR,Amazônia,41
+2026-10-25,TO,Cerrado,10
+2026-10-26,AC,Amazônia,23
+2026-10-26,AL,Caatinga,2
+2026-10-26,AL,Mata Atlântica,10
+2026-10-26,AM,Amazônia,36
+2026-10-26,AP,Amazônia,15
+2026-10-26,BA,Caatinga,54
+2026-10-26,BA,Cerrado,9
+2026-10-26,BA,Mata Atlântica,9
+2026-10-26,CE,Caatinga,33
+2026-10-26,MA,Amazônia,55
+2026-10-26,MA,Caatinga,3
+2026-10-26,MA,Cerrado,84
+2026-10-26,MG,Mata Atlântica,2
+2026-10-26,MT,Amazônia,11
+2026-10-26,PA,Amazônia,29
+2026-10-26,PB,Caatinga,6
+2026-10-26,PE,Caatinga,11
+2026-10-26,PE,Mata Atlântica,1
+2026-10-26,PI,Caatinga,31
+2026-10-26,PI,Cerrado,8
+2026-10-26,RN,Caatinga,12
+2026-10-26,RO,Amazônia,16
+2026-10-26,RR,Amazônia,2
+2026-10-26,SE,Caatinga,2
+2026-10-26,SE,Mata Atlântica,4
+2026-10-27,AM,Amazônia,2
+2026-10-27,AP,Amazônia,53
+2026-10-27,BA,Caatinga,4
+2026-10-27,BA,Cerrado,17
+2026-10-27,GO,Cerrado,13
+2026-10-27,MA,Amazônia,70
+2026-10-27,MA,Caatinga,2
+2026-10-27,MA,Cerrado,142
+2026-10-27,MG,Cerrado,1
+2026-10-27,PA,Amazônia,902
+2026-10-27,PE,Caatinga,1
+2026-10-27,PI,Caatinga,6
+2026-10-27,PI,Cerrado,11
+2026-10-27,PR,Mata Atlântica,1
+2026-10-27,RR,Amazônia,11
+2026-10-27,SC,Mata Atlântica,3
+2026-10-27,SP,Mata Atlântica,4
+2026-10-27,TO,Amazônia,22
+2026-10-27,TO,Cerrado,66
+2026-10-28,AL,Mata Atlântica,1
+2026-10-28,AM,Amazônia,55
+2026-10-28,AP,Amazônia,1
+2026-10-28,BA,Caatinga,4
+2026-10-28,BA,Cerrado,1
+2026-10-28,BA,Mata Atlântica,1
+2026-10-28,CE,Caatinga,43
+2026-10-28,MA,Caatinga,7
+2026-10-28,MA,Cerrado,12
+2026-10-28,MT,Amazônia,2
+2026-10-28,MT,Cerrado,2
+2026-10-28,PA,Amazônia,257
+2026-10-28,PB,Caatinga,11
+2026-10-28,PB,Mata Atlântica,1
+2026-10-28,PE,Caatinga,15
+2026-10-28,PE,Mata Atlântica,8
+2026-10-28,PI,Caatinga,11
+2026-10-28,RN,Caatinga,3
+2026-10-28,RR,Amazônia,61
+2026-10-28,RS,Pampa,2
+2026-10-28,SE,Mata Atlântica,4
+2026-10-29,AC,Amazônia,4
+2026-10-29,AM,Amazônia,11
+2026-10-29,AP,Amazônia,52
+2026-10-29,BA,Caatinga,79
+2026-10-29,BA,Cerrado,107
+2026-10-29,BA,Mata Atlântica,3
+2026-10-29,CE,Caatinga,75
+2026-10-29,MA,Amazônia,135
+2026-10-29,MA,Caatinga,4
+2026-10-29,MA,Cerrado,139
+2026-10-29,MG,Caatinga,17
+2026-10-29,MG,Cerrado,16
+2026-10-29,MG,Mata Atlântica,2
+2026-10-29,PA,Amazônia,223
+2026-10-29,PB,Caatinga,11
+2026-10-29,PE,Caatinga,24
+2026-10-29,PI,Caatinga,101
+2026-10-29,PI,Cerrado,55
+2026-10-29,RJ,Mata Atlântica,1
+2026-10-29,RO,Amazônia,1
+2026-10-29,TO,Cerrado,18
+2026-10-30,AM,Amazônia,19
+2026-10-30,AP,Amazônia,94
+2026-10-30,BA,Cerrado,9
+2026-10-30,CE,Caatinga,11
+2026-10-30,GO,Cerrado,8
+2026-10-30,MA,Amazônia,3
+2026-10-30,MA,Cerrado,5
+2026-10-30,MS,Pantanal,1
+2026-10-30,MT,Amazônia,23
+2026-10-30,MT,Cerrado,8
+2026-10-30,MT,Pantanal,3
+2026-10-30,PA,Amazônia,674
+2026-10-30,PB,Mata Atlântica,6
+2026-10-30,PR,Mata Atlântica,2
+2026-10-30,RO,Amazônia,1
+2026-10-30,RR,Amazônia,21
+2026-10-30,RS,Mata Atlântica,2
+2026-10-30,RS,Pampa,1
+2026-10-30,TO,Amazônia,4
+2026-10-30,TO,Cerrado,24
+2026-10-31,AC,Amazônia,3
+2026-10-31,AL,Mata Atlântica,3
+2026-10-31,AM,Amazônia,13
+2026-10-31,BA,Caatinga,57
+2026-10-31,BA,Cerrado,6
+2026-10-31,BA,Mata Atlântica,12
+2026-10-31,CE,Caatinga,184
+2026-10-31,MA,Amazônia,53
+2026-10-31,MA,Cerrado,113
+2026-10-31,MG,Caatinga,1
+2026-10-31,MG,Cerrado,1
+2026-10-31,MT,Amazônia,3
+2026-10-31,PA,Amazônia,29
+2026-10-31,PB,Caatinga,41
+2026-10-31,PE,Caatinga,44
+2026-10-31,PE,Mata Atlântica,6
+2026-10-31,PI,Caatinga,67
+2026-10-31,PI,Cerrado,14
+2026-10-31,RN,Caatinga,8
+2026-10-31,RN,Mata Atlântica,3
+2026-10-31,RO,Amazônia,15
+2026-10-31,RR,Amazônia,10
+2026-10-31,RS,Mata Atlântica,1
+2026-10-31,RS,Pampa,2
+2026-10-31,SE,Mata Atlântica,4
+2026-10-31,TO,Cerrado,6
+2026-11-01,AC,Amazônia,7
+2026-11-01,AP,Amazônia,131
+2026-11-01,BA,Caatinga,7
+2026-11-01,BA,Cerrado,16
+2026-11-01,CE,Caatinga,5
+2026-11-01,GO,Cerrado,2
+2026-11-01,MA,Amazônia,127
+2026-11-01,MA,Caatinga,1
+2026-11-01,MA,Cerrado,113
+2026-11-01,MG,Cerrado,1
+2026-11-01,MT,Amazônia,6
+2026-11-01,MT,Cerrado,2
+2026-11-01,PA,Amazônia,715
+2026-11-01,PE,Caatinga,4
+2026-11-01,PI,Caatinga,13
+2026-11-01,PI,Cerrado,25
+2026-11-01,SP,Cerrado,1
+2026-11-01,SP,Mata Atlântica,1
+2026-11-01,TO,Amazônia,9
+2026-11-01,TO,Cerrado,68
+2026-11-02,AL,Mata Atlântica,2
+2026-11-02,AM,Amazônia,92
+2026-11-02,AP,Amazônia,1
+2026-11-02,BA,Caatinga,1
+2026-11-02,BA,Mata Atlântica,1
+2026-11-02,CE,Caatinga,1
+2026-11-02,GO,Cerrado,3
+2026-11-02,MS,Cerrado,5
+2026-11-02,MS,Pantanal,1
+2026-11-02,MT,Amazônia,44
+2026-11-02,MT,Cerrado,11
+2026-11-02,MT,Pantanal,13
+2026-11-02,PA,Amazônia,365
+2026-11-02,PB,Caatinga,2
+2026-11-02,PB,Mata Atlântica,4
+2026-11-02,PE,Caatinga,2
+2026-11-02,PE,Mata Atlântica,6
+2026-11-02,PI,Caatinga,1
+2026-11-02,RN,Caatinga,1
+2026-11-02,RO,Amazônia,5
+2026-11-02,RR,Amazônia,45
+2026-11-02,RS,Mata Atlântica,4
+2026-11-02,RS,Pampa,4
+2026-11-02,TO,Cerrado,3
+2026-11-03,AC,Amazônia,39
+2026-11-03,AL,Caatinga,2
+2026-11-03,AM,Amazônia,10
+2026-11-03,AP,Amazônia,5
+2026-11-03,BA,Caatinga,181
+2026-11-03,BA,Cerrado,73
+2026-11-03,BA,Mata Atlântica,58
+2026-11-03,CE,Caatinga,50
+2026-11-03,ES,Mata Atlântica,1
+2026-11-03,MA,Amazônia,105
+2026-11-03,MA,Caatinga,6
+2026-11-03,MA,Cerrado,262
+2026-11-03,MG,Caatinga,9
+2026-11-03,MG,Cerrado,9
+2026-11-03,MG,Mata Atlântica,13
+2026-11-03,MT,Amazônia,1
+2026-11-03,PA,Amazônia,69
+2026-11-03,PB,Caatinga,5
+2026-11-03,PE,Caatinga,14
+2026-11-03,PE,Mata Atlântica,1
+2026-11-03,PI,Caatinga,132
+2026-11-03,PI,Cerrado,54
+2026-11-03,RJ,Mata Atlântica,2
+2026-11-03,RO,Amazônia,24
+2026-11-03,SE,Mata Atlântica,4
+2026-11-03,TO,Cerrado,7
+2026-11-04,AC,Amazônia,1
+2026-11-04,AM,Amazônia,3
+2026-11-04,AP,Amazônia,122
+2026-11-04,BA,Caatinga,5
+2026-11-04,BA,Cerrado,17
+2026-11-04,GO,Cerrado,24
+2026-11-04,MA,Amazônia,17
+2026-11-04,MA,Cerrado,14
+2026-11-04,MG,Caatinga,1
+2026-11-04,MG,Cerrado,7
+2026-11-04,MG,Mata Atlântica,2
+2026-11-04,MS,Cerrado,1
+2026-11-04,MT,Amazônia,15
+2026-11-04,MT,Cerrado,14
+2026-11-04,PA,Amazônia,909
+2026-11-04,PI,Caatinga,5
+2026-11-04,PI,Cerrado,14
+2026-11-04,RJ,Mata Atlântica,1
+2026-11-04,RN,Caatinga,2
+2026-11-04,RR,Amazônia,5
+2026-11-04,SP,Mata Atlântica,1
+2026-11-04,TO,Amazônia,1
+2026-11-04,TO,Cerrado,79
+2026-11-05,AL,Caatinga,1
+2026-11-05,AL,Mata Atlântica,6
+2026-11-05,AM,Amazônia,15
+2026-11-05,BA,Caatinga,54
+2026-11-05,BA,Cerrado,7
+2026-11-05,BA,Mata Atlântica,22
+2026-11-05,CE,Caatinga,86
+2026-11-05,ES,Mata Atlântica,2
+2026-11-05,MA,Amazônia,35
+2026-11-05,MA,Cerrado,65
+2026-11-05,MG,Caatinga,1
+2026-11-05,MG,Mata Atlântica,1
+2026-11-05,MT,Amazônia,38
+2026-11-05,MT,Cerrado,6
+2026-11-05,MT,Pantanal,22
+2026-11-05,PA,Amazônia,12
+2026-11-05,PB,Caatinga,38
+2026-11-05,PB,Mata Atlântica,4
+2026-11-05,PE,Caatinga,34
+2026-11-05,PE,Mata Atlântica,13
+2026-11-05,PI,Caatinga,35
+2026-11-05,PI,Cerrado,14
+2026-11-05,RN,Caatinga,8
+2026-11-05,RN,Mata Atlântica,8
+2026-11-05,RO,Amazônia,21
+2026-11-05,RR,Amazônia,28
+2026-11-05,RS,Pampa,1
+2026-11-05,SE,Caatinga,1
+2026-11-05,SE,Mata Atlântica,2
+2026-11-06,AC,Amazônia,6
+2026-11-06,AM,Amazônia,11
+2026-11-06,AP,Amazônia,138
+2026-11-06,BA,Caatinga,130
+2026-11-06,BA,Cerrado,113
+2026-11-06,BA,Mata Atlântica,14
+2026-11-06,CE,Caatinga,67
+2026-11-06,ES,Mata Atlântica,3
+2026-11-06,GO,Cerrado,10
+2026-11-06,MA,Amazônia,257
+2026-11-06,MA,Caatinga,1
+2026-11-06,MA,Cerrado,471
+2026-11-06,MG,Caatinga,5
+2026-11-06,MG,Cerrado,13
+2026-11-06,MG,Mata Atlântica,29
+2026-11-06,MT,Cerrado,1
+2026-11-06,PA,Amazônia,628
+2026-11-06,PB,Caatinga,3
+2026-11-06,PE,Caatinga,1
+2026-11-06,PI,Caatinga,55
+2026-11-06,PI,Cerrado,74
+2026-11-06,RN,Caatinga,1
+2026-11-06,RO,Amazônia,3
+2026-11-06,TO,Amazônia,30
+2026-11-06,TO,Cerrado,75
+2026-11-07,AM,Amazônia,109
+2026-11-07,AP,Amazônia,49
+2026-11-07,BA,Caatinga,1
+2026-11-07,CE,Caatinga,1
+2026-11-07,GO,Cerrado,1
+2026-11-07,MA,Amazônia,1
+2026-11-07,MG,Cerrado,3
+2026-11-07,MT,Amazônia,22
+2026-11-07,MT,Cerrado,12
+2026-11-07,MT,Pantanal,7
+2026-11-07,PA,Amazônia,729
+2026-11-07,PB,Caatinga,1
+2026-11-07,PB,Mata Atlântica,2
+2026-11-07,PE,Caatinga,10
+2026-11-07,PE,Mata Atlântica,2
+2026-11-07,PI,Caatinga,3
+2026-11-07,RN,Mata Atlântica,1
+2026-11-07,RR,Amazônia,73
+2026-11-07,TO,Cerrado,7
+2026-11-08,AC,Amazônia,4
+2026-11-08,AL,Caatinga,1
+2026-11-08,AL,Mata Atlântica,7
+2026-11-08,AM,Amazônia,28
+2026-11-08,AP,Amazônia,3
+2026-11-08,BA,Caatinga,29
+2026-11-08,BA,Cerrado,2
+2026-11-08,BA,Mata Atlântica,13
+2026-11-08,CE,Caatinga,64
+2026-11-08,MA,Amazônia,126
+2026-11-08,MA,Caatinga,1
+2026-11-08,MA,Cerrado,141
+2026-11-08,MG,Cerrado,2
+2026-11-08,MG,Mata Atlântica,1
+2026-11-08,PA,Amazônia,87
+2026-11-08,PB,Caatinga,16
+2026-11-08,PB,Mata Atlântica,1
+2026-11-08,PE,Caatinga,17
+2026-11-08,PE,Mata Atlântica,11
+2026-11-08,PI,Caatinga,42
+2026-11-08,PI,Cerrado,6
+2026-11-08,RN,Caatinga,4
+2026-11-08,RN,Mata Atlântica,4
+2026-11-08,RO,Amazônia,3
+2026-11-08,RR,Amazônia,33
+2026-11-08,SE,Caatinga,1
+2026-11-08,SE,Mata Atlântica,3
+2026-11-08,TO,Amazônia,1
+2026-11-08,TO,Cerrado,1
+2026-11-09,AC,Amazônia,1
+2026-11-09,AM,Amazônia,3
+2026-11-09,AP,Amazônia,203
+2026-11-09,BA,Caatinga,2
+2026-11-09,BA,Cerrado,2
+2026-11-09,GO,Cerrado,14
+2026-11-09,GO,Mata Atlântica,1
+2026-11-09,MA,Amazônia,65
+2026-11-09,MA,Cerrado,21
+2026-11-09,MG,Cerrado,4
+2026-11-09,MT,Amazônia,1
+2026-11-09,PA,Amazônia,829
+2026-11-09,PI,Caatinga,4
+2026-11-09,PI,Cerrado,4
+2026-11-09,PR,Mata Atlântica,1
+2026-11-09,RN,Mata Atlântica,3
+2026-11-09,RR,Amazônia,3
+2026-11-09,RS,Pampa,2
+2026-11-09,SC,Mata Atlântica,5
+2026-11-09,SP,Cerrado,1
+2026-11-09,TO,Cerrado,50
+2026-11-10,AL,Caatinga,2
+2026-11-10,AL,Mata Atlântica,1
+2026-11-10,BA,Caatinga,5
+2026-11-10,CE,Caatinga,64
+2026-11-10,GO,Cerrado,1
+2026-11-10,MA,Amazônia,1
+2026-11-10,MA,Cerrado,32
+2026-11-10,MS,Cerrado,2
+2026-11-10,MS,Pantanal,1
+2026-11-10,PB,Caatinga,20
+2026-11-10,PB,Mata Atlântica,1
+2026-11-10,PE,Caatinga,9
+2026-11-10,PE,Mata Atlântica,10
+2026-11-10,PI,Caatinga,10
+2026-11-10,PR,Mata Atlântica,4
+2026-11-10,RN,Caatinga,4
+2026-11-10,RS,Pampa,8
+2026-11-10,SC,Mata Atlântica,3
+2026-11-10,SE,Caatinga,2
+2026-11-10,SE,Mata Atlântica,1
+2026-11-10,SP,Cerrado,1

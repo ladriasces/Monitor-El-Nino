@@ -1,0 +1,105 @@
+# Atualiza os dados e publica o site no GitHub Pages, 4 vezes por dia.
+#
+# - Os JSON do dia (docs/dados/) não vão para o repositório: são gerados aqui e publicados direto no Pages.
+#   Só a série de focos do satélite de referência (data/ref/focos_ref_diario.csv), que cresce dia a dia, é gravada.
+# - Execução completa uma vez por dia (06h20 UTC = 03h20 em Brasília, dentro da janela que o GDACS pede);
+#   nas outras, só as fontes que mudam ao longo do dia (avisos do INMET e da OMM, focos, notícias).
+# - 04_validar.py confere tudo antes de publicar: se reprovar, o site continua na última versão boa.
+# - As ações de terceiros estão fixadas pelo SHA do commit (com a versão no comentário), para que uma
+#   etiqueta alterada no repositório delas não mude o que roda aqui.
+#
+# Configuração única no GitHub: Settings → Pages → Source: "GitHub Actions".
+name: Atualizar dados e publicar
+
+on:
+  schedule:
+    - cron: "20 0,6,12,18 * * *"   # 21h20, 3h20 (completa), 9h20 e 15h20 em Brasília
+  workflow_dispatch:
+    inputs:
+      gdelt_horas:
+        description: "Horas de notícias do GDELT (7 = normal; 72 na primeira execução, para encher a aba de notícias)"
+        default: "7"
+  push:
+    branches: [main]
+    paths: ["docs/index.html", "0*.py", "clima_comum.py", ".github/workflows/atualizar.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atualizar
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write      # gravar a série de focos
+      pages: write         # publicar no Pages
+      id-token: write      # exigido pelo deploy do Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-actions.txt
+
+      - run: pip install -r requirements-actions.txt
+
+      - name: Escolher as fontes desta execução
+        id: perfil
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%H)" = "06" ]; then
+            echo "fontes=enso clima previsao avisos focos mundo swic noticias" >> "$GITHUB_OUTPUT"
+            echo "blocos=enso clima focos avisos mundo swic noticias" >> "$GITHUB_OUTPUT"
+          else
+            echo "fontes=avisos focos swic noticias" >> "$GITHUB_OUTPUT"
+            echo "blocos=focos avisos swic noticias" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Se uma fonte falhar (ou não for consultada nesta execução), os dados publicados antes são mantidos
+      - name: Recuperar os dados publicados
+        env:
+          SITE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+        run: |
+          mkdir -p docs/dados/serie
+          for f in enso clima focos avisos mundo swic noticias atualizacao; do
+            curl -sfL "$SITE/dados/$f.json" -o "docs/dados/$f.json" || rm -f "docs/dados/$f.json"
+          done
+          for uf in AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO; do
+            curl -sfL "$SITE/dados/serie/$uf.json" -o "docs/dados/serie/$uf.json" || rm -f "docs/dados/serie/$uf.json"
+          done
+
+      - name: Coleta
+        env:
+          GDELT_HORAS: ${{ inputs.gdelt_horas || '7' }}   # via variável (não direto no comando): o Python só aceita 1–336
+        run: python 01_coleta.py --fonte ${{ steps.perfil.outputs.fontes }} --gdelt-horas "$GDELT_HORAS"
+
+      - name: Tratamento
+        run: python 02_tratamento.py --bloco ${{ steps.perfil.outputs.blocos }}
+
+      - name: Validação
+        run: python 04_validar.py
+
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d  # v6.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
+
+      - name: Gravar a série de focos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ref/focos_ref_diario.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Focos do INPE: $(TZ=America/Sao_Paulo date +%d/%m/%Y)"
+            git pull --rebase && git push
+          fi

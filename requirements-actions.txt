@@ -1,0 +1,4 @@
+# Só o necessário para a atualização diária (GitHub Actions): 01_coleta.py e 02_tratamento.py
+pandas>=2.2
+requests>=2.31
+defusedxml>=0.7

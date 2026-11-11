@@ -1,0 +1,16 @@
+# Arquivos brutos baixados a cada coleta (recriados pelo 01_coleta.py)
+data/raw/
+
+# Dados do dia: gerados pelo GitHub Actions e publicados direto no Pages
+docs/dados/
+
+# Python
+__pycache__/
+*.pyc
+
+# Ferramentas locais
+.claude/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

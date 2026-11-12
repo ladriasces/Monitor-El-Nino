@@ -5497,6 +5497,8 @@ data,uf,bioma,n
 2026-11-10,SE,Caatinga,2
 2026-11-10,SE,Mata Atlântica,1
 2026-11-10,SP,Cerrado,1
+2026-11-11,AC,Amazônia,23
+2026-11-11,AM,Amazônia,12
 2026-11-11,AP,Amazônia,52
 2026-11-11,BA,Caatinga,44
 2026-11-11,BA,Cerrado,19
@@ -5510,6 +5512,7 @@ data,uf,bioma,n
 2026-11-11,PE,Caatinga,10
 2026-11-11,PI,Caatinga,60
 2026-11-11,PI,Cerrado,29
+2026-11-11,RO,Amazônia,1
 2026-11-11,SP,Mata Atlântica,1
 2026-11-11,TO,Amazônia,5
 2026-11-11,TO,Cerrado,12

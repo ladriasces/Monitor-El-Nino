@@ -1,9 +1,9 @@
 """
-01_coleta.py — Baixa as fontes abertas para data/raw/ (roda no GitHub Actions, 4 vezes por dia, ou à mão).
+01_coleta.py — Baixa as fontes abertas para data/raw/ (roda no GitHub Actions a cada hora, ou à mão).
 
   python 01_coleta.py                      # todas as fontes
   python 01_coleta.py --fonte avisos focos # só algumas
-  python 01_coleta.py --gdelt-horas 72     # carga inicial das notícias (padrão: 7 horas)
+  python 01_coleta.py --gdelt-horas 72     # carga inicial das notícias (padrão: 3 horas)
 
 Fontes:
   enso      NOAA/CPC: índice ONI, regiões Niño semana a semana e boletim mensal (ENSO Diagnostic Discussion)
@@ -44,7 +44,7 @@ CPC = "https://www.cpc.ncep.noaa.gov"
 INPE_DIARIO = "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/diario/Brasil"
 GDACS = "https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH"
 GDELT = "https://data.gdeltproject.org/gdeltv2"
-GDELT_HORAS = 7   # execuções a cada 6 horas: 7 horas de janela dão uma margem para atrasos
+GDELT_HORAS = 3   # execuções a cada hora: 3 horas de janela cobrem atrasos e uma rodada perdida
 
 
 def _regioes() -> pd.DataFrame:
@@ -288,6 +288,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Coleta das fontes do Monitor El Niño.")
     ap.add_argument("--fonte", nargs="*", default=list(FONTES), choices=list(FONTES))
     ap.add_argument("--gdelt-horas", type=_horas_validas, default=GDELT_HORAS, metavar="1-336",
-                    help="horas de notícias do GDELT a ler (padrão 7; na carga inicial, 72)")
+                    help="horas de notícias do GDELT a ler (padrão 3; na carga inicial, 72)")
     args = ap.parse_args()
     main(args.fonte, args.gdelt_horas)

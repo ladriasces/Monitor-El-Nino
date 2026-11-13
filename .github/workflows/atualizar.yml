@@ -1,9 +1,11 @@
-# Atualiza os dados e publica o site no GitHub Pages, 4 vezes por dia.
+# Atualiza os dados e publica o site no GitHub Pages: avisos e notícias a cada hora, o resto em menos rodadas.
 #
 # - Os JSON do dia (docs/dados/) não vão para o repositório: são gerados aqui e publicados direto no Pages.
 #   Só a série de focos do satélite de referência (data/ref/focos_ref_diario.csv), que cresce dia a dia, é gravada.
-# - Execução completa uma vez por dia (06h20 UTC = 03h20 em Brasília, dentro da janela que o GDACS pede);
-#   nas outras, só as fontes que mudam ao longo do dia (avisos do INMET e da OMM, focos, notícias).
+# - Execução completa uma vez por dia (06h20 UTC = 03h20 em Brasília, dentro da janela que o GDACS pede).
+# - A cada hora: avisos do INMET e da OMM e notícias, que mudam ao longo do dia.
+# - Focos do INPE também às 00h20, 12h20 e 18h20 UTC: o arquivo do INPE é diário, consultá-lo a cada hora
+#   só repetiria o mesmo download. As demais fontes mudam no máximo uma vez por dia.
 # - 04_validar.py confere tudo antes de publicar: se reprovar, o site continua na última versão boa.
 # - As ações de terceiros estão fixadas pelo SHA do commit (com a versão no comentário), para que uma
 #   etiqueta alterada no repositório delas não mude o que roda aqui.
@@ -13,12 +15,12 @@ name: Atualizar dados e publicar
 
 on:
   schedule:
-    - cron: "20 0,6,12,18 * * *"   # 21h20, 3h20 (completa), 9h20 e 15h20 em Brasília
+    - cron: "20 * * * *"   # a cada hora, aos 20 minutos (a das 06h20 UTC = 3h20 em Brasília é a completa)
   workflow_dispatch:
     inputs:
       gdelt_horas:
-        description: "Horas de notícias do GDELT (7 = normal; 72 na primeira execução, para encher a aba de notícias)"
-        default: "7"
+        description: "Horas de notícias do GDELT (3 = normal; 72 na primeira execução, para encher a aba de notícias)"
+        default: "3"
   push:
     branches: [main]
     paths: ["docs/index.html", "0*.py", "clima_comum.py", ".github/workflows/atualizar.yml"]
@@ -55,12 +57,16 @@ jobs:
       - name: Escolher as fontes desta execução
         id: perfil
         run: |
-          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%H)" = "06" ]; then
+          hora="$(date -u +%H)"
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$hora" = "06" ]; then
             echo "fontes=enso pacifico clima previsao avisos focos mundo swic noticias" >> "$GITHUB_OUTPUT"
             echo "blocos=enso pacifico clima focos avisos mundo swic noticias" >> "$GITHUB_OUTPUT"
-          else
+          elif [ "$hora" = "00" ] || [ "$hora" = "12" ] || [ "$hora" = "18" ]; then
             echo "fontes=avisos focos swic noticias" >> "$GITHUB_OUTPUT"
             echo "blocos=focos avisos swic noticias" >> "$GITHUB_OUTPUT"
+          else
+            echo "fontes=avisos swic noticias" >> "$GITHUB_OUTPUT"
+            echo "blocos=avisos swic noticias" >> "$GITHUB_OUTPUT"
           fi
 
       # Se uma fonte falhar (ou não for consultada nesta execução), os dados publicados antes são mantidos
@@ -78,7 +84,7 @@ jobs:
 
       - name: Coleta
         env:
-          GDELT_HORAS: ${{ inputs.gdelt_horas || '7' }}   # via variável (não direto no comando): o Python só aceita 1–336
+          GDELT_HORAS: ${{ inputs.gdelt_horas || '3' }}   # via variável (não direto no comando): o Python só aceita 1–336
         run: python 01_coleta.py --fonte ${{ steps.perfil.outputs.fontes }} --gdelt-horas "$GDELT_HORAS"
 
       - name: Tratamento

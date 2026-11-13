@@ -6,7 +6,7 @@
 
 ## O que é
 
-Uma plataforma aberta para qualquer pessoa acompanhar o El Niño e o clima: a situação do fenômeno no Oceano Pacífico, a chuva e a temperatura em cada região do Brasil, os avisos meteorológicos, as queimadas, os alertas no mundo e as notícias sobre o tema. Tudo vem de fontes públicas e oficiais e se atualiza sozinho, 4 vezes por dia.
+Uma plataforma aberta para qualquer pessoa acompanhar o El Niño e o clima: a situação do fenômeno no Oceano Pacífico, a chuva e a temperatura em cada região do Brasil, os avisos meteorológicos, as queimadas, os alertas no mundo e as notícias sobre o tema. Tudo vem de fontes públicas e oficiais e se atualiza sozinho: avisos e notícias a cada hora.
 
 ## Como usar
 
@@ -25,7 +25,7 @@ Em **Dados e método** estão as fontes e as explicações de cada número.
 
 ## Como funciona
 
-Quatro vezes por dia (3h20, 9h20, 15h20 e 21h20, horário de Brasília), uma rotina automática no GitHub busca os dados nas fontes, calcula os indicadores, confere tudo e publica o site. Ninguém precisa deixar um computador ligado. Se uma fonte estiver fora do ar, o site mantém os últimos dados dela e mostra a data.
+Uma rotina automática no GitHub busca os dados nas fontes, calcula os indicadores, confere tudo e publica o site. Avisos e notícias são atualizados a cada hora; os focos de queimada, quatro vezes por dia (3h20, 9h20, 15h20 e 21h20, horário de Brasília); e as fontes que publicam dados novos no máximo uma vez por dia (El Niño, temperatura do mar, chuva, temperatura, previsão e desastres no mundo), às 3h20. Ninguém precisa deixar um computador ligado. Se uma fonte estiver fora do ar, o site mantém os últimos dados dela e mostra a data.
 
 **Fontes:** NOAA (El Niño e temperatura do mar), NASA POWER e Open-Meteo (chuva, temperatura e previsão), INMET (avisos), INPE (queimadas), Organização Meteorológica Mundial e GDACS (alertas no mundo), Copernicus (temperatura global), GDELT, Agência Brasil, ONU News e Cemaden (notícias) e IBGE (mapas).
 

@@ -5516,6 +5516,7 @@ data,uf,bioma,n
 2026-11-11,SP,Mata Atlântica,1
 2026-11-11,TO,Amazônia,5
 2026-11-11,TO,Cerrado,12
+2026-11-12,AC,Amazônia,5
 2026-11-12,AM,Amazônia,47
 2026-11-12,AP,Amazônia,95
 2026-11-12,BA,Cerrado,2
@@ -5535,3 +5536,28 @@ data,uf,bioma,n
 2026-11-12,SC,Mata Atlântica,3
 2026-11-12,SP,Mata Atlântica,1
 2026-11-12,TO,Cerrado,2
+2026-11-13,AL,Caatinga,1
+2026-11-13,AL,Mata Atlântica,2
+2026-11-13,AM,Amazônia,30
+2026-11-13,BA,Caatinga,16
+2026-11-13,BA,Mata Atlântica,3
+2026-11-13,CE,Caatinga,220
+2026-11-13,MA,Amazônia,74
+2026-11-13,MA,Caatinga,5
+2026-11-13,MA,Cerrado,168
+2026-11-13,MG,Mata Atlântica,2
+2026-11-13,MS,Pantanal,2
+2026-11-13,MT,Amazônia,1
+2026-11-13,MT,Pantanal,1
+2026-11-13,PA,Amazônia,42
+2026-11-13,PB,Caatinga,8
+2026-11-13,PB,Mata Atlântica,2
+2026-11-13,PE,Caatinga,38
+2026-11-13,PE,Mata Atlântica,1
+2026-11-13,PI,Caatinga,112
+2026-11-13,PI,Cerrado,11
+2026-11-13,RN,Caatinga,3
+2026-11-13,RO,Amazônia,4
+2026-11-13,RR,Amazônia,15
+2026-11-13,SE,Caatinga,1
+2026-11-13,SE,Mata Atlântica,5

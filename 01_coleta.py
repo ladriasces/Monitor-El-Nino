@@ -1,9 +1,10 @@
 """
-01_coleta.py — Baixa as fontes abertas para data/raw/ (roda no GitHub Actions a cada hora, ou à mão).
+01_coleta.py — Baixa as fontes abertas para data/raw/ (roda no GitHub Actions, ou à mão).
 
   python 01_coleta.py                      # todas as fontes
   python 01_coleta.py --fonte avisos focos # só algumas
   python 01_coleta.py --gdelt-horas 72     # carga inicial das notícias (padrão: 3 horas)
+  python 01_coleta.py --plano [--completo] # só diz o que está na hora de atualizar (usado pelo GitHub Actions)
 
 Fontes:
   enso      NOAA/CPC: índice ONI, regiões Niño semana a semana e boletim mensal (ENSO Diagnostic Discussion)
@@ -17,8 +18,8 @@ Fontes:
   noticias  GDELT (manchetes de veículos brasileiros) e RSS oficiais (Agência Brasil, ONU News, Cemaden)
 
 Boas práticas com as fontes: identificação honesta (User-Agent do LADRI) e os intervalos que os
-robots.txt pedem (GDACS: 1 acesso por minuto; Agência Brasil: 10 s). Uma fonte que falha não
-interrompe as outras: o 02_tratamento.py mantém os dados anteriores dela.
+robots.txt pedem (GDACS: 1 acesso por minuto e só entre 04h00 e 06h45 UTC; Agência Brasil: 10 s).
+Uma fonte que falha não interrompe as outras: o 02_tratamento.py mantém os dados anteriores dela.
 """
 from __future__ import annotations
 
@@ -32,11 +33,11 @@ import time
 import traceback
 import zipfile
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import pandas as pd
 
-from clima_comum import RAW, REF, RX_TEMAS, agora, baixar, gravar_json, ler_json
+from clima_comum import RAW, REF, RX_TEMAS, SAIDA, agora, baixar, gravar_json, ler_json
 
 csv.field_size_limit(2**31 - 1)   # campos do GDELT podem ser muito longos
 
@@ -151,15 +152,27 @@ def focos() -> None:
 
 
 # ---------------------------------------------------------------- mundo
+def na_janela_gdacs(t: datetime | None = None) -> bool:
+    """O robots.txt do GDACS pede visitas só entre 04h00 e 06h45 UTC. A última consulta começa até
+    06h43, para terminar dentro do horário."""
+    t = (t or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    return 4 * 60 <= t.hour * 60 + t.minute <= 6 * 60 + 43
+
+
 def mundo() -> None:
     """GDACS (eventos laranja e vermelhos dos últimos 45 dias, mais ciclones de qualquer nível) e a
-    temperatura média global diária do Copernicus. O robots.txt do GDACS pede 1 acesso por minuto."""
+    temperatura média global diária do Copernicus. O robots.txt do GDACS pede 1 acesso por minuto e
+    só entre 04h00 e 06h45 UTC: fora desse horário a coleta é recusada aqui e o site mantém os dados
+    anteriores."""
+    def gdacs(destino: str, params: dict) -> None:
+        if not na_janela_gdacs():
+            raise RuntimeError("fora do horário de acesso pedido pelo GDACS (04h00–06h45 UTC)")
+        baixar(GDACS, RAW / "mundo" / destino, timeout=120, tentativas=2, params=params)
+
     ini = (agora() - timedelta(days=45)).strftime("%Y-%m-%d")
-    baixar(GDACS, RAW / "mundo" / "gdacs.json", timeout=120, tentativas=2,
-           params={"eventlist": "EQ;TC;FL;VO;DR;WF", "alertlevel": "Orange;Red", "fromdate": ini})
+    gdacs("gdacs.json", {"eventlist": "EQ;TC;FL;VO;DR;WF", "alertlevel": "Orange;Red", "fromdate": ini})
     time.sleep(61)
-    baixar(GDACS, RAW / "mundo" / "gdacs_tc.json", timeout=120, tentativas=2,
-           params={"eventlist": "TC", "alertlevel": "Green;Orange;Red", "fromdate": ini})
+    gdacs("gdacs_tc.json", {"eventlist": "TC", "alertlevel": "Green;Orange;Red", "fromdate": ini})
     baixar("https://sites.ecmwf.int/data/climatepulse/data/series/era5_daily_series_2t_global.csv",
            RAW / "mundo" / "era5_2t_global.csv", timeout=180)
 
@@ -254,6 +267,50 @@ def noticias(horas: int = GDELT_HORAS) -> None:
         print("  ", e)
 
 
+# ---------------------------------------------------------------- agenda
+# O GitHub não garante o horário das execuções agendadas: em horários de muito uso ele atrasa ou pula
+# execuções (de 12 a 15/11/2026 rodaram de 2 a 5 das 24 agendadas por dia). Por isso a rotina tenta
+# rodar a cada 15 minutos e cada execução decide o que buscar pela idade dos dados já publicados.
+ORDEM_BLOCOS = ["enso", "pacifico", "clima", "focos", "avisos", "mundo", "swic", "noticias"]   # a do 02_tratamento
+FONTES_DO_BLOCO = {"clima": ["clima", "previsao"]}   # os demais blocos usam a fonte de mesmo nome
+DIARIOS = {"enso", "pacifico", "clima", "mundo"}       # fontes que publicam dados novos no máximo uma vez por dia
+INTERVALO = {"avisos": timedelta(minutes=50), "swic": timedelta(minutes=50), "noticias": timedelta(minutes=50),
+             "focos": timedelta(hours=5, minutes=50)}
+REPETIR_DIARIO = timedelta(minutes=55)   # um bloco diário que falhou é tentado de novo depois desse intervalo
+
+
+def plano(completo: bool = False, t: datetime | None = None) -> list[str]:
+    """Blocos que estão na hora de atualizar, pela última tentativa de cada um (docs/dados/atualizacao.json):
+    - avisos do INMET e da OMM e notícias: a cada hora;  focos do INPE: a cada 6 horas;
+    - El Niño, Pacífico, chuva e temperatura: uma vez por dia, a partir das 04h UTC (01h em Brasília);
+    - mundo: uma vez por dia, dentro do horário que o GDACS pede.
+    completo=True (execução manual ou envio de código): todos, menos o mundo fora do horário do GDACS."""
+    t = (t or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    arq = SAIDA / "atualizacao.json"
+    at = ler_json(arq) if arq.exists() else {}
+
+    def quando(bloco: str, campo: str) -> datetime:
+        """Data (UTC) do campo pedido do bloco; sem registro, uma data muito antiga."""
+        txt = at.get(bloco, {}).get(campo) or at.get(bloco, {}).get("atualizado")
+        return datetime.fromisoformat(txt).astimezone(timezone.utc) if txt else datetime.min.replace(tzinfo=timezone.utc)
+
+    corte = t.replace(hour=4, minute=0, second=0, microsecond=0)   # início do "dia" das fontes diárias
+    if t < corte:
+        corte -= timedelta(days=1)
+    escolhidos = []
+    for b in ORDEM_BLOCOS:
+        if b == "mundo" and not na_janela_gdacs(t):
+            continue
+        if completo:
+            escolhidos.append(b)
+        elif b in DIARIOS:
+            if quando(b, "atualizado") < corte and t - quando(b, "tentado") >= REPETIR_DIARIO:
+                escolhidos.append(b)
+        elif t - quando(b, "tentado") >= INTERVALO[b]:
+            escolhidos.append(b)
+    return escolhidos
+
+
 # ---------------------------------------------------------------- execução
 FONTES = {"enso": enso, "pacifico": pacifico, "clima": clima, "previsao": previsao, "avisos": avisos, "focos": focos, "mundo": mundo,
           "swic": swic, "noticias": noticias}
@@ -289,5 +346,14 @@ if __name__ == "__main__":
     ap.add_argument("--fonte", nargs="*", default=list(FONTES), choices=list(FONTES))
     ap.add_argument("--gdelt-horas", type=_horas_validas, default=GDELT_HORAS, metavar="1-336",
                     help="horas de notícias do GDELT a ler (padrão 3; na carga inicial, 72)")
+    ap.add_argument("--plano", action="store_true",
+                    help="não coleta: escreve as fontes e os blocos que estão na hora (formato do GitHub Actions)")
+    ap.add_argument("--completo", action="store_true", help="com --plano: todos os blocos")
     args = ap.parse_args()
-    main(args.fonte, args.gdelt_horas)
+    if args.plano:
+        blocos = plano(args.completo)
+        fontes = [f for b in blocos for f in FONTES_DO_BLOCO.get(b, [b])]
+        print(f"fontes={' '.join(fontes)}")
+        print(f"blocos={' '.join(blocos)}")
+    else:
+        main(args.fonte, args.gdelt_horas)

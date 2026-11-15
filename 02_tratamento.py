@@ -762,6 +762,8 @@ def main(blocos: list[str]) -> None:
     for nome in blocos:
         fn, fontes = BLOCOS[nome]
         print(f"== {nome}")
+        tentado = agora().isoformat(timespec="minutes")   # usado pela agenda (01_coleta.py --plano)
+        at.setdefault(nome, {})["tentado"] = tentado
         if any(not coleta.get(f, {}).get("ok", False) for f in fontes):
             print("  coleta falhou hoje: mantendo os dados anteriores")
             at.setdefault(nome, {})["ok_hoje"] = False
@@ -769,7 +771,7 @@ def main(blocos: list[str]) -> None:
         try:
             dados = fn()
             gravar_json(dados, SAIDA / f"{nome}.json")
-            at[nome] = {"ok_hoje": True, "atualizado": agora().isoformat(timespec="minutes")}
+            at[nome] = {"ok_hoje": True, "atualizado": tentado, "tentado": tentado}
             print(f"  ok ({(SAIDA / f'{nome}.json').stat().st_size / 1e3:.0f} kB)")
         except Exception:  # noqa: BLE001
             traceback.print_exc()

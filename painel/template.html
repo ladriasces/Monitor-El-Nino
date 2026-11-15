@@ -1,12 +1,19 @@
 <meta charset="utf-8">
 <title>Monitor El Niño</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>
+/* Fontes servidas pelo próprio site (SIL Open Font License; ver fontes/OFL.txt): nenhum dado de quem
+   acessa vai para terceiros. Arquivos variáveis, só os alfabetos latinos. */
+@font-face { font-family: "Fraunces"; font-style: normal; font-display: swap; font-weight: 100 900;
+  src: url(fontes/fraunces-latin-ext-opsz-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-display: swap; font-weight: 100 900;
+  src: url(fontes/fraunces-latin-opsz-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Public Sans"; font-style: normal; font-display: swap; font-weight: 100 900;
+  src: url(fontes/public-sans-latin-ext-wght-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: "Public Sans"; font-style: normal; font-display: swap; font-weight: 100 900;
+  src: url(fontes/public-sans-latin-wght-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 /* Identidade de meio ambiente: papel de linho, verde-floresta, títulos em serifa suave (Fraunces), formas arredondadas. */
 :root {
-  --bg: #f3efe6; --surface: #fbf9f4; --ink: #1f2b23; --ink-2: #4a5a4e; --muted: #7b867c;
+  --bg: #f3efe6; --surface: #fbf9f4; --ink: #1f2b23; --ink-2: #4a5a4e; --muted: #5f6a60;
   --line: #e3ddd0; --line-strong: #cbc3b2;
   --accent: #2f6b45; --accent-ink: #ffffff; --accent-soft: #e2ebdc;
   --mid: #ebe6da;                 /* meio neutro das escalas divergentes */
@@ -411,7 +418,7 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
       <div class="cartao c12">
         <h3>Quando os dados foram atualizados</h3>
         <div class="tabela-wrap"><table id="tab-atualizacao"></table></div>
-        <p class="nota">A plataforma busca os dados sozinha: avisos e notícias a cada hora; as demais fontes, que mudam no máximo uma vez por dia, em menos rodadas. Se uma fonte estiver fora do ar, o painel mostra os últimos dados disponíveis e a data deles.</p>
+        <p class="nota">A plataforma busca os dados sozinha: avisos e notícias a cada hora; as demais fontes, que mudam no máximo uma vez por dia, em menos rodadas. O horário exato depende da fila do GitHub, por isso o painel mostra a data de cada fonte. Se uma fonte estiver fora do ar, o painel mostra os últimos dados disponíveis e a data deles.</p>
       </div>
     </div>
   </section>
@@ -561,7 +568,7 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
       <p class="lede">Manchetes dos últimos 14 dias de veículos de todo o país, encontradas pelo <a href="https://www.gdeltproject.org/" target="_blank" rel="noopener noreferrer">GDELT Project</a>, e dos canais oficiais da Agência Brasil, da ONU News (em português) e do Cemaden. Clique para ler no site original.</p>
     </div>
     <div class="controles">
-      <span><span class="ctl-label">Estado</span><select id="sel-not-uf"><option value="">Todo o Brasil</option></select></span>
+      <span><label class="ctl-label" for="sel-not-uf">Estado</label><select id="sel-not-uf"><option value="">Todo o Brasil</option></select></span>
       <span><span class="ctl-label">Tema</span><span class="seg" id="ctl-not-tema"><button data-v="" aria-pressed="true">Todos</button><button data-v="el-nino" aria-pressed="false">El Niño</button><button data-v="clima" aria-pressed="false">Mudanças climáticas</button><button data-v="extremos" aria-pressed="false">Eventos extremos</button><button data-v="queimadas" aria-pressed="false">Queimadas</button></span></span>
       <input type="search" id="busca-not" placeholder="Buscar nas manchetes…" aria-label="Buscar nas manchetes">
     </div>
@@ -618,9 +625,9 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
         <h3>Limites e responsabilidade</h3>
         <p>Esta é uma plataforma de informação e de educação. Ela <b>não substitui os alertas oficiais</b>. Em situação de risco, siga a Defesa Civil (telefone 199, alertas por SMS no 40199) e o INMET.</p>
         <h3>Atualização</h3>
-        <p>Uma rotina automática no GitHub busca as fontes, recalcula os indicadores e publica o site. Avisos meteorológicos e notícias são atualizados a cada hora; os focos de queimada, quatro vezes por dia; El Niño, temperatura do mar, chuva, temperatura, previsão e desastres no mundo, uma vez por dia, de madrugada, porque essas fontes publicam dados novos no máximo diariamente. Nenhum computador do LADRI precisa ficar ligado.</p>
+        <p>Uma rotina automática no GitHub busca as fontes, recalcula os indicadores e publica o site. Avisos meteorológicos e notícias são atualizados a cada hora; os focos de queimada, a cada seis horas; El Niño, temperatura do mar, chuva, temperatura, previsão e desastres no mundo, uma vez por dia, de madrugada, porque essas fontes publicam dados novos no máximo diariamente. O GitHub não garante o horário exato das rotinas agendadas e às vezes as atrasa; a data e a hora de cada fonte aparecem no painel. Nenhum computador do LADRI precisa ficar ligado.</p>
         <h3>Contagem de acessos</h3>
-        <p>O site conta os acessos de forma anônima, com o <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a>: sem cookies e sem guardar dados pessoais. A escolha do "Meu lugar" fica só no seu navegador.</p>
+        <p>O site conta os acessos de forma anônima, com o <a href="https://www.goatcounter.com" target="_blank" rel="noopener noreferrer">GoatCounter</a>: sem cookies e sem guardar dados pessoais. Ele registra as páginas e abas visitadas e, quando alguém escolhe o "Meu lugar", só o estado escolhido (nunca o município nem a localização), para sabermos o que é mais usado. O município fica guardado só no seu navegador; se você usar "Usar minha localização", a posição é conferida no próprio aparelho e não é enviada a ninguém. As fontes de letra e as imagens são servidas pelo próprio site.</p>
         <h3>Como esta plataforma foi feita</h3>
         <p>Esta plataforma foi desenvolvida pelo LADRI com o auxílio do <b>Claude</b>, assistente de inteligência artificial da Anthropic, que ajudou a escrever o código de coleta, tratamento e visualização dos dados. A definição dos recortes e a revisão do conteúdo são da equipe do LADRI.</p>
       </div>

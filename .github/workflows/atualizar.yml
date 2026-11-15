@@ -1,11 +1,16 @@
-# Atualiza os dados e publica o site no GitHub Pages: avisos e notícias a cada hora, o resto em menos rodadas.
+# Atualiza os dados e publica o site no GitHub Pages.
 #
+# - O GitHub não garante o horário das execuções agendadas (atrasa e, em horários de muito uso, pula).
+#   Por isso a rotina tenta rodar a cada 15 minutos e o primeiro job ("plano") decide, pela idade dos
+#   dados já publicados, o que está na hora (01_coleta.py --plano):
+#     avisos do INMET e da OMM e notícias: a cada hora; focos do INPE: a cada 6 horas;
+#     El Niño, Pacífico, chuva, temperatura e previsão: uma vez por dia, a partir das 04h UTC (01h em Brasília);
+#     mundo (GDACS e Copernicus): uma vez por dia, só entre 04h00 e 06h45 UTC, o horário que o robots.txt
+#     do GDACS pede.
+#   Se nada estiver na hora, a execução termina ali, sem publicar.
+# - Envio de código (push) ou execução manual: atualiza tudo (o mundo, só dentro do horário do GDACS).
 # - Os JSON do dia (docs/dados/) não vão para o repositório: são gerados aqui e publicados direto no Pages.
 #   Só a série de focos do satélite de referência (data/ref/focos_ref_diario.csv), que cresce dia a dia, é gravada.
-# - Execução completa uma vez por dia (06h20 UTC = 03h20 em Brasília, dentro da janela que o GDACS pede).
-# - A cada hora: avisos do INMET e da OMM e notícias, que mudam ao longo do dia.
-# - Focos do INPE também às 00h20, 12h20 e 18h20 UTC: o arquivo do INPE é diário, consultá-lo a cada hora
-#   só repetiria o mesmo download. As demais fontes mudam no máximo uma vez por dia.
 # - 04_validar.py confere tudo antes de publicar: se reprovar, o site continua na última versão boa.
 # - As ações de terceiros estão fixadas pelo SHA do commit (com a versão no comentário), para que uma
 #   etiqueta alterada no repositório delas não mude o que roda aqui.
@@ -15,7 +20,7 @@ name: Atualizar dados e publicar
 
 on:
   schedule:
-    - cron: "20 * * * *"   # a cada hora, aos 20 minutos (a das 06h20 UTC = 3h20 em Brasília é a completa)
+    - cron: "7,22,37,52 * * * *"   # tentativas a cada 15 minutos, fora da virada da hora (a mais congestionada)
   workflow_dispatch:
     inputs:
       gdelt_horas:
@@ -32,8 +37,39 @@ concurrency:
   group: atualizar
   cancel-in-progress: false
 
+env:
+  SITE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+
 jobs:
+  plano:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      fontes: ${{ steps.plano.outputs.fontes }}
+      blocos: ${{ steps.plano.outputs.blocos }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      - name: Decidir o que está na hora
+        id: plano
+        env:
+          COMPLETO: ${{ github.event_name != 'schedule' && '--completo' || '' }}
+        run: |
+          mkdir -p docs/dados
+          curl -sfL "$SITE/dados/atualizacao.json" -o docs/dados/atualizacao.json || rm -f docs/dados/atualizacao.json
+          python 01_coleta.py --plano $COMPLETO | tee -a "$GITHUB_OUTPUT"
+
   atualizar:
+    needs: plano
+    if: needs.plano.outputs.blocos != ''
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -54,25 +90,8 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Escolher as fontes desta execução
-        id: perfil
-        run: |
-          hora="$(date -u +%H)"
-          if [ "${{ github.event_name }}" != "schedule" ] || [ "$hora" = "06" ]; then
-            echo "fontes=enso pacifico clima previsao avisos focos mundo swic noticias" >> "$GITHUB_OUTPUT"
-            echo "blocos=enso pacifico clima focos avisos mundo swic noticias" >> "$GITHUB_OUTPUT"
-          elif [ "$hora" = "00" ] || [ "$hora" = "12" ] || [ "$hora" = "18" ]; then
-            echo "fontes=avisos focos swic noticias" >> "$GITHUB_OUTPUT"
-            echo "blocos=focos avisos swic noticias" >> "$GITHUB_OUTPUT"
-          else
-            echo "fontes=avisos swic noticias" >> "$GITHUB_OUTPUT"
-            echo "blocos=avisos swic noticias" >> "$GITHUB_OUTPUT"
-          fi
-
       # Se uma fonte falhar (ou não for consultada nesta execução), os dados publicados antes são mantidos
       - name: Recuperar os dados publicados
-        env:
-          SITE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: |
           mkdir -p docs/dados/serie
           for f in enso pacifico clima focos avisos mundo swic noticias atualizacao; do
@@ -84,11 +103,14 @@ jobs:
 
       - name: Coleta
         env:
+          FONTES: ${{ needs.plano.outputs.fontes }}
           GDELT_HORAS: ${{ inputs.gdelt_horas || '3' }}   # via variável (não direto no comando): o Python só aceita 1–336
-        run: python 01_coleta.py --fonte ${{ steps.perfil.outputs.fontes }} --gdelt-horas "$GDELT_HORAS"
+        run: python 01_coleta.py --fonte $FONTES --gdelt-horas "$GDELT_HORAS"
 
       - name: Tratamento
-        run: python 02_tratamento.py --bloco ${{ steps.perfil.outputs.blocos }}
+        env:
+          BLOCOS: ${{ needs.plano.outputs.blocos }}
+        run: python 02_tratamento.py --bloco $BLOCOS
 
       - name: Validação
         run: python 04_validar.py

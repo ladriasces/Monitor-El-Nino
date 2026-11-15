@@ -25,6 +25,8 @@ from clima_comum import COD_UF, RAIZ, RAW, REF
 
 PAINEL = RAIZ / "painel"
 GEO = RAW / "geo"   # malhas baixadas pelo 00_referencias.py
+# Versão fixa do script do GoatCounter, com o hash publicado (SRI): se o arquivo mudar, o navegador não o executa
+SRI_GOATCOUNTER = "sha384-nRw6qfbWyJha9LhsOtSb2YJDyZdKvvCFh0fJYlkquSFjUxp9FVNugbfy8q1jdxI+"
 GOATCOUNTER = "ladri"   # contador anônimo de acessos (o mesmo do painel Eleições 2026; o endereço do site separa os dois)
 REPO = "https://github.com/ladriasces/Monitor-El-Nino"
 
@@ -92,13 +94,13 @@ def base() -> dict:
 
 def politica_seguranca(script: str) -> str:
     """Política de segurança de conteúdo (CSP): o navegador só executa o script do painel (autorizado
-    pelo hash exato do conteúdo), o D3 do cdnjs (com verificação de integridade no template) e o
-    contador anônimo. Qualquer script injetado é bloqueado."""
+    pelo hash exato do conteúdo), o D3 do cdnjs e o contador anônimo (os dois com verificação de
+    integridade, SRI). Fontes e imagens vêm só do próprio site. Qualquer script injetado é bloqueado."""
     hash_script = base64.b64encode(hashlib.sha256(script.encode("utf-8")).digest()).decode("ascii")
     gc = f"https://{GOATCOUNTER}.goatcounter.com"
     return ("default-src 'self'; "
             f"script-src 'sha256-{hash_script}' https://cdnjs.cloudflare.com https://gc.zgo.at; "
-            "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; "
+            "style-src 'self' 'unsafe-inline'; font-src 'self'; "
             f"img-src 'self' data: {gc}; connect-src 'self' {gc}; "
             "object-src 'none'; base-uri 'none'; form-action 'none'")
 
@@ -127,7 +129,7 @@ def main() -> None:
 <meta name="description" content="Monitor El Niño: acompanhe o fenômeno, a chuva, a temperatura, as queimadas, os alertas e as notícias sobre o clima no Brasil e no mundo, com dados abertos atualizados todo dia. LADRI · ASCES-UNITA.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f6b45'/%3E%3Cpath d='M5 19c3-6 6-6 9 0s6 6 9 0 4-4 4-4' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>[hidden] {{ display: none !important; }} img {{ max-width: 100%; }}</style>
-<script data-goatcounter="https://{GOATCOUNTER}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://{GOATCOUNTER}.goatcounter.com/count" async src="https://gc.zgo.at/count.v4.js" integrity="{SRI_GOATCOUNTER}" crossorigin="anonymous"></script>
 {cabeca}
 </head>
 <body>

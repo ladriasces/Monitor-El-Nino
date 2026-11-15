@@ -6,7 +6,7 @@
 
 ## O que é
 
-Uma plataforma aberta para qualquer pessoa acompanhar o El Niño e o clima: a situação do fenômeno no Oceano Pacífico, a chuva e a temperatura em cada região do Brasil, os avisos meteorológicos, as queimadas, os alertas no mundo e as notícias sobre o tema. Tudo vem de fontes públicas e oficiais e se atualiza sozinho: avisos e notícias a cada hora.
+Uma plataforma aberta para qualquer pessoa acompanhar o El Niño e o clima: a situação do fenômeno no Oceano Pacífico, a chuva e a temperatura em cada região do Brasil, os avisos meteorológicos, as queimadas, os alertas no mundo e as notícias sobre o tema. Os dados vêm de fontes públicas e oficiais, as notícias, de veículos de imprensa e canais oficiais, e tudo se atualiza sozinho: avisos e notícias a cada hora.
 
 ## Como usar
 
@@ -25,7 +25,7 @@ Em **Dados e método** estão as fontes e as explicações de cada número.
 
 ## Como funciona
 
-Uma rotina automática no GitHub busca os dados nas fontes, calcula os indicadores, confere tudo e publica o site. Avisos e notícias são atualizados a cada hora; os focos de queimada, quatro vezes por dia (3h20, 9h20, 15h20 e 21h20, horário de Brasília); e as fontes que publicam dados novos no máximo uma vez por dia (El Niño, temperatura do mar, chuva, temperatura, previsão e desastres no mundo), às 3h20. Ninguém precisa deixar um computador ligado. Se uma fonte estiver fora do ar, o site mantém os últimos dados dela e mostra a data.
+Uma rotina automática no GitHub busca os dados nas fontes, calcula os indicadores, confere tudo e publica o site. Avisos e notícias são atualizados a cada hora; os focos de queimada, a cada seis horas; e as fontes que publicam dados novos no máximo uma vez por dia (El Niño, temperatura do mar, chuva, temperatura, previsão e desastres no mundo), de madrugada. O GitHub não garante o horário exato das rotinas agendadas, então a rotina tenta rodar a cada 15 minutos e cada execução busca só o que está na hora; o site mostra a data de cada fonte. Ninguém precisa deixar um computador ligado. Se uma fonte estiver fora do ar, o site mantém os últimos dados dela e mostra a data.
 
 **Fontes:** NOAA (El Niño e temperatura do mar), NASA POWER e Open-Meteo (chuva, temperatura e previsão), INMET (avisos), INPE (queimadas), Organização Meteorológica Mundial e GDACS (alertas no mundo), Copernicus (temperatura global), GDELT, Agência Brasil, ONU News e Cemaden (notícias) e IBGE (mapas).
 
@@ -37,7 +37,7 @@ Uma rotina automática no GitHub busca os dados nas fontes, calcula os indicador
 04_validar.py       confere dados e segurança antes de publicar
 clima_comum.py      funções e constantes usadas pelos scripts
 painel/             modelo do site (template.html) e logo
-docs/               o site publicado (img/: fotos com licença livre)
+docs/               o site publicado (img/: fotos com licença livre; fontes/: fontes de letra, licença OFL)
 data/ref/           tabelas de referência
 .github/workflows/  a rotina automática
 ```

@@ -1,8 +1,10 @@
 # Atualiza os dados e publica o site no GitHub Pages.
 #
-# - O GitHub não garante o horário das execuções agendadas (atrasa e, em horários de muito uso, pula).
-#   Por isso a rotina tenta rodar a cada 15 minutos e o primeiro job ("plano") decide, pela idade dos
-#   dados já publicados, o que está na hora (01_coleta.py --plano):
+# - O GitHub não garante o horário das execuções agendadas (neste repositório, descarta quase todas).
+#   Por isso quem dispara a rotina a cada 15 minutos é o acionador do Google Apps Script, na conta do
+#   LADRI (acionador/acionador.gs), com o modo "agenda"; o agendamento abaixo fica só como reserva.
+#   Em cada execução, o primeiro job ("plano") decide, pela idade dos dados já publicados, o que está
+#   na hora (01_coleta.py --plano):
 #     avisos do INMET e da OMM e notícias: a cada hora; focos do INPE: a cada 6 horas;
 #     El Niño, Pacífico, chuva, temperatura e previsão: uma vez por dia, a partir das 04h UTC (01h em Brasília);
 #     mundo (GDACS e Copernicus): uma vez por dia, só entre 04h00 e 06h45 UTC, o horário que o robots.txt
@@ -20,9 +22,14 @@ name: Atualizar dados e publicar
 
 on:
   schedule:
-    - cron: "7,22,37,52 * * * *"   # tentativas a cada 15 minutos, fora da virada da hora (a mais congestionada)
+    - cron: "7,22,37,52 * * * *"   # reserva do acionador do Google (a cada 15 min, fora da virada da hora)
   workflow_dispatch:
     inputs:
+      modo:
+        description: "completo = atualiza tudo (execução manual); agenda = só o que está na hora (usado pelo acionador do Google)"
+        type: choice
+        options: [completo, agenda]
+        default: completo
       gdelt_horas:
         description: "Horas de notícias do GDELT (3 = normal; 72 na primeira execução, para encher a aba de notícias)"
         default: "3"
@@ -61,7 +68,8 @@ jobs:
       - name: Decidir o que está na hora
         id: plano
         env:
-          COMPLETO: ${{ github.event_name != 'schedule' && '--completo' || '' }}
+          # Envio de código ou execução manual: tudo. Agendamento ou acionador do Google (modo "agenda"): só o que está na hora.
+          COMPLETO: ${{ (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.modo != 'agenda')) && '--completo' || '' }}
         run: |
           mkdir -p docs/dados
           curl -sfL "$SITE/dados/atualizacao.json" -o docs/dados/atualizacao.json || rm -f docs/dados/atualizacao.json

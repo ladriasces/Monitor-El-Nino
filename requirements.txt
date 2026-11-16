@@ -3,4 +3,4 @@ pandas>=2.2
 requests>=2.31
 defusedxml>=0.7
 # Para refazer as referências ou o visual do site (00_referencias.py, 03_painel.py), instale também:
-#   pip install geopandas>=1.0 shapely>=2.0
+#   pip install geopandas>=1.0 shapely>=2.0 pillow>=10 fonttools>=4.40 brotli>=1.0

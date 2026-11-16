@@ -99,12 +99,13 @@ def base() -> dict:
 
 def politica_seguranca(script: str) -> str:
     """Política de segurança de conteúdo (CSP): o navegador só executa o script do painel (autorizado
-    pelo hash exato do conteúdo), o D3 do cdnjs e o contador anônimo (os dois com verificação de
-    integridade, SRI). Fontes e imagens vêm só do próprio site. Qualquer script injetado é bloqueado."""
+    pelo hash exato do conteúdo), o D3 (servido pelo próprio site) e o contador anônimo, os dois com
+    verificação de integridade (SRI). Fontes, imagens e bibliotecas vêm do próprio site; o único serviço
+    externo é o contador. Qualquer script injetado é bloqueado."""
     hash_script = base64.b64encode(hashlib.sha256(script.encode("utf-8")).digest()).decode("ascii")
     gc = f"https://{GOATCOUNTER}.goatcounter.com"
     return ("default-src 'self'; "
-            f"script-src 'sha256-{hash_script}' https://cdnjs.cloudflare.com https://gc.zgo.at; "
+            f"script-src 'self' 'sha256-{hash_script}' https://gc.zgo.at; "
             "style-src 'self' 'unsafe-inline'; font-src 'self'; "
             f"img-src 'self' data: {gc}; connect-src 'self' {gc}; "
             "object-src 'none'; base-uri 'none'; form-action 'none'")

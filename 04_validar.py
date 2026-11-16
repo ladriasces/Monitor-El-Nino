@@ -156,7 +156,7 @@ def validar_site() -> None:
     html = (RAIZ / "docs" / "index.html").read_bytes()
     erro(b"\r\n" not in html, "docs/index.html com fim de linha \\r\\n (quebra o hash da CSP)")
     texto = html.decode("utf-8")
-    m = re.search(r"script-src 'sha256-([^']+)'", texto)
+    m = re.search(r"script-src [^;]*'sha256-([^']+)'", texto)
     scripts = re.findall(r"<script>(.*?)</script>", texto, flags=re.S)
     erro(bool(m) and len(scripts) == 1, "CSP ou script do painel não encontrados")
     if m and len(scripts) == 1:

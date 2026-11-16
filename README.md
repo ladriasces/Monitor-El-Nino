@@ -37,7 +37,7 @@ Uma rotina automática no GitHub busca os dados nas fontes, calcula os indicador
 04_validar.py       confere dados e segurança antes de publicar
 clima_comum.py      funções e constantes usadas pelos scripts
 painel/             modelo do site (template.html) e logo
-docs/               o site publicado (img/: fotos com licença livre; fontes/: fontes de letra, licença OFL)
+docs/               o site publicado (img/: fotos com licença livre; fontes/: fontes de letra, licença OFL; js/: D3, licença ISC)
 data/ref/           tabelas de referência
 .github/workflows/  a rotina automática
 acionador/          acionador do Google que dispara a rotina a cada 15 minutos

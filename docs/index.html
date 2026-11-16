@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-sh3HiI60saCkL2V30NuDyacOTi0B6ET7iNkvFk54Rdk=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://ladri.goatcounter.com; connect-src 'self' https://ladri.goatcounter.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Jv8vjkbiLVs50JqHIR9WSZtlZIj56A+/B2pY730pvxk=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://ladri.goatcounter.com; connect-src 'self' https://ladri.goatcounter.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Acompanhe o El Niño, a chuva, o calor, as queimadas, os alertas e as notícias sobre o clima no Brasil e no mundo, com dados abertos de fontes oficiais. LADRI · ASCES-UNITA.">
@@ -124,6 +124,10 @@ header.top { padding-block: 28px 18px; display: grid; gap: 18px; }
 .hero-legenda .rampa { width: 64px; height: 8px; border-radius: 4px; }
 .hero .fase { font-family: var(--f-display); font-weight: 650; font-size: clamp(2.1rem, 6vw, 3.4rem); line-height: 1; letter-spacing: -.02em; }
 .hero .sub { color: var(--ink-2); font-size: .92rem; }
+.hero-dados { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 5px; color: var(--ink-2); font-size: .92rem; }
+.hero-dados li { position: relative; padding-left: 16px; }
+.hero-dados li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 6px; height: 6px; border-radius: 50%; background: var(--marca, var(--nino)); }
+.hero-dados b { color: var(--ink); }
 .hero .selo { margin-top: 8px; }
 .medidor svg { display: block; width: 100%; height: auto; overflow: visible; }
 .medidor text { fill: var(--ink-2); font: 12px var(--f-body); }
@@ -1029,6 +1033,11 @@ function caixaEscolherLugar() {
 const NOME_FASE = { el_nino: "El Niño", la_nina: "La Niña", neutro: "Neutro", indefinido: "—" };
 const MESES3 = { DJF: "dez–fev", JFM: "jan–mar", FMA: "fev–abr", MAM: "mar–mai", AMJ: "abr–jun", MJJ: "mai–jul", JJA: "jun–ago", JAS: "jul–set", ASO: "ago–out", SON: "set–nov", OND: "out–dez", NDJ: "nov–jan" };
 const ESCALA_MAR = [-30, -5, 5, 25, 45];   // anomalia do mar em décimos de °C: frio, neutro, neutro, quente, extremo
+// "Alerta de El Niño: o fenômeno…" -> nome do alerta em negrito e a explicação em texto comum
+function alertaCPC(t) {
+  const i = t.indexOf(":");
+  return i < 0 ? `<b>${esc(t)}</b>` : `<b>${esc(t.slice(0, i))}:</b>${esc(t.slice(i + 1))}`;
+}
 function hero() {
   const E = D.enso;
   if (!E) { $("#hero").innerHTML = `<div class="aviso-dados">Não foi possível carregar a situação do El Niño agora.</div>`; return; }
@@ -1040,8 +1049,11 @@ function hero() {
     <div class="hero-texto">
       <div class="eyebrow">Situação do fenômeno · NOAA</div>
       <div class="fase" style="color:${corFase}">${NOME_FASE[a.fase]}${a.forca ? " " + a.forca : ""}</div>
-      <p class="sub num">Índice ONI de ${MESES3[a.estacao]}/${a.ano}: <b>${sinal(a.oni, 2, " °C")}</b>${a.nino34 != null ? ` · Pacífico (Niño 3.4) na semana de ${dataBR(a.nino34_semana)}: <b>${sinal(a.nino34, 1, " °C")}</b>` : ""}</p>
-      ${E.cpc && E.cpc.alerta_pt ? `<span class="selo" style="justify-self:start">${esc(E.cpc.alerta_pt)}</span>` : ""}
+      <ul class="hero-dados num" style="--marca:${corFase}">
+        <li>Índice ONI (${MESES3[a.estacao]}/${a.ano}): <b>${sinal(a.oni, 2, " °C")}</b></li>
+        ${a.nino34 != null ? `<li>Pacífico, Niño 3.4 (semana de ${dataBR(a.nino34_semana)}): <b>${sinal(a.nino34, 1, " °C")}</b></li>` : ""}
+        ${E.cpc && E.cpc.alerta_pt ? `<li>${alertaCPC(E.cpc.alerta_pt)}</li>` : ""}
+      </ul>
     </div>
     <div class="medidor" id="medidor"></div>
     ${P ? `<div class="hero-legenda"><span>Oceano Pacífico em ${dataBR(P.data, false)}: temperatura do mar comparada à média</span>

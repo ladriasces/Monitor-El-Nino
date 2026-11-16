@@ -273,16 +273,19 @@ def noticias(horas: int = GDELT_HORAS) -> None:
 # rodar a cada 15 minutos e cada execução decide o que buscar pela idade dos dados já publicados.
 ORDEM_BLOCOS = ["enso", "pacifico", "clima", "focos", "avisos", "mundo", "swic", "noticias"]   # a do 02_tratamento
 FONTES_DO_BLOCO = {"clima": ["clima", "previsao"]}   # os demais blocos usam a fonte de mesmo nome
-DIARIOS = {"enso", "pacifico", "clima", "mundo"}       # fontes que publicam dados novos no máximo uma vez por dia
+DIARIOS = {"pacifico", "clima", "mundo"}               # fontes que publicam dados novos no máximo uma vez por dia
 INTERVALO = {"avisos": timedelta(minutes=50), "swic": timedelta(minutes=50), "noticias": timedelta(minutes=50),
-             "focos": timedelta(hours=5, minutes=50)}
+             "focos": timedelta(hours=5, minutes=50),
+             # o NOAA publica o Niño semanal às segundas e o ONI no início do mês, em horário dos EUA: conferir
+             # a cada 6 horas (arquivos pequenos) põe o valor novo no site no mesmo dia
+             "enso": timedelta(hours=5, minutes=50)}
 REPETIR_DIARIO = timedelta(minutes=55)   # um bloco diário que falhou é tentado de novo depois desse intervalo
 
 
 def plano(completo: bool = False, t: datetime | None = None) -> list[str]:
     """Blocos que estão na hora de atualizar, pela última tentativa de cada um (docs/dados/atualizacao.json):
-    - avisos do INMET e da OMM e notícias: a cada hora;  focos do INPE: a cada 6 horas;
-    - El Niño, Pacífico, chuva e temperatura: uma vez por dia, a partir das 04h UTC (01h em Brasília);
+    - avisos do INMET e da OMM e notícias: a cada hora;  focos do INPE e índices do El Niño: a cada 6 horas;
+    - Pacífico, chuva e temperatura: uma vez por dia, a partir das 04h UTC (01h em Brasília);
     - mundo: uma vez por dia, dentro do horário que o GDACS pede.
     completo=True (execução manual ou envio de código): todos, menos o mundo fora do horário do GDACS."""
     t = (t or datetime.now(timezone.utc)).astimezone(timezone.utc)

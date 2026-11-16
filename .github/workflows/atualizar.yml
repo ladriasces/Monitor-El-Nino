@@ -5,8 +5,8 @@
 #   LADRI (acionador/acionador.gs), com o modo "agenda"; o agendamento abaixo fica só como reserva.
 #   Em cada execução, o primeiro job ("plano") decide, pela idade dos dados já publicados, o que está
 #   na hora (01_coleta.py --plano):
-#     avisos do INMET e da OMM e notícias: a cada hora; focos do INPE: a cada 6 horas;
-#     El Niño, Pacífico, chuva, temperatura e previsão: uma vez por dia, a partir das 04h UTC (01h em Brasília);
+#     avisos do INMET e da OMM e notícias: a cada hora; focos do INPE e índices do El Niño: a cada 6 horas;
+#     Pacífico, chuva, temperatura e previsão: uma vez por dia, a partir das 04h UTC (01h em Brasília);
 #     mundo (GDACS e Copernicus): uma vez por dia, só entre 04h00 e 06h45 UTC, o horário que o robots.txt
 #     do GDACS pede.
 #   Se nada estiver na hora, a execução termina ali, sem publicar.

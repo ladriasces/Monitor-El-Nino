@@ -291,10 +291,14 @@ tr.destaque td { background: var(--accent-soft); font-weight: 600; }
 
 .texto { display: grid; gap: 10px; max-width: 76ch; }
 .texto ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.texto details { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; background: var(--surface); }
+.texto summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.texto details[open] summary { margin-bottom: 10px; }
 code { font-size: .85em; background: var(--bg); padding: 1px 5px; border-radius: 4px; border: 1px solid var(--line); }
 .aviso-dados { padding: 18px; border: 1px dashed var(--line-strong); border-radius: 10px; color: var(--ink-2); text-align: center; }
 .mais { justify-self: center; }
 .repo { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 24px; border-color: var(--accent); }
+@media (max-width: 640px) { .repo { grid-template-columns: minmax(0, 1fr); justify-items: start; } }
 .btn-repo { font: 700 .95rem var(--f-body); background: var(--accent); color: var(--accent-ink); text-decoration: none; padding: 10px 16px; border-radius: 8px; border-bottom: 3px solid color-mix(in srgb, var(--accent) 60%, #000); white-space: nowrap; justify-self: end; }
 .horizonte { display: block; width: 100%; height: 18px; margin-top: -4px; fill: color-mix(in srgb, var(--accent) 38%, var(--bg)); }
 .horizonte .hz-l { fill: none; stroke: color-mix(in srgb, var(--accent) 38%, var(--bg)); stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
@@ -653,18 +657,23 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
         <h3>Atualização</h3>
         <p>Uma rotina automática no GitHub busca as fontes, recalcula os indicadores e publica o site. Um acionador dispara essa rotina a cada 15 minutos, e cada execução busca só o que está na hora: avisos meteorológicos e notícias, a cada hora; focos de queimada e índices do El Niño, a cada seis horas; temperatura do mar, chuva, temperatura, previsão e desastres no mundo, uma vez por dia, de madrugada, porque essas fontes publicam dados novos no máximo diariamente. A data e a hora de cada fonte aparecem no painel. Nenhum computador do LADRI precisa ficar ligado.</p>
         <h3 id="privacidade">Privacidade e proteção de dados (LGPD)</h3>
-        <p>O Monitor El Niño não tem cadastro, não usa cookies e não pede nenhum dado pessoal. Conforme a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), explicamos abaixo o pouco que é tratado quando alguém acessa o site.</p>
-        <ul>
-          <li><b>Responsável:</b> LADRI, Laboratório de Dados e Relações Internacionais da ASCES-UNITA (Caruaru, PE). Contato: <a href="mailto:ladri.lapri.asces@gmail.com">ladri.lapri.asces@gmail.com</a>.</li>
-          <li><b>Contagem de acessos:</b> usamos o <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener noreferrer">GoatCounter</a> para saber quanto e como a plataforma é usada. Para contar a visita, ele recebe o endereço IP e os dados do navegador, mas não guarda o IP nem nenhum identificador de quem acessa: guarda só totais (páginas e abas visitadas, site de origem, navegador, sistema, país, idioma e tamanho da tela) e, quando alguém escolhe o “Meu lugar”, apenas o estado escolhido. Base legal: legítimo interesse (art. 7º, IX), com o mínimo de dados. Os servidores do GoatCounter ficam na Finlândia e na Alemanha.</li>
-          <li><b>Hospedagem:</b> o site é publicado no GitHub Pages (GitHub, Estados Unidos), que registra o endereço IP de quem acessa por motivos de segurança, conforme a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">declaração de privacidade do GitHub</a>. O LADRI não tem acesso a esses registros.</li>
-          <li><b>No seu aparelho:</b> o município escolhido em “Meu lugar” fica guardado apenas no seu navegador e pode ser apagado com “Esquecer meu lugar”. “Usar minha localização” só funciona com a sua autorização; a posição é usada no próprio aparelho para encontrar a região e não é enviada a ninguém.</li>
-          <li><b>Nenhum outro terceiro:</b> as fontes de letra, a biblioteca de gráficos e as imagens são servidas pelo próprio site.</li>
-          <li><b>Notícias:</b> mostramos manchetes públicas, com o nome do veículo e o link para a matéria, com finalidade informativa e acadêmica. Se uma manchete expuser você indevidamente, peça a retirada pelo e-mail do LADRI.</li>
-          <li><b>Seus direitos (art. 18):</b> confirmar se tratamos dados seus, acessá-los, corrigi-los, pedir a eliminação, saber com quem são compartilhados e se opor ao tratamento. Como não guardamos dados que identifiquem quem acessa, na maior parte dos casos não haverá dados seus conosco. Pedidos pelo e-mail do LADRI, que os encaminha ao encarregado de proteção de dados da ASCES-UNITA quando necessário. Você também pode recorrer à <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">Autoridade Nacional de Proteção de Dados (ANPD)</a>.</li>
-          <li><b>Segurança:</b> conexão protegida (HTTPS), política de segurança de conteúdo e verificação de integridade dos scripts. O site não tem banco de dados nem formulários.</li>
-        </ul>
-        <p class="nota">Seção atualizada em 16/11/2026.</p>
+        <p>O Monitor El Niño não tem cadastro, não usa cookies e não guarda dados que identifiquem quem acessa. As visitas são contadas de forma anônima (GoatCounter), e o site é hospedado no GitHub Pages, que registra o endereço IP por segurança. O município escolhido em “Meu lugar” fica só no seu navegador, e a localização não sai do aparelho.</p>
+        <p>Responsável: LADRI/ASCES-UNITA. Dúvidas, pedidos sobre seus dados ou retirada de manchetes: <a href="mailto:ladri.lapri.asces@gmail.com">ladri.lapri.asces@gmail.com</a>.</p>
+        <details>
+          <summary>Ver detalhes</summary>
+          <p>Conforme a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018):</p>
+          <ul>
+            <li><b>Responsável:</b> LADRI, Laboratório de Dados e Relações Internacionais da ASCES-UNITA (Caruaru, PE). Contato: <a href="mailto:ladri.lapri.asces@gmail.com">ladri.lapri.asces@gmail.com</a>.</li>
+            <li><b>Contagem de acessos:</b> usamos o <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener noreferrer">GoatCounter</a> para saber quanto e como a plataforma é usada. Para contar a visita, ele recebe o endereço IP e os dados do navegador, mas não guarda o IP nem nenhum identificador de quem acessa: guarda só totais (páginas e abas visitadas, site de origem, navegador, sistema, país, idioma e tamanho da tela) e, quando alguém escolhe o “Meu lugar”, apenas o estado escolhido. Base legal: legítimo interesse (art. 7º, IX), com o mínimo de dados. Os servidores do GoatCounter ficam na Finlândia e na Alemanha.</li>
+            <li><b>Hospedagem:</b> o site é publicado no GitHub Pages (GitHub, Estados Unidos), que registra o endereço IP de quem acessa por motivos de segurança, conforme a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">declaração de privacidade do GitHub</a>. O LADRI não tem acesso a esses registros.</li>
+            <li><b>No seu aparelho:</b> o município escolhido em “Meu lugar” fica guardado apenas no seu navegador e pode ser apagado com “Esquecer meu lugar”. “Usar minha localização” só funciona com a sua autorização; a posição é usada no próprio aparelho para encontrar a região e não é enviada a ninguém.</li>
+            <li><b>Nenhum outro terceiro:</b> as fontes de letra, a biblioteca de gráficos e as imagens são servidas pelo próprio site.</li>
+            <li><b>Notícias:</b> mostramos manchetes públicas, com o nome do veículo e o link para a matéria, com finalidade informativa e acadêmica. Se uma manchete expuser você indevidamente, peça a retirada pelo e-mail do LADRI.</li>
+            <li><b>Seus direitos (art. 18):</b> confirmar se tratamos dados seus, acessá-los, corrigi-los, pedir a eliminação, saber com quem são compartilhados e se opor ao tratamento. Como não guardamos dados que identifiquem quem acessa, na maior parte dos casos não haverá dados seus conosco. Pedidos pelo e-mail do LADRI, que os encaminha ao encarregado de proteção de dados da ASCES-UNITA quando necessário. Você também pode recorrer à <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">Autoridade Nacional de Proteção de Dados (ANPD)</a>.</li>
+            <li><b>Segurança:</b> conexão protegida (HTTPS), política de segurança de conteúdo e verificação de integridade dos scripts. O site não tem banco de dados nem formulários.</li>
+          </ul>
+          <p class="nota">Seção atualizada em 16/11/2026.</p>
+        </details>
         <h3>Como esta plataforma foi feita</h3>
         <p>Esta plataforma foi desenvolvida pelo LADRI com o auxílio do <b>Claude</b>, assistente de inteligência artificial da Anthropic, que ajudou a escrever o código de coleta, tratamento e visualização dos dados. A definição dos recortes e a revisão do conteúdo são da equipe do LADRI.</p>
       </div>

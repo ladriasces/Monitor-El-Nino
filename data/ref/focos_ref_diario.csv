@@ -5599,6 +5599,8 @@ data,uf,bioma,n
 2026-11-15,RS,Mata Atlântica,1
 2026-11-15,RS,Pampa,2
 2026-11-15,SC,Mata Atlântica,2
+2026-11-16,AC,Amazônia,11
+2026-11-16,AM,Amazônia,28
 2026-11-16,BA,Cerrado,8
 2026-11-16,CE,Caatinga,3
 2026-11-16,MA,Amazônia,51
@@ -5608,3 +5610,4 @@ data,uf,bioma,n
 2026-11-16,PE,Caatinga,1
 2026-11-16,PE,Mata Atlântica,1
 2026-11-16,PI,Caatinga,11
+2026-11-16,RO,Amazônia,15

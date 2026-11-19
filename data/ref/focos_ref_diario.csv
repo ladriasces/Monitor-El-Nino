@@ -5626,11 +5626,13 @@ data,uf,bioma,n
 2026-11-17,RR,Amazônia,3
 2026-11-17,SP,Cerrado,2
 2026-11-18,AL,Mata Atlântica,10
+2026-11-18,AM,Amazônia,39
 2026-11-18,CE,Caatinga,111
 2026-11-18,ES,Mata Atlântica,1
 2026-11-18,MA,Amazônia,47
 2026-11-18,MA,Cerrado,61
-2026-11-18,PA,Amazônia,11
+2026-11-18,MT,Amazônia,1
+2026-11-18,PA,Amazônia,17
 2026-11-18,PB,Caatinga,21
 2026-11-18,PB,Mata Atlântica,1
 2026-11-18,PE,Caatinga,9
@@ -5638,3 +5640,5 @@ data,uf,bioma,n
 2026-11-18,PI,Caatinga,26
 2026-11-18,PI,Cerrado,2
 2026-11-18,RN,Caatinga,3
+2026-11-18,RO,Amazônia,16
+2026-11-18,RR,Amazônia,54

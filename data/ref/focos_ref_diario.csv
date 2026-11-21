@@ -5660,13 +5660,14 @@ data,uf,bioma,n
 2026-11-19,TO,Amazônia,2
 2026-11-19,TO,Cerrado,30
 2026-11-20,AL,Mata Atlântica,3
-2026-11-20,AM,Amazônia,1
+2026-11-20,AM,Amazônia,12
+2026-11-20,AP,Amazônia,34
 2026-11-20,CE,Caatinga,87
 2026-11-20,GO,Cerrado,4
 2026-11-20,MA,Amazônia,2
 2026-11-20,MT,Amazônia,11
 2026-11-20,MT,Cerrado,7
-2026-11-20,PA,Amazônia,71
+2026-11-20,PA,Amazônia,463
 2026-11-20,PB,Caatinga,7
 2026-11-20,PB,Mata Atlântica,4
 2026-11-20,PE,Caatinga,9
@@ -5674,4 +5675,5 @@ data,uf,bioma,n
 2026-11-20,PI,Caatinga,8
 2026-11-20,RN,Caatinga,2
 2026-11-20,RO,Amazônia,4
+2026-11-20,RR,Amazônia,38
 2026-11-20,TO,Cerrado,1

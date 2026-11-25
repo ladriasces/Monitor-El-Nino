@@ -5744,7 +5744,9 @@ data,uf,bioma,n
 2026-11-23,RS,Pampa,2
 2026-11-23,SE,Caatinga,1
 2026-11-23,SE,Mata Atlântica,1
+2026-11-24,AC,Amazônia,28
 2026-11-24,AL,Mata Atlântica,1
+2026-11-24,AM,Amazônia,14
 2026-11-24,AP,Amazônia,56
 2026-11-24,BA,Caatinga,50
 2026-11-24,BA,Cerrado,33
@@ -5760,6 +5762,7 @@ data,uf,bioma,n
 2026-11-24,PI,Caatinga,232
 2026-11-24,PI,Cerrado,43
 2026-11-24,RN,Caatinga,1
+2026-11-24,RO,Amazônia,12
 2026-11-24,SE,Caatinga,1
 2026-11-24,SP,Cerrado,1
 2026-11-24,TO,Amazônia,29

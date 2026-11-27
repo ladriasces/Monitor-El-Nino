@@ -603,7 +603,7 @@ footer a { color: var(--ink); text-underline-offset: 2px; }
         <h2>De onde vêm os dados</h2>
         <ul>
           <li><b>El Niño:</b> NOAA, Centro de Previsão do Clima dos EUA (CPC). Índice ONI (desde 1950), temperatura semanal das regiões Niño e boletim mensal (<i>ENSO Diagnostic Discussion</i>).</li>
-          <li><b>Chuva e temperatura observadas:</b> os dados foram obtidos do projeto Prediction Of Worldwide Energy Resources (POWER), do Langley Research Center da NASA, financiado pela NASA Earth Science Division (reanálise MERRA-2, com chuva corrigida por satélite), dia a dia, no ponto central de cada uma das 510 regiões imediatas do IBGE. As médias de 1991 a 2020 vêm do mesmo produto, para que a comparação seja coerente. O dado mais recente tem cerca de 3 dias de atraso.</li>
+          <li><b>Chuva e temperatura observadas:</b> os dados foram obtidos do projeto Prediction Of Worldwide Energy Resources (POWER), do Langley Research Center da NASA, financiado pela NASA Earth Science Division (reanálise MERRA-2, com chuva corrigida por satélite), dia a dia, no ponto central de cada uma das 510 regiões imediatas do IBGE. Fernando de Noronha tem um ponto próprio: pelo IBGE, o arquipélago faz parte da região imediata de Recife, mas fica a cerca de 350 km da costa e tem clima diferente. Quem escolhe Noronha em “Meu lugar” vê os dados da ilha; no mapa, ele continua na região de Recife. As médias de 1991 a 2020 vêm do mesmo produto, para que a comparação seja coerente. O dado mais recente tem cerca de 3 dias de atraso.</li>
           <li><b>Previsão de 7 dias:</b> <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Dados de previsão: Open-Meteo.com</a> (licença CC BY 4.0; combinação de modelos meteorológicos), nos mesmos pontos.</li>
           <li><b>Avisos meteorológicos:</b> INMET, avisos em vigor (RSS oficial), ligados às mesorregiões do IBGE.</li>
           <li><b>Queimadas:</b> Programa Queimadas/INPE (dados abertos). Focos diários de todos os satélites (últimas 48 horas) e do satélite de referência (séries anuais desde 2003).</li>
@@ -1120,8 +1120,11 @@ function meuLugar() {
   const box = $("#meu-lugar");
   if (!LUGAR) { box.innerHTML = caixaEscolherLugar(); montarBusca(box.querySelector("[data-busca-lugar]")); return; }
   const ri = IMED.get(LUGAR.imed) || {};
-  const C = D.clima && D.clima.regioes[LUGAR.imed];
-  const P = D.clima && D.clima.previsao.regioes[LUGAR.imed];
+  // Ponto próprio de clima (data/ref/pontos_extras.csv): município longe do ponto da sua região imediata,
+  // como Fernando de Noronha, que o IBGE põe na região de Recife. Sem ele, vale o ponto da região.
+  const PT = D.clima && D.clima.pontos && D.clima.pontos[LUGAR.ibge];
+  const C = D.clima && (PT || D.clima.regioes[LUGAR.imed]);
+  const P = D.clima && ((D.clima.previsao.pontos || {})[LUGAR.ibge] || D.clima.previsao.regioes[LUGAR.imed]);
   const avisos = D.avisos ? D.avisos.avisos.filter(a => a.mesos.includes(LUGAR.meso)) : [];
   const focos = D.focos ? (D.focos.h48.por_imediata[LUGAR.imed] || 0) : null;
   let h = `<div class="cartao-cab"><div><div class="eyebrow">Meu lugar</div><div class="detalhe"><div class="nome">${esc(LUGAR.nome)} (${LUGAR.uf})</div></div><div class="muted">Região imediata de ${esc(ri.nome || "—")}</div></div><button class="btn" type="button" data-acao="lugar">Trocar</button></div>`;
@@ -1132,7 +1135,7 @@ function meuLugar() {
       <div><span>Chuva nos últimos 90 dias</span><span>${fmtN(p90, 0)} mm <span class="muted" style="font-weight:400">(normal: ${fmtN(n90, 0)} mm)</span> ${a90 != null ? `· ${sinal(a90, 0, "%")}` : ""}</span></div>
       <div><span>Temperatura média, 30 dias</span><span>${fmtN(t30, 1)} °C · ${sinal(ta30, 1, " °C")} do normal</span></div>
       <div><span>Focos de queimada na região (48 h)</span><span>${focos == null ? "—" : fmtInt.format(focos)}</span></div>
-    </div><p class="nota">Dados observados até ${dataBR(D.clima.fim)} (NASA POWER), comparados com 1991–2020.</p>`;
+    </div><p class="nota">Dados observados até ${dataBR(D.clima.fim)} (NASA POWER), comparados com 1991–2020.${PT ? ` Chuva, temperatura e previsão medidas no próprio ${esc(LUGAR.nome)}, e não no ponto da região imediata, que fica no continente.` : ""}</p>`;
   }
   if (P) {
     const datas = D.clima.previsao.datas, maxP = Math.max(20, d3.max(P[0]) || 0);

@@ -37,7 +37,7 @@ from datetime import datetime, timedelta, timezone
 
 import pandas as pd
 
-from clima_comum import RAW, REF, RX_TEMAS, SAIDA, agora, baixar, gravar_json, ler_json
+from clima_comum import RAW, RX_TEMAS, SAIDA, agora, baixar, gravar_json, ler_json, pontos_clima
 
 csv.field_size_limit(2**31 - 1)   # campos do GDELT podem ser muito longos
 
@@ -49,8 +49,9 @@ GDELT_HORAS = 3   # execuções a cada hora: 3 horas de janela cobrem atrasos e 
 
 
 def _regioes() -> pd.DataFrame:
-    """As 510 regiões imediatas do IBGE, com o ponto usado nas consultas de clima."""
-    return pd.read_csv(REF / "regioes_imediatas.csv", dtype={"id": str})
+    """Os pontos das consultas de clima: as 510 regiões imediatas do IBGE e os pontos extras
+    (data/ref/pontos_extras.csv, como Fernando de Noronha)."""
+    return pontos_clima()
 
 
 # ---------------------------------------------------------------- El Niño

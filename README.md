@@ -16,7 +16,7 @@ Abra o site e, se quiser, escolha o seu município em **"Escolha seu município"
 |---|---|
 | **Agora** | Resumo do dia e o seu lugar: chuva e temperatura recentes, previsão de 7 dias, avisos e notícias |
 | **O El Niño no oceano** | O que é o fenômeno, o índice desde 1950, a comparação com os maiores El Niños e o boletim do NOAA |
-| **Chuva e temperatura** | Mapa das 510 regiões do país comparadas com a média de 1991–2020, e a previsão de 7 dias |
+| **Chuva e temperatura** | Mapa das 510 regiões do país comparadas com a média de 1991–2020, e a previsão de 7 dias. Fernando de Noronha, que o IBGE põe na região de Recife, tem um ponto de clima próprio no “Meu lugar” (`data/ref/pontos_extras.csv`) |
 | **Alertas e queimadas** | Avisos do INMET em vigor e focos de queimada (últimas 48 horas e acumulado do ano) |
 | **Mundo** | Temperatura do planeta, países com avisos meteorológicos graves e desastres em curso |
 | **Notícias** | Manchetes dos últimos 14 dias, por estado, região e tema, com link para o veículo |

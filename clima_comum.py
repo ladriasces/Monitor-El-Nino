@@ -25,6 +25,20 @@ SAIDA = RAIZ / "docs" / "dados"
 
 BRT = timezone(timedelta(hours=-3))   # horário de Brasília (sem horário de verão desde 2019)
 
+
+def pontos_clima():
+    """Pontos das consultas de clima (NASA POWER e Open-Meteo): as 510 regiões imediatas do IBGE, cada uma
+    no seu ponto representativo, e os pontos extras de data/ref/pontos_extras.csv. Um ponto extra serve a um
+    município que o IBGE põe numa região imediata, mas cujo clima é muito diferente do ponto dela (caso de
+    Fernando de Noronha, a 350 km da costa, na região de Recife). As regiões são identificadas pelo código
+    da região imediata (6 dígitos), e os extras, pelo código do município (7 dígitos). O mapa e as
+    comparações entre regiões continuam com as 510 regiões oficiais; os extras só aparecem no "Meu lugar"."""
+    import pandas as pd   # só os scripts que usam esta função precisam do pandas
+    ri = pd.read_csv(REF / "regioes_imediatas.csv", dtype={"id": str})
+    ex = pd.read_csv(REF / "pontos_extras.csv", dtype={"id": str})
+    cols = ["id", "nome", "uf", "lat", "lon"]
+    return pd.concat([ri[cols], ex[cols]], ignore_index=True)
+
 # ---------------------------------------------------------------- estados
 NOME_UF = {
     "RO": "Rondônia", "AC": "Acre", "AM": "Amazonas", "RR": "Roraima", "PA": "Pará", "AP": "Amapá", "TO": "Tocantins",

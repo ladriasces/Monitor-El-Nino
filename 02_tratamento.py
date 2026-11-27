@@ -32,8 +32,8 @@ from urllib.parse import urlparse
 import pandas as pd
 from defusedxml import ElementTree as ET   # XML vindo de fora: protegido contra entidades maliciosas
 
-from clima_comum import (BRT, NOME_UF, RAW, REF, RX_TEMAS, SAIDA, UF_POR_NOME, agora, chave, gravar_json, ler_json, r,
-                         url_segura)
+from clima_comum import (BRT, NOME_UF, RAW, REF, RX_TEMAS, SAIDA, UF_POR_NOME, agora, chave, gravar_json, ler_json,
+                         pontos_clima, r, url_segura)
 
 SAT_REF = "AQUA_M-T"   # satélite de referência do INPE (o das séries históricas oficiais de queimadas)
 
@@ -144,8 +144,11 @@ def _normais() -> dict:
 
 def bloco_clima() -> dict:
     """Chuva e temperatura dos últimos 30 e 90 dias contra as normais 1991–2020, por região imediata;
-    séries diárias de 120 dias por estado; e a previsão de 7 dias do Open-Meteo."""
-    ri = pd.read_csv(REF / "regioes_imediatas.csv", dtype={"id": str})
+    séries diárias de 120 dias por estado; e a previsão de 7 dias do Open-Meteo. Os pontos extras
+    (data/ref/pontos_extras.csv, como Fernando de Noronha) saem à parte, em "pontos" e em
+    "previsao.pontos", para não entrarem no mapa nem nas comparações entre as 510 regiões."""
+    ri = pontos_clima()
+    extras = set(pd.read_csv(REF / "pontos_extras.csv", dtype={"id": str}).id)
     NORM = _normais()
     series = {}
     for t in ri.itertuples():
@@ -172,11 +175,14 @@ def bloco_clima() -> dict:
         # Estação seca: com chuva normal muito baixa (< 1/3 mm por dia), a diferença em % não tem sentido
         return [r(p, 1), r(np_, 1), r(anom_p, 0) if np_ >= dias / 3 else None, r(t, 1), r(t - nt, 2) if t == t else None]
 
-    regioes, por_uf = {}, {}
+    regioes, pontos, por_uf = {}, {}, {}
     for t in ri.itertuples():
         if t.id not in series:
             continue
         df = series[t.id]
+        if t.id in extras:
+            pontos[t.id] = resumo(t.id, df, 30) + resumo(t.id, df, 90)
+            continue
         regioes[t.id] = resumo(t.id, df, 30) + resumo(t.id, df, 90)
         # Série diária (para o gráfico do "Meu lugar"), separada por estado e carregada só quando pedida
         jan = df.loc[fim - timedelta(days=119):fim]
@@ -189,20 +195,22 @@ def bloco_clima() -> dict:
         gravar_json({"ini": ini_serie, "regioes": dados}, SAIDA / "serie" / f"{uf}.json")
 
     # Previsão de 7 dias (Open-Meteo)
-    prev = {}
+    prev, prev_pontos = {}, {}
     datas = None
     for arq in sorted((RAW / "previsao").glob("lote_*.json")):
         lote = ler_json(arq)
         for rid, d in zip(lote["ids"], lote["dados"]):
             dd = d["daily"]
             datas = dd["time"]
-            prev[rid] = [[r(x, 1) for x in dd["precipitation_sum"]], [r(x, 1) for x in dd["temperature_2m_max"]],
-                         [r(x, 1) for x in dd["temperature_2m_min"]]]
+            (prev_pontos if rid in extras else prev)[rid] = [
+                [r(x, 1) for x in dd["precipitation_sum"]], [r(x, 1) for x in dd["temperature_2m_max"]],
+                [r(x, 1) for x in dd["temperature_2m_min"]]]
     return {
         "fim": fim.date().isoformat(),
         "cols": ["p30", "p30_normal", "p30_anom", "t30", "t30_anom", "p90", "p90_normal", "p90_anom", "t90", "t90_anom"],
         "regioes": regioes,
-        "previsao": {"datas": datas, "regioes": prev},
+        "pontos": pontos,
+        "previsao": {"datas": datas, "regioes": prev, "pontos": prev_pontos},
     }
 
 

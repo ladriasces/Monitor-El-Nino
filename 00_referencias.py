@@ -8,7 +8,8 @@ Roda no computador do LADRI (precisa do geopandas: pip install geopandas); o res
 Etapas:
   malhas  IBGE (estados, regiões imediatas, mesorregiões) e Natural Earth (mundo) -> data/raw/geo/
   locais  municípios, regiões imediatas (com centroide) e mesorregiões -> data/ref/*.csv
-  normais NASA POWER, normais climatológicas 1991–2020 (chuva e temperatura) por região imediata
+  normais NASA POWER, normais climatológicas 1991–2020 (chuva e temperatura) por região imediata e
+          pelos pontos extras de data/ref/pontos_extras.csv (sempre completa os que faltarem)
   focos   INPE, focos de queimada do satélite de referência (AQUA_M-T): 2003–2025 (arquivos anuais)
           e o ano corrente (arquivos mensais) -> data/ref/focos_*.csv
 """
@@ -23,7 +24,7 @@ from concurrent.futures import ThreadPoolExecutor
 import geopandas as gpd
 import pandas as pd
 
-from clima_comum import RAW, REF, UF_POR_NOME, agora, baixar, chave
+from clima_comum import RAW, REF, UF_POR_NOME, agora, baixar, chave, pontos_clima
 
 GEO = RAW / "geo"
 IBGE = "https://servicodados.ibge.gov.br/api"
@@ -94,15 +95,24 @@ def _normal(linha) -> list[dict]:
             for var in ("PRECTOTCORR", "T2M")]
 
 
-def normais() -> None:
-    """Grava normais_power.csv: a régua de comparação (1991–2020) de cada uma das 510 regiões imediatas.
-    Vem do mesmo produto (NASA POWER) dos dados diários, para a comparação ser coerente."""
-    ri = pd.read_csv(REF / "regioes_imediatas.csv", dtype={"id": str})
+def normais(so_faltantes: bool = False) -> None:
+    """Grava normais_power.csv: a régua de comparação (1991–2020) de cada uma das 510 regiões imediatas e
+    dos pontos extras (data/ref/pontos_extras.csv). Vem do mesmo produto (NASA POWER) dos dados diários,
+    para a comparação ser coerente. Com so_faltantes, calcula só os pontos que ainda não estão no arquivo
+    (por exemplo, um ponto extra novo) e mantém os demais."""
+    pontos = pontos_clima()
+    arq = REF / "normais_power.csv"
+    antigas = pd.read_csv(arq, dtype={"id": str}) if so_faltantes and arq.exists() else pd.DataFrame(columns=["id"])
+    pontos = pontos[~pontos.id.isin(set(antigas.id))]
+    if pontos.empty:
+        print("Normais NASA POWER 1991–2020: nada a completar")
+        return
     with ThreadPoolExecutor(max_workers=4) as pool:
-        res = list(pool.map(_normal, ri.itertuples()))
-    df = pd.DataFrame([x for lst in res for x in lst])
-    df.to_csv(REF / "normais_power.csv", index=False)
-    print(f"Normais NASA POWER 1991–2020: {df.id.nunique()} regiões imediatas")
+        res = list(pool.map(_normal, pontos.itertuples()))
+    novas = pd.DataFrame([x for lst in res for x in lst])
+    df = pd.concat([antigas, novas], ignore_index=True) if len(antigas) else novas
+    df.to_csv(arq, index=False)
+    print(f"Normais NASA POWER 1991–2020: {novas.id.nunique()} pontos calculados, {df.id.nunique()} no arquivo")
 
 
 # ---------------------------------------------------------------- focos
@@ -171,3 +181,6 @@ if __name__ == "__main__":
             fn()
         else:
             print(f"== {nome}: já existe ({marca.relative_to(REF.parent.parent)})")
+    if (REF / "normais_power.csv").exists():   # um ponto extra novo só precisa da normal dele
+        print("== normais de pontos novos")
+        normais(so_faltantes=True)

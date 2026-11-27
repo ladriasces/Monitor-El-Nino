@@ -81,7 +81,10 @@ def validar_clima(C: dict) -> None:
     """Pelo menos 90% das regiões, valores de chuva e temperatura possíveis, previsão e séries completas."""
     reg = C["regioes"]
     erro(len(reg) >= 459, f"clima: só {len(reg)} de 510 regiões")
-    for rid, v in reg.items():
+    # Pontos extras (como Fernando de Noronha): só avisam se faltarem, porque um ponto não deve travar a publicação
+    pontos = C.get("pontos", {})
+    aviso(len(pontos) > 0, "clima: nenhum ponto extra (Fernando de Noronha)")
+    for rid, v in {**reg, **pontos}.items():
         chuva, _, _, temp, anom_temp = v[:5]
         erro(chuva is None or 0 <= chuva < 3000, f"clima {rid}: chuva impossível {chuva}")
         erro(temp is None or -10 < temp < 45, f"clima {rid}: temperatura impossível {temp}")
